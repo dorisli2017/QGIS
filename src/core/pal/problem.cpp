@@ -40,9 +40,13 @@
 #include "internalexception.h"
 #include <cfloat>
 #include <limits> //for std::numeric_limits<int>::max()
-
+#include <cassert>
+#include <QSet>
 #include "qgslabelingengine.h"
-
+//+++++++++++++++++++gpl++++++++++++++++++++++++++++
+#include "qgslogger.h"
+bool gplDebugger = true;
+//-------------------gpl----------------------------
 using namespace pal;
 
 inline void delete_chain( Chain *chain )
@@ -170,6 +174,11 @@ void Problem::reduce()
 
 void Problem::init_sol_empty()
 {
+//+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "init_sol_empty"));
+}
+//-------------------gpl-----------------------------------
   int i;
 
   if ( sol )
@@ -256,6 +265,11 @@ bool falpCallback1( LabelPosition *lp, void *ctx )
  */
 void Problem::init_sol_falp()
 {
+//+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "init_sol_falp"));
+}
+//-------------------gpl-----------------------------------
   int i, j;
   int label;
   PriorityQueue *list = nullptr;
@@ -369,7 +383,11 @@ void Problem::init_sol_falp()
 
 void Problem::popmusic()
 {
-
+//+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "popmusic"));
+}
+//-------------------gpl-----------------------------------
   if ( nbft == 0 )
     return;
 
@@ -772,6 +790,11 @@ bool updateCandidatesCost( LabelPosition *lp, void *context )
 
 double Problem::popmusic_tabu( SubPart *part )
 {
+//+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "popmusic_tabu"));
+}
+//-------------------gpl-----------------------------------
   int probSize = part->probSize;
   int borderSize = part->borderSize;
   int subSize = part->subSize;
@@ -1143,7 +1166,11 @@ bool chainCallback( LabelPosition *lp, void *context )
 
 inline Chain *Problem::chain( SubPart *part, int seed )
 {
-
+//+++++++++++++++++++gpl++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "chain"));
+}
+//-------------------gpl----------------------------
   int i;
   int j;
 
@@ -1430,7 +1457,11 @@ inline Chain *Problem::chain( SubPart *part, int seed )
 
 inline Chain *Problem::chain( int seed )
 {
-
+//+++++++++++++++++++gpl++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "chain"));
+}
+//-------------------gpl----------------------------
   int i;
   int j;
 
@@ -1712,6 +1743,11 @@ inline Chain *Problem::chain( int seed )
 
 double Problem::popmusic_chain( SubPart *part )
 {
+//+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "popmusic_chain"));
+}
+//-------------------gpl-----------------------------------
   int i;
   //int j;
 
@@ -1859,6 +1895,11 @@ double Problem::popmusic_chain( SubPart *part )
 
 double Problem::popmusic_tabu_chain( SubPart *part )
 {
+//+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "popmusic_tabu_chain"));
+}
+//-------------------gpl----------------------------------------
   int i;
 
   int probSize   = part->probSize;
@@ -2117,7 +2158,11 @@ bool nokCallback( LabelPosition *lp, void *context )
 
 void Problem::chain_search()
 {
-
+//+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++
+if(gplDebugger){
+ QgsLogger::QgsDebugMsg( QStringLiteral( "chain_search"));
+}
+//-------------------gpl----------------------------------
   if ( nbft == 0 )
     return;
 
@@ -2344,3 +2389,195 @@ void Problem::solution_cost()
     }
   }
 }
+//+++++++++++++++++++++++++++gpl-algorithms++++++++++++++++++++++++++++++++++++++++++++++++++
+ /*typedef struct
+ {
+   bool* labelList = nullptr;
+   LabelPosition *lp = nullptr;
+   RTree <LabelPosition *, double, 2, double> *candidates;
+ } SimpleContext;
+
+bool simpleConflictCallback(LabelPosition *lp, void *ctx){
+ SimpleContext *context = reinterpret_cast< SimpleContext * >( ctx );
+ LabelPosition *choosenLp = context->lp;
+ bool* list = context->labelList; 
+ int id = lp->getId(); 
+ if(id > choosenLp->getId() && choosenLp->isInConflict(lp)){
+    list[id] = false;
+ }
+  return true;
+}
+void Problem::simple()
+{
+//+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+    if(gplDebugger){
+        QgsLogger::QgsDebugMsg( QStringLiteral( "simple"));
+    }
+//-------------------gpl-----------------------------------
+    int i, j;
+    int label;
+    double amin[2];
+    double amax[2];
+    QVector<bool> labelList(all_nblp,true);
+    LabelPosition *lp = nullptr;
+    SimpleContext *context = new SimpleContext();
+    context->candidates = candidates;
+    context->labelList = labelList.data();
+    bool setF = false;
+    init_sol_empty();
+     for ( i = 0; i < nbft; i++){
+        setF= false;
+        for ( j = 0; j < featNbLp[i]; j++ )
+        {
+          if(setF) break;
+          label = featStartId[i] + j;  
+            if(labelList[label] == false) continue;
+            lp=mLabelPositions.at(label);
+            if ( lp->getId() != label )
+            {
+                std::cerr << "simple wrong";
+            }
+            int probFeatId = lp->getProblemFeatureId();
+            sol->s[probFeatId] = label; 
+            lp->getBoundingBox( amin, amax); 
+            //ignore all its overlapps;
+            context->lp = lp;
+            setF= true;
+            candidates->Search( amin, amax, simpleConflictCallback ,reinterpret_cast< void * >( context ));        
+        }
+    }
+   if ( displayAll )
+   {
+     int nbOverlap;
+     int start_p;
+     LabelPosition *retainedLabel = nullptr;
+     int p;
+ 
+     for ( i = 0; i < nbft; i++ ) // forearch hidden feature
+     {
+       if ( sol->s[i] == -1 )
+       {
+         nbOverlap = std::numeric_limits<int>::max();
+         start_p = featStartId[i];
+         for ( p = 0; p < featNbLp[i]; p++ )
+         {
+           lp = mLabelPositions.at( start_p + p );
+           lp->resetNumOverlaps();
+ 
+           lp->getBoundingBox( amin, amax );
+ 
+ 
+           candidates_sol->Search( amin, amax, LabelPosition::countOverlapCallback, lp );
+ 
+           if ( lp->getNumOverlaps() < nbOverlap )
+           {
+             retainedLabel = lp;
+             nbOverlap = lp->getNumOverlaps();
+           }
+         }
+         sol->s[i] = retainedLabel->getId();
+ 
+         retainedLabel->insertIntoIndex( candidates_sol );
+ 
+       }
+     }
+   }
+}*/
+//------------------------gpl-algorithms-----------------------------------------------------
+//+++++++++++++++++++++++++++gpl-algorithms++++++++++++++++++++++++++++++++++++++++++++++++++
+typedef struct
+ {
+   QSet<int> labelList;
+   LabelPosition *lp = nullptr;
+   RTree <LabelPosition *, double, 2, double> *candidates;
+ } SimpleContext;
+
+bool simpleConflictCallback(LabelPosition *lp, void *ctx){
+ SimpleContext *context = reinterpret_cast< SimpleContext * >( ctx );
+ LabelPosition *choosenLp = context->lp; 
+ int id = lp->getId(); 
+ if(id > choosenLp->getId()&&choosenLp->isInConflict(lp)){
+    context->labelList.insert(id);
+ }
+  return true;
+}
+void Problem::simple()
+{
+//+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+    if(gplDebugger){
+        QgsLogger::QgsDebugMsg( QStringLiteral( "simple"));
+    }
+//-------------------gpl-----------------------------------
+    int i, j;
+    int label;
+    double amin[2];
+    double amax[2];
+    bool setF = false;
+    LabelPosition *lp = nullptr;
+    SimpleContext *context = new SimpleContext();
+    context->candidates = candidates;
+    init_sol_empty();
+     for ( i = 0; i < nbft; i++){
+        setF= false;
+        for ( j = 0; j < featNbLp[i]; j++ )
+        {
+            if(setF){
+                break;
+            }
+            label = featStartId[i] + j;  
+            if(context->labelList.contains(label)){
+                 continue;
+            }
+            lp=mLabelPositions.at(label);
+            if ( lp->getId() != label )
+            {
+                std::cerr << "simple wrong";
+            }
+            int probFeatId = lp->getProblemFeatureId();
+            sol->s[probFeatId] = label; 
+            lp->getBoundingBox( amin, amax); 
+            //ignore all its overlapps;
+            context->lp = lp;
+            setF = true;
+            candidates->Search( amin, amax, simpleConflictCallback ,reinterpret_cast< void * >( context ));     
+        }
+    }
+   delete context;
+   if ( displayAll )
+   {
+     int nbOverlap;
+     int start_p;
+     LabelPosition *retainedLabel = nullptr;
+     int p;
+ 
+     for ( i = 0; i < nbft; i++ ) // forearch hidden feature
+     {
+       if ( sol->s[i] == -1 )
+       {
+         nbOverlap = std::numeric_limits<int>::max();
+         start_p = featStartId[i];
+         for ( p = 0; p < featNbLp[i]; p++ )
+         {
+           lp = mLabelPositions.at( start_p + p );
+           lp->resetNumOverlaps();
+ 
+           lp->getBoundingBox( amin, amax );
+ 
+ 
+           candidates_sol->Search( amin, amax, LabelPosition::countOverlapCallback, lp );
+ 
+           if ( lp->getNumOverlaps() < nbOverlap )
+           {
+             retainedLabel = lp;
+             nbOverlap = lp->getNumOverlaps();
+           }
+         }
+         sol->s[i] = retainedLabel->getId();
+ 
+         retainedLabel->insertIntoIndex( candidates_sol );
+ 
+       }
+     }
+   }
+}
+//------------------------gpl-algorithms-----------------------------------------------------

@@ -52,6 +52,9 @@ class CORE_EXPORT QgsLabelingEngineSettings
       Popmusic_Chain,
       Popmusic_Tabu_Chain,
       Falp
+//++++++++++++++++gpl-algorithms++++++++++++++++++++++++++++++++++++++++
+      ,SIMPLE
+//----------------qpl-algorithms----------------------------------------
     };
 
     QgsLabelingEngineSettings();

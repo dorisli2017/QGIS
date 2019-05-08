@@ -183,6 +183,9 @@ namespace pal
        */
       void init_sol_empty();
       void init_sol_falp();
+//+++++++++++++++++++++++++++++++gpl_algorithms+++++++++++++++++++++++++++++++++
+      void simple();
+//-------------------------------gpl-algorithms---------------------------------
 
       static bool compareLabelArea( pal::LabelPosition *l1, pal::LabelPosition *l2 );
 

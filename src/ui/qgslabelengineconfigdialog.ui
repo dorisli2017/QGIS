@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>420</width>
+    <width>444</width>
     <height>358</height>
    </rect>
   </property>
@@ -54,6 +54,11 @@
        <item>
         <property name="text">
          <string>FALP (fastest)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SIMPLE</string>
         </property>
        </item>
       </widget>
