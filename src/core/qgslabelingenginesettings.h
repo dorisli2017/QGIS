@@ -54,6 +54,7 @@ class CORE_EXPORT QgsLabelingEngineSettings
       Falp
 //++++++++++++++++gpl-algorithms++++++++++++++++++++++++++++++++++++++++
       ,SIMPLE
+      ,MIS
 //----------------qpl-algorithms----------------------------------------
     };
 

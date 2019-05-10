@@ -421,7 +421,10 @@ SET(QGIS_CORE_SRCS
   layout/qgsreportsectionfieldgroup.cpp
   layout/qgsreportsectionlayout.cpp
   layout/qgscompositionconverter.cpp
-
+#+++++++++++++++++gpl+++++++++++++++++++
+ # pal/graph_boost.cpp
+  pal/graph.cpp
+#-----------------gpl-------------------
   pal/costcalculator.cpp
   pal/feature.cpp
   pal/geomfunction.cpp

@@ -469,6 +469,8 @@ QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll )
 //+++++++++++++++++gpl-algorithms+++++++++++++++++++++
     else if ( searchMethod == SIMPLE )
       prob->simple();
+    else if ( searchMethod == MIS )
+      prob->mis();
 //-----------------gpl-algorithms---------------------
     else if ( searchMethod == CHAIN )
       prob->chain_search();
@@ -616,6 +618,9 @@ void Pal::setSearch( SearchMethod method )
       break;
 //+++++++++++++++++gpl-algorithms+++++++++++++++++++++
     case SIMPLE:
+      searchMethod = method;
+      break;
+    case MIS:
       searchMethod = method;
       break;
 //-----------------gpl-algorithms---------------------

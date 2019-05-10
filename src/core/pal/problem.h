@@ -37,7 +37,8 @@
 #include <list>
 #include <QList>
 #include "rtree.hpp"
-
+#include "graph.h"
+//#include "graph_boost.h"
 namespace pal
 {
 
@@ -187,6 +188,12 @@ namespace pal
       void simple();
 //-------------------------------gpl-algorithms---------------------------------
 
+//++++++++++++++++++++++++ set conflict graph for MIS-algorithms+++++++++++++++++
+      void setConflictGraph();
+      void debugConflictGraph();
+      void mis();
+//------------------------ set conflict graph for MIS-algorithms-----------------
+
       static bool compareLabelArea( pal::LabelPosition *l1, pal::LabelPosition *l2 );
 
     private:
@@ -235,6 +242,7 @@ namespace pal
       RTree<LabelPosition *, double, 2, double> *candidates = nullptr; // index all candidates
       RTree<LabelPosition *, double, 2, double> *candidates_sol = nullptr; // index active candidates
       RTree<LabelPosition *, double, 2, double> *candidates_subsol = nullptr; // idem for subparts
+      Graph* conflictGraph = nullptr;
 
       //int *feat;        // [nblp]
       int *featStartId = nullptr; // [nbft]

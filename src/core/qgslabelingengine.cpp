@@ -211,6 +211,9 @@ void QgsLabelingEngine::run( QgsRenderContext &context )
     case QgsLabelingEngineSettings::SIMPLE:
       s = pal::SIMPLE;
       break;
+    case QgsLabelingEngineSettings::MIS:
+      s = pal::MIS;
+      break;
 //-------------gpl-algorithms------------------------
   }
   p.setSearch( s );

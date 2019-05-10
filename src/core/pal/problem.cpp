@@ -69,6 +69,7 @@ Problem::Problem()
   candidates = new RTree<LabelPosition *, double, 2, double>();
   candidates_sol = new RTree<LabelPosition *, double, 2, double>();
   candidates_subsol = nullptr;
+  conflictGraph = nullptr;
 }
 
 Problem::~Problem()
@@ -2562,8 +2563,6 @@ void Problem::simple()
            lp->resetNumOverlaps();
  
            lp->getBoundingBox( amin, amax );
- 
- 
            candidates_sol->Search( amin, amax, LabelPosition::countOverlapCallback, lp );
  
            if ( lp->getNumOverlaps() < nbOverlap )
@@ -2581,3 +2580,62 @@ void Problem::simple()
    }
 }
 //------------------------gpl-algorithms-----------------------------------------------------
+
+//++++++++++++++++++++++++ set conflict graph for MIS-algorithms+++++++++++++++++++++++++++++
+typedef struct{
+  Graph* conflictGraph;
+  LabelPosition* lp;
+  int* lpID= nullptr;
+}CONFLICTContext;
+bool conflictCallBack( LabelPosition *lp, void *ctx ){
+  CONFLICTContext* context = reinterpret_cast< CONFLICTContext* >( ctx );
+  LabelPosition *lp2 = context->lp;
+  int id = lp->getId();
+  int id2 = *(context->lpID);
+  if ( id > id2)
+  {
+    if(lp2->getProblemFeatureId()  == lp->getProblemFeatureId() || lp2->isInConflict( lp)){ 
+      context->conflictGraph->addEdge(id,id2);
+    }
+  }
+  return true;
+}
+void Problem::setConflictGraph(){
+  conflictGraph = new Graph(all_nblp);
+  int i, j;
+  int label;
+  double amin[2];
+  double amax[2];
+  int lpID;
+  LabelPosition *lp = nullptr;
+  CONFLICTContext * context = new CONFLICTContext();
+  context-> lpID = &lpID;
+  context->conflictGraph = conflictGraph;
+  for ( i = 0; i < nbft; i++ ){
+    for ( j = 0; j < featNbLp[i]; j++ ){
+      label = featStartId[i] + j;
+       lp = mLabelPositions.at( label );
+       lpID = lp->getId();
+       if ( lpID != label )
+        {
+          std::cerr << "mis wrong";
+        }
+       lp->getBoundingBox(amin, amax);
+       context-> lp = lp;
+       candidates->Search( amin, amax, conflictCallBack, reinterpret_cast< void * >(context) );   
+    }
+  }
+}
+void Problem::debugConflictGraph(){
+  conflictGraph->debugGraph();
+  //TODO: Define more assert to check RT three and conflictgraph.
+}
+
+//------------------------ set conflict graph for MIS-algorithms-----------------------------
+//mis (maximum Indepdend set)
+void Problem::mis(){
+  std::cout<< "point A"<<std::endl;
+  init_sol_empty();
+  setConflictGraph();
+  debugConflictGraph();
+}

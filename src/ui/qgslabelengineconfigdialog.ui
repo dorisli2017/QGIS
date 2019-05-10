@@ -61,6 +61,11 @@
          <string>SIMPLE</string>
         </property>
        </item>
+       <item>
+        <property name="text">
+         <string>MIS</string>
+        </property>
+       </item>
       </widget>
      </item>
     </layout>

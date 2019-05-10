@@ -65,6 +65,7 @@ namespace pal
     FALP = 4 //!< Only initial solution
 //+++++++++++++++qpl-algorithms+++++++++++++++++++++++++++++
     ,SIMPLE = 5
+    ,MIS = 6
 //---------------gpl-algorithms-----------------------------
   };
 

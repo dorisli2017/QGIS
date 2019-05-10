@@ -37,6 +37,7 @@
 #include "qgsmessagelog.h"
 #include <cmath>
 #include <cfloat>
+#include "qgslogger.h"
 
 using namespace pal;
 
@@ -264,8 +265,7 @@ bool LabelPosition::isInside( double *bbox )
 bool LabelPosition::isInConflict( LabelPosition *lp )
 {
   if ( this->probFeat == lp->probFeat ) // bugfix #1
-    return false; // always overlaping itself !
-
+    return false;// always overlaping itself !
   if ( !nextPart && !lp->nextPart )
     return isInConflictSinglePart( lp );
   else
