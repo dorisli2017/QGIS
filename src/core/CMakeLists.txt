@@ -423,7 +423,8 @@ SET(QGIS_CORE_SRCS
   layout/qgscompositionconverter.cpp
 #+++++++++++++++++gpl+++++++++++++++++++
  # pal/graph_boost.cpp
-  pal/graph.cpp
+#  pal/graph_set.cpp
+pal/graph.cpp
 #-----------------gpl-------------------
   pal/costcalculator.cpp
   pal/feature.cpp

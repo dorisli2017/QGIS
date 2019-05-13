@@ -3,21 +3,20 @@
 //TODO: a map of index of labelLabel could save more memory
 //TODO: unordered set?
 #include <assert.h>
-#include <unordered_set>
-#include <unordered_map>
+#include <set>
 #include <iostream>
-#include <assert.h>
 using namespace std;
-typedef unordered_set<int> edgeList;
-typedef unordered_map<int,edgeList> adjecencyList; 
+typedef set<int> edgeList;
 class Graph{
     public:
-        Graph();
+        Graph(int numV);
         void debugGraph();
         void printGraph();
         void addEdge(int source, int target);
-        void deleteVertex(int u);
         void deleteEdge(int source, int target);
         bool searchEdge(int source, int target);
-        adjecencyList adList; 
+
+    private:
+        int numV;
+        edgeList* adList; 
 };

@@ -2601,7 +2601,7 @@ bool conflictCallBack( LabelPosition *lp, void *ctx ){
   return true;
 }
 void Problem::setConflictGraph(){
-  conflictGraph = new Graph(all_nblp);
+  conflictGraph = new Graph();
   int i, j;
   int label;
   double amin[2];
@@ -2628,6 +2628,7 @@ void Problem::setConflictGraph(){
 }
 void Problem::debugConflictGraph(){
   conflictGraph->debugGraph();
+  conflictGraph->printGraph();
   //TODO: Define more assert to check RT three and conflictgraph.
 }
 
