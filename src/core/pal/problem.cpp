@@ -45,7 +45,7 @@
 #include "qgslabelingengine.h"
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++
 #include "qgslogger.h"
-bool gplDebugger = true;
+bool gplDebugger = false;
 //-------------------gpl----------------------------
 using namespace pal;
 
@@ -2485,7 +2485,7 @@ void Problem::simple()
    }
 }*/
 //------------------------gpl-algorithms-----------------------------------------------------
-//+++++++++++++++++++++++++++gpl-algorithms++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++gpl-algorithms+++simple++++++++++++++++++++++++++++++++++++++++++++
 typedef struct
  {
    QSet<int> labelList;
@@ -2579,9 +2579,8 @@ void Problem::simple()
      }
    }
 }
-//------------------------gpl-algorithms-----------------------------------------------------
-
-//++++++++++++++++++++++++ set conflict graph for MIS-algorithms+++++++++++++++++++++++++++++
+//------------------------gpl-algorithms-----------------simple-----------------------------------
+//++++++++++++++++++++++++gpl-dataSruct++++set conflict graph+++++++++++++++++++++++++++++
 typedef struct{
   Graph* conflictGraph;
   LabelPosition* lp;
@@ -2607,13 +2606,22 @@ void Problem::setConflictGraph(){
   double amin[2];
   double amax[2];
   int lpID;
+  int startID, endID;
   LabelPosition *lp = nullptr;
   CONFLICTContext * context = new CONFLICTContext();
   context-> lpID = &lpID;
   context->conflictGraph = conflictGraph;
   for ( i = 0; i < nbft; i++ ){
-    for ( j = 0; j < featNbLp[i]; j++ ){
-      label = featStartId[i] + j;
+    startID = featStartId[i];
+    endID = startID+ featNbLp[i];
+    for ( j = startID; j <endID; j++ ){
+      label = j;
+      conflictGraph->addVertex(label);
+      //add neighbors with smaller indices 
+      for(int k = startID; k < j; k++){
+        conflictGraph->addEdge(k,j);
+        conflictGraph->addEdge(j,k);
+      }
        lp = mLabelPositions.at( label );
        lpID = lp->getId();
        if ( lpID != label )
@@ -2626,17 +2634,215 @@ void Problem::setConflictGraph(){
     }
   }
 }
+bool graphDebugCallBack( LabelPosition *lp, void *ctx ){
+  CONFLICTContext* context = reinterpret_cast< CONFLICTContext* >( ctx );
+  LabelPosition *lp2 = context->lp;
+  int id = lp->getId();
+  int id2 = *(context->lpID);
+  if ( id != id2)
+  {
+    if(lp2->isInConflict( lp)){ 
+      context->conflictGraph->containEdge(id,id2);
+      context->conflictGraph->containEdge(id2,id);
+    }
+  }
+  return true;
+
+}
 void Problem::debugConflictGraph(){
   conflictGraph->debugGraph();
   conflictGraph->printGraph();
-  //TODO: Define more assert to check RT three and conflictgraph.
+  //Define more assert to check RT three and conflictgraph.
+  int i,j;
+  int lpID;
+  int start,end;
+  LabelPosition *lp = nullptr;
+  LabelPosition *lp2 = nullptr;
+  int label,label2;
+  vector<int> neighbors;
+  for ( i = 0; i < nbft; i++ ){
+    start = featStartId[i];
+    end = start+featNbLp[i];
+    for (j = start; j < end; j++)
+    {
+      label = j;
+      assert(conflictGraph->containVertex(label));
+      lp = mLabelPositions.at( label );
+      lpID = lp->getId();
+      if ( lpID != label )
+      {
+        std::cerr << "conflictGraph wrong";
+      }
+      for ( int p = 0; p < nbft; p++ ){
+        for (int q = 0; q < featNbLp[p]; q++){
+          label2 = featStartId[p]+q;
+          lp2 = mLabelPositions.at( label2 );
+          bool contains = conflictGraph->containEdge(label, label2);
+          if(label == label2){
+            assert(!contains);
+            continue;
+          } 
+          bool conflict = (lp->isInConflict( lp2));
+          bool neighbor = (lp->getFeaturePart() == lp2->getFeaturePart());
+          if((conflict || neighbor) != contains){
+            cout<< conflict<< endl;
+            cout<< neighbor << endl;
+            cout<< contains << endl;
+            cout<< label<< endl;
+            cout<< label2 <<endl;
+          }
+          assert((conflict || neighbor) == contains);
+        }
+      }
+    }
+  }
 }
+//-------------------gpl-dataSruct----- set conflict graph --------------------------------------------------
+//+++++++++++++++++++++++++++gpl-algorithms++++++++++++MIS++++++++++++++++++++++++++++++++++++++
+void Problem::debugVertexCover(unordered_set<int>& vertexCover){
+  cout<< "***********&&&&&&&&&&&***********"<< endl;
+  for(const auto &p : vertexCover){
+      cout<< p << endl;
+  }
+  int label1,label2;
+    for (const auto &p : conflictGraph->adList) {
+      label1 = p.first;
+      if(p.second.size() == 0 || vertexCover.find(label1) != vertexCover.end()) continue;
+      for(const auto &q : p.second){
+        label2 = q;
+        assert(vertexCover.find(label2) != vertexCover.end());
+      }
+    }
+}
+void Problem::debugIndepdency( unordered_set<int>& MIS){
+  for(const auto &p: MIS){
+    for(const auto &q: MIS){
+      if(p == q) continue;
+      assert(!conflictGraph->containEdge(p,q));
+      if(mLabelPositions[p]->getFeaturePart() == mLabelPositions[q]->getFeaturePart()){
+        std::cout<< "p: "<< p << endl;
+         std::cout<< "q: "<< q<< endl;
+        conflictGraph->printGraph();
+      }
+      assert(mLabelPositions[p]->getFeaturePart() != mLabelPositions[q]->getFeaturePart());
+      assert(!mLabelPositions[p]->isInConflict( mLabelPositions[q] ));
 
-//------------------------ set conflict graph for MIS-algorithms-----------------------------
+    }
+  }
+}
 //mis (maximum Indepdend set)
 void Problem::mis(){
+  int label;
+  int i,j;
+  double amin[2];
+  double amax[2];
+  LabelPosition *lp = nullptr;
   std::cout<< "point A"<<std::endl;
   init_sol_empty();
   setConflictGraph();
-  debugConflictGraph();
+  if(gplDebugger){
+    debugConflictGraph();
+  }
+  unordered_set<int> vertexCover = getVertexCover();
+  unordered_set<int> MIS;
+  for ( i = 0; i < nbft; i++ ){
+    for (j = 0; j < featNbLp[i]; j++ ){
+      label = featStartId[i] + j;
+      if(vertexCover.find(label) != vertexCover.end()) continue;
+      MIS.insert(label);
+    }
+  }
+  if(gplDebugger){
+    debugIndepdency(MIS);
+  }
+  for(const auto &label: MIS){
+    lp=mLabelPositions.at(label);
+    if ( lp->getId() != label )
+    {
+        std::cerr << "mis wrong";
+    }
+    int probFeatId = lp->getProblemFeatureId();
+    sol->s[probFeatId] = label; 
+  }
+  if ( displayAll )
+  {
+    int nbOverlap;
+    int start_p;
+    LabelPosition *retainedLabel = nullptr;
+    int p;
+
+    for ( i = 0; i < nbft; i++ ) // forearch hidden feature
+    {
+      if ( sol->s[i] == -1 )
+      {
+        nbOverlap = std::numeric_limits<int>::max();
+        start_p = featStartId[i];
+        for ( p = 0; p < featNbLp[i]; p++ )
+        {
+          lp = mLabelPositions.at( start_p + p );
+          lp->resetNumOverlaps();
+
+          lp->getBoundingBox( amin, amax );
+
+
+          candidates_sol->Search( amin, amax, LabelPosition::countOverlapCallback, lp );
+
+          if ( lp->getNumOverlaps() < nbOverlap )
+          {
+            retainedLabel = lp;
+            nbOverlap = lp->getNumOverlaps();
+          }
+        }
+        sol->s[i] = retainedLabel->getId();
+
+        retainedLabel->insertIntoIndex( candidates_sol );
+
+      }
+    }
+  }
 }
+
+inline double getPriority(int degree){return degree;};
+// cover all edges 
+
+unordered_set<int> Problem:: getVertexCover(){
+  PriorityQueue *list = nullptr;
+  list = new PriorityQueue( nblp, all_nblp, false );
+  int label;
+  int degree;
+  unordered_set<int> vertexCover;
+  unordered_set<int>* eList=nullptr;
+  for (const auto &p : conflictGraph->adList) {
+    label = p.first;
+    eList = &(conflictGraph->adList[label]);
+    degree = p.second.size();
+    if(degree == 0) continue;
+    list->insert(label, getPriority(p.second.size()));
+  }
+  if(gplDebugger){
+    list->print();
+  }
+  unordered_set<int> covered;
+  unsigned int size = list->getSize();
+  while ( covered.size() != size){
+      label = list->getBest(); 
+      vertexCover.insert(label);
+      covered.insert(label);
+      if(covered.size() == size) break;
+      eList = &(conflictGraph->adList[label]);
+      for(const auto &p: (*eList)){
+        if(list->decreaseKey_remove(p,0.0)){
+          covered.insert(p);
+          if(covered.size() == size) goto check_pointer;
+        }
+      }
+  }
+  check_pointer:{
+    if(gplDebugger){
+      debugVertexCover(vertexCover);
+    }
+    return vertexCover;
+  }
+} 
+//---------------------gpl-algorithms-----------------mis--------------------------
+//++++++++++++++++maxHS

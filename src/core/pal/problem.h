@@ -192,6 +192,9 @@ namespace pal
       void setConflictGraph();
       void debugConflictGraph();
       void mis();
+      unordered_set<int> getVertexCover();
+      void debugVertexCover(unordered_set<int>& vertexCover);
+      void debugIndepdency( unordered_set<int>& MIS);
 //------------------------ set conflict graph for MIS-algorithms-----------------
 
       static bool compareLabelArea( pal::LabelPosition *l1, pal::LabelPosition *l2 );

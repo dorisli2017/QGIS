@@ -85,6 +85,9 @@ namespace pal
       void upheap( int key );
 
       void decreaseKey( int key );
+      //++++++++++++++++++++gpl++++++++++++++++++++++++++++++++++++++++++++++
+      bool decreaseKey_remove( int key, double limit);
+      //----------------gpl--------------------------------------------------
       void setPriority( int key, double new_p );
 
 

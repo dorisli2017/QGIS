@@ -15,9 +15,14 @@ class Graph{
         Graph();
         void debugGraph();
         void printGraph();
+        void addVertex(int u);
         void addEdge(int source, int target);
         void deleteVertex(int u);
         void deleteEdge(int source, int target);
-        bool searchEdge(int source, int target);
+        bool containEdge(int source, int target);
+        bool containVertex(int u);
+    //******************vertex cover***********************
+        void getVertexCover(int* vertexCover);
+    //******************maxi. independent set************** 
         adjecencyList adList; 
 };

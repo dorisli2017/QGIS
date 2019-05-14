@@ -286,8 +286,29 @@ void PriorityQueue::decreaseKey( int key )
   upheap( key );
   downheap( pos[key] );
 }
+//++++++++++++++++++++gpl++++++++++++++++++++++++++++++++++++++++++++++
+bool PriorityQueue::decreaseKey_remove( int key, double limit)
+{
 
+  if ( key < 0 || key > maxId )
+    return false;
 
+  int i = pos[key];
+
+  if ( i < 0 )
+    return false;
+
+  p[i]--;
+  if(p[i] == limit){
+    remove(key);
+    return true;
+  }
+
+  upheap( key );
+  downheap( pos[key] );
+  return false;
+}
+//----------------gpl----------------------------------------------------
 void PriorityQueue::print()
 {
   int i;
