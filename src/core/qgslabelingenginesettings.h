@@ -55,6 +55,8 @@ class CORE_EXPORT QgsLabelingEngineSettings
 //++++++++++++++++gpl-algorithms++++++++++++++++++++++++++++++++++++++++
       ,SIMPLE
       ,MIS
+      ,MAXHS
+      ,KAMIS
 //----------------qpl-algorithms----------------------------------------
     };
 

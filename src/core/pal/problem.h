@@ -37,8 +37,11 @@
 #include <list>
 #include <QList>
 #include "rtree.hpp"
-#include "graph.h"
+//#include "graph.h"
+#include "graph_set.h"
+#include <unordered_set>
 //#include "graph_boost.h"
+//#include "graph_set_hash.h"
 namespace pal
 {
 
@@ -186,14 +189,14 @@ namespace pal
       void init_sol_falp();
 //+++++++++++++++++++++++++++++++gpl_algorithms+++++++++++++++++++++++++++++++++
       void simple();
+      void mis();
+      void maxHS();
+      void kamis();
 //-------------------------------gpl-algorithms---------------------------------
 
 //++++++++++++++++++++++++ set conflict graph for MIS-algorithms+++++++++++++++++
       void setConflictGraph();
       void debugConflictGraph();
-      void mis();
-      unordered_set<int> getVertexCover();
-      void debugVertexCover(unordered_set<int>& vertexCover);
       void debugIndepdency( unordered_set<int>& MIS);
 //------------------------ set conflict graph for MIS-algorithms-----------------
 

@@ -45,10 +45,10 @@
 #include "qgslabelingengine.h"
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++
 #include "qgslogger.h"
-bool gplDebugger = false;
+#include "debugger.h"
 //-------------------gpl----------------------------
 using namespace pal;
-
+bool gplDebugger = true;
 inline void delete_chain( Chain *chain )
 {
   if ( chain )
@@ -2600,7 +2600,8 @@ bool conflictCallBack( LabelPosition *lp, void *ctx ){
   return true;
 }
 void Problem::setConflictGraph(){
-  conflictGraph = new Graph();
+  conflictGraph = new Graph(nblp,all_nblp);
+  //conflictGraph = new Graph(all_nblp);
   int i, j;
   int label;
   double amin[2];
@@ -2613,10 +2614,15 @@ void Problem::setConflictGraph(){
   context->conflictGraph = conflictGraph;
   for ( i = 0; i < nbft; i++ ){
     startID = featStartId[i];
+    for(j = 0; j < featNbLp[i]; j++){
+        conflictGraph->addVertex(startID+j);
+    }
+  }
+  for ( i = 0; i < nbft; i++ ){
+    startID = featStartId[i];
     endID = startID+ featNbLp[i];
     for ( j = startID; j <endID; j++ ){
       label = j;
-      conflictGraph->addVertex(label);
       //add neighbors with smaller indices 
       for(int k = startID; k < j; k++){
         conflictGraph->addEdge(k,j);
@@ -2677,20 +2683,13 @@ void Problem::debugConflictGraph(){
         for (int q = 0; q < featNbLp[p]; q++){
           label2 = featStartId[p]+q;
           lp2 = mLabelPositions.at( label2 );
-          bool contains = conflictGraph->containEdge(label, label2);
+          bool contains = conflictGraph->containEdge_label(label, label2);
           if(label == label2){
             assert(!contains);
             continue;
           } 
           bool conflict = (lp->isInConflict( lp2));
           bool neighbor = (lp->getFeaturePart() == lp2->getFeaturePart());
-          if((conflict || neighbor) != contains){
-            cout<< conflict<< endl;
-            cout<< neighbor << endl;
-            cout<< contains << endl;
-            cout<< label<< endl;
-            cout<< label2 <<endl;
-          }
           assert((conflict || neighbor) == contains);
         }
       }
@@ -2699,26 +2698,11 @@ void Problem::debugConflictGraph(){
 }
 //-------------------gpl-dataSruct----- set conflict graph --------------------------------------------------
 //+++++++++++++++++++++++++++gpl-algorithms++++++++++++MIS++++++++++++++++++++++++++++++++++++++
-void Problem::debugVertexCover(unordered_set<int>& vertexCover){
-  cout<< "***********&&&&&&&&&&&***********"<< endl;
-  for(const auto &p : vertexCover){
-      cout<< p << endl;
-  }
-  int label1,label2;
-    for (const auto &p : conflictGraph->adList) {
-      label1 = p.first;
-      if(p.second.size() == 0 || vertexCover.find(label1) != vertexCover.end()) continue;
-      for(const auto &q : p.second){
-        label2 = q;
-        assert(vertexCover.find(label2) != vertexCover.end());
-      }
-    }
-}
 void Problem::debugIndepdency( unordered_set<int>& MIS){
   for(const auto &p: MIS){
     for(const auto &q: MIS){
       if(p == q) continue;
-      assert(!conflictGraph->containEdge(p,q));
+      assert(!conflictGraph->containEdge_label(p,q));
       if(mLabelPositions[p]->getFeaturePart() == mLabelPositions[q]->getFeaturePart()){
         std::cout<< "p: "<< p << endl;
          std::cout<< "q: "<< q<< endl;
@@ -2737,13 +2721,12 @@ void Problem::mis(){
   double amin[2];
   double amax[2];
   LabelPosition *lp = nullptr;
-  std::cout<< "point A"<<std::endl;
   init_sol_empty();
   setConflictGraph();
   if(gplDebugger){
     debugConflictGraph();
   }
-  unordered_set<int> vertexCover = getVertexCover();
+  unordered_set<int> vertexCover = conflictGraph->getVertexCover(nblp, all_nblp);
   unordered_set<int> MIS;
   for ( i = 0; i < nbft; i++ ){
     for (j = 0; j < featNbLp[i]; j++ ){
@@ -2802,47 +2785,40 @@ void Problem::mis(){
   }
 }
 
-inline double getPriority(int degree){return degree;};
 // cover all edges 
 
-unordered_set<int> Problem:: getVertexCover(){
-  PriorityQueue *list = nullptr;
-  list = new PriorityQueue( nblp, all_nblp, false );
-  int label;
-  int degree;
-  unordered_set<int> vertexCover;
-  unordered_set<int>* eList=nullptr;
-  for (const auto &p : conflictGraph->adList) {
-    label = p.first;
-    eList = &(conflictGraph->adList[label]);
-    degree = p.second.size();
-    if(degree == 0) continue;
-    list->insert(label, getPriority(p.second.size()));
-  }
-  if(gplDebugger){
-    list->print();
-  }
-  unordered_set<int> covered;
-  unsigned int size = list->getSize();
-  while ( covered.size() != size){
-      label = list->getBest(); 
-      vertexCover.insert(label);
-      covered.insert(label);
-      if(covered.size() == size) break;
-      eList = &(conflictGraph->adList[label]);
-      for(const auto &p: (*eList)){
-        if(list->decreaseKey_remove(p,0.0)){
-          covered.insert(p);
-          if(covered.size() == size) goto check_pointer;
-        }
-      }
-  }
-  check_pointer:{
-    if(gplDebugger){
-      debugVertexCover(vertexCover);
-    }
-    return vertexCover;
-  }
-} 
 //---------------------gpl-algorithms-----------------mis--------------------------
-//++++++++++++++++maxHS
+
+//+++++++++++++++++++++++++++gpl-algorithms++++++++++++MaxHS++++++++++++++++++++++++++++++++++++++
+//mis (maximum Indepdend set)
+void Problem::maxHS(){
+  //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+    if(gplDebugger){
+        QgsLogger::QgsDebugMsg( QStringLiteral( "maxHS"));
+    }
+//-------------------gpl-----------------------------------
+  int label;
+  int i,j;
+  double amin[2];
+  double amax[2];
+  LabelPosition *lp = nullptr;
+  init_sol_empty();
+}
+//---------------------gpl-algorithms-----------------MaxHs---------------------------------------
+//+++++++++++++++++++++++++++gpl-algorithms++++++++++++KAMIS++++++++++++++++++++++++++++++++++++++
+//using KAMIS to solve it (maximum Indepdend set)
+//currently as extern libery( file to file communication) 
+void Problem::kamis(){
+  //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+    if(gplDebugger){
+        QgsLogger::QgsDebugMsg( QStringLiteral( "kamis"));
+    }
+//-------------------gpl-----------------------------------
+  int label;
+  int i,j;
+  double amin[2];
+  double amax[2];
+  LabelPosition *lp = nullptr;
+  init_sol_empty();
+}
+//---------------------gpl-algorithms-----------------KAMIS---------------------------------------

@@ -214,6 +214,12 @@ void QgsLabelingEngine::run( QgsRenderContext &context )
     case QgsLabelingEngineSettings::MIS:
       s = pal::MIS;
       break;
+    case QgsLabelingEngineSettings::MAXHS:
+      s = pal::MAXHS;
+      break;
+    case QgsLabelingEngineSettings::KAMIS:
+      s = pal::KAMIS;
+      break;
 //-------------gpl-algorithms------------------------
   }
   p.setSearch( s );

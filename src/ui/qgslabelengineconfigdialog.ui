@@ -66,6 +66,16 @@
          <string>MIS</string>
         </property>
        </item>
+       <item>
+        <property name="text">
+         <string>MAXHS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>KAMIS</string>
+        </property>
+       </item>
       </widget>
      </item>
     </layout>

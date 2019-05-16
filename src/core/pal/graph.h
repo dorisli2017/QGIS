@@ -2,17 +2,22 @@
 //TODO: sparse graph may fit set of set
 //TODO: a map of index of labelLabel could save more memory
 //TODO: unordered set?
+#ifndef GRAPH_H
+#define GRAPH_H
 #include <assert.h>
 #include <unordered_set>
 #include <unordered_map>
 #include <iostream>
+#include <fstream>
 #include <assert.h>
+#include "priorityqueue.h"
+#include "debugger.h"
 using namespace std;
 typedef unordered_set<int> edgeList;
 typedef unordered_map<int,edgeList> adjecencyList; 
 class Graph{
     public:
-        Graph();
+        Graph(int nblp, int all_nblp);
         void debugGraph();
         void printGraph();
         void addVertex(int u);
@@ -20,9 +25,15 @@ class Graph{
         void deleteVertex(int u);
         void deleteEdge(int source, int target);
         bool containEdge(int source, int target);
+        bool containEdge_label(int source, int target);
         bool containVertex(int u);
+        void outputDIMACS(string const &  fileName);
+        void outputMetis(string const &  fileName);
     //******************vertex cover***********************
-        void getVertexCover(int* vertexCover);
+        void setPriorityQueue(pal::PriorityQueue * list);
+        unordered_set<int> getVertexCover(int nblp, int all_nblp);
+        void debugVertexCover(unordered_set<int>& vertexCover);
     //******************maxi. independent set************** 
         adjecencyList adList; 
 };
+#endif

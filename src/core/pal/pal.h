@@ -66,6 +66,8 @@ namespace pal
 //+++++++++++++++qpl-algorithms+++++++++++++++++++++++++++++
     ,SIMPLE = 5
     ,MIS = 6
+    ,MAXHS =7
+    ,KAMIS = 8
 //---------------gpl-algorithms-----------------------------
   };
 
