@@ -2698,7 +2698,7 @@ void Problem::debugConflictGraph(){
 }
 //-------------------gpl-dataSruct----- set conflict graph --------------------------------------------------
 //+++++++++++++++++++++++++++gpl-algorithms++++++++++++MIS++++++++++++++++++++++++++++++++++++++
-void Problem::debugIndepdency( unordered_set<int>& MIS){
+void Problem::debugIndepdency( vector<int>& MIS){
   for(const auto &p: MIS){
     for(const auto &q: MIS){
       if(p == q) continue;
@@ -2718,31 +2718,36 @@ void Problem::debugIndepdency( unordered_set<int>& MIS){
 void Problem::mis(){
   int label;
   int i,j;
-  double amin[2];
-  double amax[2];
-  LabelPosition *lp = nullptr;
   init_sol_empty();
   setConflictGraph();
   if(gplDebugger){
     debugConflictGraph();
   }
   unordered_set<int> vertexCover = conflictGraph->getVertexCover(nblp, all_nblp);
-  unordered_set<int> MIS;
+  vector<int> MIS;
   for ( i = 0; i < nbft; i++ ){
     for (j = 0; j < featNbLp[i]; j++ ){
       label = featStartId[i] + j;
       if(vertexCover.find(label) != vertexCover.end()) continue;
-      MIS.insert(label);
+      MIS.push_back(label);
     }
   }
   if(gplDebugger){
     debugIndepdency(MIS);
   }
+  setSolution(MIS);
+}
+void Problem::setSolution(vector<int>& MIS){
+  int i,j;
+  int label;
+  double amin[2];
+  double amax[2];
+  LabelPosition *lp = nullptr;
   for(const auto &label: MIS){
-    lp=mLabelPositions.at(label);
+    lp=                   .at(label);
     if ( lp->getId() != label )
     {
-        std::cerr << "mis wrong";
+      std::cerr << "mis wrong";
     }
     int probFeatId = lp->getProblemFeatureId();
     sol->s[probFeatId] = label; 
@@ -2784,7 +2789,6 @@ void Problem::mis(){
     }
   }
 }
-
 // cover all edges 
 
 //---------------------gpl-algorithms-----------------mis--------------------------
@@ -2820,5 +2824,17 @@ void Problem::kamis(){
   double amax[2];
   LabelPosition *lp = nullptr;
   init_sol_empty();
+    setConflictGraph();
+  if(gplDebugger){
+    debugConflictGraph();
+  }
+  vector<int> KAMIS;
+  conflictGraph->getKAMIS(KAMIS);
+  if(gplDebugger){
+    debugIndepdency(KAMIS);
+  }
+  setSolution(KAMIS);
+
+
 }
 //---------------------gpl-algorithms-----------------KAMIS---------------------------------------

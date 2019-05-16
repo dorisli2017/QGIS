@@ -152,6 +152,52 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
       }
     }
 }
+void Graph::readKAMIS(vector<int>& KAMIS,string const & fileName){
+  vector<int> vertexMIS;
+  ifstream indata;
+  indata.open(fileName.c_str());
+  if(!indata){
+  // file couldn't be opened
+  cerr << "Error: file could not be opened" << endl;
+  exit(1);  
+  }
+  int line = 1;
+  int in;
+  while (indata>>in){
+    if(in ==1){
+      vertexMIS.push_back(line);
+    }
+    line++;
+  }
+  if(gplDebugger){
+    debugMIS(vertexMIS);
+  }
+  for(const auto elem: vertexMIS){
+        KAMIS.push_back(elem);
+  }
+}
+void Graph::debugMIS(vector<int>& vertexMIS){
+  cout<< "***********&&&&&&&&&&&debugMIS***********"<< endl;
+  for(const auto & elem : vertexMIS){
+    cout<< elem << " ";
+  }
+  cout<< endl;
+  std::vector<int> f(numV);
+  std::iota(f.begin(), f.end(), 1);
+  vector<int> cover;
+  std::set_intersection(f.begin(),f.end(),vertexMIS.begin(), vertexMIS.end(), back_inserter(cover));
+  std::unordered_set<int> Cover(cover.begin(), cover.end());
+  debugVertexCover(Cover);
+  for(int i =0; i < vertexMIS.size(); i++){
+    for(int j = 0; j < i; j++){
+      assert(!containEdge(i,j));
+    }
+  }
+}
+void Graph::getKAMIS(vector<int>& KAMIS){
+  system("../../../../KaMIS/deploy/redumis a_map.txt --output=b_map.txt");
+  readKAMIS(KAMIS, "b_map.txt");
+}
 /*int main (int argc, char *argv[]) {
   Graph graph(3,3);
   graph.addEdge(1,2);

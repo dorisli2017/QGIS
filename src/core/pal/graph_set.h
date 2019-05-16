@@ -6,8 +6,11 @@
 #define GRAPH_SET_H
 #include <assert.h>
 #include <set>
+#include <vector>
 #include <iostream>
 #include<fstream>
+#include <numeric>
+#include<algorithm>
 #include "debugger.h"
 #include <unordered_set>
 #include "priorityqueue.h"
@@ -29,6 +32,9 @@ class Graph{
         void outputMetis(string const & fileName);
         unordered_set<int> getVertexCover(int nblp, int all_nblp);
         void debugVertexCover(unordered_set<int>& vertexCover);
+        void getKAMIS(vector<int>& KAMIS);
+        void debugMIS(vector<int>& vertexMIS);
+        void readKAMIS(vector<int>& KAMIS,string const & fileName);
         int numV;
         edgeList* adList; 
 };

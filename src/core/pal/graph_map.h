@@ -6,14 +6,19 @@
 #define GRAPH_MAP_H
 #include <assert.h>
 #include <unordered_set>
+#include <set>
 #include <map>
+#include <set>
+#include <vector>
 #include <iostream>
 #include <fstream>
 #include <assert.h>
+#include <numeric>
+#include<algorithm>
 #include "priorityqueue.h"
 #include "debugger.h"
 using namespace std;
-typedef unordered_set<int> edgeList;
+typedef set<int> edgeList;
 typedef map<int,edgeList> adjecencyList; 
 class Graph{
     public:
@@ -34,6 +39,10 @@ class Graph{
         unordered_set<int> getVertexCover(int nblp, int all_nblp);
         void debugVertexCover(unordered_set<int>& vertexCover);
     //******************maxi. independent set************** 
+        void getKAMIS(vector<int>& KAMIS);
+        void debugMIS(vector<int>& vertexMIS);
+        void readKAMIS(vector<int>& KAMIS,string const & fileName);
         adjecencyList adList; 
+        int numV;
 };
 #endif

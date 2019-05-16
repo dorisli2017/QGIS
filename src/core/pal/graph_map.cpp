@@ -1,5 +1,7 @@
 #include "graph_map.h"
+bool gplDebugger = true;
 Graph::Graph(int nblp, int all_nblp){
+  numV = all_nblp;
 }
 void Graph::addVertex(int u){
     adList[u];
@@ -83,15 +85,18 @@ void Graph::outputMetis(string const & fileName){
     exit(1);  
   }
   outdata << "% "<<fileName<<endl;
-  int vSize= 0;
   int eSize= 0;
-  vSize = adList.size();
+  map<int,edgeList>::const_iterator it;
   for (const auto &p : adList){
       eSize+=p.second.size();
   }
-  outdata<< vSize<<" "<< eSize/2<<endl;
-  for (const auto &p : adList) {
-    for(const auto &q : p.second){
+  outdata<< numV<<" "<< eSize/2<<endl;
+  for(int i = 1; i <numV;i++){
+    it = adList.find (i);
+  if ( it == adList.end() )
+    outdata<< endl;
+  else
+    for(const auto &q : it->second){
         outdata<<q<<" ";
     }
   outdata<<endl;
@@ -154,15 +159,70 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
         assert(vertexCover.find(label2) != vertexCover.end());
       }
     }
+};
+void Graph::readKAMIS(vector<int>& KAMIS,string const & fileName){
+  vector<int> vertexMIS;
+  ifstream indata;
+  indata.open(fileName.c_str());
+  if(!indata){
+  // file couldn't be opened
+  cerr << "Error: file could not be opened" << endl;
+  exit(1);  
+  }
+  int line = 1;
+  int in;
+  while (indata>>in){
+    if(in ==1){
+      vertexMIS.push_back(line);
+    }
+    line++;
+  }
+  if(gplDebugger){
+    debugMIS(vertexMIS);
+  }
+  for(const auto elem: vertexMIS){
+        KAMIS.push_back(elem);
+  }
 }
-/*int main (int argc, char *argv[]) {
+void Graph::debugMIS(vector<int>& vertexMIS){
+  cout<< "***********&&&&&&&&&&&debugMIS***********"<< endl;
+  for(const auto & elem : vertexMIS){
+    cout<< elem << " ";
+  }
+  cout<< endl;
+  std::vector<int> f(numV);
+  std::iota(f.begin(), f.end(), 1);
+  vector<int> cover;
+  std::set_intersection(f.begin(),f.end(),vertexMIS.begin(), vertexMIS.end(), back_inserter(cover));
+  std::unordered_set<int> Cover(cover.begin(), cover.end());
+  debugVertexCover(Cover);
+  for(int i =0; i < vertexMIS.size(); i++){
+    for(int j = 0; j < i; j++){
+      assert(!containEdge(i,j));
+    }
+  }
+}
+void Graph::getKAMIS(vector<int>& KAMIS){
+  system("../../../../KaMIS/deploy/redumis a_map.txt --output=b_map.txt");
+  readKAMIS(KAMIS, "b_map.txt");
+}
+int main (int argc, char *argv[]) {
   Graph graph(3,3);
-  graph.addEdge(1,2);
-  graph.addEdge(3,2);
-  graph.addEdge(2,1);
+  graph.addVertex(100);
+  graph.addVertex(200);
+  graph.addVertex(300);
+  graph.addEdge(100,200);
+  graph.addEdge(300,200);
+  graph.addEdge(200,100);
   graph.printGraph();
   graph.debugGraph();
   graph.outputMetis("a_map.txt");
+  vector<int> KAMIS;
+  graph.getKAMIS(KAMIS);
+  cout<< "KAMIS"<< endl;
+  for(const auto elem: KAMIS){
+    cout<< elem<< " ";
+  }
+  cout<<endl;
   return 0;
 }
-*/

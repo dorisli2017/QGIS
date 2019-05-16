@@ -12,6 +12,8 @@
 #include <unordered_set>
 #include "priorityqueue.h"
 #include "gpl_datastructure.h"
+#include <numeric>
+#include <algorithm>
 using namespace std;
 typedef set<int> edgeList;
 class Graph{
@@ -30,6 +32,9 @@ class Graph{
         void outputMetis(string const & fileName);
         unordered_set<int> getVertexCover(int nblp, int all_nblp);
         void debugVertexCover(unordered_set<int>& vertexCover);
+        void getKAMIS(vector<int>& KAMIS);
+        void debugMIS(vector<int>& vertexMIS);
+        void readKAMIS(vector<int>& KAMIS,string const & fileName);
         int numV;
         edgeList* adList;
         lookupTable* table; 
