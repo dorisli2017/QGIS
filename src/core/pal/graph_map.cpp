@@ -1,56 +1,52 @@
-#include "graph_set.h"
-//bool gplDebugger = true;
+#include "graph_map.h"
 Graph::Graph(int nblp, int all_nblp){
-    numV = all_nblp;
-    adList = new edgeList[numV+1];
 }
-void Graph::addVertex(int v){
-
-};
+void Graph::addVertex(int u){
+    adList[u];
+}
 void Graph::addEdge(int u, int v){
-    assert(u<= numV);
-    assert(v <= numV);
     adList[u].insert(v);
     adList[v].insert(u);
 };
-void Graph::deleteEdge(int u, int v){
-    assert(u< numV);
-    assert(v < numV);
-    if(adList[u].erase(v)>0){
-        adList[v].erase(u);
+void Graph:: deleteVertex(int u){
+    adList.erase(u);
+    /*for (const auto &p : adList) {
+        adList[p.first].erase(u);
     }
+    */
 
-};
-bool Graph::containVertex(int u){
-    return u<= numV;
 }
+void Graph::deleteEdge(int u, int v){
+    assert(adList.find(u) != adList.end());
+    assert(adList.find(v) != adList.end());
+
+    adList[u].erase(v);
+    adList[v].erase(u);
+};
 bool Graph::containEdge(int source, int target){
     return (adList[source].count(target) != 0);
 };
 bool Graph::containEdge_label(int source, int target){
     return (adList[source].count(target) != 0);
 };
+bool Graph::containVertex(int u){
+    return adList.find(u) != adList.end();
+};
 void Graph::debugGraph(){
-    edgeList::iterator it;
-    for(int i =0; i < numV;i++){
-        it= adList[i].begin();
-        while (it != adList[i].end()){
-            //undirected graph (u,v)->(v,u)
-            assert(containEdge(*it,i));
-            //index < numV
-            assert(*it <= numV);
-            it++;
-        }
+        for (const auto &p : adList) {
+            for(const auto &q : p.second){
+                assert(containEdge(q,p.first));
+            }
     }
 };
 void Graph::printGraph(){
-    for (int i = 1; i <= numV; ++i){  
-        cout << endl << i<< ": " ; 
-        for (auto itr = adList[i].begin(); itr != adList[i].end(); ++itr){ 
-            cout << *itr << " "; 
-        }
-        cout << endl; 
-    } 
+    for (const auto &p : adList) {
+            std::cout << p.first << " => ";
+            for(const auto &q : p.second){
+                        std::cout << q << " ";
+            }
+            cout<<'\n';
+    }
 }
 void Graph::outputDIMACS(string const &  fileName){
   ofstream outdata;
@@ -61,15 +57,18 @@ void Graph::outputDIMACS(string const &  fileName){
     exit(1);  
   }
   outdata << "c "<<fileName<<endl;
+  int vSize= 0;
   int eSize= 0;
-  for (int i =1 ; i < numV; i++) {
-      eSize+=adList[i].size();
+  vSize = adList.size();
+  for (const auto &p : adList){
+      eSize+=p.second.size();
   }
-  outdata<<"p edge"<< numV<<" "<< eSize/2;
-  for (int i =1 ; i < numV; i++) {
-    for(const auto &q : adList[i]){
-        if(i < q){
-            outdata <<std::endl<<"e "<<i<<" "<<q;
+  outdata<<"p edge"<< vSize<<" "<< eSize/2<<endl;
+  for (const auto &p : adList) {
+    outdata<<endl;
+    for(const auto &q : p.second){
+        if(p.first < q){
+            outdata <<std::endl<<"e "<<p.first<<" "<<q;
         }
     }
   }
@@ -84,27 +83,30 @@ void Graph::outputMetis(string const & fileName){
     exit(1);  
   }
   outdata << "% "<<fileName<<endl;
+  int vSize= 0;
   int eSize= 0;
-  for (int i =1 ; i < numV+1; i++) {
-      eSize+=adList[i].size();
+  vSize = adList.size();
+  for (const auto &p : adList){
+      eSize+=p.second.size();
   }
-  outdata<< numV<<" "<< eSize/2<<endl;
-  for (int i =1 ; i < numV+1; i++) {
-    for(const auto &q : adList[i]){
+  outdata<< vSize<<" "<< eSize/2<<endl;
+  for (const auto &p : adList) {
+    for(const auto &q : p.second){
         outdata<<q<<" ";
     }
-    outdata<<endl;
+  outdata<<endl;
   }
   outdata.close();
 }
 inline double getPriority(int degree){return degree;};
 
 void Graph::setPriorityQueue(pal::PriorityQueue * list){
-    int degree;
-    for (int i =1 ; i < numV+1; i++) {
-    degree = adList[i].size();
+    int label, degree;
+    for (const auto &p : adList) {
+    label = p.first;
+    degree = p.second.size();
     if(degree == 0) continue;
-    list->insert(i, getPriority(degree));
+    list->insert(label, getPriority(degree));
   }
   if(gplDebugger){
     list->print();
@@ -114,6 +116,7 @@ unordered_set<int> Graph:: getVertexCover(int nblp, int all_nblp){
   pal::PriorityQueue *list = nullptr;
   list = new pal::PriorityQueue( nblp, all_nblp, false );
   int label;
+  int degree;
   unordered_set<int> vertexCover;
   setPriorityQueue(list);
   unordered_set<int> covered;
@@ -143,10 +146,10 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
       cout<< p << endl;
   }
   int label1,label2;
-    for (int i =1; i < numV+1; i++) {
-      label1 = i;
-      if(adList[i].size() == 0 || vertexCover.find(label1) != vertexCover.end()) continue;
-      for(const auto &q : adList[i]){
+    for (const auto &p : adList) {
+      label1 = p.first;
+      if(p.second.size() == 0 || vertexCover.find(label1) != vertexCover.end()) continue;
+      for(const auto &q : p.second){
         label2 = q;
         assert(vertexCover.find(label2) != vertexCover.end());
       }
@@ -159,6 +162,7 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
   graph.addEdge(2,1);
   graph.printGraph();
   graph.debugGraph();
-  graph.outputMetis("a.txt");
+  graph.outputMetis("a_map.txt");
   return 0;
-}*/
+}
+*/

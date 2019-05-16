@@ -1,4 +1,5 @@
 #include "graph.h"
+//bool gplDebugger = true;
 Graph::Graph(int nblp, int all_nblp){
 }
 void Graph::addVertex(int u){
@@ -90,8 +91,9 @@ void Graph::outputMetis(string const & fileName){
       eSize+=p.second.size();
   }
   outdata<< vSize<<" "<< eSize/2<<endl;
-  for (const auto &p : adList) {
-    for(const auto &q : p.second){
+  for (int i = 1; i <= vSize; i++) {
+    edgeList& elist = adList.at(i);
+    for(const auto &q : elist){
         outdata<<q<<" ";
     }
     outdata<<endl;
@@ -156,15 +158,12 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
     }
 }
 /*int main (int argc, char *argv[]) {
-  Graph graph;
- graph.addVertex(100);
-  //graph.addEdge(0,1);
-  graph.deleteVertex(3);
+  Graph graph(3,3);
+  graph.addEdge(1,2);
+  graph.addEdge(3,2);
   graph.addEdge(2,1);
-    graph.addEdge(2,0);
- graph.deleteEdge(0,1);
   graph.printGraph();
   graph.debugGraph();
- graph.outputMetis("a.txt");
+  graph.outputMetis("a_graph.txt");
   return 0;
 }*/
