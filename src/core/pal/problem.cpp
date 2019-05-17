@@ -2744,7 +2744,7 @@ void Problem::setSolution(vector<int>& MIS){
   double amax[2];
   LabelPosition *lp = nullptr;
   for(const auto &label: MIS){
-    lp=                   .at(label);
+    lp= mLabelPositions.at(label);
     if ( lp->getId() != label )
     {
       std::cerr << "mis wrong";

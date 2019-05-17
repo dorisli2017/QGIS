@@ -1,5 +1,5 @@
 #include "graph_map.h"
-bool gplDebugger = true;
+//bool gplDebugger = true;
 Graph::Graph(int nblp, int all_nblp){
   numV = all_nblp;
 }
@@ -91,15 +91,17 @@ void Graph::outputMetis(string const & fileName){
       eSize+=p.second.size();
   }
   outdata<< numV<<" "<< eSize/2<<endl;
-  for(int i = 1; i <numV;i++){
-    it = adList.find (i);
-  if ( it == adList.end() )
-    outdata<< endl;
-  else
+  int i = 1;
+  for ( it = adList.begin(); it != adList.end(); it++)
+  {
+    for(; i < it->first; i++){
+      outdata<< endl;      
+    }
     for(const auto &q : it->second){
         outdata<<q<<" ";
     }
-  outdata<<endl;
+    i+=2;
+    outdata<<endl;
   }
   outdata.close();
 }
@@ -198,7 +200,11 @@ void Graph::debugMIS(vector<int>& vertexMIS){
   debugVertexCover(Cover);
   for(int i =0; i < vertexMIS.size(); i++){
     for(int j = 0; j < i; j++){
-      assert(!containEdge(i,j));
+      if(containEdge(vertexMIS[i],vertexMIS[j])){
+        cout<< "i:"<< i<<endl;
+        cout<< "j:"<< j<<endl;
+      }
+      assert(!containEdge(vertexMIS[i],vertexMIS[j]));
     }
   }
 }
@@ -206,14 +212,15 @@ void Graph::getKAMIS(vector<int>& KAMIS){
   system("../../../../KaMIS/deploy/redumis a_map.txt --output=b_map.txt");
   readKAMIS(KAMIS, "b_map.txt");
 }
+/*
 int main (int argc, char *argv[]) {
-  Graph graph(3,3);
-  graph.addVertex(100);
-  graph.addVertex(200);
-  graph.addVertex(300);
-  graph.addEdge(100,200);
-  graph.addEdge(300,200);
-  graph.addEdge(200,100);
+  Graph graph(3,30);
+  graph.addVertex(10);
+  graph.addVertex(20);
+  graph.addVertex(30);
+  graph.addEdge(10,20);
+  graph.addEdge(30,20);
+  graph.addEdge(20,10);
   graph.printGraph();
   graph.debugGraph();
   graph.outputMetis("a_map.txt");
@@ -225,4 +232,4 @@ int main (int argc, char *argv[]) {
   }
   cout<<endl;
   return 0;
-}
+}*/

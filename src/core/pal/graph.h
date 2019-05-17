@@ -10,6 +10,9 @@
 #include <iostream>
 #include <fstream>
 #include <assert.h>
+#include<vector>
+#include<numeric>
+#include<algorithm>
 #include "priorityqueue.h"
 #include "debugger.h"
 using namespace std;
@@ -34,6 +37,10 @@ class Graph{
         unordered_set<int> getVertexCover(int nblp, int all_nblp);
         void debugVertexCover(unordered_set<int>& vertexCover);
     //******************maxi. independent set************** 
+        void getKAMIS(vector<int>& KAMIS);
+        void debugMIS(vector<int>& vertexMIS);
+        void readKAMIS(vector<int>& KAMIS,string const & fileName);
         adjecencyList adList; 
+        int numV;
 };
 #endif

@@ -213,7 +213,7 @@ void Graph::debugMIS(vector<int>& vertexMIS){
   debugVertexCover(Cover);
   for(int i =0; i < vertexMIS.size(); i++){
     for(int j = 0; j < i; j++){
-      assert(!containEdge(i,j));
+      assert(!containEdge(vertexMIS[i],vertexMIS[j]);
     }
   }
 }
