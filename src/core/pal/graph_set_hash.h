@@ -14,6 +14,8 @@
 #include "gpl_datastructure.h"
 #include <numeric>
 #include <algorithm>
+#include <string.h>
+#include <stdlib.h>
 using namespace std;
 typedef set<int> edgeList;
 class Graph{
@@ -35,6 +37,8 @@ class Graph{
         void getKAMIS(vector<int>& KAMIS);
         void debugMIS(vector<int>& vertexMIS);
         void readKAMIS(vector<int>& KAMIS,string const & fileName);
+        void readWCNF(vector<int>& KAMIS,string const & fileName);
+        void getMAXHS(vector<int>& KAMIS);
         int numV;
         edgeList* adList;
         lookupTable* table; 

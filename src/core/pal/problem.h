@@ -37,12 +37,12 @@
 #include <list>
 #include <QList>
 #include "rtree.hpp"
-#include "graph_map.h"
+//#include "graph_map.h"
 //#include "graph.h"
 #include <unordered_set>
 //#include "graph_boost.h"
 //#include "graph_set.h"
-//#include "graph_set_hash.h"
+#include "graph_set_hash.h"
 namespace pal
 {
 

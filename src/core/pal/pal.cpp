@@ -471,6 +471,8 @@ QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll )
       prob->simple();
     else if ( searchMethod == MIS )
       prob->mis();
+    else if ( searchMethod == KAMIS )
+      prob->kamis();
     else if ( searchMethod == MAXHS )
       prob->maxHS();
 //-----------------gpl-algorithms---------------------

@@ -49,6 +49,7 @@
 //-------------------gpl----------------------------
 using namespace pal;
 bool gplDebugger = true;
+bool gplPrinter = false;
 inline void delete_chain( Chain *chain )
 {
   if ( chain )
@@ -2657,7 +2658,9 @@ bool graphDebugCallBack( LabelPosition *lp, void *ctx ){
 }
 void Problem::debugConflictGraph(){
   conflictGraph->debugGraph();
-  conflictGraph->printGraph();
+  if(gplPrinter){
+    conflictGraph->printGraph();
+  }
   //Define more assert to check RT three and conflictgraph.
   int i,j;
   int lpID;
@@ -2716,6 +2719,11 @@ void Problem::debugIndepdency( vector<int>& MIS){
 }
 //mis (maximum Indepdend set)
 void Problem::mis(){
+  //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+    if(gplDebugger){
+        QgsLogger::QgsDebugMsg( QStringLiteral( "mis"));
+    }
+//-------------------gpl-----------------------------------
   int label;
   int i,j;
   init_sol_empty();
@@ -2807,6 +2815,16 @@ void Problem::maxHS(){
   double amax[2];
   LabelPosition *lp = nullptr;
   init_sol_empty();
+  setConflictGraph();
+  if(gplDebugger){
+    debugConflictGraph();
+  }
+  vector<int> KAMIS;
+  conflictGraph->getMAXHS(KAMIS);
+  if(gplDebugger){
+    debugIndepdency(KAMIS);
+  }
+  setSolution(KAMIS);
 }
 //---------------------gpl-algorithms-----------------MaxHs---------------------------------------
 //+++++++++++++++++++++++++++gpl-algorithms++++++++++++KAMIS++++++++++++++++++++++++++++++++++++++
@@ -2824,7 +2842,7 @@ void Problem::kamis(){
   double amax[2];
   LabelPosition *lp = nullptr;
   init_sol_empty();
-    setConflictGraph();
+  setConflictGraph();
   if(gplDebugger){
     debugConflictGraph();
   }
