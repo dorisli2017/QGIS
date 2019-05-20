@@ -2746,8 +2746,7 @@ void Problem::mis(){
   setSolution(MIS);
 }
 void Problem::setSolution(vector<int>& MIS){
-  int i,j;
-  int label;
+  int i;
   double amin[2];
   double amax[2];
   LabelPosition *lp = nullptr;
@@ -2809,11 +2808,6 @@ void Problem::maxHS(){
         QgsLogger::QgsDebugMsg( QStringLiteral( "maxHS"));
     }
 //-------------------gpl-----------------------------------
-  int label;
-  int i,j;
-  double amin[2];
-  double amax[2];
-  LabelPosition *lp = nullptr;
   init_sol_empty();
   setConflictGraph();
   if(gplDebugger){
@@ -2836,11 +2830,6 @@ void Problem::kamis(){
         QgsLogger::QgsDebugMsg( QStringLiteral( "kamis"));
     }
 //-------------------gpl-----------------------------------
-  int label;
-  int i,j;
-  double amin[2];
-  double amax[2];
-  LabelPosition *lp = nullptr;
   init_sol_empty();
   setConflictGraph();
   if(gplDebugger){

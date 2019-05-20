@@ -52,6 +52,8 @@ void Graph::printGraph(){
 }
 void Graph::outputDIMACS(string const &  fileName){
   ofstream outdata;
+  int top = 2;
+  int cost = 1;
   outdata.open (fileName.c_str());
   if(!outdata){
     // file couldn't be opened
@@ -65,14 +67,17 @@ void Graph::outputDIMACS(string const &  fileName){
   for (const auto &p : adList){
       eSize+=p.second.size();
   }
-  outdata<<"p edge"<< vSize<<" "<< eSize/2<<endl;
+  outdata<<"p wcnf"<< vSize<<" "<< eSize/2<<endl;
   for (const auto &p : adList) {
     outdata<<endl;
     for(const auto &q : p.second){
         if(p.first < q){
-            outdata <<std::endl<<"e "<<p.first<<" "<<q;
+              outdata<<top<<" "<<-p.first<<" "<< -q<<" "<< 0<< endl;
         }
     }
+  }
+  for (const auto &p : adList){
+    outdata<<cost<<" "<<p.first<<" "<< 0<< endl;
   }
   outdata.close();
 }
@@ -209,11 +214,50 @@ void Graph::debugMIS(vector<int>& vertexMIS){
   }
 }
 void Graph::getKAMIS(vector<int>& KAMIS){
-  system("../../../../KaMIS/deploy/redumis a_map.txt --output=b_map.txt");
+  outputMetis("metis_map.txt");
+  system("../redumis metis_map.txt --output=b_map.txt");
   readKAMIS(KAMIS, "b_map.txt");
 }
+void Graph::readWCNF(vector<int>& KAMIS,string const & fileName){
+  ifstream indata;
+  indata.open(fileName.c_str());
+  if(!indata){
+  // file couldn't be opened
+  cerr << "Error: file could not be opened" << endl;
+  exit(1);  
+  }
+  string line;
+  char head;
+  while (getline(indata, line)){
+    if(line.empty()) continue;
+		head =line.at(0);
+		if(head == 'v'){
+			break;
+		}
+  }
+  int i;
+  char* str = strdup(line.c_str());
+  const char s[2] = " ";
+  char* token = strtok(str, s);
+  token = strtok(NULL, s);
+    while(token != NULL){
+      i = atoi(token);
+      if(i>0){
+        KAMIS.push_back(i);
+      }
+      token = strtok(NULL, s);
+    }
+  if(gplDebugger){
+    debugMIS(KAMIS);
+  }
+}
+void Graph::getMAXHS(vector<int>& KAMIS){
+  outputDIMACS("dimacs_map.txt");
+  system("../maxhs dimacs_map.txt >b_map.txt");
+  readWCNF(KAMIS, "b_map.txt");
+}
 /*
-int main (int argc, char *argv[]) {
+int main_metis (int argc, char *argv[]) {
   Graph graph(3,30);
   graph.addVertex(10);
   graph.addVertex(20);
@@ -233,3 +277,26 @@ int main (int argc, char *argv[]) {
   cout<<endl;
   return 0;
 }*/
+/*
+int main(int argc, char *argv[]){
+  Graph graph(3,300);
+  graph.addVertex(100);
+  graph.addVertex(200);
+  graph.addVertex(300);
+  graph.addEdge(100,200);
+  graph.addEdge(300,200);
+  graph.addEdge(200,100);
+  graph.printGraph();
+  graph.debugGraph();
+  vector<int> KAMIS;
+  graph.outputDIMACS("dimacs_map.txt");
+  system("../../../maxhs dimacs_map.txt >b_map.txt");
+  graph.readWCNF(KAMIS, "b_map.txt");
+  cout<< "MAXHS"<< endl;
+  for(const auto elem: KAMIS){
+    cout<< elem<< " ";
+  }
+  cout<<endl;
+  return 0;
+}
+*/

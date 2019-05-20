@@ -15,6 +15,7 @@
 #include<algorithm>
 #include "priorityqueue.h"
 #include "debugger.h"
+#include "string.h"
 using namespace std;
 typedef unordered_set<int> edgeList;
 typedef unordered_map<int,edgeList> adjecencyList; 
@@ -40,6 +41,8 @@ class Graph{
         void getKAMIS(vector<int>& KAMIS);
         void debugMIS(vector<int>& vertexMIS);
         void readKAMIS(vector<int>& KAMIS,string const & fileName);
+        void readWCNF(vector<int>& KAMIS,string const & fileName);
+        void getMAXHS(vector<int>& KAMIS);
         adjecencyList adList; 
         int numV;
 };

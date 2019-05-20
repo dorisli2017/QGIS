@@ -265,13 +265,12 @@ void Graph::debugMIS(vector<int>& vertexMIS){
 }
 void Graph::getKAMIS(vector<int>& KAMIS){
   outputMetis("metis_set_map.txt");
-  system("../../KaMIS/deploy/redumis metis_set_map.txt --output=b_set_map.txt");
+  system("../redumis metis_set_map.txt --output=b_set_map.txt");
   readKAMIS(KAMIS, "b_set_map.txt");
 }
 void Graph::getMAXHS(vector<int>& KAMIS){
   outputDIMACS("dimacs_set_map.txt");
-  cout<< "POINT A"<< endl;
-  system("../../maxhs dimacs_set_map.txt >b_set_map.txt");
+  system("../maxhs dimacs_set_map.txt >b_set_map.txt");
   readWCNF(KAMIS, "b_set_map.txt");
 }
 /*int main_metis (int argc, char *argv[]) {
