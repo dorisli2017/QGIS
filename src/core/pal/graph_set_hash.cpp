@@ -62,6 +62,7 @@ void Graph::debugGraph(){
     }
 };
 void Graph::printGraph(){
+  cout<< "&&&&&&&&&&&&&print Graph &&&&&&&&&&&&&&&"<< endl;
     table->print();
     for (int i = 1; i < numV; ++i){  
         cout << endl << i<< ": " ; 
@@ -168,7 +169,7 @@ unordered_set<int> Graph:: getVertexCover(int nblp, int all_nblp){
     return labelCover;
 } 
 void Graph::debugVertexCover(unordered_set<int>& vertexCover){
- /* cout<< "***********&&&&&&&&&&& debugVertexCover***********"<< endl;
+  cout<< "***********&&&&&&&&&&& debugVertexCover***********"<< endl;
   for(const auto &p : vertexCover){
       cout<< p << endl;
   }
@@ -181,7 +182,6 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
         assert(vertexCover.find(label2) != vertexCover.end());
       }
     }
-    */
 }
 void Graph::readKAMIS(vector<int>& KAMIS,string const & fileName){
   vector<int> vertexMIS;
@@ -253,10 +253,9 @@ void Graph::debugMIS(vector<int>& vertexMIS){
   std::vector<int> f(numV);
   std::iota(f.begin(), f.end(), 1);
   vector<int> cover;
- /* std::set_intersection(f.begin(),f.end(),vertexMIS.begin(), vertexMIS.end(), back_inserter(cover));
+  std::set_difference(f.begin(),f.end(),vertexMIS.begin(), vertexMIS.end(), back_inserter(cover));
   std::unordered_set<int> Cover(cover.begin(), cover.end());
   debugVertexCover(Cover);
-*/
   for(int i =0; i < vertexMIS.size(); i++){
     for(int j = 0; j < i; j++){
       assert(!containEdge(vertexMIS[i],vertexMIS[j]));

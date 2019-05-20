@@ -49,7 +49,7 @@
 //-------------------gpl----------------------------
 using namespace pal;
 bool gplDebugger = true;
-bool gplPrinter = false;
+bool gplPrinter = true;
 inline void delete_chain( Chain *chain )
 {
   if ( chain )
@@ -178,7 +178,7 @@ void Problem::init_sol_empty()
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "init_sol_empty"));
+  std::cout<< "init_sol_empty"<<endl;
 }
 //-------------------gpl-----------------------------------
   int i;
@@ -269,7 +269,7 @@ void Problem::init_sol_falp()
 {
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "init_sol_falp"));
+  std::cout<< "init_sol_falp"<<endl;
 }
 //-------------------gpl-----------------------------------
   int i, j;
@@ -387,7 +387,7 @@ void Problem::popmusic()
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "popmusic"));
+   std::cout<<"popmusic"<<endl;
 }
 //-------------------gpl-----------------------------------
   if ( nbft == 0 )
@@ -794,7 +794,7 @@ double Problem::popmusic_tabu( SubPart *part )
 {
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "popmusic_tabu"));
+ cout<< "popmusic_tabu"<<endl;
 }
 //-------------------gpl-----------------------------------
   int probSize = part->probSize;
@@ -1170,7 +1170,7 @@ inline Chain *Problem::chain( SubPart *part, int seed )
 {
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "chain"));
+ std::cout<< "chain"<<endl;
 }
 //-------------------gpl----------------------------
   int i;
@@ -1461,7 +1461,7 @@ inline Chain *Problem::chain( int seed )
 {
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "chain"));
+ cout<<"chain"<<endl;
 }
 //-------------------gpl----------------------------
   int i;
@@ -1747,7 +1747,7 @@ double Problem::popmusic_chain( SubPart *part )
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "popmusic_chain"));
+ cout<< "popmusic_chain"<<endl;
 }
 //-------------------gpl-----------------------------------
   int i;
@@ -1899,7 +1899,7 @@ double Problem::popmusic_tabu_chain( SubPart *part )
 {
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "popmusic_tabu_chain"));
+ cout<<"popmusic_tabu_chain"<<endl;
 }
 //-------------------gpl----------------------------------------
   int i;
@@ -2162,7 +2162,7 @@ void Problem::chain_search()
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++
 if(gplDebugger){
- QgsLogger::QgsDebugMsg( QStringLiteral( "chain_search"));
+ std::cout<<"chain_search"<<endl;
 }
 //-------------------gpl----------------------------------
   if ( nbft == 0 )
@@ -2507,7 +2507,7 @@ void Problem::simple()
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
-        QgsLogger::QgsDebugMsg( QStringLiteral( "simple"));
+       cout<< "simple"<<endl;
     }
 //-------------------gpl-----------------------------------
     int i, j;
@@ -2721,7 +2721,7 @@ void Problem::debugIndepdency( vector<int>& MIS){
 void Problem::mis(){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
-        QgsLogger::QgsDebugMsg( QStringLiteral( "mis"));
+        cout<< "mis"<<endl;
     }
 //-------------------gpl-----------------------------------
   int label;
@@ -2805,7 +2805,7 @@ void Problem::setSolution(vector<int>& MIS){
 void Problem::maxHS(){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
-        QgsLogger::QgsDebugMsg( QStringLiteral( "maxHS"));
+        cout<<"maxHS"<<endl;
     }
 //-------------------gpl-----------------------------------
   init_sol_empty();
@@ -2827,7 +2827,7 @@ void Problem::maxHS(){
 void Problem::kamis(){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
-        QgsLogger::QgsDebugMsg( QStringLiteral( "kamis"));
+        cout<< "kamis"<<endl;
     }
 //-------------------gpl-----------------------------------
   init_sol_empty();

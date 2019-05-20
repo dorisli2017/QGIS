@@ -8,8 +8,8 @@ void Graph::addVertex(int v){
 
 };
 void Graph::addEdge(int u, int v){
-    assert(u<= numV);
-    assert(v <= numV);
+    assert(u< numV);
+    assert(v < numV);
     adList[u].insert(v);
     adList[v].insert(u);
 };
@@ -22,7 +22,7 @@ void Graph::deleteEdge(int u, int v){
 
 };
 bool Graph::containVertex(int u){
-    return u<= numV;
+    return u< numV;
 }
 bool Graph::containEdge(int source, int target){
     return (adList[source].count(target) != 0);
@@ -44,7 +44,8 @@ void Graph::debugGraph(){
     }
 };
 void Graph::printGraph(){
-    for (int i = 1; i < numV; ++i){  
+    cout<< "&&&&&&&&&&&&&print Graph &&&&&&&&&&&&&&&"<< endl;
+    for (int i = 0; i < numV; ++i){  
         cout << endl << i<< ": " ; 
         for (auto itr = adList[i].begin(); itr != adList[i].end(); ++itr){ 
             cout << *itr << " "; 
@@ -67,7 +68,7 @@ void Graph::outputDIMACS(string const &  fileName){
   for (int i =1 ; i < numV; i++) {
       eSize+=adList[i].size();
   }
-  outdata<<"p wcnf"<< numV<<" "<< eSize/2<<endl;
+  outdata<<"p wcnf "<< numV<<" "<< eSize/2<<endl;
   for (int i =1 ; i < numV; i++) {
     for(const auto &q : adList[i]){
         if(i < q){
@@ -90,11 +91,11 @@ void Graph::outputMetis(string const & fileName){
   }
   outdata << "% "<<fileName<<endl;
   int eSize= 0;
-  for (int i =1 ; i < numV; i++) {
+  for (int i =0 ; i < numV; i++) {
       eSize+=adList[i].size();
   }
   outdata<< numV<<" "<< eSize/2<<endl;
-  for (int i =1 ; i < numV; i++) {
+  for (int i =0; i < numV; i++) {
     for(const auto &q : adList[i]){
         outdata<<q<<" ";
     }
@@ -153,6 +154,11 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
       if(adList[i].size() == 0 || vertexCover.find(label1) != vertexCover.end()) continue;
       for(const auto &q : adList[i]){
         label2 = q;
+        if(vertexCover.find(label2) == vertexCover.end()){
+          cout<< "label 1 :"<< label1 << endl;
+          cout<< "label 2 :"<< label2 << endl;
+
+        }
         assert(vertexCover.find(label2) != vertexCover.end());
       }
     }
@@ -190,8 +196,9 @@ void Graph::debugMIS(vector<int>& vertexMIS){
   std::vector<int> f(numV);
   std::iota(f.begin(), f.end(), 1);
   vector<int> cover;
-  std::set_intersection(f.begin(),f.end(),vertexMIS.begin(), vertexMIS.end(), back_inserter(cover));
+  std::set_difference(f.begin(),f.end(),vertexMIS.begin(), vertexMIS.end(), back_inserter(cover));
   std::unordered_set<int> Cover(cover.begin(), cover.end());
+  cout<< "POINT A"<< endl;
   debugVertexCover(Cover);
   for(int i =0; i < vertexMIS.size(); i++){
     for(int j = 0; j < i; j++){
@@ -247,17 +254,22 @@ void Graph::getMAXHS(vector<int>& KAMIS){
   system("../maxhs dimacs_set.txt >b_set.txt");
   readWCNF(KAMIS, "b_set.txt");
 }
-/*int main_metis (int argc, char *argv[]) {
+/*int main(int argc, char *argv[]) {
   Graph graph(3,3);
   graph.addEdge(1,2);
   graph.addEdge(3,2);
   graph.addEdge(2,1);
   graph.printGraph();
   graph.debugGraph();
-  graph.outputMetis("a.txt");
+  vector<int> KAMIS;
+  graph.getKAMIS(KAMIS);
+  cout<< "KAMIS"<< endl;
+  for(const auto elem: KAMIS){
+    cout<< elem<< " ";
+  }
+  cout<<endl;
   return 0;
-}*/
-/*
+}
 int main(int argc, char *argv[]){
   Graph graph(3,300);
   graph.addVertex(100);
@@ -282,4 +294,5 @@ int main(int argc, char *argv[]){
   }
   cout<<endl;
   return 0;
-}*/
+}
+*/

@@ -163,6 +163,10 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
       if(p.second.size() == 0 || vertexCover.find(label1) != vertexCover.end()) continue;
       for(const auto &q : p.second){
         label2 = q;
+        if(vertexCover.find(label2) == vertexCover.end()){
+          cout<< "label 1: "<< label1 << endl;
+          cout<< "label 2: "<< label2 << endl;
+        }
         assert(vertexCover.find(label2) != vertexCover.end());
       }
     }
@@ -200,7 +204,7 @@ void Graph::debugMIS(vector<int>& vertexMIS){
   std::vector<int> f(numV);
   std::iota(f.begin(), f.end(), 1);
   vector<int> cover;
-  std::set_intersection(f.begin(),f.end(),vertexMIS.begin(), vertexMIS.end(), back_inserter(cover));
+  std::set_difference(f.begin(),f.end(),vertexMIS.begin(), vertexMIS.end(), back_inserter(cover));
   std::unordered_set<int> Cover(cover.begin(), cover.end());
   debugVertexCover(Cover);
   for(int i =0; i < vertexMIS.size(); i++){
