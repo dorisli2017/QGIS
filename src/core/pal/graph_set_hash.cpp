@@ -1,6 +1,8 @@
 #include "graph_set_hash.h"
+#include <float.h>
 //bool gplDebugger = true;
-double e = 0.1;
+double e;
+double top;
 Graph::Graph(int nblp, int all_nblp){
     numV = nblp+1;
     weights.push_back(-1);
@@ -26,25 +28,35 @@ void Graph::addVertex(int label, double weight){
   assert(weights[v1] == weight);
       cout<< "POINT aV-done"<< endl;
 };
+void Graph:: setE(){
+  int min = DBL_MAX;
+  for (int i = 1; i < weights.size(); i++){
+    if(weights[i]< min) {
+      min = weights[i];
+    }
+  }
+  e = min/2;
+  assert(e > 0);
+}
+void Graph:: setTOP(){
+  int sum = 0;
+  for (int i = 1; i < weights.size(); i++){
+    sum += weights[i];
+  }
+  top = sum +1;
+}
 // set e< min{Weights}
 inline void Graph::increaseWeight(int v){
-  if(gplDebugger){
-     std::vector<double>::iterator minW = std::min_element(std::begin(weights), std::end(weights));
-    assert(e < *minW );
-  } 
   weights[v]+= e;
 }
 // increase weights for previous solution
 void Graph::adjustWeights(){
+  setE();
   for (const auto &p : solution_prev) {
     increaseWeight(p);
   }
+  setTOP();
   // for maxHS (top > sum(weights))
-  int sum = 0;
-  for (auto& n : weights){
-    sum += n;
-  }
-  assert(sum < 10000);
 };
 void Graph::addEdge(int l1, int l2){
     int v1 = table->lookUpVID(l1);
@@ -113,7 +125,6 @@ void Graph::printGraph(){
 void Graph::outputDIMACS(string const &  fileName){
   ofstream outdata;
   // unweighted first, using  2 as top value for hard clause, 1 for soft clause
-  int top = 10000000;
   int cost = 1;
   outdata.open (fileName.c_str());
   if(!outdata){

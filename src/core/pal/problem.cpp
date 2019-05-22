@@ -2714,7 +2714,7 @@ void Problem::setConflictGraph(){
       if (got != solution_prev.end()){
         offset = got->second;
         if(offset< featNbLp[i]){
-          conflictGraph->addCache(i + offset);
+          conflictGraph->addCache(featStartId[i] + offset);
         }
       }
     }
@@ -2825,8 +2825,8 @@ void Problem::mis(){
   if(gplDebugger){
     debugIndepdency(MIS);
   }
-  cacheSolution();
   setSolution(MIS);
+  cacheSolution();
 }
 void Problem::setSolution(vector<int>& MIS){
   int i;
@@ -2902,6 +2902,7 @@ void Problem::maxHS(){
     debugIndepdency(KAMIS);
   }
   setSolution(KAMIS);
+  cacheSolution();
 }
 //---------------------gpl-algorithms-----------------MaxHs---------------------------------------
 //+++++++++++++++++++++++++++gpl-algorithms++++++++++++KAMIS++++++++++++++++++++++++++++++++++++++
@@ -2945,10 +2946,9 @@ void Problem:: cacheSolution(){
     }
   }
   cout<< solution_prev.size() << " are cached from the previous solution"<< endl;
-  /*for (const auto &p : solution_prev) {
+  for (const auto &p : solution_prev) {
     std::cout << p.first << " => "<< p.second << endl;
   }
-  */
 }
 // get the offset to the startID (>= 0)
 // if no cached availd, return -1

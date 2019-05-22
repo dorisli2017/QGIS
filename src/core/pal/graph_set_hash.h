@@ -42,6 +42,8 @@ class Graph{
         void addCache(int l1);
         void adjustWeights();
         inline void increaseWeight(int v);
+        void setE();
+        void setTOP();
         int numV;
         vector<double> weights;
         edgeList* adList;
