@@ -46,10 +46,23 @@
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++
 #include "qgslogger.h"
 #include "debugger.h"
+#include <unordered_map>
+#include <unordered_set>
 //-------------------gpl----------------------------
 using namespace pal;
+//+++++++++++debug+++++++++++++++++++++
 bool gplDebugger = true;
 bool gplPrinter = true;
+QSet<int> QgsFeatureIDS_prev;
+int numF_prev;
+int numL_prev;
+unordered_map<int, unordered_set<int>> candidates_prev;
+//---------------debug-----------------
+//*+++++++++++++modification++++++++++++++++++++++++++++++
+bool init = true;
+unordered_map<int, int> solution_prev; 
+//--------------modification-----------------------------
+
 inline void delete_chain( Chain *chain )
 {
   if ( chain )
@@ -2431,10 +2444,10 @@ void Problem::simple()
         setF= false;
         for ( j = 0; j < featNbLp[i]; j++ )
         {
-          if(setF) break;
-          label = featStartId[i] + j;  
-            if(labelList[label] == false) continue;
-            lp=mLabelPositions.at(label);
+          if(setF) break;Simple
+          label = featStaSimple
+            if(labelList[Simple
+            lp=mLabelPosiSimple
             if ( lp->getId() != label )
             {
                 std::cerr << "simple wrong";
@@ -2446,9 +2459,9 @@ void Problem::simple()
             context->lp = lp;
             setF= true;
             candidates->Search( amin, amax, simpleConflictCallback ,reinterpret_cast< void * >( context ));        
-        }
+        }simple
     }
-   if ( displayAll )
+   if ( dsimple
    {
      int nbOverlap;
      int start_p;
@@ -2509,6 +2522,9 @@ void Problem::simple()
     if(gplDebugger){
        cout<< "simple"<<endl;
     }
+    int same = 0;
+    int diff = 0;
+    int cached = 0;
 //-------------------gpl-----------------------------------
     int i, j;
     int label;
@@ -2520,7 +2536,30 @@ void Problem::simple()
     context->candidates = candidates;
     init_sol_empty();
      for ( i = 0; i < nbft; i++){
+        int offset = getCached(i);
+        if(offset >-1){
+          cached ++;
+          label = featStartId[i]+offset;
+          if(!context->labelList.contains(label)){
+            lp=mLabelPositions.at(label);
+            if ( lp->getId() != label )
+            {
+                std::cerr << "simple wrong";
+            }
+            int probFeatId = lp->getProblemFeatureId();
+            sol->s[probFeatId] = label; 
+            lp->getBoundingBox( amin, amax); 
+            //ignore all its overlapps;
+            context->lp = lp;
+            setF = true;
+            candidates->Search( amin, amax, simpleConflictCallback ,reinterpret_cast< void * >( context ));   
+            same++;
+            continue;
+          }
+          diff++;
+        }
         setF= false;
+        // initial solution 
         for ( j = 0; j < featNbLp[i]; j++ )
         {
             if(setF){
@@ -2544,6 +2583,11 @@ void Problem::simple()
             candidates->Search( amin, amax, simpleConflictCallback ,reinterpret_cast< void * >( context ));     
         }
     }
+    cout<< "cached"<< cached << endl;
+    cout<< "same"<< same << endl;
+    cout<< "diff"<< diff << endl;
+    cacheSolution();
+   //checkQgsfeatureID();
    delete context;
    if ( displayAll )
    {
@@ -2845,3 +2889,231 @@ void Problem::kamis(){
 
 }
 //---------------------gpl-algorithms-----------------KAMIS---------------------------------------
+//+++++++++++++++++++++++++++++modification+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+void Problem:: cacheSolution(){
+  // store new solution
+  solution_prev.clear();
+  init = false;
+  int offset;
+  for (int  i = 0; i < nbft; i++ ){
+    offset = sol->s[i]-featStartId[i];
+    if(offset >= 0){
+      // there are even features with same uniqueID
+      /*std::unordered_map<int,int>::const_iterator got = solution_prev.find(mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id());
+      assert(got == solution_prev.end());
+      */
+      solution_prev.insert({mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id(),offset});
+    }
+  }
+  cout<< solution_prev.size() << " are cached from the previous solution"<< endl;
+  /*for (const auto &p : solution_prev) {
+    std::cout << p.first << " => "<< p.second << endl;
+  }
+  */
+}
+// get the offset to the startID (>= 0)
+// if no cached availd, return -1
+int Problem:: getCached(int feat){
+  int offset;
+  int qgsID = mLabelPositions.at(featStartId[feat])->getFeaturePart()->feature()->id();
+  std::unordered_map<int,int>::const_iterator got = solution_prev.find(qgsID);
+  if (got == solution_prev.end())
+    return -1;
+  offset = solution_prev[qgsID];
+  if(offset< featNbLp[feat]){
+    return offset;
+  } 
+  return -1;
+}
+//-----------------------------modification-------------------------------------------------------
+//++++++++++++++++++++++++++++++++++Assertions for understanding QGIS+++++++++++++++++++++++++++++++++++
+//pal::labelposition(for labeling), pal::featurePart(reduldent information TODO: integrate PAL with QGIS feature directly) and also Qgsfeature(assume has unique id).
+//assume the id of qgsfeature is unique and static in same bounding map (different problem instance)
+//QSet<int> QgsFeatureIDS_prev;
+//int numF_prev;
+//int numL_prev;
+//bool init;
+//unordered_map<int, int> solution_prev; 
+//unordered_map<int, unordered_set<int>> candidates_prev;
+void print(QSet<int>& prev){
+  QSet<int>::const_iterator i;
+    for (i = prev.begin(); i != prev.end(); ++i){
+      cout<< *i<< " ";
+    }
+    cout<< endl;
+
+}
+void printLabelPosition(LabelPosition* lp){
+  cout<< "label with id " << lp->getId()<< endl;
+  cout<< "belongs to feature "<< lp->getFeaturePart()->feature()->id()<< endl;
+  cout<< "its coordinats are "<< lp->getX() << ", "<< lp->getY()<< endl;
+  cout<< "width and height are "<< lp->getWidth() << "." << lp->getHeight() << endl;
+  cout<< "alpha: "<< lp->getAlpha()<< endl;
+  cout<< "reversed? "<< lp->getReversed()<< endl;
+  cout<< "UpsideDown? "<< lp->getUpsideDown()<< endl;
+  cout<< "Quadrant" << lp->getQuadrant()<< endl;
+}
+
+void Problem:: checkQgsfeatureID(){
+  cout<< "check starts******************"<<endl;
+  QSet<int> QgsFeatureIDS;
+  int coutL = 0;
+  int label;
+  unordered_map<int, int> solution; 
+  unordered_map<int, unordered_set<int>> candidates;
+  //comparison with previous solution 
+  if(!init){
+    if(numF_prev != nbft){
+      cout<< "numF_prev: "<<numF_prev <<endl;  
+      cout<< "nbft: "<<nbft <<endl;  
+    };
+    assert(numF_prev == nbft);
+    for ( int i = 0; i < nbft; i++ ){
+      coutL+=featNbLp[i];
+      solution.insert({mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id(),sol->s[i]-featStartId[i]});
+      candidates[mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id()];
+      for ( int j = 0; j < featNbLp[i]; j++ ){  
+        label = featStartId[i] + j;
+        candidates[mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id()].insert(label);
+        QgsFeatureIDS.insert(mLabelPositions.at(label)->getFeaturePart()->feature()->id());
+      }
+    }
+    QSet<int>::const_iterator i;
+    for (i = QgsFeatureIDS.begin(); i != QgsFeatureIDS.end(); ++i){
+        if(!QgsFeatureIDS_prev.contains(*i)){
+          cout<< "the current feature IDs:"<<endl;
+          print(QgsFeatureIDS);
+          cout<< "the previous feature IDs:"<<endl;
+          print(QgsFeatureIDS_prev);
+          cout<< "no "<< *i<< " in previous IDS"<< endl;
+        }
+        assert(QgsFeatureIDS_prev.contains(*i)); 
+    }
+    for (i = QgsFeatureIDS_prev.begin(); i != QgsFeatureIDS_prev.end(); ++i){
+      if(!QgsFeatureIDS.contains(*i)){
+          cout<< "the current feature IDs:"<<endl;
+          print(QgsFeatureIDS);
+          cout<< "the previous feature IDs:"<<endl;
+          print(QgsFeatureIDS_prev);
+          cout<< "no "<< *i<< " in current IDS"<< endl;
+
+      }
+      assert(QgsFeatureIDS.contains(*i)); 
+    }
+    if(coutL != numL_prev){
+      cout<< "numL_prev: "<< numL_prev <<endl;  
+      cout<< "current number: "<< coutL <<endl;
+    }
+    cout<< "CHECK THE SOLUTION"<<endl;
+    int same = 0;
+    int diff = 0;
+    for(int i =0; i < nbft; i++){
+      int qgsID = mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id();
+      if(candidates_prev[qgsID].size() == candidates[qgsID].size()){
+        if(solution_prev[qgsID] != solution[qgsID] && solution[qgsID] >= 0){
+          printLabelPosition(mLabelPositions.at(featStartId[i]+solution[qgsID]));
+          cout<<"the previous one is "<<  solution_prev[qgsID]<< endl;
+        }
+        else same++;
+       /* if(solution[qgsID] <0){
+          if(solution_prev[qgsID] >=0){
+            printLabelPosition(mLabelPositions.at(featStartId[i]));
+            QgsLabelFeature* qgsF =mLabelPositions.at(featStartId[i])->getFeaturePart()->feature();
+            cout<<qgsF->labelText().toUtf8().constData() << endl;
+          }
+          assert(solution_prev[qgsID] < 0);
+        }
+        if(solution_prev[qgsID] <0){
+          if(solution[qgsID] >=0){
+            printLabelPosition(mLabelPositions.at(featStartId[i]+solution[qgsID]));
+            QgsLabelFeature* qgsF =mLabelPositions.at(featStartId[i]+solution[qgsID])->getFeaturePart()->feature();
+            cout<<qgsF->labelText().toUtf8().constData() << endl;
+          }
+          assert(solution[qgsID] < 0);
+        }
+        */
+        if(candidates_prev[qgsID].size() == candidates[qgsID].size()){
+          if(!(solution_prev[qgsID] == solution[qgsID])&&solution_prev[qgsID] >= 0 && solution[qgsID]>=0){
+            diff++;
+            cout<< "S: " << solution[qgsID]<< endl;
+            cout<< "S_prev: " << solution_prev[qgsID]<< endl;
+          }
+          //assert((solution_prev[qgsID] == solution[qgsID])||(solution_prev[qgsID] < 0 || solution[qgsID]<0) );
+        }
+      }
+    }
+    cout<< "same "<< same << endl;
+    cout<< "diff "<< diff<< endl;
+    for(int i =0; i < nbft; i++){
+      int qgsID = mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id();
+      if(candidates_prev[qgsID].size() != candidates[qgsID].size()){
+        QgsLabelFeature* qgsF = mLabelPositions.at(featStartId[i])->getFeaturePart()->feature();
+        cout<<qgsF->labelText().toUtf8().constData() << endl;
+      }
+      //assert(candidates_prev[qgsID].size() == candidates[qgsID].size());
+    }
+  } 
+  //assert(coutL == numL_prev);
+  // store new solution
+  QgsFeatureIDS_prev.clear();
+  solution_prev.clear();
+  candidates_prev.clear();
+  init = false;
+  numF_prev = nbft;
+  coutL = 0;
+  int fID_first = -1;
+  int fID; 
+    for (int  i = 0; i < nbft; i++ ){
+      fID_first = -1;
+      coutL+=featNbLp[i];
+      solution_prev.insert({mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id(),sol->s[i]-featStartId[i]});
+      candidates_prev[mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id()];
+      for ( int j = 0; j < featNbLp[i]; j++ ){ 
+        label = featStartId[i] + j;
+        fID =  mLabelPositions.at(label)->getFeaturePart()->feature()->id();
+        candidates_prev[fID].insert(label);
+        if(fID_first == -1) fID_first = fID;
+        if(fID != fID_first){
+          cout<< "fID: "<< fID<< endl;
+          cout<< "fID_first: "<< fID_first<< endl;
+        }
+        assert(fID == fID_first);
+        QgsFeatureIDS_prev.insert(fID);
+      }
+    }
+  numL_prev = coutL;
+  for(int i = 0; i < nbft; i++){
+    cout<< featStartId[i]<< endl;    
+    cout<< featNbLp[i]<< endl;
+    for ( int j = 0; j < featNbLp[i]; j++ ){ 
+              label = featStartId[i] + j;
+              LabelPosition* LP = mLabelPositions.at(label);
+              cout<< "getID: "<< LP->getId()<< endl;
+              cout<< "label: " << label<< endl;
+
+    }
+  }
+  cout<< "check ends******************"<<endl;
+}
+void Problem::checkLabelID(){
+  int label;
+  int label2;
+  pal::LabelPosition::Quadrant quadrant;
+  set<pal::LabelPosition::Quadrant> diff;
+  for(int i = 0; i< nbft; i++){
+    diff.clear();
+    for(int j =0 ; j <featNbLp[i]; j++ ){ 
+       label = featStartId[i] + j;
+        quadrant = mLabelPositions.at(label)->getQuadrant();
+        if(diff.find(quadrant)!= diff.end()){
+              for(int j =0 ; j <featNbLp[i]; j++ ){ 
+                cout<< "Quadrant is not unique!";
+                label2 = featStartId[i] + j;
+                printLabelPosition(mLabelPositions.at(label2));
+              }
+        }
+        assert(diff.find(quadrant)== diff.end());
+        diff.insert(quadrant);
+    }
+  }
+}

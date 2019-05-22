@@ -201,6 +201,14 @@ namespace pal
       void debugIndepdency( vector<int>& MIS);
       void setSolution(vector<int>& MIS);
 //------------------------ set conflict graph for MIS-algorithms-----------------
+//+++++++++++++++++++++++++++++++Assertions for understanding QGIS++++++++++++++++++++++++++++++++++++++++++
+      void checkQgsfeatureID();
+      void checkLabelID();
+//-----------------------------------Assertions for understanding QGIS-------------------------------------
+//+++++++++++++++++++++++++++++modification+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      void cacheSolution();
+      int getCached(int feat);
+//-----------------------------modification-------------------------------------------------------
 
       static bool compareLabelArea( pal::LabelPosition *l1, pal::LabelPosition *l2 );
 
