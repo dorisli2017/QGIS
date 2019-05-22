@@ -23,7 +23,7 @@ class Graph{
         Graph(int nblp, int all_nblp);
         void debugGraph();
         void printGraph();
-        void addVertex(int u);
+        void addVertex(int u, double wight);
         void addEdge(int source, int target);
         void deleteEdge(int source, int target);
         bool containVertex(int u);
@@ -39,8 +39,14 @@ class Graph{
         void readKAMIS(vector<int>& KAMIS,string const & fileName);
         void readWCNF(vector<int>& KAMIS,string const & fileName);
         void getMAXHS(vector<int>& KAMIS);
+        void addCache(int l1);
+        void adjustWeights();
+        inline void increaseWeight(int v);
         int numV;
+        vector<double> weights;
         edgeList* adList;
         lookupTable* table; 
+        // nodes choosen before in solution
+        set<int> solution_prev;
 };
 #endif

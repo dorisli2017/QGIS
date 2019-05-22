@@ -1,12 +1,50 @@
 #include "graph_set_hash.h"
 //bool gplDebugger = true;
+double e = 0.1;
 Graph::Graph(int nblp, int all_nblp){
     numV = nblp+1;
+    weights.push_back(-1);
     adList = new edgeList[numV];
     table = new lookupTable(nblp);
 }
-void Graph::addVertex(int label){
-  table->insert(label);
+//TODO: combinae addCache and addVertex together
+void Graph::addCache(int l1){
+  int v1 = table->lookUpVID(l1);
+  solution_prev.insert(v1);
+};
+void printWeights(vector<double> weights){
+  cout<< "the weights size is" << weights.size()<< endl;
+    for (const auto &p : weights){
+      cout<< p << " ";
+    }
+}
+void Graph::addVertex(int label, double weight){
+  cout<< "POINT aV"<< endl;
+  printWeights(weights);
+  int v1 = table->insert(label);
+  weights.push_back(weight);
+  assert(weights[v1] == weight);
+      cout<< "POINT aV-done"<< endl;
+};
+// set e< min{Weights}
+inline void Graph::increaseWeight(int v){
+  if(gplDebugger){
+     std::vector<double>::iterator minW = std::min_element(std::begin(weights), std::end(weights));
+    assert(e < *minW );
+  } 
+  weights[v]+= e;
+}
+// increase weights for previous solution
+void Graph::adjustWeights(){
+  for (const auto &p : solution_prev) {
+    increaseWeight(p);
+  }
+  // for maxHS (top > sum(weights))
+  int sum = 0;
+  for (auto& n : weights){
+    sum += n;
+  }
+  assert(sum < 10000);
 };
 void Graph::addEdge(int l1, int l2){
     int v1 = table->lookUpVID(l1);
@@ -75,7 +113,7 @@ void Graph::printGraph(){
 void Graph::outputDIMACS(string const &  fileName){
   ofstream outdata;
   // unweighted first, using  2 as top value for hard clause, 1 for soft clause
-  int top = numV;
+  int top = 10000000;
   int cost = 1;
   outdata.open (fileName.c_str());
   if(!outdata){
@@ -98,6 +136,8 @@ void Graph::outputDIMACS(string const &  fileName){
     }
   }
   for (int i =1 ; i < numV; i++){
+    // use weight
+    cost = weights[i];
     outdata<<cost<<" "<<i<<" "<< 0<< endl;
   }
   outdata.close();
@@ -124,11 +164,11 @@ void Graph::outputMetis(string const & fileName){
   }
   outdata.close();
 }
+// TODO: add weights version ;
 inline double getPriority(int degree){return degree;};
-
 void Graph::setPriorityQueue(pal::PriorityQueue * list){
-    int degree;
-    for (int i =1 ; i < numV; i++) {
+  int degree;
+  for (int i =1 ; i < numV; i++) {
     degree = adList[i].size();
     if(degree == 0) continue;
     list->insert(i, getPriority(degree));
@@ -313,4 +353,5 @@ int main(int argc, char *argv[]){
   }
   cout<<endl;
   return 0;
-}*/
+}
+*/

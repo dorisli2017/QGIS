@@ -8,7 +8,7 @@ using namespace std;
 class lookupTable{
     public:
         lookupTable(int numV);
-        void insert(int lID);
+        int insert(int lID);
         int lookUpLID(int vID);
         int lookUpVID(int lID);
         void debug();

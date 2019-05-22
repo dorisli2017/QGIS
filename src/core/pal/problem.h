@@ -204,11 +204,16 @@ namespace pal
 //+++++++++++++++++++++++++++++++Assertions for understanding QGIS++++++++++++++++++++++++++++++++++++++++++
       void checkQgsfeatureID();
       void checkLabelID();
+      void printCost();
 //-----------------------------------Assertions for understanding QGIS-------------------------------------
 //+++++++++++++++++++++++++++++modification+++++++++++++++++++++++++++++++++++++++++++++++++++++++
       void cacheSolution();
       int getCached(int feat);
 //-----------------------------modification-------------------------------------------------------
+//++++++++++++++++++add weights+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// set weight as 1-cost
+      int solution_weights();
+//------------------add weights-------------------------------------------------------
 
       static bool compareLabelArea( pal::LabelPosition *l1, pal::LabelPosition *l2 );
 

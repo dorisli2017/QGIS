@@ -23,7 +23,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with libpal.  If not, see <http://www.gnu.org/licenses/>.
+ * along with libpal.  If not, see <http://www.gnu.org/liceprintCostes/>.
  *
  */
 
@@ -352,7 +352,12 @@ if(gplDebugger){
   }
 
   delete context;
-
+//+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++
+if(gplDebugger){
+  solution_cost();
+  cout<< sol->cost<<endl;
+}
+//-------------------gpl-----------------------------------
 
 
 
@@ -2525,6 +2530,7 @@ void Problem::simple()
     int same = 0;
     int diff = 0;
     int cached = 0;
+    printCost();
 //-------------------gpl-----------------------------------
     int i, j;
     int label;
@@ -2589,6 +2595,12 @@ void Problem::simple()
     cacheSolution();
    //checkQgsfeatureID();
    delete context;
+//+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++
+if(gplDebugger){
+  solution_cost();
+  cout<< sol->cost<<endl;
+}
+//-------------------gpl-----------------------------------
    if ( displayAll )
    {
      int nbOverlap;
@@ -2653,16 +2665,22 @@ void Problem::setConflictGraph(){
   double amax[2];
   int lpID;
   int startID, endID;
+  double weight;
   LabelPosition *lp = nullptr;
   CONFLICTContext * context = new CONFLICTContext();
   context-> lpID = &lpID;
   context->conflictGraph = conflictGraph;
+    cout<< "POINT C"<< endl;
   for ( i = 0; i < nbft; i++ ){
     startID = featStartId[i];
+        cout<< "inner for"<< endl;
     for(j = 0; j < featNbLp[i]; j++){
-        conflictGraph->addVertex(startID+j);
+        weight = inactiveCost[i]-mLabelPositions.at(startID+j)->cost();
+        conflictGraph->addVertex(startID+j, weight);
     }
+            cout<< "inner for_done"<< endl;
   }
+    cout<< "POINT D"<< endl;
   for ( i = 0; i < nbft; i++ ){
     startID = featStartId[i];
     endID = startID+ featNbLp[i];
@@ -2683,6 +2701,24 @@ void Problem::setConflictGraph(){
        context-> lp = lp;
        candidates->Search( amin, amax, conflictCallBack, reinterpret_cast< void * >(context) );   
     }
+  }
+    cout<< "POINT E"<< endl;
+  if(!init){
+    // build previou solution
+    int qgsID;
+    int offset;
+    for ( i = 0; i < nbft; i++ ){
+      startID = featStartId[i];
+      qgsID = mLabelPositions.at(startID)->getFeaturePart()->feature()->id();
+      std::unordered_map<int,int>::const_iterator got = solution_prev.find(qgsID);
+      if (got != solution_prev.end()){
+        offset = got->second;
+        if(offset< featNbLp[i]){
+          conflictGraph->addCache(i + offset);
+        }
+      }
+    }
+    conflictGraph->adjustWeights();
   }
 }
 bool graphDebugCallBack( LabelPosition *lp, void *ctx ){
@@ -2771,7 +2807,9 @@ void Problem::mis(){
   int label;
   int i,j;
   init_sol_empty();
+  cout<< "POINT A"<< endl;
   setConflictGraph();
+  cout<< "POINT B"<< endl;
   if(gplDebugger){
     debugConflictGraph();
   }
@@ -2787,6 +2825,7 @@ void Problem::mis(){
   if(gplDebugger){
     debugIndepdency(MIS);
   }
+  cacheSolution();
   setSolution(MIS);
 }
 void Problem::setSolution(vector<int>& MIS){
@@ -2946,12 +2985,13 @@ void print(QSet<int>& prev){
 void printLabelPosition(LabelPosition* lp){
   cout<< "label with id " << lp->getId()<< endl;
   cout<< "belongs to feature "<< lp->getFeaturePart()->feature()->id()<< endl;
-  cout<< "its coordinats are "<< lp->getX() << ", "<< lp->getY()<< endl;
-  cout<< "width and height are "<< lp->getWidth() << "." << lp->getHeight() << endl;
-  cout<< "alpha: "<< lp->getAlpha()<< endl;
-  cout<< "reversed? "<< lp->getReversed()<< endl;
-  cout<< "UpsideDown? "<< lp->getUpsideDown()<< endl;
-  cout<< "Quadrant" << lp->getQuadrant()<< endl;
+ // cout<< "its coordinats are "<< lp->getX() << ", "<< lp->getY()<< endl;
+  //cout<< "width and height are "<< lp->getWidth() << "." << lp->getHeight() << endl;
+  //cout<< "alpha: "<< lp->getAlpha()<< endl;
+  //cout<< "reversed? "<< lp->getReversed()<< endl;
+  //cout<< "UpsideDown? "<< lp->getUpsideDown()<< endl;
+  //cout<< "Quadrant" << lp->getQuadrant()<< endl;
+  cout<< "cost " << lp->cost()<< endl;
 }
 
 void Problem:: checkQgsfeatureID(){
@@ -3117,3 +3157,39 @@ void Problem::checkLabelID(){
     }
   }
 }
+void printFeature(QgsLabelFeature* qgsF){
+  cout<< "Priority: "<< qgsF->priority()<< endl;
+  cout<< "ID: "<< qgsF->id()<< endl;
+  cout<<"Text:"<< qgsF->labelText().toUtf8().constData() << endl;
+
+}
+// what is a cost? cost for feature and cost for label?
+// same feature different label cost? (yes but very similiar check function createCandidate)
+// different feature priority semiliar label cost? (priority is -1, how to use?)
+// there is no 4/8-position preferences for poit labeling
+//TODO: define preference ourselves
+// the cost is sorted by cost growing
+void Problem::printCost(){
+    int label;
+     QgsLabelFeature* qgsF;
+    for(int i = 0; i< nbft; i++){
+      qgsF = mLabelPositions.at( featStartId[i])->getFeaturePart()->feature();
+      //print feature info
+      printFeature(qgsF);
+      cout<< "has " << featNbLp[i] << "labels: "<< endl;
+      for(int j =0 ; j <featNbLp[i]; j++ ){
+        label = featStartId[i] + j;
+        // print labelposition;
+        printLabelPosition(mLabelPositions.at(label));
+      }
+    }
+}
+//-------------------Assertions for understanding QGIS-------------------------------
+
+//++++++++++++++++++add weights+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// set weight as 1-cost
+int Problem::solution_weights(){
+  return -1;
+  
+}
+//------------------add weights-------------------------------------------------------

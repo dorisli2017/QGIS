@@ -6,10 +6,11 @@ lookupTable::lookupTable(int n){
   labelID.push_back(-1);
   vertexID.insert({-1,0});
 };
-void lookupTable::insert(int lID){
+int lookupTable::insert(int lID){
   int vID = labelID.size();
   labelID.push_back(lID);
   vertexID.insert({lID,vID});
+  return vID;
 };
 int lookupTable::lookUpLID(int vID){
   if(vID < labelID.size()){
