@@ -1,7 +1,12 @@
-//self-defined graph representation, building adjacency_list using array of set
-//TODO: sparse graph may fit set of set
-//TODO: a map of index of labelLabel could save more memory
-//TODO: unordered set?
+// Self-defined graph representation.
+// the labelIDs in QGIS are discrete in a large range.
+// To build a small graph on it, I compare different ways.
+// The current one in use first maps the labelID to vertexID in (much) smaller range, 
+// Then uses an array of sets at the convenience of ordered adjecency list for weighted DIMACS.
+// It takes maybe more time for conversion and lookup between vertexID and labelID.
+// Considering the extern algorithms we choose may be sensitive to the size of verices, we use this way.
+// TODO: A more efficient representaion is expected
+
 #ifndef GRAPH_SET_HASH
 #define GRAPH_SET_HASH
 #include <assert.h>
@@ -29,10 +34,13 @@ class Graph{
         bool containVertex(int u);
         bool containEdge(int source, int target);
         bool containEdge_label(int l1, int l2);
+        void setPriorityQueue_weighted(pal::PriorityQueue& list, vector<int>& degrees);
         void setPriorityQueue(pal::PriorityQueue * list);
         void outputDIMACS(string const &  fileName);
         void outputMetis(string const & fileName);
+        unordered_set<int> getVertexCover_weighted(int nblp, int all_nblp);
         unordered_set<int> getVertexCover(int nblp, int all_nblp);
+        void debugCover(int vertex, unordered_set<int>& vertexCover,vector<int>& degrees);
         void debugVertexCover(unordered_set<int>& vertexCover);
         void getKAMIS(vector<int>& KAMIS);
         void debugMIS(vector<int>& vertexMIS);
@@ -44,6 +52,7 @@ class Graph{
         inline void increaseWeight(int v);
         void setE();
         void setTOP();
+        void debugDegree(int vertex, vector<int> degrees,   unordered_set<int>& vertexCover);
         int numV;
         vector<double> weights;
         edgeList* adList;

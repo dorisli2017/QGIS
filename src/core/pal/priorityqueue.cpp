@@ -270,6 +270,7 @@ void PriorityQueue::setPriority( int key, double new_p )
 }
 
 
+
 void PriorityQueue::decreaseKey( int key )
 {
 
@@ -308,6 +309,26 @@ bool PriorityQueue::decreaseKey_remove( int key, double limit)
   downheap( pos[key] );
   return false;
 }
+void PriorityQueue::changePriority( int key, double new_p )
+{
+
+  if ( key < 0 || key > maxId )
+    return;
+
+  int i = pos[key];
+
+  if ( i < 0 )
+  {
+    return;
+  }
+
+  p[i] = new_p;
+
+  upheap( key);
+  downheap( pos[key] );
+}
+
+
 //----------------gpl----------------------------------------------------
 void PriorityQueue::print()
 {

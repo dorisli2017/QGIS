@@ -2702,7 +2702,6 @@ void Problem::setConflictGraph(){
        candidates->Search( amin, amax, conflictCallBack, reinterpret_cast< void * >(context) );   
     }
   }
-    cout<< "POINT E"<< endl;
   if(!init){
     // build previou solution
     int qgsID;
@@ -2807,13 +2806,12 @@ void Problem::mis(){
   int label;
   int i,j;
   init_sol_empty();
-  cout<< "POINT A"<< endl;
   setConflictGraph();
-  cout<< "POINT B"<< endl;
   if(gplDebugger){
     debugConflictGraph();
   }
-  unordered_set<int> vertexCover = conflictGraph->getVertexCover(nblp, all_nblp);
+  unordered_set<int> vertexCover = conflictGraph->getVertexCover_weighted(nblp, all_nblp);
+  //unordered_set<int> vertexCover = conflictGraph->getVertexCover(nblp, all_nblp);
   vector<int> MIS;
   for ( i = 0; i < nbft; i++ ){
     for (j = 0; j < featNbLp[i]; j++ ){

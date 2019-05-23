@@ -87,6 +87,7 @@ namespace pal
       void decreaseKey( int key );
       //++++++++++++++++++++gpl++++++++++++++++++++++++++++++++++++++++++++++
       bool decreaseKey_remove( int key, double limit);
+      void changePriority( int key, double new_p );
       //----------------gpl--------------------------------------------------
       void setPriority( int key, double new_p );
 
