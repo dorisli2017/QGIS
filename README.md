@@ -13,4 +13,4 @@ In qgis, point features normally have only one label candidate (8 positions for 
 
 ## further improvements<br /> 
 reimplementation of pal (directed in qgis with qgsfeature and qgslabling)<br /> 
-modification and update in problem implemented (Now modification emits new layout and builds new problem)<br /> 
+implements modification and update in problem (Now modification emits new layout and builds new problem)<br /> 
