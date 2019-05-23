@@ -1,4 +1,4 @@
-# QGIS:<br /> 
+# Hilabeling:<br /> 
 
 ## Our algorithms<br /> 
  simple[weighted/ stable]( corresponds to the algorithm Greedy in our paper)<br /> 
