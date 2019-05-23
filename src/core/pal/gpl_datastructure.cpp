@@ -6,18 +6,28 @@ lookupTable::lookupTable(int n){
   labelID.push_back(-1);
   vertexID.insert({-1,0});
 };
+// insert a new labelID
 int lookupTable::insert(int lID){
   int vID = labelID.size();
   labelID.push_back(lID);
   vertexID.insert({lID,vID});
   return vID;
 };
+// lookup the labelID of a vertexID 
+//vID: the vertex ID
+// return labelID 
+// return -1 if no vertex with ID vID
 int lookupTable::lookUpLID(int vID){
+  //vID is continous
   if(vID < labelID.size()){
     return labelID[vID];
   }
   else return -1;
 };
+// lookup the vertexID of labelID lID 
+//lID: the label ID
+// return vertexID 
+// return -1 if no vertex represents this label
 int lookupTable::lookUpVID(int lID){
   unordered_map<int,int>::const_iterator it = vertexID.find (lID);
   if(it != vertexID.end()){
@@ -26,6 +36,7 @@ int lookupTable::lookUpVID(int lID){
   return -1;  
 
 };
+// debug code
 void lookupTable::debug(){
   assert(labelID.size() == numV);
   assert(vertexID.size() == numV);
@@ -44,6 +55,7 @@ void lookupTable::debug(){
     assert(lookUpLID(lookUpVID(lID)) == lID);
   }
 };
+// print the lookuptable
 void lookupTable::print(){
   cout<<"numV "<< numV<< endl;
   cout<<"labelID "<< labelID.size()<< endl;

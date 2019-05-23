@@ -240,7 +240,7 @@ void Graph::setPriorityQueue(pal::PriorityQueue * list){
     list->print();
   }
 }
-// get vertex cover by 
+// get vertex cover ( priority of vertex u is  deg(u)/w(u)+1 ) 
 unordered_set<int> Graph:: getVertexCover_weighted(int nblp, int all_nblp){
   vector<int> degrees; 
   degrees.push_back(-1);
@@ -250,8 +250,10 @@ unordered_set<int> Graph:: getVertexCover_weighted(int nblp, int all_nblp){
   unordered_set<int> vertexCover;
   unordered_set<int> labelCover;
   setPriorityQueue_weighted(list,degrees);
-  for(int i = 0; i < degrees.size(); i++){
-    cout<< i << " " << degrees[i]<< endl;
+  if(gplPrinter){
+    for(int i = 0; i < degrees.size(); i++){
+      cout<< i << " " << degrees[i]<< endl;
+    }
   }
   //
   unordered_set<int> covered;
@@ -283,6 +285,7 @@ unordered_set<int> Graph:: getVertexCover_weighted(int nblp, int all_nblp){
   }
     return labelCover;
 } 
+// debug code 
 void Graph::debugDegree(int vertex, vector<int> degrees,   unordered_set<int>& vertexCover){
   int label2;
   int r = 0;
@@ -309,9 +312,9 @@ void Graph::debugDegree(int vertex, vector<int> degrees,   unordered_set<int>& v
     cout<< "degrees[vertex]: "<< degrees[vertex]<< endl;
   }
   assert(degrees[vertex] + r == adList[vertex].size());
-}
-
-// get vertex cover by 
+} 
+// get unweighted vertex cover ( priority of vertex u is  deg(u)) 
+// use this in mis(), just change mis() function in problem.cpp (2814)
 unordered_set<int> Graph:: getVertexCover(int nblp, int all_nblp){
   pal::PriorityQueue *list = nullptr;
   // true: sort by growth
@@ -345,6 +348,7 @@ unordered_set<int> Graph:: getVertexCover(int nblp, int all_nblp){
   }
     return labelCover;
 } 
+// bebug code
 void Graph:: debugCover(int vertex, unordered_set<int>& vertexCover, vector<int>& degrees){
     int i,label2;
     i = vertex;
@@ -368,6 +372,7 @@ void Graph:: debugCover(int vertex, unordered_set<int>& vertexCover, vector<int>
         assert(vertexCover.find(label2) != vertexCover.end());
     }
 }
+// debug code
 void Graph::debugVertexCover(unordered_set<int>& vertexCover){
   cout<< "***********&&&&&&&&&&& debugVertexCover***********"<< endl;
   for(const auto &p : vertexCover){
@@ -387,6 +392,8 @@ void Graph::debugVertexCover(unordered_set<int>& vertexCover){
       }
     }
 }
+// get MIS from kamis file
+// In kamis, one line for each node. 1 for taken, 0 for not taken 
 void Graph::readKAMIS(vector<int>& KAMIS,string const & fileName){
   vector<int> vertexMIS;
   ifstream indata;
@@ -411,6 +418,7 @@ void Graph::readKAMIS(vector<int>& KAMIS,string const & fileName){
         KAMIS.push_back(table->lookUpLID(elem));
   }
 }
+// read outputfile from  maxHS-like SAT programm
 void Graph::readWCNF(vector<int>& KAMIS,string const & fileName){
   vector<int> vertexMIS;
   ifstream indata;
@@ -448,6 +456,9 @@ void Graph::readWCNF(vector<int>& KAMIS,string const & fileName){
         KAMIS.push_back(table->lookUpLID(elem));
   }
 }
+// debug code 
+// to check if the set is independent
+// to check if its complement a vertex cover (maximal)
 void Graph::debugMIS(vector<int>& vertexMIS){
   cout<< "***********&&&&&&&&&&&debugMIS***********"<< endl;
   for(const auto & elem : vertexMIS){
@@ -466,16 +477,21 @@ void Graph::debugMIS(vector<int>& vertexMIS){
     }
   }
 }
+// get MIS by kamis
+// KAMIS contains the labelID in original problem.
 void Graph::getKAMIS(vector<int>& KAMIS){
   outputMetis("metis_set_map.txt");
   system("../redumis metis_set_map.txt --output=b_set_map.txt");
   readKAMIS(KAMIS, "b_set_map.txt");
 }
+// get MIS by maxHS
+// KAMIS contains the labelID in original problem.
 void Graph::getMAXHS(vector<int>& KAMIS){
   outputDIMACS("dimacs_set_map.txt");
   system("../maxhs dimacs_set_map.txt >b_set_map.txt");
   readWCNF(KAMIS, "b_set_map.txt");
 }
+// debug code
 /*int main_metis (int argc, char *argv[]) {
   Graph graph(3,3);
   graph.addVertex(100);
@@ -498,6 +514,7 @@ void Graph::getMAXHS(vector<int>& KAMIS){
 }
 */
 /*
+// debug code
 int main(int argc, char *argv[]){
   Graph graph(3,3);
   graph.addVertex(100);

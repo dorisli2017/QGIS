@@ -51,15 +51,20 @@
 //-------------------gpl----------------------------
 using namespace pal;
 //+++++++++++debug+++++++++++++++++++++
-bool gplDebugger = true;
-bool gplPrinter = true;
+bool gplDebugger = false;
+bool gplPrinter = false;
 QSet<int> QgsFeatureIDS_prev;
 int numF_prev;
 int numL_prev;
 unordered_map<int, unordered_set<int>> candidates_prev;
 //---------------debug-----------------
 //*+++++++++++++modification++++++++++++++++++++++++++++++
+//TODO: if zooming level or ragion change, the init should be reset to true
 bool init = true;
+// solution is cached in it after one round
+// map <qgsFeatureID, offset>
+//qgsFeatureID: unique id of feature
+// offset: the offset of the choosen label to the startID of the feature is unique 
 unordered_map<int, int> solution_prev; 
 //--------------modification-----------------------------
 
@@ -2409,7 +2414,9 @@ void Problem::solution_cost()
     }
   }
 }
-//+++++++++++++++++++++++++++gpl-algorithms++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++gpl-algorithms++++simple++++++++++++++++++++++++++++++++++++++++++++++
+// another implementation of simple
+// no test yet
  /*typedef struct
  {
    bool* labelList = nullptr;
@@ -2503,7 +2510,7 @@ void Problem::simple()
      }
    }
 }*/
-//------------------------gpl-algorithms-----------------------------------------------------
+//------------------------gpl-algorithms---------------simple--------------------------------------
 //+++++++++++++++++++++++++++gpl-algorithms+++simple++++++++++++++++++++++++++++++++++++++++++++
 typedef struct
  {
@@ -2521,6 +2528,9 @@ bool simpleConflictCallback(LabelPosition *lp, void *ctx){
  }
   return true;
 }
+// greedy algorithm 
+// no graph representation used
+// the order of feature counts
 void Problem::simple()
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
@@ -2530,7 +2540,9 @@ void Problem::simple()
     int same = 0;
     int diff = 0;
     int cached = 0;
-    printCost();
+    if(gplPrinter){
+      printCost();
+    }
 //-------------------gpl-----------------------------------
     int i, j;
     int label;
@@ -2636,13 +2648,15 @@ if(gplDebugger){
      }
    }
 }
-//------------------------gpl-algorithms-----------------simple-----------------------------------
+//------------------------gpl-algorithms-----------------simple---------------------------
+
 //++++++++++++++++++++++++gpl-dataSruct++++set conflict graph+++++++++++++++++++++++++++++
 typedef struct{
   Graph* conflictGraph;
   LabelPosition* lp;
   int* lpID= nullptr;
 }CONFLICTContext;
+// add bidirected edge for one conflict in conflictgraph
 bool conflictCallBack( LabelPosition *lp, void *ctx ){
   CONFLICTContext* context = reinterpret_cast< CONFLICTContext* >( ctx );
   LabelPosition *lp2 = context->lp;
@@ -2656,6 +2670,8 @@ bool conflictCallBack( LabelPosition *lp, void *ctx ){
   }
   return true;
 }
+// set conflictgraph according to the Rtree
+//TODO: get the graph in the process of setting Rtree (in Rtree, it has counted once the number of overlappings)
 void Problem::setConflictGraph(){
   conflictGraph = new Graph(nblp,all_nblp);
   //conflictGraph = new Graph(all_nblp);
@@ -2670,17 +2686,13 @@ void Problem::setConflictGraph(){
   CONFLICTContext * context = new CONFLICTContext();
   context-> lpID = &lpID;
   context->conflictGraph = conflictGraph;
-    cout<< "POINT C"<< endl;
   for ( i = 0; i < nbft; i++ ){
     startID = featStartId[i];
-        cout<< "inner for"<< endl;
     for(j = 0; j < featNbLp[i]; j++){
         weight = inactiveCost[i]-mLabelPositions.at(startID+j)->cost();
         conflictGraph->addVertex(startID+j, weight);
     }
-            cout<< "inner for_done"<< endl;
   }
-    cout<< "POINT D"<< endl;
   for ( i = 0; i < nbft; i++ ){
     startID = featStartId[i];
     endID = startID+ featNbLp[i];
@@ -2720,6 +2732,7 @@ void Problem::setConflictGraph(){
     conflictGraph->adjustWeights();
   }
 }
+// debug callback 
 bool graphDebugCallBack( LabelPosition *lp, void *ctx ){
   CONFLICTContext* context = reinterpret_cast< CONFLICTContext* >( ctx );
   LabelPosition *lp2 = context->lp;
@@ -2735,12 +2748,14 @@ bool graphDebugCallBack( LabelPosition *lp, void *ctx ){
   return true;
 
 }
+// debug code 
+// check if all candidates of one feature are in conflict
+//check if all and only the overlapped labels in RTree are connected in conflictgraph.
 void Problem::debugConflictGraph(){
   conflictGraph->debugGraph();
   if(gplPrinter){
     conflictGraph->printGraph();
   }
-  //Define more assert to check RT three and conflictgraph.
   int i,j;
   int lpID;
   int start,end;
@@ -2778,8 +2793,9 @@ void Problem::debugConflictGraph(){
     }
   }
 }
-//-------------------gpl-dataSruct----- set conflict graph --------------------------------------------------
-//+++++++++++++++++++++++++++gpl-algorithms++++++++++++MIS++++++++++++++++++++++++++++++++++++++
+// bebug code for all MIS-getting-algorithms (set conflict graph and get maximal independet set)
+//check the independency of labels 
+// TODO: check indepedency directly in the original problem
 void Problem::debugIndepdency( vector<int>& MIS){
   for(const auto &p: MIS){
     for(const auto &q: MIS){
@@ -2796,7 +2812,10 @@ void Problem::debugIndepdency( vector<int>& MIS){
     }
   }
 }
-//mis (maximum Indepdend set)
+//-------------------gpl-dataSruct----- set conflict graph -------------------------------------
+
+//+++++++++++++++++++++++++++gpl-algorithms++++++++++++MIS++++++++++++++++++++++++++++++++++++++
+
 void Problem::mis(){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
@@ -2826,6 +2845,8 @@ void Problem::mis(){
   setSolution(MIS);
   cacheSolution();
 }
+// set the solution found using MIS-like algorithm
+// a set of independent labels 
 void Problem::setSolution(vector<int>& MIS){
   int i;
   double amin[2];
@@ -2835,7 +2856,7 @@ void Problem::setSolution(vector<int>& MIS){
     lp= mLabelPositions.at(label);
     if ( lp->getId() != label )
     {
-      std::cerr << "mis wrong";
+      std::cerr << "setSolution wrong";
     }
     int probFeatId = lp->getProblemFeatureId();
     sol->s[probFeatId] = label; 
@@ -2881,8 +2902,9 @@ void Problem::setSolution(vector<int>& MIS){
 
 //---------------------gpl-algorithms-----------------mis--------------------------
 
+
 //+++++++++++++++++++++++++++gpl-algorithms++++++++++++MaxHS++++++++++++++++++++++++++++++++++++++
-//mis (maximum Indepdend set)
+//get a maximum independent set using maxHS
 void Problem::maxHS(){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
@@ -2903,9 +2925,12 @@ void Problem::maxHS(){
   cacheSolution();
 }
 //---------------------gpl-algorithms-----------------MaxHs---------------------------------------
+
 //+++++++++++++++++++++++++++gpl-algorithms++++++++++++KAMIS++++++++++++++++++++++++++++++++++++++
 //using KAMIS to solve it (maximum Indepdend set)
 //currently as extern libery( file to file communication) 
+// Unweighted
+// Unstable
 void Problem::kamis(){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
@@ -2923,11 +2948,11 @@ void Problem::kamis(){
     debugIndepdency(KAMIS);
   }
   setSolution(KAMIS);
-
-
 }
 //---------------------gpl-algorithms-----------------KAMIS---------------------------------------
+
 //+++++++++++++++++++++++++++++modification+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// cache the solution in solution_prev (map of qgsFeatureID and offset of the labelID)
 void Problem:: cacheSolution(){
   // store new solution
   solution_prev.clear();
@@ -2943,13 +2968,15 @@ void Problem:: cacheSolution(){
       solution_prev.insert({mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id(),offset});
     }
   }
-  cout<< solution_prev.size() << " are cached from the previous solution"<< endl;
-  for (const auto &p : solution_prev) {
-    std::cout << p.first << " => "<< p.second << endl;
+  if(gplPrinter){
+    cout<< solution_prev.size() << " are cached from the previous solution"<< endl;
+    for (const auto &p : solution_prev) {
+      std::cout << p.first << " => "<< p.second << endl;
+    }
   }
 }
 // get the offset to the startID (>= 0)
-// if no cached availd, return -1
+// if no cached avalid, return -1
 int Problem:: getCached(int feat){
   int offset;
   int qgsID = mLabelPositions.at(featStartId[feat])->getFeaturePart()->feature()->id();
@@ -2963,6 +2990,7 @@ int Problem:: getCached(int feat){
   return -1;
 }
 //-----------------------------modification-------------------------------------------------------
+
 //++++++++++++++++++++++++++++++++++Assertions for understanding QGIS+++++++++++++++++++++++++++++++++++
 //pal::labelposition(for labeling), pal::featurePart(reduldent information TODO: integrate PAL with QGIS feature directly) and also Qgsfeature(assume has unique id).
 //assume the id of qgsfeature is unique and static in same bounding map (different problem instance)
@@ -3161,9 +3189,8 @@ void printFeature(QgsLabelFeature* qgsF){
   cout<<"Text:"<< qgsF->labelText().toUtf8().constData() << endl;
 
 }
-// what is a cost? cost for feature and cost for label?
+// priority for feature (used to define inativecost)and cost for label.
 // same feature different label cost? (yes but very similiar check function createCandidate)
-// different feature priority semiliar label cost? (priority is -1, how to use?)
 // there is no 4/8-position preferences for poit labeling
 //TODO: define preference ourselves
 // the cost is sorted by cost growing
@@ -3183,11 +3210,3 @@ void Problem::printCost(){
     }
 }
 //-------------------Assertions for understanding QGIS-------------------------------
-
-//++++++++++++++++++add weights+++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// set weight as 1-cost
-int Problem::solution_weights(){
-  return -1;
-  
-}
-//------------------add weights-------------------------------------------------------
