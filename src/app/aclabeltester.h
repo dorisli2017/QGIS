@@ -14,90 +14,205 @@
 #include "qgsvectorlayerlabeling.h"
 #include "qgsvectorlayerlabelprovider.h"
 #include "geometry/qgsrectangle.h"
+
+#include <QMap>
 #include <QDebug>
 
 using namespace std;
 
-int labeltester(const QString& db_path)
-{
-    qDebug() << "Getting QGis App";
-    QString table = "points";
-    QString geom_column = "geometry";
-    QgsDataSourceUri uri;
-    uri.setDatabase(db_path);
-    uri.setDataSource("", table, geom_column);
-    qDebug() << uri.uri();
+namespace lt {
+    QTextStream& qStdOut()
+    {
+        static QTextStream ts( stdout );
+        return ts;
+    }
 
-    qDebug() << "Creating layer";
-    QgsVectorLayer *layer = new QgsVectorLayer(uri.uri(), "ka", "spatialite");
-    QgsProject::instance()->addMapLayer(layer);
-    qDebug() << layer->isValid();
+    class Modification
+    {
+        public:
+            virtual bool modify();
+    };
 
-    qDebug() << "Creating map";
-    QSize size(1000, 1000);
-    QgsMapSettings mapSettings;
-    mapSettings.setOutputSize(size);
-    mapSettings.setExtent(layer->extent());
-    qDebug() << layer->extent().area();
-    mapSettings.setLayers(QList<QgsMapLayer *>() << layer);
-    mapSettings.setOutputDpi(96);
+    typedef QPair<QString, QgsLabelingEngineSettings::Search> AlgorithmPair;
+    extern const AlgorithmPair FALP;
+    extern const AlgorithmPair POPMUSIC;
+    extern const AlgorithmPair SIMPLE;
+    extern const AlgorithmPair MIS;
+    extern const AlgorithmPair KAMIS;
+    extern const AlgorithmPair MAXHS;
 
-    qDebug() << "Get rendering context";
-    QgsMapRendererSequentialJob job(mapSettings);
-    job.start();
-    job.waitForFinished();
+    class LabelTester
+    {
+        public:
+            LabelTester(const QString& dataset, const QDir& base_path = QDir("/home/fabian/clean_home/research/HILabeling/hilabeling_experiments/")) :
+                ext_shapefile(".shp"),
+                ext_image(".png"),
+                map_size(5000, 5000),
+                map_dpi(300),
+                dataset(dataset),
+                base_path(base_path),
+                statistics_path(base_path.filePath("statistics")),
+                shapefile_path(base_path.filePath("shapefiles")),
+                image_path(base_path.filePath("images"))
+            {
+                Q_ASSERT(base_path.exists());
+                Q_ASSERT(statistics_path.exists());
+                Q_ASSERT(shapefile_path.exists());
+                Q_ASSERT(image_path.exists());
 
-    QImage imgM = job.renderedImage();
-    qDebug() << imgM.save("test_map.png");
+                QString dataset_path = shapefile_path.filePath(dataset + ext_shapefile);
+                Q_ASSERT(QFile(dataset_path).exists());
+            }
 
-    QImage img = job.renderedImage();
-    QPainter p(&img);
-    QgsRenderContext context = QgsRenderContext::fromMapSettings(mapSettings);
-    context.setPainter(&p);
+            template<typename AlgSequenceGenerator, typename ModSequenceGenerator>
+            void run(AlgSequenceGenerator g_alg, ModSequenceGenerator g_mod)
+            {
+                QVector<AlgorithmPair> run_algorithms;
+                g_alg(run_algorithms, 10);
+                QVector<Modification> run_modifications;
+                g_mod(run_modifications, 10);
+                run_test(run_algorithms, run_modifications);
+            }
 
-    qDebug() << "Setting up pal";
-    QgsPalLayerSettings pal_settings;
-    pal_settings.fieldName = QStringLiteral("name");
+        private:
+            /*
+             * One labeling with one algorithm for the given map and provider is created
+             */
+            bool create_labeling_with_algorithm(QgsRenderContext& context, const QgsLabelingEngineSettings::Search& algortihm,
+                                                QgsMapSettings& map_settings, QgsVectorLayerLabelProvider* provider)
+            {
+                // Configuring algorithm
+                qStdOut() << "Setting algorithm" << endl;
+                QgsLabelingEngineSettings engine_settings;
+                engine_settings.setSearchMethod(algortihm);
+                map_settings.setLabelingEngineSettings(engine_settings);
 
-    QgsTextFormat format;
-    format.setFont(QgsFontUtils::getStandardTestFont(QStringLiteral("Bold")).family());
-    format.setSize(12);
-    format.setNamedStyle(QStringLiteral("Bold"));
-    format.setColor(QColor(200, 0, 200));
-    pal_settings.setFormat(format);
+                // Create Labeling Engine
+                qStdOut() << "Creating labeling engine" << endl;
+                QgsLabelingEngine engine;
+                engine.setMapSettings(map_settings);
+                engine.addProvider(provider);
 
-    layer->setLabeling(new QgsVectorLayerSimpleLabeling(pal_settings));
-    layer->setLabelsEnabled(true);
+                // Run engine
+                qStdOut() << "Running labeling engine..." << endl;
+                engine.run(context);
+                qStdOut() << "Labeled " << engine.results()->labelsWithinRect(map_settings.layers().first()->extent()).size() << " features" << endl;
+                return true;
+            }
 
-    qDebug() << "Setting up label provider";
-    QgsVectorLayerLabelProvider *provider = new QgsVectorLayerLabelProvider(layer,
-                                                                            "",
-                                                                            true,
-                                                                            &pal_settings);
-    qDebug() << layer->labelsEnabled();
-    qDebug() << layer->isValid();
-    qDebug() << provider->name();
+            bool setup_map(QgsMapSettings& map_settings, QgsVectorLayer* layer)
+            {
+                map_settings.setOutputSize(map_size);
+                map_settings.setExtent(layer->extent());
+                map_settings.setLayers(QList<QgsMapLayer *>() << layer);
+                map_settings.setOutputDpi(map_dpi);
 
-    qDebug() << "Setting up labeling engine";
-    QgsLabelingEngineSettings engine_settings;
-    engine_settings.setSearchMethod(QgsLabelingEngineSettings::Falp);
+                return true;
+            }
 
-    QgsLabelingEngine engine;
-    engine.setMapSettings( mapSettings );
-    engine.addProvider(provider);
+            bool setup_pal(QgsPalLayerSettings& pal_settings)
+            {
+                pal_settings.fieldName = QStringLiteral("name");
 
-    qDebug() << "Running labeling engine";
-    engine.run(context);
-    img.save("test_labeling.png");
+                QgsTextFormat format;
+                format.setFont(QgsFontUtils::getStandardTestFont(QStringLiteral("Bold")).family());
+                format.setSize(12);
+                format.setNamedStyle(QStringLiteral("Bold"));
+                format.setColor(QColor(200, 0, 200));
+                pal_settings.setFormat(format);
 
-    qDebug() << engine.results()->labelsWithinRect(mapSettings.extent()).size();
+                return true;
+            }
 
-//    app.exitQgis();
-    QgsApplication::exitQgis();
+            bool render_map(QImage& map_image, const QgsMapSettings& map_settings)
+            {
+                // Get rendering context
+                qStdOut() << "Get rendering context" << endl;
+                QgsMapRendererSequentialJob job(map_settings);
+                job.start();
+                job.waitForFinished();
+                map_image = job.renderedImage();
 
-    qDebug() << "Reached end";
+                return true;
+            }
 
-    return 0;
+            bool run_test(const QVector<AlgorithmPair>& run_algorithms, const QVector<Modification>& run_modifications)
+            {
+                // Create layer & map
+                qStdOut() << "Creating layer for dataset " << QFile(dataset_path).fileName() << endl;
+                QgsVectorLayer *layer = new QgsVectorLayer(dataset_path, "", "ogr");
+                QgsProject::instance()->addMapLayer(layer);
+
+                Q_ASSERT(layer->isValid());
+
+                qStdOut() << "Setting up map" << endl;
+                QgsMapSettings map_settings;
+                setup_map(map_settings, layer);
+
+                // Setting up PAL
+                qStdOut() << "Setting up PAL" << endl;
+                QgsPalLayerSettings pal_settings;
+                setup_pal(pal_settings);
+
+                // Setting up layer & creating provider
+                layer->setLabelsEnabled(true);
+                QgsVectorLayerLabelProvider *provider = new QgsVectorLayerLabelProvider(layer, "", true, &pal_settings);
+
+                // Rendernig map once to save time later
+                qStdOut() << "Rendering map" << endl;
+                QImage map_image;
+                render_map(map_image, map_settings);
+
+                // Test loop
+                for(int i = 0; i < run_algorithms.length(); ++i)
+                {
+                    const AlgorithmPair& algorithm = run_algorithms[i];
+
+                    qStdOut() << "Running test with algorithm " << algorithm.first << endl;
+                    layer->setLabeling(new QgsVectorLayerSimpleLabeling(pal_settings));
+
+                    //Get rendering context
+                    QImage labeled_image(map_image);
+                    QPainter p(&labeled_image);
+                    QgsRenderContext context = QgsRenderContext::fromMapSettings(map_settings);
+                    context.setPainter(&p);
+
+                    // Create one labeling with algorithm
+                    create_labeling_with_algorithm(context, algorithm.second, map_settings, provider);
+
+                    p.end();
+
+                    // Store image
+                    QString save_to_image_path(image_path.filePath(dataset + "_" + algorithm.first + "_" + i + ext_image));
+                    save_to_image_path.replace(".shp", ".png");
+                    qStdOut() << "Saving labeled map to: " << save_to_image_path << endl;
+                    labeled_image.save(save_to_image_path);
+                }
+
+                return true;
+            }
+
+            QString ext_shapefile;
+            QString ext_image;
+            QSize map_size;
+            qint16 map_dpi;
+
+            QString dataset;
+            QString dataset_path;
+
+            QDir base_path;
+            QDir statistics_path;
+            QDir shapefile_path;
+            QDir image_path;
+    };
+
+    int test(const QString& dataset)
+    {
+        LabelTester tester(dataset);
+        tester.run([](QVector<AlgorithmPair>& algorithms, const int& length) {return ;}, [](QVector<Modification>& algorithms, const int& length) {return ;});
+
+        return 0;
+    }
 }
 
 
