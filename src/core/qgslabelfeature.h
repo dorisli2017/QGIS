@@ -114,6 +114,12 @@ class CORE_EXPORT QgsLabelFeature
 
     //! Size of the label (in map units)
     QSizeF size() const { return mSize; }
+    //+++++++++++++++gpl++++++enlarge and schrink++++++++++++++++++++++++++++
+    void setSize(QSizeF size){mSize = size;}
+    void fitSize(double factor){
+      mSize = QSize(qRound(mSize.width()*factor), qRound(mSize.height()*factor));
+    }
+    //---------------gpl------enlarge and schrink----------------------------
 
     /**
      * Sets the visual margin for the label feature. The visual margin represents a margin

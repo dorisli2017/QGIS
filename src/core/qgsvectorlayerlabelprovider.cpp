@@ -535,3 +535,24 @@ void QgsVectorLayerLabelProvider::drawLabelPrivate( pal::LabelPosition *label, Q
   if ( label->getNextPart() )
     drawLabelPrivate( label->getNextPart(), context, tmpLyr, drawType, dpiRatio );
 }
+    //+++++++++++++++++gpl-modification+++++++++++++++++++
+    void QgsVectorLayerLabelProvider::fixFeature(int id){
+      for(auto ele: mLabels){
+        if(ele->id() == id){
+            ele->setAlwaysShow(true);
+        }
+      }
+    };
+    void QgsVectorLayerLabelProvider::fitFeature(int id, double factor){
+      for(auto ele: mLabels){
+        if(ele->id() == id){
+          ele->fitSize(factor);
+        }
+      }  
+    };
+    void QgsVectorLayerLabelProvider::getFeatureIds(vector<int>& ids){
+      for(auto ele: mLabels){
+        ids.push_back(ele->id());
+      }
+    };
+    //----------------gpl-modification--------------------

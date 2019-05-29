@@ -2,7 +2,8 @@
 #define ACLABELTESTER_H
 
 #include <iostream>
-
+#include <fstream>   
+#include <iomanip>
 #include "qgsproject.h"
 #include "qgsdatasourceuri.h"
 #include "qgsvectorlayer.h"
@@ -14,11 +15,12 @@
 #include "qgsvectorlayerlabeling.h"
 #include "qgsvectorlayerlabelprovider.h"
 #include "geometry/qgsrectangle.h"
-
 #include <QMap>
 #include <QDebug>
-
+#include "acstability.h"
+#include "modification.h"
 using namespace std;
+
 
 namespace lt {
     QTextStream& qStdOut()
@@ -27,24 +29,55 @@ namespace lt {
         return ts;
     }
 
-    class Modification
-    {
-        public:
-            virtual bool modify();
-    };
+ typedef QPair<QString, QgsLabelingEngineSettings::Search> AlgorithmPair;
 
-    typedef QPair<QString, QgsLabelingEngineSettings::Search> AlgorithmPair;
+    extern const AlgorithmPair CHAIN;
+    extern const AlgorithmPair POPMUSIC_TABU;
+    extern const AlgorithmPair  POPMUSIC_CHAIN;
+    extern const AlgorithmPair POPMUSIC_TABU_CHAIN;
     extern const AlgorithmPair FALP;
-    extern const AlgorithmPair POPMUSIC;
+//    our algorihtms 
     extern const AlgorithmPair SIMPLE;
     extern const AlgorithmPair MIS;
-    extern const AlgorithmPair KAMIS;
     extern const AlgorithmPair MAXHS;
+    extern const AlgorithmPair KAMIS;
 
+   struct Tracker{
+        string name;
+        int numOfFeatures;
+        int runs;
+        QVector<ModificationSettings> modifications;
+        //conflictsNumbers[0]= Initial number of conflicts
+        QVector<int> conflictsNumbers;
+        QVector<test::Performance> algorithmPerformances;
+        void print(){
+            cout<<"name: "<< name << endl;
+            cout<< "numOfFeatures: "<<numOfFeatures << endl; 
+            cout<< "runs: "<< runs << endl;
+            for(int i = 0; i < runs; i++){
+                //modifications[i].print();
+                cout<< "conflictsNumber: "<< conflictsNumbers[i]<< endl;
+                algorithmPerformances[i].print();
+            }
+        }
+        void print_JSON(std::ofstream o){
+            json node; 
+            node["name"]  = name;
+            node["numOfFeatures"] = numOfFeatures; 
+            node["runs"] = runs;
+            for(int i = 0; i < runs; i++){
+               // node["modifications"].push_back(modifications[i].convertJSON());
+                node["conflictsNumber"].push_back(conflictsNumbers[i]);
+                node["algorithms"].push_back(algorithmPerformances[i].convertJSON());
+            }
+            o << std::setw(4) << node << std::endl;
+        }
+    };
     class LabelTester
     {
-        public:
-            LabelTester(const QString& dataset, const QDir& base_path = QDir("/home/fabian/clean_home/research/HILabeling/hilabeling_experiments/")) :
+        public:                                                          
+        LabelTester(const QString& dataset, const QDir& base_path = QDir("/home/guangping/dev/cpp/GIT/QGIS/test_hilabling")) :
+           // LabelTester(const QString& dataset, const QDir& base_path = QDir("/home/fabian/clean_home/research/HILabeling/hilabeling_experiments/")) :
                 ext_shapefile(".shp"),
                 ext_image(".png"),
                 map_size(5000, 5000),
@@ -60,26 +93,27 @@ namespace lt {
                 Q_ASSERT(shapefile_path.exists());
                 Q_ASSERT(image_path.exists());
 
-                QString dataset_path = shapefile_path.filePath(dataset + ext_shapefile);
+                dataset_path = shapefile_path.filePath(dataset + ext_shapefile);
                 Q_ASSERT(QFile(dataset_path).exists());
             }
 
             template<typename AlgSequenceGenerator, typename ModSequenceGenerator>
             void run(AlgSequenceGenerator g_alg, ModSequenceGenerator g_mod)
             {
+                cout<< "NOW THE DATAset IS "<< dataset.toLocal8Bit().constData()<<endl;
+                cout<< "NOW THE DATApath IS "<< dataset_path.toLocal8Bit().constData()<< endl;
                 QVector<AlgorithmPair> run_algorithms;
-                g_alg(run_algorithms, 10);
-                QVector<Modification> run_modifications;
-                g_mod(run_modifications, 10);
+               // g_alg(run_algorithms, 10);
+                QVector<ModificationSettings> run_modifications;
+               // g_mod(run_modifications, 10);
                 run_test(run_algorithms, run_modifications);
             }
 
         private:
-            /*
-             * One labeling with one algorithm for the given map and provider is created
-             */
+            // One labeling with one algorithm for the given map and provider is created
+             
             bool create_labeling_with_algorithm(QgsRenderContext& context, const QgsLabelingEngineSettings::Search& algortihm,
-                                                QgsMapSettings& map_settings, QgsVectorLayerLabelProvider* provider)
+                                                QgsMapSettings& map_settings, QgsVectorLayerLabelProvider* provider,test::Performance performance)
             {
                 // Configuring algorithm
                 qStdOut() << "Setting algorithm" << endl;
@@ -95,7 +129,7 @@ namespace lt {
 
                 // Run engine
                 qStdOut() << "Running labeling engine..." << endl;
-                engine.run(context);
+                engine.run(context,performance);
                 qStdOut() << "Labeled " << engine.results()->labelsWithinRect(map_settings.layers().first()->extent()).size() << " features" << endl;
                 return true;
             }
@@ -136,7 +170,7 @@ namespace lt {
                 return true;
             }
 
-            bool run_test(const QVector<AlgorithmPair>& run_algorithms, const QVector<Modification>& run_modifications)
+            bool run_test(const QVector<AlgorithmPair>& run_algorithms, QVector<ModificationSettings>& run_modifications)
             {
                 // Create layer & map
                 qStdOut() << "Creating layer for dataset " << QFile(dataset_path).fileName() << endl;
@@ -148,7 +182,6 @@ namespace lt {
                 qStdOut() << "Setting up map" << endl;
                 QgsMapSettings map_settings;
                 setup_map(map_settings, layer);
-
                 // Setting up PAL
                 qStdOut() << "Setting up PAL" << endl;
                 QgsPalLayerSettings pal_settings;
@@ -162,8 +195,10 @@ namespace lt {
                 qStdOut() << "Rendering map" << endl;
                 QImage map_image;
                 render_map(map_image, map_settings);
-
+                // add Tracker 
+                Tracker tracker;
                 // Test loop
+                init = true;
                 for(int i = 0; i < run_algorithms.length(); ++i)
                 {
                     const AlgorithmPair& algorithm = run_algorithms[i];
@@ -178,7 +213,9 @@ namespace lt {
                     context.setPainter(&p);
 
                     // Create one labeling with algorithm
-                    create_labeling_with_algorithm(context, algorithm.second, map_settings, provider);
+                    test::Performance performance;
+                    create_labeling_with_algorithm(context, algorithm.second, map_settings, provider,performance);
+                    tracker.algorithmPerformances.push_back(performance);
 
                     p.end();
 
@@ -187,6 +224,20 @@ namespace lt {
                     save_to_image_path.replace(".shp", ".png");
                     qStdOut() << "Saving labeled map to: " << save_to_image_path << endl;
                     labeled_image.save(save_to_image_path);
+                    //++++++++++++++++++++++++++++++++ print all the feature 
+                    //---------------------------------
+                    // randomly choose features for modification
+                    vector<int> featureIds;
+                    provider->getFeatureIds(featureIds);
+                    vector<int> solutionIds;
+                    for(auto ele: solution_prev){
+                        solutionIds.push_back(ele.first);
+                    }
+                    Modification m(run_modifications[i]);
+                    bool global = m.isGlobal();
+                    if(global) m.modify(featureIds);
+                    else m.modify(solutionIds);
+                    m.applyModification(provider,context);
                 }
 
                 return true;
@@ -204,12 +255,15 @@ namespace lt {
             QDir statistics_path;
             QDir shapefile_path;
             QDir image_path;
+            // track the performance of the whole test process
+            Tracker tracker;
     };
 
     int test(const QString& dataset)
     {
+        cout<< "test starts"<< endl;
         LabelTester tester(dataset);
-        tester.run([](QVector<AlgorithmPair>& algorithms, const int& length) {return ;}, [](QVector<Modification>& algorithms, const int& length) {return ;});
+        //tester.run([](QVector<AlgorithmPair>& algorithms, const int& length) {return ;}, [](QVector<ModificationSettings>& algorithms, const int& length) {return ;});
 
         return 0;
     }

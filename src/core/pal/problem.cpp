@@ -48,11 +48,13 @@
 #include "debugger.h"
 #include <unordered_map>
 #include <unordered_set>
+#include "../../app/acstability.h"
 //-------------------gpl----------------------------
 using namespace pal;
 //+++++++++++debug+++++++++++++++++++++
 bool gplDebugger = false;
 bool gplPrinter = false;
+bool testPrinter = true;
 QSet<int> QgsFeatureIDS_prev;
 int numF_prev;
 int numL_prev;
@@ -60,12 +62,12 @@ unordered_map<int, unordered_set<int>> candidates_prev;
 //---------------debug-----------------
 //*+++++++++++++modification++++++++++++++++++++++++++++++
 //TODO: if zooming level or ragion change, the init should be reset to true
-bool init = true;
+//bool init = true;
 // solution is cached in it after one round
 // map <qgsFeatureID, offset>
 //qgsFeatureID: unique id of feature
 // offset: the offset of the choosen label to the startID of the feature is unique 
-unordered_map<int, int> solution_prev; 
+//unordered_map<int, int> solution_prev; 
 //--------------modification-----------------------------
 
 inline void delete_chain( Chain *chain )
@@ -283,12 +285,15 @@ bool falpCallback1( LabelPosition *lp, void *ctx )
 /* Better initial solution
  * Step one FALP (Yamamoto, Camara, Lorena 2005)
  */
-void Problem::init_sol_falp()
+void Problem::init_sol_falp(test::Performance& performance)
 {
+  auto start = std::chrono::system_clock::now();
+  int solutionCount = 0;
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++++++++
 if(gplDebugger){
   std::cout<< "init_sol_falp"<<endl;
 }
+performance.name = "init_sol_falp";
 //-------------------gpl-----------------------------------
   int i, j;
   int label;
@@ -342,6 +347,7 @@ if(gplDebugger){
 
     int probFeatId = lp->getProblemFeatureId();
     sol->s[probFeatId] = label;
+    solutionCount++;
 
     for ( i = featStartId[probFeatId]; i < featStartId[probFeatId] + featNbLp[probFeatId]; i++ )
     {
@@ -362,6 +368,15 @@ if(gplDebugger){
   solution_cost();
   cout<< sol->cost<<endl;
 }
+  performance.solutionSize = solutionCount;
+ auto end = std::chrono::system_clock::now();
+ std::chrono::duration<double> elapsed_seconds = end-start;
+ performance.time = elapsed_seconds.count();
+ solution_cost();
+ performance.solutionWeight = sol->cost;
+ if(testPrinter){
+   performance.print();
+ }
 //-------------------gpl-----------------------------------
 
 
@@ -406,12 +421,15 @@ if(gplDebugger){
   delete list;
 }
 
-void Problem::popmusic()
+void Problem::popmusic(test::Performance& performance)
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
+auto start = std::chrono::system_clock::now();
+int solutionCount = 0;
 if(gplDebugger){
    std::cout<<"popmusic"<<endl;
 }
+performance.name = "popmusic";
 //-------------------gpl-----------------------------------
   if ( nbft == 0 )
     return;
@@ -453,7 +471,7 @@ if(gplDebugger){
   Util::sort( reinterpret_cast< void ** >( parts ), nbft, borderSizeInc );
   //sort ((void**)parts, nbft, borderSizeDec);
 
-  init_sol_falp();
+  init_sol_falp(performance);
 
   solution_cost();
 
@@ -559,6 +577,18 @@ if(gplDebugger){
   delete[] parts;
 
   delete[] ok;
+  solution_cost();
+  performance.solutionWeight = sol->cost;
+  for(int i = 0; i < nbft; i++){
+    if(sol->s[i] != -1) solutionCount++;
+  }
+  performance.solutionSize = solutionCount;
+  auto end = std::chrono::system_clock::now();
+  std::chrono::duration<double> elapsed_seconds = end-start;
+  performance.time = elapsed_seconds.count();
+   if(testPrinter){
+   performance.print();
+ }
 }
 
 typedef struct
@@ -2181,12 +2211,14 @@ bool nokCallback( LabelPosition *lp, void *context )
   return true;
 }
 
-void Problem::chain_search()
+void Problem::chain_search(test::Performance& performance)
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++
+auto start = std::chrono::system_clock::now();
 if(gplDebugger){
  std::cout<<"chain_search"<<endl;
 }
+performance.name = "chain_search";
 //-------------------gpl----------------------------------
   if ( nbft == 0 )
     return;
@@ -2211,7 +2243,7 @@ if(gplDebugger){
   std::fill( ok, ok + nbft, false );
 
   //initialization();
-  init_sol_falp();
+  init_sol_falp(performance);
 
   //check_solution();
   solution_cost();
@@ -2278,7 +2310,19 @@ if(gplDebugger){
   }
 
   solution_cost();
+  performance.solutionWeight = sol->cost;
   delete[] ok;
+  int solutionCount = 0;
+  for(int i = 0; i < nbft; i++){
+    if(sol->s[i]  != -1) solutionCount++;
+  }
+  performance.solutionSize = solutionCount;
+  auto end = std::chrono::system_clock::now();
+  std::chrono::duration<double> elapsed_seconds = end-start;
+  performance.time = elapsed_seconds.count();
+  if(testPrinter){
+    performance.print();
+  }
 }
 
 bool Problem::compareLabelArea( pal::LabelPosition *l1, pal::LabelPosition *l2 )
@@ -2531,18 +2575,19 @@ bool simpleConflictCallback(LabelPosition *lp, void *ctx){
 // greedy algorithm 
 // no graph representation used
 // the order of feature counts
-void Problem::simple()
+void Problem::simple(test::Performance& performance)
 {
 //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
        cout<< "simple"<<endl;
     }
-    int same = 0;
-    int diff = 0;
-    int cached = 0;
+    performance.name = "simple";
+    int solutionCount= 0;
+    int remainingCount = 0;
     if(gplPrinter){
       printCost();
     }
+    auto start = std::chrono::system_clock::now();
 //-------------------gpl-----------------------------------
     int i, j;
     int label;
@@ -2556,7 +2601,6 @@ void Problem::simple()
      for ( i = 0; i < nbft; i++){
         int offset = getCached(i);
         if(offset >-1){
-          cached ++;
           label = featStartId[i]+offset;
           if(!context->labelList.contains(label)){
             lp=mLabelPositions.at(label);
@@ -2566,15 +2610,15 @@ void Problem::simple()
             }
             int probFeatId = lp->getProblemFeatureId();
             sol->s[probFeatId] = label; 
+            solutionCount++;
+            remainingCount++;
             lp->getBoundingBox( amin, amax); 
             //ignore all its overlapps;
             context->lp = lp;
             setF = true;
             candidates->Search( amin, amax, simpleConflictCallback ,reinterpret_cast< void * >( context ));   
-            same++;
             continue;
           }
-          diff++;
         }
         setF= false;
         // initial solution 
@@ -2594,6 +2638,7 @@ void Problem::simple()
             }
             int probFeatId = lp->getProblemFeatureId();
             sol->s[probFeatId] = label; 
+            solutionCount++;
             lp->getBoundingBox( amin, amax); 
             //ignore all its overlapps;
             context->lp = lp;
@@ -2601,9 +2646,6 @@ void Problem::simple()
             candidates->Search( amin, amax, simpleConflictCallback ,reinterpret_cast< void * >( context ));     
         }
     }
-    cout<< "cached"<< cached << endl;
-    cout<< "same"<< same << endl;
-    cout<< "diff"<< diff << endl;
     cacheSolution();
    //checkQgsfeatureID();
    delete context;
@@ -2611,6 +2653,16 @@ void Problem::simple()
 if(gplDebugger){
   solution_cost();
   cout<< sol->cost<<endl;
+}
+solution_cost();
+performance.solutionWeight = sol->cost;
+performance.solutionSize = solutionCount;
+performance.remainingLabels = remainingCount;
+auto end = std::chrono::system_clock::now();
+std::chrono::duration<double> elapsed_seconds = end-start;
+performance.time = elapsed_seconds.count();
+if(testPrinter){
+  performance.print();
 }
 //-------------------gpl-----------------------------------
    if ( displayAll )
@@ -2816,11 +2868,13 @@ void Problem::debugIndepdency( vector<int>& MIS){
 
 //+++++++++++++++++++++++++++gpl-algorithms++++++++++++MIS++++++++++++++++++++++++++++++++++++++
 
-void Problem::mis(){
+void Problem::mis(test::Performance& performance){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
         cout<< "mis"<<endl;
     }
+    performance.name = "mis";
+    auto start = std::chrono::system_clock::now();
 //-------------------gpl-----------------------------------
   int label;
   int i,j;
@@ -2843,7 +2897,21 @@ void Problem::mis(){
     debugIndepdency(MIS);
   }
   setSolution(MIS);
-  cacheSolution();
+  solution_cost();
+  performance.solutionWeight = sol->cost;
+  int remainingCount = cacheSolution();
+  int solutionCount = 0;
+  for(int i = 0; i < nbft; i++){
+    if(sol->s[i] != -1) solutionCount++;
+  }
+  performance.solutionSize = solutionCount;
+  performance.remainingLabels = remainingCount;
+  auto end = std::chrono::system_clock::now();
+  std::chrono::duration<double> elapsed_seconds = end-start;
+  performance.time = elapsed_seconds.count();
+  if(testPrinter){
+    performance.print();
+  }
 }
 // set the solution found using MIS-like algorithm
 // a set of independent labels 
@@ -2905,11 +2973,13 @@ void Problem::setSolution(vector<int>& MIS){
 
 //+++++++++++++++++++++++++++gpl-algorithms++++++++++++MaxHS++++++++++++++++++++++++++++++++++++++
 //get a maximum independent set using maxHS
-void Problem::maxHS(){
+void Problem::maxHS(test::Performance& performance){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
         cout<<"maxHS"<<endl;
     }
+    performance.name = "maxHS";
+    auto start = std::chrono::system_clock::now();
 //-------------------gpl-----------------------------------
   init_sol_empty();
   setConflictGraph();
@@ -2922,7 +2992,21 @@ void Problem::maxHS(){
     debugIndepdency(KAMIS);
   }
   setSolution(KAMIS);
-  cacheSolution();
+  int remainingCount = cacheSolution();
+  int solutionCount = 0;
+  for(int i = 0; i < nbft; i++){
+    if(sol->s[i] != -1) solutionCount++;
+  }
+  solution_cost();
+  performance.solutionWeight = sol->cost;
+  performance.solutionSize = solutionCount;
+  performance.remainingLabels =- remainingCount;
+  auto end = std::chrono::system_clock::now();
+  std::chrono::duration<double> elapsed_seconds = end-start;
+  performance.time = elapsed_seconds.count();
+    if(testPrinter){
+    performance.print();
+  }
 }
 //---------------------gpl-algorithms-----------------MaxHs---------------------------------------
 
@@ -2931,11 +3015,13 @@ void Problem::maxHS(){
 //currently as extern libery( file to file communication) 
 // Unweighted
 // Unstable
-void Problem::kamis(){
+void Problem::kamis(test::Performance& performance){
   //+++++++++++++++++++gpl+++++++++++++++++++++++++++++++++++
     if(gplDebugger){
         cout<< "kamis"<<endl;
     }
+    performance.name = "kamis";
+    auto start = std::chrono::system_clock::now();
 //-------------------gpl-----------------------------------
   init_sol_empty();
   setConflictGraph();
@@ -2948,16 +3034,64 @@ void Problem::kamis(){
     debugIndepdency(KAMIS);
   }
   setSolution(KAMIS);
+
+  int offset;
+  QgsFeatureId id;
+  std::unordered_map<int,int>::const_iterator got;
+  // count remaing labels
+  int remainingCount = 0;
+  if(!init){
+    for (int  i = 0; i < nbft; i++ ){
+      offset = sol->s[i]-featStartId[i];
+      if(offset >= 0){
+        id = mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id();
+        got = solution_prev.find (id);
+        if ( got != solution_prev.end()){
+          if(offset == got->second) remainingCount++;
+        }
+      }
+    }
+  }
+  int solutionCount = 0;
+  for(int i = 0; i < nbft; i++){
+    if(sol->s[i] != -1) solutionCount++;
+  }
+  solution_cost();
+  performance.solutionWeight = sol->cost;
+  performance.solutionSize = solutionCount;
+  performance.remainingLabels = remainingCount;
+  auto end = std::chrono::system_clock::now();
+  std::chrono::duration<double> elapsed_seconds = end-start;
+  performance.time = elapsed_seconds.count();
+  if(testPrinter){
+    performance.print();
+  }
 }
 //---------------------gpl-algorithms-----------------KAMIS---------------------------------------
 
 //+++++++++++++++++++++++++++++modification+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // cache the solution in solution_prev (map of qgsFeatureID and offset of the labelID)
-void Problem:: cacheSolution(){
+int Problem:: cacheSolution(){
+  int offset;
+  QgsFeatureId id;
+  std::unordered_map<int,int>::const_iterator got;
+  // count remaing labels
+  int remainingCount = 0;
+  if(!init){
+    for (int  i = 0; i < nbft; i++ ){
+      offset = sol->s[i]-featStartId[i];
+      if(offset >= 0){
+        id = mLabelPositions.at(featStartId[i])->getFeaturePart()->feature()->id();
+        got = solution_prev.find (id);
+        if ( got != solution_prev.end()){
+          if(offset == got->second) remainingCount++;
+        }
+      }
+    }
+  }
   // store new solution
   solution_prev.clear();
   init = false;
-  int offset;
   for (int  i = 0; i < nbft; i++ ){
     offset = sol->s[i]-featStartId[i];
     if(offset >= 0){
@@ -2974,6 +3108,7 @@ void Problem:: cacheSolution(){
       std::cout << p.first << " => "<< p.second << endl;
     }
   }
+  return remainingCount;
 }
 // get the offset to the startID (>= 0)
 // if no cached avalid, return -1

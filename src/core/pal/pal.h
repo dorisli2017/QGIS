@@ -42,7 +42,7 @@
 #include <ctime>
 #include <QMutex>
 #include <QStringList>
-
+#include "../../app/acstability.h"
 // TODO ${MAJOR} ${MINOR} etc instead of 0.2
 
 class QgsAbstractLabelProvider;
@@ -70,7 +70,6 @@ namespace pal
     ,KAMIS = 8
 //---------------gpl-algorithms-----------------------------
   };
-
   //! Enumeration line arrangement flags. Flags can be combined.
   enum LineArrangementFlag
   {
@@ -149,7 +148,7 @@ namespace pal
        */
       std::unique_ptr< Problem > extractProblem( const QgsRectangle &extent, const QgsGeometry &mapBoundary );
 
-      QList<LabelPosition *> solveProblem( Problem *prob, bool displayAll );
+      QList<LabelPosition *> solveProblem( Problem *prob, bool displayAll,test::Performance& performance);
 
       /**
        *\brief Set flag show partial label

@@ -804,6 +804,7 @@ int main( int argc, char *argv[] )
 
   if(aclabeltest)
   {
+    cout<< "acLabelTest starts"<< endl;
       myHideSplash = true;
       QgsApplication app(argc, argv, false);
       app.init();
