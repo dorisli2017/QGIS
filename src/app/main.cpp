@@ -108,6 +108,7 @@ typedef SInt32 SRefCon;
 
 #include "qgsuserprofilemanager.h"
 #include "qgsuserprofile.h"
+#include "aclabeltester.h"
 
 #ifdef HAVE_OPENCL
 #include "qgsopenclutils.h"
@@ -585,6 +586,8 @@ int main( int argc, char *argv[] )
 #endif
 
   QStringList args;
+  bool aclabeltest = false;
+  QString dataset = "";
 
   {
     QCoreApplication coreApp( argc, argv );
@@ -604,6 +607,11 @@ int main( int argc, char *argv[] )
         {
           usage( args[0] );
           return 2;
+        }
+        else if ( arg == QLatin1String( "--labeltest" ) )
+        {
+            aclabeltest = true;
+            dataset = args[2];
         }
         else if ( arg == QLatin1String( "--nologo" ) || arg == QLatin1String( "-n" ) )
         {
@@ -792,6 +800,20 @@ int main( int argc, char *argv[] )
         }
       }
     }
+  }
+
+  if(aclabeltest)
+  {
+      myHideSplash = true;
+      QgsApplication app(argc, argv, false);
+      app.init();
+      app.initQgis();
+
+      lt::test(dataset);
+
+      app.exitQgis();
+
+      return 0;
   }
 
   /////////////////////////////////////////////////////////////////////
