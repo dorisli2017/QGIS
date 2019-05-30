@@ -550,9 +550,14 @@ void QgsVectorLayerLabelProvider::drawLabelPrivate( pal::LabelPosition *label, Q
         }
       }  
     };
-    void QgsVectorLayerLabelProvider::getFeatureIds(std::vector<int>& ids){
-      for(auto ele: mLabels){
-        ids.push_back(ele->id());
+    /*void QgsVectorLayerLabelProvider::getFeatureIds(){
+      if(initial){
+        cout<< "get featureIDs"<< endl;
+        cout<<"the size of features: "<< mLabels.size() << endl;
+        for(auto ele: mLabels){
+          featureQGSIDS.push_back(ele->id());
+        }
       }
     };
+    */
     //----------------gpl-modification--------------------

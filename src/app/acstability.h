@@ -8,14 +8,15 @@
 template<class K, class V, class dummy_compare, class A> using json_fifo_map = nlohmann::fifo_map<K, V, nlohmann::fifo_map_compare<K>, A>; 
 using json = nlohmann::basic_json<json_fifo_map>;
 using namespace std;
-inline bool init;
+inline bool initial = true;
+inline vector<int> featureQGSIDS;
 inline unordered_map<int, int> solution_prev; 
 namespace test{
     struct Performance{
         string name;
         int time;
         int solutionSize;
-        int remainingLabels;
+        int remainingLabels = 0;
         double solutionWeight;
         //+++++++++++++++++++++++++debug code++++++++++++++++++++++++++++++++++++
         void print(){
@@ -27,7 +28,15 @@ namespace test{
         }
         json convertJSON(){
             json node;
+            node["name"] = name;
+            node["time"] = time; 
+             node["solutionSize"] = solutionSize;
+              node["remainingLabels"] = remainingLabels;
+               node["solutionWeight"] =  solutionWeight;
             return node;
+        }
+        void appendJSON(json node, string name){
+            node[name] = convertJSON();
         }
         //-----------------------debug code--------------------------------------
     };

@@ -23,6 +23,7 @@
 #include <vector>
 #include "qgspallabeling.h"
 #include "qgslabelingenginesettings.h"
+#include "../../app/acstability.h"
 
 
 class QgsLabelingEngine;
@@ -70,7 +71,7 @@ class CORE_EXPORT QgsAbstractLabelProvider
     //+++++++++++++++++gpl-modification+++++++++++++++++++
     virtual void fixFeature(int id){};
     virtual void fitFeature(int id, double fator){};
-    virtual void getFeatureIds(std::vector<int>& ids){};
+    //virtual void getFeatureIds(){};
     //--------------gpl-modification----------------------
     //! Returns list of child providers - useful if the provider needs to put labels into more layers with different configuration
     virtual QList<QgsAbstractLabelProvider *> subProviders() { return QList<QgsAbstractLabelProvider *>(); }
@@ -205,8 +206,8 @@ class CORE_EXPORT QgsLabelingEngine
     void removeProvider( QgsAbstractLabelProvider *provider );
 
     //! compute the labeling with given map settings and providers
-    void run( QgsRenderContext &context );
-    void interRun( QgsRenderContext &context,QDir& image_path, QString& ext_image, QImage &labeled_image, QString& dataset);
+    void run( QgsRenderContext &context,test::Performance& performance );
+    void interRun(QgsRenderContext &context,QDir& image_path, QString& ext_image, QImage &labeled_image, QString& dataset,vector<test::Performance>& performances);
 
     //! Returns pointer to recently computed results and pass the ownership of results to the caller
     QgsLabelingResults *takeResults();

@@ -28,6 +28,7 @@
 #include "qgssymbol.h"
 #include "qgsexpressioncontextutils.h"
 
+
 // helper function for checking for job cancellation within PAL
 static bool _palIsCanceled( void *ctx )
 {
@@ -184,7 +185,7 @@ void QgsLabelingEngine::processProvider( QgsAbstractLabelProvider *provider, Qgs
 }
 
 
-void QgsLabelingEngine::run( QgsRenderContext &context )
+void QgsLabelingEngine::run( QgsRenderContext &context,test::Performance& performance )
 {
   const QgsLabelingEngineSettings &settings = mMapSettings.labelingEngineSettings();
 
@@ -246,6 +247,7 @@ void QgsLabelingEngine::run( QgsRenderContext &context )
     processProvider( provider, context, p );
     if ( appendedLayerScope )
       delete context.expressionContext().popScope();
+              //  provider->getFeatureIds();
   }
 
 
@@ -347,7 +349,7 @@ void QgsLabelingEngine::run( QgsRenderContext &context )
   }
 
   // find the solution
-  QList<pal::LabelPosition *> labels = p.solveProblem( problem.get(), settings.testFlag( QgsLabelingEngineSettings::UseAllLabels ) );
+  QList<pal::LabelPosition *> labels = p.solveProblem( problem.get(), settings.testFlag( QgsLabelingEngineSettings::UseAllLabels ), performance );
 
   QgsDebugMsgLevel( QStringLiteral( "LABELING work:  %1 ms ... labels# %2" ).arg( t.elapsed() ).arg( labels.size() ), 4 );
   t.restart();
@@ -499,8 +501,9 @@ QVector<QgsPalLayerSettings::PredefinedPointPosition> QgsLabelingUtils::decodePr
   return result;
 }
 
-void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QString& ext_image, QImage &labeled_image, QString& dataset)
+void QgsLabelingEngine::interRun(QgsRenderContext &context,QDir& image_path, QString& ext_image, QImage &labeled_image, QString& dataset,vector<test::Performance>& performances)
 {
+  for(int i =0 ; i < 10; i++){
   const QgsLabelingEngineSettings &settings = mMapSettings.labelingEngineSettings();
 
   pal::Pal p;
@@ -562,8 +565,6 @@ void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QS
     if ( appendedLayerScope )
       delete context.expressionContext().popScope();
   }
-
-
   // NOW DO THE LAYOUT (from QgsPalLabeling::drawLabeling)
 
   QPainter *painter = context.painter();
@@ -581,7 +582,7 @@ void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QS
   {
     mapBoundaryGeom = mapBoundaryGeom.difference( region.geometry );
   }
-
+//for(int i =0 ; i < 10; i++){
   if ( settings.flags() & QgsLabelingEngineSettings::DrawCandidates )
   {
     // draw map boundary
@@ -598,7 +599,7 @@ void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QS
     boundarySymbol->renderFeature( f, context );
     boundarySymbol->stopRender( context );
   }
-
+//for(int i =0 ; i < 10; i++){
   if ( !qgsDoubleNear( mMapSettings.rotation(), 0.0 ) )
   {
     //PAL features are prerotated, so extent also needs to be unrotated
@@ -613,7 +614,7 @@ void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QS
 
   QTime t;
   t.start();
-
+//for(int i =0 ; i < 10; i++){
   // do the labeling itself
   std::unique_ptr< pal::Problem > problem;
   try
@@ -626,7 +627,6 @@ void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QS
     QgsDebugMsgLevel( "PAL EXCEPTION :-( " + QString::fromLatin1( e.what() ), 4 );
     return;
   }
-
   if ( context.renderingStopped() )
   {
     return; // it has been canceled
@@ -641,7 +641,7 @@ void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QS
 #else
   const QgsMapToPixel &xform = mMapSettings->mapToPixel();
 #endif
-
+ //for(int i =0 ; i < 10; i++){
   // draw rectangles with all candidates
   // this is done before actual solution of the problem
   // before number of candidates gets reduced
@@ -659,9 +659,11 @@ void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QS
       }
     }
   }
-    for(int i =0 ; i < 10; i++){
+//    for(int i =0 ; i < 10; i++){
       // find the solution
-      QList<pal::LabelPosition *> labels = p.solveProblem( problem.get(), settings.testFlag( QgsLabelingEngineSettings::UseAllLabels ) );
+      test::Performance performance;
+      QList<pal::LabelPosition *> labels = p.solveProblem( problem.get(), settings.testFlag( QgsLabelingEngineSettings::UseAllLabels),performance );
+      performances.push_back(performance);
 
       QgsDebugMsgLevel( QStringLiteral( "LABELING work:  %1 ms ... labels# %2" ).arg( t.elapsed() ).arg( labels.size() ), 4 );
       t.restart();
@@ -690,14 +692,14 @@ void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QS
         lf->provider()->drawLabel( context, label );
       }
       QgsDebugMsgLevel( QStringLiteral( "LABELING draw:  %1 ms" ).arg( t.elapsed() ), 4 );
-      cout<< i << "Round"<<  "Labeled " << labels.size()<< " features" << endl;
+      cout<< i << " Round "<<  " Labeled " << labels.size()<< " features" << endl;
       // Store image
       QString save_to_image_path(image_path.filePath(QString(dataset+ "_%1").arg(i)));
       //save_to_image_path.replace(".shp", ".png");
       save_to_image_path.append(".png");
       cout<< "Saving labeled map to: " << save_to_image_path.toUtf8().constData() << endl;
       labeled_image.save(save_to_image_path);
-    }
-    // Reset composition mode for further drawing operations
+          // Reset composition mode for further drawing operations
     painter->setCompositionMode( QPainter::CompositionMode_SourceOver );
+    }
 }

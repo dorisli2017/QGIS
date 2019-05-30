@@ -43,6 +43,7 @@
 //#include "graph_boost.h"
 #include <unordered_set>
 #include "graph_set_hash.h"
+#include "../../app/acstability.h"
 namespace pal
 {
 
@@ -148,12 +149,12 @@ namespace pal
       /**
        * \brief popmusic framework
        */
-      void popmusic();
+      void popmusic(test::Performance& performance);
 
       /**
        * \brief Test with very-large scale neighborhood
        */
-      void chain_search();
+      void chain_search(test::Performance& performance);
 
       QList<LabelPosition *> getSolution( bool returnInactive );
 
@@ -187,12 +188,12 @@ namespace pal
        * \brief Basic initial solution : every feature to -1
        */
       void init_sol_empty();
-      void init_sol_falp();
+      void init_sol_falp(test::Performance& performance);
 //+++++++++++++++++++++++++++++++gpl_algorithms+++++++++++++++++++++++++++++++++
-      void simple();
-      void mis();
-      void maxHS();
-      void kamis();
+      void simple(test::Performance& performance);
+      void mis(test::Performance& performance);
+      void maxHS(test::Performance& performance);
+      void kamis(test::Performance& performance);
 //-------------------------------gpl-algorithms---------------------------------
 
 //++++++++++++++++++++++++ set conflict graph for MIS-algorithms+++++++++++++++++
@@ -207,7 +208,8 @@ namespace pal
       void printCost();
 //-----------------------------------Assertions for understanding QGIS-------------------------------------
 //+++++++++++++++++++++++++++++modification+++++++++++++++++++++++++++++++++++++++++++++++++++++++
-      void cacheSolution();
+      int cacheSolution();
+      //void cacheIds();
       int getCached(int feat);
 //-----------------------------modification-------------------------------------------------------
 //++++++++++++++++++add weights+++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -455,7 +455,7 @@ std::unique_ptr<Problem> Pal::extractProblem( const QgsRectangle &extent, const 
   return extract( extent, mapBoundary );
 }
 
-QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll )
+QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll,test::Performance& performance)
 {
   if ( !prob )
     return QList<LabelPosition *>();
@@ -465,21 +465,21 @@ QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll )
   try
   {
     if ( searchMethod == FALP )
-      prob->init_sol_falp();
+      prob->init_sol_falp(performance);
 //+++++++++++++++++gpl-algorithms+++++++++++++++++++++
     else if ( searchMethod == SIMPLE )
-      prob->simple();
+      prob->simple(performance);
     else if ( searchMethod == MIS )
-      prob->mis();
+      prob->mis(performance);
     else if ( searchMethod == KAMIS )
-      prob->kamis();
+      prob->kamis(performance);
     else if ( searchMethod == MAXHS )
-      prob->maxHS();
+      prob->maxHS(performance);
 //-----------------gpl-algorithms---------------------
     else if ( searchMethod == CHAIN )
-      prob->chain_search();
+      prob->chain_search(performance);
     else
-      prob->popmusic();
+      prob->popmusic(performance);
   }
   catch ( InternalException::Empty & )
   {

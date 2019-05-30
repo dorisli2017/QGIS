@@ -1145,7 +1145,8 @@ void QgsDxfExport::writeEntities()
     renderer->stopRender( ctx );
   }
 
-  engine.run( ctx );
+  test::Performance performance;
+  engine.run( ctx,performance );
 
   endSection();
 }

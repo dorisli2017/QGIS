@@ -180,7 +180,8 @@ void TestQgsLabelingEngine::testBasic()
   engine.setMapSettings( mapSettings );
   engine.addProvider( new QgsVectorLayerLabelProvider( vl, QString(), true, &settings ) );
   //engine.setFlags( QgsLabelingEngine::RenderOutlineLabels | QgsLabelingEngine::DrawLabelRectOnly );
-  engine.run( context );
+  test::Performance performance;
+  engine.run( context,performance);
 
   p.end();
 
@@ -227,7 +228,8 @@ void TestQgsLabelingEngine::testDiagrams()
   QgsLabelingEngine engine;
   engine.setMapSettings( mapSettings );
   engine.addProvider( new QgsVectorLayerDiagramProvider( vl ) );
-  engine.run( context );
+   test::Performance performance;
+  engine.run( context,performance);
 
   p.end();
 
@@ -364,7 +366,8 @@ void TestQgsLabelingEngine::zOrder()
   engine.setMapSettings( mapSettings );
   engine.addProvider( provider1 );
   //engine.setFlags( QgsLabelingEngine::RenderOutlineLabels | QgsLabelingEngine::DrawLabelRectOnly );
-  engine.run( context );
+  test::Performance performance;
+  engine.run( context,performance );
   p.end();
   engine.removeProvider( provider1 );
 
@@ -378,7 +381,7 @@ void TestQgsLabelingEngine::zOrder()
   provider1 = new QgsVectorLayerLabelProvider( vl, QString(), true, &pls1 );
   engine.addProvider( provider1 );
   p.begin( &img );
-  engine.run( context );
+ engine.run( context,performance );
   p.end();
   engine.removeProvider( provider1 );
 
@@ -411,7 +414,7 @@ void TestQgsLabelingEngine::zOrder()
   engine.setMapSettings( mapSettings );
 
   p.begin( &img );
-  engine.run( context );
+  engine.run( context,performance );
   p.end();
 
   // labels have same z-index, so layer order will be used
@@ -422,7 +425,7 @@ void TestQgsLabelingEngine::zOrder()
   mapSettings.setLayers( QList<QgsMapLayer *>() << vl2 << vl );
   engine.setMapSettings( mapSettings );
   p.begin( &img );
-  engine.run( context );
+  engine.run( context,performance );
   p.end();
 
   // label order should be reversed
@@ -436,7 +439,7 @@ void TestQgsLabelingEngine::zOrder()
   engine.addProvider( provider1 );
 
   p.begin( &img );
-  engine.run( context );
+ engine.run( context,performance );
   p.end();
 
   // label order should be most labels from layer 1, then labels from layer 2, then "Jet"s from layer 1
@@ -729,7 +732,8 @@ void TestQgsLabelingEngine::testRotateHidePartial()
   engine.setMapSettings( mapSettings );
   engine.addProvider( provider );
 
-  engine.run( context );
+ test::Performance performance;
+  engine.run( context,performance);
   p.end();
   engine.removeProvider( provider );
 
@@ -799,7 +803,8 @@ void TestQgsLabelingEngine::testParallelLabelSmallFeature()
   engine.setMapSettings( mapSettings );
   engine.addProvider( provider );
 
-  engine.run( context );
+   test::Performance performance;
+  engine.run( context,performance );
   p.end();
   engine.removeProvider( provider );
 

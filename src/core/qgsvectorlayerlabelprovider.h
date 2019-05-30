@@ -21,6 +21,7 @@
 #include "qgis_core.h"
 #include "qgslabelingengine.h"
 #include "qgsrenderer.h"
+#include "../../app/acstability.h"
 
 class QgsAbstractFeatureSource;
 class QgsFeatureRenderer;
@@ -55,7 +56,7 @@ class CORE_EXPORT QgsVectorLayerLabelProvider : public QgsAbstractLabelProvider
     //+++++++++++++++++gpl-modification+++++++++++++++++++
     void fixFeature(int id);
     void fitFeature(int id, double fator);
-    void getFeatureIds(std::vector<int>& ids);
+    //void getFeatureIds();
     //----------------gpl-modification--------------------
 
     // new virtual methods
