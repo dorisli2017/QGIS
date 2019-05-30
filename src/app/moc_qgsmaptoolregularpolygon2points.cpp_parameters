@@ -1,0 +1,12 @@
+-I/home/guangping/dev/cpp/GIT/QGIS
+-DWITH_BINDINGS
+-DPROJ_VERSION_MAJOR=5
+-DWITH_QTWEBKIT
+-DQT_DISABLE_DEPRECATED_BEFORE=0
+-DQT_NO_CAST_TO_ASCII
+-DSIP_VERSION=0x041307
+-DHAVE_PGCONFIG=1
+-DTEST_DATA_DIR="/home/guangping/dev/cpp/GIT/QGIS/tests/testdata"
+-o
+/home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolregularpolygon2points.cpp
+/home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolregularpolygon2points.h

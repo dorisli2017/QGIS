@@ -1,0 +1,2 @@
+ccache /usr/bin/ar qc ../../../lib/libQTSignal.a  CMakeFiles/QTSignal.dir/sigwatch.cpp.o CMakeFiles/QTSignal.dir/QTSignal_autogen/mocs_compilation.cpp.o
+ccache /usr/bin/ranlib ../../../lib/libQTSignal.a

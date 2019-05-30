@@ -1,0 +1,713 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'testqgstaskmanager.cpp'
+**
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.5)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'testqgstaskmanager.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.9.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_TestTask_t {
+    QByteArrayData data[1];
+    char stringdata0[9];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_TestTask_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_TestTask_t qt_meta_stringdata_TestTask = {
+    {
+QT_MOC_LITERAL(0, 0, 8) // "TestTask"
+
+    },
+    "TestTask"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_TestTask[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void TestTask::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject TestTask::staticMetaObject = {
+    { &QgsTask::staticMetaObject, qt_meta_stringdata_TestTask.data,
+      qt_meta_data_TestTask,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *TestTask::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *TestTask::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_TestTask.stringdata0))
+        return static_cast<void*>(this);
+    return QgsTask::qt_metacast(_clname);
+}
+
+int TestTask::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QgsTask::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_ProgressReportingTask_t {
+    QByteArrayData data[4];
+    char stringdata0[40];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_ProgressReportingTask_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_ProgressReportingTask_t qt_meta_stringdata_ProgressReportingTask = {
+    {
+QT_MOC_LITERAL(0, 0, 21), // "ProgressReportingTask"
+QT_MOC_LITERAL(1, 22, 6), // "finish"
+QT_MOC_LITERAL(2, 29, 0), // ""
+QT_MOC_LITERAL(3, 30, 9) // "terminate"
+
+    },
+    "ProgressReportingTask\0finish\0\0terminate"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_ProgressReportingTask[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags
+       1,    0,   24,    2, 0x0a /* Public */,
+       3,    0,   25,    2, 0x0a /* Public */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+
+       0        // eod
+};
+
+void ProgressReportingTask::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        ProgressReportingTask *_t = static_cast<ProgressReportingTask *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->finish(); break;
+        case 1: _t->terminate(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObject ProgressReportingTask::staticMetaObject = {
+    { &QgsTask::staticMetaObject, qt_meta_stringdata_ProgressReportingTask.data,
+      qt_meta_data_ProgressReportingTask,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *ProgressReportingTask::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *ProgressReportingTask::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_ProgressReportingTask.stringdata0))
+        return static_cast<void*>(this);
+    return QgsTask::qt_metacast(_clname);
+}
+
+int ProgressReportingTask::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QgsTask::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 2;
+    }
+    return _id;
+}
+struct qt_meta_stringdata_TestTerminationTask_t {
+    QByteArrayData data[1];
+    char stringdata0[20];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_TestTerminationTask_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_TestTerminationTask_t qt_meta_stringdata_TestTerminationTask = {
+    {
+QT_MOC_LITERAL(0, 0, 19) // "TestTerminationTask"
+
+    },
+    "TestTerminationTask"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_TestTerminationTask[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void TestTerminationTask::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject TestTerminationTask::staticMetaObject = {
+    { &TestTask::staticMetaObject, qt_meta_stringdata_TestTerminationTask.data,
+      qt_meta_data_TestTerminationTask,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *TestTerminationTask::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *TestTerminationTask::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_TestTerminationTask.stringdata0))
+        return static_cast<void*>(this);
+    return TestTask::qt_metacast(_clname);
+}
+
+int TestTerminationTask::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = TestTask::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_CancelableTask_t {
+    QByteArrayData data[1];
+    char stringdata0[15];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_CancelableTask_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_CancelableTask_t qt_meta_stringdata_CancelableTask = {
+    {
+QT_MOC_LITERAL(0, 0, 14) // "CancelableTask"
+
+    },
+    "CancelableTask"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_CancelableTask[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void CancelableTask::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject CancelableTask::staticMetaObject = {
+    { &QgsTask::staticMetaObject, qt_meta_stringdata_CancelableTask.data,
+      qt_meta_data_CancelableTask,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *CancelableTask::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *CancelableTask::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_CancelableTask.stringdata0))
+        return static_cast<void*>(this);
+    return QgsTask::qt_metacast(_clname);
+}
+
+int CancelableTask::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QgsTask::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_SuccessTask_t {
+    QByteArrayData data[1];
+    char stringdata0[12];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_SuccessTask_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_SuccessTask_t qt_meta_stringdata_SuccessTask = {
+    {
+QT_MOC_LITERAL(0, 0, 11) // "SuccessTask"
+
+    },
+    "SuccessTask"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_SuccessTask[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void SuccessTask::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject SuccessTask::staticMetaObject = {
+    { &QgsTask::staticMetaObject, qt_meta_stringdata_SuccessTask.data,
+      qt_meta_data_SuccessTask,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *SuccessTask::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *SuccessTask::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_SuccessTask.stringdata0))
+        return static_cast<void*>(this);
+    return QgsTask::qt_metacast(_clname);
+}
+
+int SuccessTask::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QgsTask::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_FailTask_t {
+    QByteArrayData data[1];
+    char stringdata0[9];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_FailTask_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_FailTask_t qt_meta_stringdata_FailTask = {
+    {
+QT_MOC_LITERAL(0, 0, 8) // "FailTask"
+
+    },
+    "FailTask"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_FailTask[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void FailTask::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject FailTask::staticMetaObject = {
+    { &QgsTask::staticMetaObject, qt_meta_stringdata_FailTask.data,
+      qt_meta_data_FailTask,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *FailTask::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *FailTask::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_FailTask.stringdata0))
+        return static_cast<void*>(this);
+    return QgsTask::qt_metacast(_clname);
+}
+
+int FailTask::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QgsTask::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_FinishTask_t {
+    QByteArrayData data[1];
+    char stringdata0[11];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_FinishTask_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_FinishTask_t qt_meta_stringdata_FinishTask = {
+    {
+QT_MOC_LITERAL(0, 0, 10) // "FinishTask"
+
+    },
+    "FinishTask"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_FinishTask[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void FinishTask::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject FinishTask::staticMetaObject = {
+    { &QgsTask::staticMetaObject, qt_meta_stringdata_FinishTask.data,
+      qt_meta_data_FinishTask,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *FinishTask::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *FinishTask::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_FinishTask.stringdata0))
+        return static_cast<void*>(this);
+    return QgsTask::qt_metacast(_clname);
+}
+
+int FinishTask::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QgsTask::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_TestQgsTaskManager_t {
+    QByteArrayData data[28];
+    char stringdata0[374];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_TestQgsTaskManager_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_TestQgsTaskManager_t qt_meta_stringdata_TestQgsTaskManager = {
+    {
+QT_MOC_LITERAL(0, 0, 18), // "TestQgsTaskManager"
+QT_MOC_LITERAL(1, 19, 12), // "initTestCase"
+QT_MOC_LITERAL(2, 32, 0), // ""
+QT_MOC_LITERAL(3, 33, 15), // "cleanupTestCase"
+QT_MOC_LITERAL(4, 49, 4), // "init"
+QT_MOC_LITERAL(5, 54, 7), // "cleanup"
+QT_MOC_LITERAL(6, 62, 4), // "task"
+QT_MOC_LITERAL(7, 67, 10), // "taskResult"
+QT_MOC_LITERAL(8, 78, 12), // "taskFinished"
+QT_MOC_LITERAL(9, 91, 7), // "subTask"
+QT_MOC_LITERAL(10, 99, 7), // "addTask"
+QT_MOC_LITERAL(11, 107, 27), // "taskTerminationBeforeDelete"
+QT_MOC_LITERAL(12, 135, 6), // "taskId"
+QT_MOC_LITERAL(13, 142, 15), // "waitForFinished"
+QT_MOC_LITERAL(14, 158, 15), // "progressChanged"
+QT_MOC_LITERAL(15, 174, 13), // "statusChanged"
+QT_MOC_LITERAL(16, 188, 16), // "allTasksFinished"
+QT_MOC_LITERAL(17, 205, 11), // "activeTasks"
+QT_MOC_LITERAL(18, 217, 8), // "holdTask"
+QT_MOC_LITERAL(19, 226, 12), // "dependencies"
+QT_MOC_LITERAL(20, 239, 17), // "layerDependencies"
+QT_MOC_LITERAL(21, 257, 19), // "managerWithSubTasks"
+QT_MOC_LITERAL(22, 277, 20), // "managerWithSubTasks2"
+QT_MOC_LITERAL(23, 298, 20), // "managerWithSubTasks3"
+QT_MOC_LITERAL(24, 319, 17), // "cancelBeforeStart"
+QT_MOC_LITERAL(25, 337, 9), // "proxyTask"
+QT_MOC_LITERAL(26, 347, 10), // "proxyTask2"
+QT_MOC_LITERAL(27, 358, 15) // "scopedProxyTask"
+
+    },
+    "TestQgsTaskManager\0initTestCase\0\0"
+    "cleanupTestCase\0init\0cleanup\0task\0"
+    "taskResult\0taskFinished\0subTask\0addTask\0"
+    "taskTerminationBeforeDelete\0taskId\0"
+    "waitForFinished\0progressChanged\0"
+    "statusChanged\0allTasksFinished\0"
+    "activeTasks\0holdTask\0dependencies\0"
+    "layerDependencies\0managerWithSubTasks\0"
+    "managerWithSubTasks2\0managerWithSubTasks3\0"
+    "cancelBeforeStart\0proxyTask\0proxyTask2\0"
+    "scopedProxyTask"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_TestQgsTaskManager[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      26,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags
+       1,    0,  144,    2, 0x08 /* Private */,
+       3,    0,  145,    2, 0x08 /* Private */,
+       4,    0,  146,    2, 0x08 /* Private */,
+       5,    0,  147,    2, 0x08 /* Private */,
+       6,    0,  148,    2, 0x08 /* Private */,
+       7,    0,  149,    2, 0x08 /* Private */,
+       8,    0,  150,    2, 0x08 /* Private */,
+       9,    0,  151,    2, 0x08 /* Private */,
+      10,    0,  152,    2, 0x08 /* Private */,
+      11,    0,  153,    2, 0x08 /* Private */,
+      12,    0,  154,    2, 0x08 /* Private */,
+      13,    0,  155,    2, 0x08 /* Private */,
+      14,    0,  156,    2, 0x08 /* Private */,
+      15,    0,  157,    2, 0x08 /* Private */,
+      16,    0,  158,    2, 0x08 /* Private */,
+      17,    0,  159,    2, 0x08 /* Private */,
+      18,    0,  160,    2, 0x08 /* Private */,
+      19,    0,  161,    2, 0x08 /* Private */,
+      20,    0,  162,    2, 0x08 /* Private */,
+      21,    0,  163,    2, 0x08 /* Private */,
+      22,    0,  164,    2, 0x08 /* Private */,
+      23,    0,  165,    2, 0x08 /* Private */,
+      24,    0,  166,    2, 0x08 /* Private */,
+      25,    0,  167,    2, 0x08 /* Private */,
+      26,    0,  168,    2, 0x08 /* Private */,
+      27,    0,  169,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+
+       0        // eod
+};
+
+void TestQgsTaskManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        TestQgsTaskManager *_t = static_cast<TestQgsTaskManager *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->initTestCase(); break;
+        case 1: _t->cleanupTestCase(); break;
+        case 2: _t->init(); break;
+        case 3: _t->cleanup(); break;
+        case 4: _t->task(); break;
+        case 5: _t->taskResult(); break;
+        case 6: _t->taskFinished(); break;
+        case 7: _t->subTask(); break;
+        case 8: _t->addTask(); break;
+        case 9: _t->taskTerminationBeforeDelete(); break;
+        case 10: _t->taskId(); break;
+        case 11: _t->waitForFinished(); break;
+        case 12: _t->progressChanged(); break;
+        case 13: _t->statusChanged(); break;
+        case 14: _t->allTasksFinished(); break;
+        case 15: _t->activeTasks(); break;
+        case 16: _t->holdTask(); break;
+        case 17: _t->dependencies(); break;
+        case 18: _t->layerDependencies(); break;
+        case 19: _t->managerWithSubTasks(); break;
+        case 20: _t->managerWithSubTasks2(); break;
+        case 21: _t->managerWithSubTasks3(); break;
+        case 22: _t->cancelBeforeStart(); break;
+        case 23: _t->proxyTask(); break;
+        case 24: _t->proxyTask2(); break;
+        case 25: _t->scopedProxyTask(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObject TestQgsTaskManager::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_TestQgsTaskManager.data,
+      qt_meta_data_TestQgsTaskManager,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *TestQgsTaskManager::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *TestQgsTaskManager::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_TestQgsTaskManager.stringdata0))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int TestQgsTaskManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 26)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 26;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 26)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 26;
+    }
+    return _id;
+}
+QT_WARNING_POP
+QT_END_MOC_NAMESPACE

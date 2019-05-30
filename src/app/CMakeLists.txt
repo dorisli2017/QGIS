@@ -5,7 +5,7 @@ ENDIF(NOT WIN32)
 
 SET(QGIS_APP_SRCS
   ${CMAKE_SOURCE_DIR}/external/nmea/gmath.c
-
+  modification.cpp
   qgisapp.cpp
   qgisappinterface.cpp
   qgisappstylesheet.cpp

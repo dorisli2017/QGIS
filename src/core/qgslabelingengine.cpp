@@ -498,3 +498,206 @@ QVector<QgsPalLayerSettings::PredefinedPointPosition> QgsLabelingUtils::decodePr
   }
   return result;
 }
+
+void QgsLabelingEngine::interRun( QgsRenderContext &context,QDir& image_path, QString& ext_image, QImage &labeled_image, QString& dataset)
+{
+  const QgsLabelingEngineSettings &settings = mMapSettings.labelingEngineSettings();
+
+  pal::Pal p;
+  pal::SearchMethod s;
+  switch ( settings.searchMethod() )
+  {
+    case QgsLabelingEngineSettings::Chain:
+      s = pal::CHAIN;
+      break;
+    case QgsLabelingEngineSettings::Popmusic_Tabu:
+      s = pal::POPMUSIC_TABU;
+      break;
+    case QgsLabelingEngineSettings::Popmusic_Chain:
+      s = pal::POPMUSIC_CHAIN;
+      break;
+    case QgsLabelingEngineSettings::Popmusic_Tabu_Chain:
+      s = pal::POPMUSIC_TABU_CHAIN;
+      break;
+    case QgsLabelingEngineSettings::Falp:
+      s = pal::FALP;
+      break;
+//+++++++++++++gpl-algorithms++++++++++++++++++++++++
+    case QgsLabelingEngineSettings::SIMPLE:
+      s = pal::SIMPLE;
+      break;
+    case QgsLabelingEngineSettings::MIS:
+      s = pal::MIS;
+      break;
+    case QgsLabelingEngineSettings::MAXHS:
+      s = pal::MAXHS;
+      break;
+    case QgsLabelingEngineSettings::KAMIS:
+      s = pal::KAMIS;
+      break;
+//-------------gpl-algorithms------------------------
+  }
+  p.setSearch( s );
+
+  // set number of candidates generated per feature
+  int candPoint, candLine, candPolygon;
+  settings.numCandidatePositions( candPoint, candLine, candPolygon );
+  p.setPointP( candPoint );
+  p.setLineP( candLine );
+  p.setPolyP( candPolygon );
+
+  p.setShowPartial( settings.testFlag( QgsLabelingEngineSettings::UsePartialCandidates ) );
+
+
+  // for each provider: get labels and register them in PAL
+  for ( QgsAbstractLabelProvider *provider : qgis::as_const( mProviders ) )
+  {
+    bool appendedLayerScope = false;
+    if ( QgsMapLayer *ml = provider->layer() )
+    {
+      appendedLayerScope = true;
+      context.expressionContext().appendScope( QgsExpressionContextUtils::layerScope( ml ) );
+    }
+    processProvider( provider, context, p );
+    if ( appendedLayerScope )
+      delete context.expressionContext().popScope();
+  }
+
+
+  // NOW DO THE LAYOUT (from QgsPalLabeling::drawLabeling)
+
+  QPainter *painter = context.painter();
+
+  QgsGeometry extentGeom = QgsGeometry::fromRect( mMapSettings.visibleExtent() );
+  QPolygonF visiblePoly = mMapSettings.visiblePolygon();
+  visiblePoly.append( visiblePoly.at( 0 ) ); //close polygon
+
+  // get map label boundary geometry - if one hasn't been explicitly set, we use the whole of the map's visible polygon
+  QgsGeometry mapBoundaryGeom = !mMapSettings.labelBoundaryGeometry().isNull() ? mMapSettings.labelBoundaryGeometry() : QgsGeometry::fromQPolygonF( visiblePoly );
+
+  // label blocking regions work by "chopping away" those regions from the permissible labeling area
+  const QList< QgsLabelBlockingRegion > blockingRegions = mMapSettings.labelBlockingRegions();
+  for ( const QgsLabelBlockingRegion &region : blockingRegions )
+  {
+    mapBoundaryGeom = mapBoundaryGeom.difference( region.geometry );
+  }
+
+  if ( settings.flags() & QgsLabelingEngineSettings::DrawCandidates )
+  {
+    // draw map boundary
+    QgsFeature f;
+    f.setGeometry( mapBoundaryGeom );
+    QgsStringMap properties;
+    properties.insert( QStringLiteral( "style" ), QStringLiteral( "no" ) );
+    properties.insert( QStringLiteral( "style_border" ), QStringLiteral( "solid" ) );
+    properties.insert( QStringLiteral( "color_border" ), QStringLiteral( "#0000ff" ) );
+    properties.insert( QStringLiteral( "width_border" ), QStringLiteral( "0.3" ) );
+    properties.insert( QStringLiteral( "joinstyle" ), QStringLiteral( "miter" ) );
+    std::unique_ptr< QgsFillSymbol > boundarySymbol( QgsFillSymbol::createSimple( properties ) );
+    boundarySymbol->startRender( context );
+    boundarySymbol->renderFeature( f, context );
+    boundarySymbol->stopRender( context );
+  }
+
+  if ( !qgsDoubleNear( mMapSettings.rotation(), 0.0 ) )
+  {
+    //PAL features are prerotated, so extent also needs to be unrotated
+    extentGeom.rotate( -mMapSettings.rotation(), mMapSettings.visibleExtent().center() );
+    // yes - this is rotated in the opposite direction... phew, this is confusing!
+    mapBoundaryGeom.rotate( mMapSettings.rotation(), mMapSettings.visibleExtent().center() );
+  }
+
+  QgsRectangle extent = extentGeom.boundingBox();
+
+  p.registerCancellationCallback( &_palIsCanceled, reinterpret_cast< void * >( &context ) );
+
+  QTime t;
+  t.start();
+
+  // do the labeling itself
+  std::unique_ptr< pal::Problem > problem;
+  try
+  {
+    problem = p.extractProblem( extent, mapBoundaryGeom );
+  }
+  catch ( std::exception &e )
+  {
+    Q_UNUSED( e );
+    QgsDebugMsgLevel( "PAL EXCEPTION :-( " + QString::fromLatin1( e.what() ), 4 );
+    return;
+  }
+
+  if ( context.renderingStopped() )
+  {
+    return; // it has been canceled
+  }
+#if 1 // XXX strk
+  // features are pre-rotated but not scaled/translated,
+  // so we only disable rotation here. Ideally, they'd be
+  // also pre-scaled/translated, as suggested here:
+  // https://issues.qgis.org/issues/11856
+  QgsMapToPixel xform = mMapSettings.mapToPixel();
+  xform.setMapRotation( 0, 0, 0 );
+#else
+  const QgsMapToPixel &xform = mMapSettings->mapToPixel();
+#endif
+
+  // draw rectangles with all candidates
+  // this is done before actual solution of the problem
+  // before number of candidates gets reduced
+  // TODO mCandidates.clear();
+  if ( settings.testFlag( QgsLabelingEngineSettings::DrawCandidates ) && problem )
+  {
+    painter->setBrush( Qt::NoBrush );
+    for ( int i = 0; i < problem->getNumFeatures(); i++ )
+    {
+      for ( int j = 0; j < problem->getFeatureCandidateCount( i ); j++ )
+      {
+        pal::LabelPosition *lp = problem->getFeatureCandidate( i, j );
+
+        QgsPalLabeling::drawLabelCandidateRect( lp, painter, &xform );
+      }
+    }
+  }
+    for(int i =0 ; i < 10; i++){
+      // find the solution
+      QList<pal::LabelPosition *> labels = p.solveProblem( problem.get(), settings.testFlag( QgsLabelingEngineSettings::UseAllLabels ) );
+
+      QgsDebugMsgLevel( QStringLiteral( "LABELING work:  %1 ms ... labels# %2" ).arg( t.elapsed() ).arg( labels.size() ), 4 );
+      t.restart();
+
+      if ( context.renderingStopped() )
+      {
+        return;
+      }
+      painter->setRenderHint( QPainter::Antialiasing );
+
+      // sort labels
+      std::sort( labels.begin(), labels.end(), QgsLabelSorter( mMapSettings ) );
+
+      // draw the labels
+      for ( pal::LabelPosition *label : qgis::as_const( labels ) )
+      {
+        if ( context.renderingStopped() )
+          break;
+
+        QgsLabelFeature *lf = label->getFeaturePart()->feature();
+        if ( !lf )
+        {
+          continue;
+        }
+
+        lf->provider()->drawLabel( context, label );
+      }
+      QgsDebugMsgLevel( QStringLiteral( "LABELING draw:  %1 ms" ).arg( t.elapsed() ), 4 );
+      cout<< i << "Round"<<  "Labeled " << labels.size()<< " features" << endl;
+      // Store image
+      QString save_to_image_path(image_path.filePath(QString(dataset+ "_%1").arg(i)));
+      //save_to_image_path.replace(".shp", ".png");
+      save_to_image_path.append(".png");
+      cout<< "Saving labeled map to: " << save_to_image_path.toUtf8().constData() << endl;
+      labeled_image.save(save_to_image_path);
+    }
+    // Reset composition mode for further drawing operations
+    painter->setCompositionMode( QPainter::CompositionMode_SourceOver );
+}

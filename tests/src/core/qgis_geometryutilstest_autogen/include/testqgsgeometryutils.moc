@@ -1,0 +1,313 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'testqgsgeometryutils.cpp'
+**
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.5)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'testqgsgeometryutils.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.9.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_TestQgsGeometryUtils_t {
+    QByteArrayData data[46];
+    char stringdata0[1015];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_TestQgsGeometryUtils_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_TestQgsGeometryUtils_t qt_meta_stringdata_TestQgsGeometryUtils = {
+    {
+QT_MOC_LITERAL(0, 0, 20), // "TestQgsGeometryUtils"
+QT_MOC_LITERAL(1, 21, 22), // "testExtractLinestrings"
+QT_MOC_LITERAL(2, 44, 0), // ""
+QT_MOC_LITERAL(3, 45, 24), // "testCircleClockwise_data"
+QT_MOC_LITERAL(4, 70, 19), // "testCircleClockwise"
+QT_MOC_LITERAL(5, 90, 22), // "testAngleOnCircle_data"
+QT_MOC_LITERAL(6, 113, 17), // "testAngleOnCircle"
+QT_MOC_LITERAL(7, 131, 19), // "testLeftOfLine_data"
+QT_MOC_LITERAL(8, 151, 14), // "testLeftOfLine"
+QT_MOC_LITERAL(9, 166, 24), // "testSegmentMidPoint_data"
+QT_MOC_LITERAL(10, 191, 19), // "testSegmentMidPoint"
+QT_MOC_LITERAL(11, 211, 25), // "testSegmentMidPointCenter"
+QT_MOC_LITERAL(12, 237, 21), // "testCircleLength_data"
+QT_MOC_LITERAL(13, 259, 16), // "testCircleLength"
+QT_MOC_LITERAL(14, 276, 24), // "testNormalizedAngle_data"
+QT_MOC_LITERAL(15, 301, 19), // "testNormalizedAngle"
+QT_MOC_LITERAL(16, 321, 18), // "testLineAngle_data"
+QT_MOC_LITERAL(17, 340, 13), // "testLineAngle"
+QT_MOC_LITERAL(18, 354, 31), // "testLinePerpendicularAngle_data"
+QT_MOC_LITERAL(19, 386, 26), // "testLinePerpendicularAngle"
+QT_MOC_LITERAL(20, 413, 21), // "testAverageAngle_data"
+QT_MOC_LITERAL(21, 435, 16), // "testAverageAngle"
+QT_MOC_LITERAL(22, 452, 20), // "testDistanceToVertex"
+QT_MOC_LITERAL(23, 473, 22), // "testVerticesAtDistance"
+QT_MOC_LITERAL(24, 496, 27), // "testCircleCenterRadius_data"
+QT_MOC_LITERAL(25, 524, 22), // "testCircleCenterRadius"
+QT_MOC_LITERAL(26, 547, 17), // "testSqrDistToLine"
+QT_MOC_LITERAL(27, 565, 20), // "testAngleThreePoints"
+QT_MOC_LITERAL(28, 586, 12), // "testMidPoint"
+QT_MOC_LITERAL(29, 599, 12), // "testGradient"
+QT_MOC_LITERAL(30, 612, 16), // "testCoefficients"
+QT_MOC_LITERAL(31, 629, 24), // "testPerpendicularSegment"
+QT_MOC_LITERAL(32, 654, 16), // "testClosestPoint"
+QT_MOC_LITERAL(33, 671, 23), // "testlinesIntersection3D"
+QT_MOC_LITERAL(34, 695, 23), // "testSegmentIntersection"
+QT_MOC_LITERAL(35, 719, 26), // "testLineCircleIntersection"
+QT_MOC_LITERAL(36, 746, 28), // "testCircleCircleIntersection"
+QT_MOC_LITERAL(37, 775, 25), // "testTangentPointAndCircle"
+QT_MOC_LITERAL(38, 801, 29), // "testCircleCircleOuterTangents"
+QT_MOC_LITERAL(39, 831, 29), // "testCircleCircleInnerTangents"
+QT_MOC_LITERAL(40, 861, 7), // "testGml"
+QT_MOC_LITERAL(41, 869, 34), // "testInterpolatePointOnLineQgs..."
+QT_MOC_LITERAL(42, 904, 26), // "testInterpolatePointOnLine"
+QT_MOC_LITERAL(43, 931, 33), // "testInterpolatePointOnLineByV..."
+QT_MOC_LITERAL(44, 965, 27), // "testPointOnLineWithDistance"
+QT_MOC_LITERAL(45, 993, 21) // "interpolatePointOnArc"
+
+    },
+    "TestQgsGeometryUtils\0testExtractLinestrings\0"
+    "\0testCircleClockwise_data\0testCircleClockwise\0"
+    "testAngleOnCircle_data\0testAngleOnCircle\0"
+    "testLeftOfLine_data\0testLeftOfLine\0"
+    "testSegmentMidPoint_data\0testSegmentMidPoint\0"
+    "testSegmentMidPointCenter\0"
+    "testCircleLength_data\0testCircleLength\0"
+    "testNormalizedAngle_data\0testNormalizedAngle\0"
+    "testLineAngle_data\0testLineAngle\0"
+    "testLinePerpendicularAngle_data\0"
+    "testLinePerpendicularAngle\0"
+    "testAverageAngle_data\0testAverageAngle\0"
+    "testDistanceToVertex\0testVerticesAtDistance\0"
+    "testCircleCenterRadius_data\0"
+    "testCircleCenterRadius\0testSqrDistToLine\0"
+    "testAngleThreePoints\0testMidPoint\0"
+    "testGradient\0testCoefficients\0"
+    "testPerpendicularSegment\0testClosestPoint\0"
+    "testlinesIntersection3D\0testSegmentIntersection\0"
+    "testLineCircleIntersection\0"
+    "testCircleCircleIntersection\0"
+    "testTangentPointAndCircle\0"
+    "testCircleCircleOuterTangents\0"
+    "testCircleCircleInnerTangents\0testGml\0"
+    "testInterpolatePointOnLineQgsPoint\0"
+    "testInterpolatePointOnLine\0"
+    "testInterpolatePointOnLineByValue\0"
+    "testPointOnLineWithDistance\0"
+    "interpolatePointOnArc"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_TestQgsGeometryUtils[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      44,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags
+       1,    0,  234,    2, 0x08 /* Private */,
+       3,    0,  235,    2, 0x08 /* Private */,
+       4,    0,  236,    2, 0x08 /* Private */,
+       5,    0,  237,    2, 0x08 /* Private */,
+       6,    0,  238,    2, 0x08 /* Private */,
+       7,    0,  239,    2, 0x08 /* Private */,
+       8,    0,  240,    2, 0x08 /* Private */,
+       9,    0,  241,    2, 0x08 /* Private */,
+      10,    0,  242,    2, 0x08 /* Private */,
+      11,    0,  243,    2, 0x08 /* Private */,
+      12,    0,  244,    2, 0x08 /* Private */,
+      13,    0,  245,    2, 0x08 /* Private */,
+      14,    0,  246,    2, 0x08 /* Private */,
+      15,    0,  247,    2, 0x08 /* Private */,
+      16,    0,  248,    2, 0x08 /* Private */,
+      17,    0,  249,    2, 0x08 /* Private */,
+      18,    0,  250,    2, 0x08 /* Private */,
+      19,    0,  251,    2, 0x08 /* Private */,
+      20,    0,  252,    2, 0x08 /* Private */,
+      21,    0,  253,    2, 0x08 /* Private */,
+      22,    0,  254,    2, 0x08 /* Private */,
+      23,    0,  255,    2, 0x08 /* Private */,
+      24,    0,  256,    2, 0x08 /* Private */,
+      25,    0,  257,    2, 0x08 /* Private */,
+      26,    0,  258,    2, 0x08 /* Private */,
+      27,    0,  259,    2, 0x08 /* Private */,
+      28,    0,  260,    2, 0x08 /* Private */,
+      29,    0,  261,    2, 0x08 /* Private */,
+      30,    0,  262,    2, 0x08 /* Private */,
+      31,    0,  263,    2, 0x08 /* Private */,
+      32,    0,  264,    2, 0x08 /* Private */,
+      33,    0,  265,    2, 0x08 /* Private */,
+      34,    0,  266,    2, 0x08 /* Private */,
+      35,    0,  267,    2, 0x08 /* Private */,
+      36,    0,  268,    2, 0x08 /* Private */,
+      37,    0,  269,    2, 0x08 /* Private */,
+      38,    0,  270,    2, 0x08 /* Private */,
+      39,    0,  271,    2, 0x08 /* Private */,
+      40,    0,  272,    2, 0x08 /* Private */,
+      41,    0,  273,    2, 0x08 /* Private */,
+      42,    0,  274,    2, 0x08 /* Private */,
+      43,    0,  275,    2, 0x08 /* Private */,
+      44,    0,  276,    2, 0x08 /* Private */,
+      45,    0,  277,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+
+       0        // eod
+};
+
+void TestQgsGeometryUtils::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        TestQgsGeometryUtils *_t = static_cast<TestQgsGeometryUtils *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->testExtractLinestrings(); break;
+        case 1: _t->testCircleClockwise_data(); break;
+        case 2: _t->testCircleClockwise(); break;
+        case 3: _t->testAngleOnCircle_data(); break;
+        case 4: _t->testAngleOnCircle(); break;
+        case 5: _t->testLeftOfLine_data(); break;
+        case 6: _t->testLeftOfLine(); break;
+        case 7: _t->testSegmentMidPoint_data(); break;
+        case 8: _t->testSegmentMidPoint(); break;
+        case 9: _t->testSegmentMidPointCenter(); break;
+        case 10: _t->testCircleLength_data(); break;
+        case 11: _t->testCircleLength(); break;
+        case 12: _t->testNormalizedAngle_data(); break;
+        case 13: _t->testNormalizedAngle(); break;
+        case 14: _t->testLineAngle_data(); break;
+        case 15: _t->testLineAngle(); break;
+        case 16: _t->testLinePerpendicularAngle_data(); break;
+        case 17: _t->testLinePerpendicularAngle(); break;
+        case 18: _t->testAverageAngle_data(); break;
+        case 19: _t->testAverageAngle(); break;
+        case 20: _t->testDistanceToVertex(); break;
+        case 21: _t->testVerticesAtDistance(); break;
+        case 22: _t->testCircleCenterRadius_data(); break;
+        case 23: _t->testCircleCenterRadius(); break;
+        case 24: _t->testSqrDistToLine(); break;
+        case 25: _t->testAngleThreePoints(); break;
+        case 26: _t->testMidPoint(); break;
+        case 27: _t->testGradient(); break;
+        case 28: _t->testCoefficients(); break;
+        case 29: _t->testPerpendicularSegment(); break;
+        case 30: _t->testClosestPoint(); break;
+        case 31: _t->testlinesIntersection3D(); break;
+        case 32: _t->testSegmentIntersection(); break;
+        case 33: _t->testLineCircleIntersection(); break;
+        case 34: _t->testCircleCircleIntersection(); break;
+        case 35: _t->testTangentPointAndCircle(); break;
+        case 36: _t->testCircleCircleOuterTangents(); break;
+        case 37: _t->testCircleCircleInnerTangents(); break;
+        case 38: _t->testGml(); break;
+        case 39: _t->testInterpolatePointOnLineQgsPoint(); break;
+        case 40: _t->testInterpolatePointOnLine(); break;
+        case 41: _t->testInterpolatePointOnLineByValue(); break;
+        case 42: _t->testPointOnLineWithDistance(); break;
+        case 43: _t->interpolatePointOnArc(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObject TestQgsGeometryUtils::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_TestQgsGeometryUtils.data,
+      qt_meta_data_TestQgsGeometryUtils,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *TestQgsGeometryUtils::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *TestQgsGeometryUtils::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_TestQgsGeometryUtils.stringdata0))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int TestQgsGeometryUtils::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 44)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 44;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 44)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 44;
+    }
+    return _id;
+}
+QT_WARNING_POP
+QT_END_MOC_NAMESPACE

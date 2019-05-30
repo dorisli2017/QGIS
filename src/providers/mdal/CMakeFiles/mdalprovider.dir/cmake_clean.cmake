@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "moc_qgsmdalprovider.cpp"
+  "moc_qgsmdaldataitems.cpp"
+  "moc_qgsmdalsourceselect.cpp"
+  "CMakeFiles/mdalprovider.dir/qgsmdalprovider.cpp.o"
+  "CMakeFiles/mdalprovider.dir/qgsmdaldataitems.cpp.o"
+  "CMakeFiles/mdalprovider.dir/qgsmdalsourceselect.cpp.o"
+  "CMakeFiles/mdalprovider.dir/moc_qgsmdalprovider.cpp.o"
+  "CMakeFiles/mdalprovider.dir/moc_qgsmdaldataitems.cpp.o"
+  "CMakeFiles/mdalprovider.dir/moc_qgsmdalsourceselect.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/mdal.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/mdal_utils.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/mdal_data_model.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/mdal_memory_data_model.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/mdal_driver_manager.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_driver.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_2dm.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_ascii_dat.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_binary_dat.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_hdf5.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_xmdf.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_hec2d.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_flo2d.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_gdal.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_gdal_grib.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_cf.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_3di.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_netcdf.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_sww.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_gdal_netcdf.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_xml.cpp.o"
+  "CMakeFiles/mdalprovider.dir/__/__/__/external/mdal/frmts/mdal_xdmf.cpp.o"
+  "../../../output/lib/qgis/plugins/libmdalprovider.pdb"
+  "../../../output/lib/qgis/plugins/libmdalprovider.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/mdalprovider.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

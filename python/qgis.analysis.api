@@ -1,0 +1,688 @@
+_analysis.QgsAnalysis.instance?4() -> QgsAnalysis
+_analysis.QgsAnalysis.geometryCheckRegistry?4() -> QgsGeometryCheckRegistry
+_analysis.QgsAlignRaster.ResampleAlg?10
+_analysis.QgsAlignRaster.RA_NearestNeighbour?10
+_analysis.QgsAlignRaster.RA_Bilinear?10
+_analysis.QgsAlignRaster.RA_Cubic?10
+_analysis.QgsAlignRaster.RA_CubicSpline?10
+_analysis.QgsAlignRaster.RA_Lanczos?10
+_analysis.QgsAlignRaster.RA_Average?10
+_analysis.QgsAlignRaster.RA_Mode?10
+_analysis.QgsAlignRaster.RA_Max?10
+_analysis.QgsAlignRaster.RA_Min?10
+_analysis.QgsAlignRaster.RA_Median?10
+_analysis.QgsAlignRaster.RA_Q1?10
+_analysis.QgsAlignRaster.RA_Q3?10
+_analysis.QgsAlignRaster?1()
+_analysis.QgsAlignRaster.__init__?1(self)
+_analysis.QgsAlignRaster?1(QgsAlignRaster)
+_analysis.QgsAlignRaster.__init__?1(self, QgsAlignRaster)
+_analysis.QgsAlignRaster.setProgressHandler?4(QgsAlignRaster.ProgressHandler)
+_analysis.QgsAlignRaster.progressHandler?4() -> QgsAlignRaster.ProgressHandler
+_analysis.QgsAlignRaster.setRasters?4(unknown-type)
+_analysis.QgsAlignRaster.rasters?4() -> unknown-type
+_analysis.QgsAlignRaster.setGridOffset?4(QPointF)
+_analysis.QgsAlignRaster.gridOffset?4() -> QPointF
+_analysis.QgsAlignRaster.setCellSize?4(float, float)
+_analysis.QgsAlignRaster.setCellSize?4(QSizeF)
+_analysis.QgsAlignRaster.cellSize?4() -> QSizeF
+_analysis.QgsAlignRaster.setDestinationCrs?4(QString)
+_analysis.QgsAlignRaster.destinationCrs?4() -> QString
+_analysis.QgsAlignRaster.setClipExtent?4(float, float, float, float)
+_analysis.QgsAlignRaster.setClipExtent?4(QgsRectangle)
+_analysis.QgsAlignRaster.clipExtent?4() -> QgsRectangle
+_analysis.QgsAlignRaster.setParametersFromRaster?4(QgsAlignRaster.RasterInfo, QString customCRSWkt='', QSizeF customCellSize=QSizeF(), QPointF customGridOffset=QPointF(-1,-1)) -> bool
+_analysis.QgsAlignRaster.setParametersFromRaster?4(QString, QString customCRSWkt='', QSizeF customCellSize=QSizeF(), QPointF customGridOffset=QPointF(-1,-1)) -> bool
+_analysis.QgsAlignRaster.checkInputParameters?4() -> bool
+_analysis.QgsAlignRaster.alignedRasterSize?4() -> QSize
+_analysis.QgsAlignRaster.alignedRasterExtent?4() -> QgsRectangle
+_analysis.QgsAlignRaster.run?4() -> bool
+_analysis.QgsAlignRaster.errorMessage?4() -> QString
+_analysis.QgsAlignRaster.dump?4()
+_analysis.QgsAlignRaster.suggestedReferenceLayer?4() -> int
+_analysis.QgsAlignRaster.createAndWarp?4(QgsAlignRaster.Item) -> bool
+_analysis.QgsAlignRaster.suggestedWarpOutput?4(QgsAlignRaster.RasterInfo, QString, QSizeF cellSize=None, QPointF gridOffset=None, QgsRectangle rect=None) -> bool
+_analysis.QgsAlignRaster.RasterInfo?1(QString)
+_analysis.QgsAlignRaster.RasterInfo.__init__?1(self, QString)
+_analysis.QgsAlignRaster.RasterInfo.isValid?4() -> bool
+_analysis.QgsAlignRaster.RasterInfo.crs?4() -> QString
+_analysis.QgsAlignRaster.RasterInfo.rasterSize?4() -> QSize
+_analysis.QgsAlignRaster.RasterInfo.bandCount?4() -> int
+_analysis.QgsAlignRaster.RasterInfo.cellSize?4() -> QSizeF
+_analysis.QgsAlignRaster.RasterInfo.gridOffset?4() -> QPointF
+_analysis.QgsAlignRaster.RasterInfo.extent?4() -> QgsRectangle
+_analysis.QgsAlignRaster.RasterInfo.origin?4() -> QPointF
+_analysis.QgsAlignRaster.RasterInfo.dump?4()
+_analysis.QgsAlignRaster.RasterInfo.identify?4(float, float) -> float
+_analysis.QgsAlignRaster.Item.inputFilename?7
+_analysis.QgsAlignRaster.Item.outputFilename?7
+_analysis.QgsAlignRaster.Item.resampleMethod?7
+_analysis.QgsAlignRaster.Item.rescaleValues?7
+_analysis.QgsAlignRaster.Item.srcCellSizeInDestCRS?7
+_analysis.QgsAlignRaster.Item?1(QString, QString)
+_analysis.QgsAlignRaster.Item.__init__?1(self, QString, QString)
+_analysis.QgsAlignRaster.Item?1(QgsAlignRaster.Item)
+_analysis.QgsAlignRaster.Item.__init__?1(self, QgsAlignRaster.Item)
+_analysis.QgsAlignRaster.ProgressHandler?1()
+_analysis.QgsAlignRaster.ProgressHandler.__init__?1(self)
+_analysis.QgsAlignRaster.ProgressHandler?1(QgsAlignRaster.ProgressHandler)
+_analysis.QgsAlignRaster.ProgressHandler.__init__?1(self, QgsAlignRaster.ProgressHandler)
+_analysis.QgsAlignRaster.ProgressHandler.progress?4(float) -> bool
+_analysis.QgsNineCellFilter?1(QString, QString, QString)
+_analysis.QgsNineCellFilter.__init__?1(self, QString, QString, QString)
+_analysis.QgsNineCellFilter?1(QgsNineCellFilter)
+_analysis.QgsNineCellFilter.__init__?1(self, QgsNineCellFilter)
+_analysis.QgsNineCellFilter.processRaster?4(QgsFeedback feedback=None) -> int
+_analysis.QgsNineCellFilter.cellSizeX?4() -> float
+_analysis.QgsNineCellFilter.setCellSizeX?4(float)
+_analysis.QgsNineCellFilter.cellSizeY?4() -> float
+_analysis.QgsNineCellFilter.setCellSizeY?4(float)
+_analysis.QgsNineCellFilter.zFactor?4() -> float
+_analysis.QgsNineCellFilter.setZFactor?4(float)
+_analysis.QgsNineCellFilter.inputNodataValue?4() -> float
+_analysis.QgsNineCellFilter.setInputNodataValue?4(float)
+_analysis.QgsNineCellFilter.outputNodataValue?4() -> float
+_analysis.QgsNineCellFilter.setOutputNodataValue?4(float)
+_analysis.QgsNineCellFilter.processNineCellWindow?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsDerivativeFilter?1(QString, QString, QString)
+_analysis.QgsDerivativeFilter.__init__?1(self, QString, QString, QString)
+_analysis.QgsDerivativeFilter?1(QgsDerivativeFilter)
+_analysis.QgsDerivativeFilter.__init__?1(self, QgsDerivativeFilter)
+_analysis.QgsDerivativeFilter.processNineCellWindow?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsDerivativeFilter.calcFirstDerX?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsDerivativeFilter.calcFirstDerY?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsAspectFilter?1(QString, QString, QString)
+_analysis.QgsAspectFilter.__init__?1(self, QString, QString, QString)
+_analysis.QgsAspectFilter?1(QgsAspectFilter)
+_analysis.QgsAspectFilter.__init__?1(self, QgsAspectFilter)
+_analysis.QgsAspectFilter.processNineCellWindow?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsExifTools?1()
+_analysis.QgsExifTools.__init__?1(self)
+_analysis.QgsExifTools?1(QgsExifTools)
+_analysis.QgsExifTools.__init__?1(self, QgsExifTools)
+_analysis.QgsExifTools.getGeoTag?4(QString) -> (QgsPoint, bool)
+_analysis.QgsExifTools.geoTagImage?4(QString, QgsPointXY, QgsExifTools.GeoTagDetails details=QgsExifTools.GeoTagDetails()) -> bool
+_analysis.QgsExifTools.GeoTagDetails.elevation?7
+_analysis.QgsExifTools.GeoTagDetails?1()
+_analysis.QgsExifTools.GeoTagDetails.__init__?1(self)
+_analysis.QgsExifTools.GeoTagDetails?1(QgsExifTools.GeoTagDetails)
+_analysis.QgsExifTools.GeoTagDetails.__init__?1(self, QgsExifTools.GeoTagDetails)
+_analysis.QgsHillshadeFilter?1(QString, QString, QString, float lightAzimuth=300, float lightAngle=40)
+_analysis.QgsHillshadeFilter.__init__?1(self, QString, QString, QString, float lightAzimuth=300, float lightAngle=40)
+_analysis.QgsHillshadeFilter?1(QgsHillshadeFilter)
+_analysis.QgsHillshadeFilter.__init__?1(self, QgsHillshadeFilter)
+_analysis.QgsHillshadeFilter.processNineCellWindow?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsHillshadeFilter.lightAzimuth?4() -> float
+_analysis.QgsHillshadeFilter.setLightAzimuth?4(float)
+_analysis.QgsHillshadeFilter.lightAngle?4() -> float
+_analysis.QgsHillshadeFilter.setLightAngle?4(float)
+_analysis.QgsKernelDensityEstimation.Result?10
+_analysis.QgsKernelDensityEstimation.Success?10
+_analysis.QgsKernelDensityEstimation.DriverError?10
+_analysis.QgsKernelDensityEstimation.InvalidParameters?10
+_analysis.QgsKernelDensityEstimation.FileCreationError?10
+_analysis.QgsKernelDensityEstimation.RasterIoError?10
+_analysis.QgsKernelDensityEstimation.OutputValues?10
+_analysis.QgsKernelDensityEstimation.OutputRaw?10
+_analysis.QgsKernelDensityEstimation.OutputScaled?10
+_analysis.QgsKernelDensityEstimation.KernelShape?10
+_analysis.QgsKernelDensityEstimation.KernelQuartic?10
+_analysis.QgsKernelDensityEstimation.KernelTriangular?10
+_analysis.QgsKernelDensityEstimation.KernelUniform?10
+_analysis.QgsKernelDensityEstimation.KernelTriweight?10
+_analysis.QgsKernelDensityEstimation.KernelEpanechnikov?10
+_analysis.QgsKernelDensityEstimation?1(QgsKernelDensityEstimation.Parameters, QString, QString)
+_analysis.QgsKernelDensityEstimation.__init__?1(self, QgsKernelDensityEstimation.Parameters, QString, QString)
+_analysis.QgsKernelDensityEstimation.run?4() -> QgsKernelDensityEstimation.Result
+_analysis.QgsKernelDensityEstimation.prepare?4() -> QgsKernelDensityEstimation.Result
+_analysis.QgsKernelDensityEstimation.addFeature?4(QgsFeature) -> QgsKernelDensityEstimation.Result
+_analysis.QgsKernelDensityEstimation.finalise?4() -> QgsKernelDensityEstimation.Result
+_analysis.QgsKernelDensityEstimation.Parameters.decayRatio?7
+_analysis.QgsKernelDensityEstimation.Parameters.outputValues?7
+_analysis.QgsKernelDensityEstimation.Parameters.pixelSize?7
+_analysis.QgsKernelDensityEstimation.Parameters.radius?7
+_analysis.QgsKernelDensityEstimation.Parameters.radiusField?7
+_analysis.QgsKernelDensityEstimation.Parameters.shape?7
+_analysis.QgsKernelDensityEstimation.Parameters.source?7
+_analysis.QgsKernelDensityEstimation.Parameters.weightField?7
+_analysis.QgsKernelDensityEstimation.Parameters?1()
+_analysis.QgsKernelDensityEstimation.Parameters.__init__?1(self)
+_analysis.QgsKernelDensityEstimation.Parameters?1(QgsKernelDensityEstimation.Parameters)
+_analysis.QgsKernelDensityEstimation.Parameters.__init__?1(self, QgsKernelDensityEstimation.Parameters)
+_analysis.QgsRasterCalculatorEntry.bandNumber?7
+_analysis.QgsRasterCalculatorEntry.raster?7
+_analysis.QgsRasterCalculatorEntry.ref?7
+_analysis.QgsRasterCalculatorEntry?1()
+_analysis.QgsRasterCalculatorEntry.__init__?1(self)
+_analysis.QgsRasterCalculatorEntry?1(QgsRasterCalculatorEntry)
+_analysis.QgsRasterCalculatorEntry.__init__?1(self, QgsRasterCalculatorEntry)
+_analysis.QgsRasterCalculatorEntry.rasterEntries?4() -> unknown-type
+_analysis.QgsRasterCalculator.Result?10
+_analysis.QgsRasterCalculator.Success?10
+_analysis.QgsRasterCalculator.CreateOutputError?10
+_analysis.QgsRasterCalculator.InputLayerError?10
+_analysis.QgsRasterCalculator.Canceled?10
+_analysis.QgsRasterCalculator.ParserError?10
+_analysis.QgsRasterCalculator.MemoryError?10
+_analysis.QgsRasterCalculator.BandError?10
+_analysis.QgsRasterCalculator?1(QString, QString, QString, QgsRectangle, int, int, unknown-type, QgsCoordinateTransformContext)
+_analysis.QgsRasterCalculator.__init__?1(self, QString, QString, QString, QgsRectangle, int, int, unknown-type, QgsCoordinateTransformContext)
+_analysis.QgsRasterCalculator?1(QString, QString, QString, QgsRectangle, QgsCoordinateReferenceSystem, int, int, unknown-type, QgsCoordinateTransformContext)
+_analysis.QgsRasterCalculator.__init__?1(self, QString, QString, QString, QgsRectangle, QgsCoordinateReferenceSystem, int, int, unknown-type, QgsCoordinateTransformContext)
+_analysis.QgsRasterCalculator?1(QString, QString, QString, QgsRectangle, int, int, unknown-type)
+_analysis.QgsRasterCalculator.__init__?1(self, QString, QString, QString, QgsRectangle, int, int, unknown-type)
+_analysis.QgsRasterCalculator?1(QString, QString, QString, QgsRectangle, QgsCoordinateReferenceSystem, int, int, unknown-type)
+_analysis.QgsRasterCalculator.__init__?1(self, QString, QString, QString, QgsRectangle, QgsCoordinateReferenceSystem, int, int, unknown-type)
+_analysis.QgsRasterCalculator?1(QgsRasterCalculator)
+_analysis.QgsRasterCalculator.__init__?1(self, QgsRasterCalculator)
+_analysis.QgsRasterCalculator.processCalculation?4(QgsFeedback feedback=None) -> QgsRasterCalculator.Result
+_analysis.QgsRasterCalculator.lastError?4() -> QString
+_analysis.QgsRelief?1(QString, QString, QString)
+_analysis.QgsRelief.__init__?1(self, QString, QString, QString)
+_analysis.QgsRelief.processRaster?4(QgsFeedback feedback=None) -> int
+_analysis.QgsRelief.zFactor?4() -> float
+_analysis.QgsRelief.setZFactor?4(float)
+_analysis.QgsRelief.clearReliefColors?4()
+_analysis.QgsRelief.addReliefColorClass?4(QgsRelief.ReliefColor)
+_analysis.QgsRelief.reliefColors?4() -> unknown-type
+_analysis.QgsRelief.setReliefColors?4(unknown-type)
+_analysis.QgsRelief.calculateOptimizedReliefClasses?4() -> unknown-type
+_analysis.QgsRelief.exportFrequencyDistributionToCsv?4(QString) -> bool
+_analysis.QgsRelief.ReliefColor.color?7
+_analysis.QgsRelief.ReliefColor.maxElevation?7
+_analysis.QgsRelief.ReliefColor.minElevation?7
+_analysis.QgsRelief.ReliefColor?1(QColor, float, float)
+_analysis.QgsRelief.ReliefColor.__init__?1(self, QColor, float, float)
+_analysis.QgsRelief.ReliefColor?1(QgsRelief.ReliefColor)
+_analysis.QgsRelief.ReliefColor.__init__?1(self, QgsRelief.ReliefColor)
+_analysis.QgsRuggednessFilter?1(QString, QString, QString)
+_analysis.QgsRuggednessFilter.__init__?1(self, QString, QString, QString)
+_analysis.QgsRuggednessFilter?1(QgsRuggednessFilter)
+_analysis.QgsRuggednessFilter.__init__?1(self, QgsRuggednessFilter)
+_analysis.QgsRuggednessFilter.processNineCellWindow?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsSlopeFilter?1(QString, QString, QString)
+_analysis.QgsSlopeFilter.__init__?1(self, QString, QString, QString)
+_analysis.QgsSlopeFilter?1(QgsSlopeFilter)
+_analysis.QgsSlopeFilter.__init__?1(self, QgsSlopeFilter)
+_analysis.QgsSlopeFilter.processNineCellWindow?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsRasterMatrix.OneArgOperator?10
+_analysis.QgsRasterMatrix.opSQRT?10
+_analysis.QgsRasterMatrix.opSIN?10
+_analysis.QgsRasterMatrix.opCOS?10
+_analysis.QgsRasterMatrix.opTAN?10
+_analysis.QgsRasterMatrix.opASIN?10
+_analysis.QgsRasterMatrix.opACOS?10
+_analysis.QgsRasterMatrix.opATAN?10
+_analysis.QgsRasterMatrix.opSIGN?10
+_analysis.QgsRasterMatrix.opLOG?10
+_analysis.QgsRasterMatrix.opLOG10?10
+_analysis.QgsRasterMatrix.TwoArgOperator?10
+_analysis.QgsRasterMatrix.opPLUS?10
+_analysis.QgsRasterMatrix.opMINUS?10
+_analysis.QgsRasterMatrix.opMUL?10
+_analysis.QgsRasterMatrix.opDIV?10
+_analysis.QgsRasterMatrix.opPOW?10
+_analysis.QgsRasterMatrix.opEQ?10
+_analysis.QgsRasterMatrix.opNE?10
+_analysis.QgsRasterMatrix.opGT?10
+_analysis.QgsRasterMatrix.opLT?10
+_analysis.QgsRasterMatrix.opGE?10
+_analysis.QgsRasterMatrix.opLE?10
+_analysis.QgsRasterMatrix.opAND?10
+_analysis.QgsRasterMatrix.opOR?10
+_analysis.QgsRasterMatrix?1()
+_analysis.QgsRasterMatrix.__init__?1(self)
+_analysis.QgsRasterMatrix?1(QgsRasterMatrix)
+_analysis.QgsRasterMatrix.__init__?1(self, QgsRasterMatrix)
+_analysis.QgsRasterMatrix.isNumber?4() -> bool
+_analysis.QgsRasterMatrix.number?4() -> float
+_analysis.QgsRasterMatrix.setData?4(int, int, float) -> float
+_analysis.QgsRasterMatrix.nColumns?4() -> int
+_analysis.QgsRasterMatrix.nRows?4() -> int
+_analysis.QgsRasterMatrix.nodataValue?4() -> float
+_analysis.QgsRasterMatrix.setNodataValue?4(float)
+_analysis.QgsRasterMatrix.add?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.subtract?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.multiply?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.divide?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.power?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.equal?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.notEqual?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.greaterThan?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.lesserThan?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.greaterEqual?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.lesserEqual?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.logicalAnd?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.logicalOr?4(QgsRasterMatrix) -> bool
+_analysis.QgsRasterMatrix.squareRoot?4() -> bool
+_analysis.QgsRasterMatrix.sinus?4() -> bool
+_analysis.QgsRasterMatrix.asinus?4() -> bool
+_analysis.QgsRasterMatrix.cosinus?4() -> bool
+_analysis.QgsRasterMatrix.acosinus?4() -> bool
+_analysis.QgsRasterMatrix.tangens?4() -> bool
+_analysis.QgsRasterMatrix.atangens?4() -> bool
+_analysis.QgsRasterMatrix.changeSign?4() -> bool
+_analysis.QgsRasterMatrix.log?4() -> bool
+_analysis.QgsRasterMatrix.log10?4() -> bool
+_analysis.QgsRasterCalcNode.Operator?10
+_analysis.QgsRasterCalcNode.opPLUS?10
+_analysis.QgsRasterCalcNode.opMINUS?10
+_analysis.QgsRasterCalcNode.opMUL?10
+_analysis.QgsRasterCalcNode.opDIV?10
+_analysis.QgsRasterCalcNode.opPOW?10
+_analysis.QgsRasterCalcNode.opSQRT?10
+_analysis.QgsRasterCalcNode.opSIN?10
+_analysis.QgsRasterCalcNode.opCOS?10
+_analysis.QgsRasterCalcNode.opTAN?10
+_analysis.QgsRasterCalcNode.opASIN?10
+_analysis.QgsRasterCalcNode.opACOS?10
+_analysis.QgsRasterCalcNode.opATAN?10
+_analysis.QgsRasterCalcNode.opEQ?10
+_analysis.QgsRasterCalcNode.opNE?10
+_analysis.QgsRasterCalcNode.opGT?10
+_analysis.QgsRasterCalcNode.opLT?10
+_analysis.QgsRasterCalcNode.opGE?10
+_analysis.QgsRasterCalcNode.opLE?10
+_analysis.QgsRasterCalcNode.opAND?10
+_analysis.QgsRasterCalcNode.opOR?10
+_analysis.QgsRasterCalcNode.opSIGN?10
+_analysis.QgsRasterCalcNode.opLOG?10
+_analysis.QgsRasterCalcNode.opLOG10?10
+_analysis.QgsRasterCalcNode.opNONE?10
+_analysis.QgsRasterCalcNode.Type?10
+_analysis.QgsRasterCalcNode.tOperator?10
+_analysis.QgsRasterCalcNode.tNumber?10
+_analysis.QgsRasterCalcNode.tRasterRef?10
+_analysis.QgsRasterCalcNode.tMatrix?10
+_analysis.QgsRasterCalcNode?1()
+_analysis.QgsRasterCalcNode.__init__?1(self)
+_analysis.QgsRasterCalcNode?1(float)
+_analysis.QgsRasterCalcNode.__init__?1(self, float)
+_analysis.QgsRasterCalcNode?1(QgsRasterMatrix)
+_analysis.QgsRasterCalcNode.__init__?1(self, QgsRasterMatrix)
+_analysis.QgsRasterCalcNode?1(QgsRasterCalcNode.Operator, QgsRasterCalcNode, QgsRasterCalcNode)
+_analysis.QgsRasterCalcNode.__init__?1(self, QgsRasterCalcNode.Operator, QgsRasterCalcNode, QgsRasterCalcNode)
+_analysis.QgsRasterCalcNode?1(QString)
+_analysis.QgsRasterCalcNode.__init__?1(self, QString)
+_analysis.QgsRasterCalcNode.type?4() -> QgsRasterCalcNode.Type
+_analysis.QgsRasterCalcNode.setLeft?4(QgsRasterCalcNode)
+_analysis.QgsRasterCalcNode.setRight?4(QgsRasterCalcNode)
+_analysis.QgsRasterCalcNode.toString?4(bool cStyle=False) -> QString
+_analysis.QgsRasterCalcNode.findNodes?4(QgsRasterCalcNode.Type) -> unknown-type
+_analysis.QgsRasterCalcNode.parseRasterCalcString?4(QString, QString) -> QgsRasterCalcNode
+_analysis.QgsTotalCurvatureFilter?1(QString, QString, QString)
+_analysis.QgsTotalCurvatureFilter.__init__?1(self, QString, QString, QString)
+_analysis.QgsTotalCurvatureFilter?1(QgsTotalCurvatureFilter)
+_analysis.QgsTotalCurvatureFilter.__init__?1(self, QgsTotalCurvatureFilter)
+_analysis.QgsTotalCurvatureFilter.processNineCellWindow?4() -> (float, float, float, float, float, float, float, float, float, float)
+_analysis.QgsMeshCalculator.Result?10
+_analysis.QgsMeshCalculator.Success?10
+_analysis.QgsMeshCalculator.Canceled?10
+_analysis.QgsMeshCalculator.CreateOutputError?10
+_analysis.QgsMeshCalculator.InputLayerError?10
+_analysis.QgsMeshCalculator.ParserError?10
+_analysis.QgsMeshCalculator.InvalidDatasets?10
+_analysis.QgsMeshCalculator.EvaluateError?10
+_analysis.QgsMeshCalculator.MemoryError?10
+_analysis.QgsMeshCalculator?1(QString, QString, QgsRectangle, float, float, QgsMeshLayer)
+_analysis.QgsMeshCalculator.__init__?1(self, QString, QString, QgsRectangle, float, float, QgsMeshLayer)
+_analysis.QgsMeshCalculator?1(QString, QString, QgsGeometry, float, float, QgsMeshLayer)
+_analysis.QgsMeshCalculator.__init__?1(self, QString, QString, QgsGeometry, float, float, QgsMeshLayer)
+_analysis.QgsMeshCalculator?1(QgsMeshCalculator)
+_analysis.QgsMeshCalculator.__init__?1(self, QgsMeshCalculator)
+_analysis.QgsMeshCalculator.processCalculation?4(QgsFeedback feedback=None) -> QgsMeshCalculator.Result
+_analysis.QgsMeshCalculator.expression_valid?4(QString, QgsMeshLayer) -> QgsMeshCalculator.Result
+_analysis.QgsGeometrySnapper.SnapMode?10
+_analysis.QgsGeometrySnapper.PreferNodes?10
+_analysis.QgsGeometrySnapper.PreferClosest?10
+_analysis.QgsGeometrySnapper.PreferNodesNoExtraVertices?10
+_analysis.QgsGeometrySnapper.PreferClosestNoExtraVertices?10
+_analysis.QgsGeometrySnapper.EndPointPreferNodes?10
+_analysis.QgsGeometrySnapper.EndPointPreferClosest?10
+_analysis.QgsGeometrySnapper.EndPointToEndPoint?10
+_analysis.QgsGeometrySnapper?1(QgsFeatureSource)
+_analysis.QgsGeometrySnapper.__init__?1(self, QgsFeatureSource)
+_analysis.QgsGeometrySnapper.snapGeometry?4(QgsGeometry, float, QgsGeometrySnapper.SnapMode mode=QgsGeometrySnapper.PreferNodes) -> QgsGeometry
+_analysis.QgsGeometrySnapper.snapFeatures?4(unknown-type, float, QgsGeometrySnapper.SnapMode mode=QgsGeometrySnapper.PreferNodes) -> unknown-type
+_analysis.QgsGeometrySnapper.snapGeometry?4(QgsGeometry, float, unknown-type, QgsGeometrySnapper.SnapMode mode=QgsGeometrySnapper.PreferNodes) -> QgsGeometry
+_analysis.QgsGeometrySnapper.featureSnapped?4()
+_analysis.QgsInternalGeometrySnapper?1(float, QgsGeometrySnapper.SnapMode mode=QgsGeometrySnapper.PreferNodes)
+_analysis.QgsInternalGeometrySnapper.__init__?1(self, float, QgsGeometrySnapper.SnapMode mode=QgsGeometrySnapper.PreferNodes)
+_analysis.QgsInternalGeometrySnapper?1(QgsInternalGeometrySnapper)
+_analysis.QgsInternalGeometrySnapper.__init__?1(self, QgsInternalGeometrySnapper)
+_analysis.QgsInternalGeometrySnapper.snapFeature?4(QgsFeature) -> QgsGeometry
+_analysis.QgsInternalGeometrySnapper.snappedGeometries?4() -> unknown-type
+_analysis.QgsGeometrySnapperSingleSource?1()
+_analysis.QgsGeometrySnapperSingleSource.__init__?1(self)
+_analysis.QgsGeometrySnapperSingleSource?1(QgsGeometrySnapperSingleSource)
+_analysis.QgsGeometrySnapperSingleSource.__init__?1(self, QgsGeometrySnapperSingleSource)
+_analysis.QgsGeometrySnapperSingleSource.run?4(QgsFeatureSource, QgsFeatureSink, float, QgsFeedback) -> int
+_analysis.QgsZonalStatistics.Statistic?10
+_analysis.QgsZonalStatistics.Count?10
+_analysis.QgsZonalStatistics.Sum?10
+_analysis.QgsZonalStatistics.Mean?10
+_analysis.QgsZonalStatistics.Median?10
+_analysis.QgsZonalStatistics.StDev?10
+_analysis.QgsZonalStatistics.Min?10
+_analysis.QgsZonalStatistics.Max?10
+_analysis.QgsZonalStatistics.Range?10
+_analysis.QgsZonalStatistics.Minority?10
+_analysis.QgsZonalStatistics.Majority?10
+_analysis.QgsZonalStatistics.Variety?10
+_analysis.QgsZonalStatistics.Variance?10
+_analysis.QgsZonalStatistics.All?10
+_analysis.QgsZonalStatistics?1(QgsVectorLayer, QgsRasterLayer, QString attributePrefix='', int rasterBand=1, QgsZonalStatistics.Statistics stats=QgsZonalStatistics.Statistics(QgsZonalStatistics.Count|QgsZonalStatistics.Sum|QgsZonalStatistics.Mean))
+_analysis.QgsZonalStatistics.__init__?1(self, QgsVectorLayer, QgsRasterLayer, QString attributePrefix='', int rasterBand=1, QgsZonalStatistics.Statistics stats=QgsZonalStatistics.Statistics(QgsZonalStatistics.Count|QgsZonalStatistics.Sum|QgsZonalStatistics.Mean))
+_analysis.QgsZonalStatistics?1(QgsVectorLayer, QgsRasterInterface, QgsCoordinateReferenceSystem, float, float, QString attributePrefix='', int rasterBand=1, QgsZonalStatistics.Statistics stats=QgsZonalStatistics.Statistics(QgsZonalStatistics.Count|QgsZonalStatistics.Sum|QgsZonalStatistics.Mean))
+_analysis.QgsZonalStatistics.__init__?1(self, QgsVectorLayer, QgsRasterInterface, QgsCoordinateReferenceSystem, float, float, QString attributePrefix='', int rasterBand=1, QgsZonalStatistics.Statistics stats=QgsZonalStatistics.Statistics(QgsZonalStatistics.Count|QgsZonalStatistics.Sum|QgsZonalStatistics.Mean))
+_analysis.QgsZonalStatistics?1(QgsZonalStatistics)
+_analysis.QgsZonalStatistics.__init__?1(self, QgsZonalStatistics)
+_analysis.QgsZonalStatistics.calculateStatistics?4(QgsFeedback) -> int
+_analysis.QgsZonalStatistics.Statistics?1()
+_analysis.QgsZonalStatistics.Statistics.__init__?1(self)
+_analysis.QgsZonalStatistics.Statistics?1(int)
+_analysis.QgsZonalStatistics.Statistics.__init__?1(self, int)
+_analysis.QgsZonalStatistics.Statistics?1(QgsZonalStatistics.Statistics)
+_analysis.QgsZonalStatistics.Statistics.__init__?1(self, QgsZonalStatistics.Statistics)
+_analysis.QgsGeometryCheckerUtils?1()
+_analysis.QgsGeometryCheckerUtils.__init__?1(self)
+_analysis.QgsGeometryCheckerUtils?1(QgsGeometryCheckerUtils)
+_analysis.QgsGeometryCheckerUtils.__init__?1(self, QgsGeometryCheckerUtils)
+_analysis.QgsGeometryCheckerUtils.LayerFeature?1(QgsFeaturePool, QgsFeature, QgsGeometryCheckContext, bool)
+_analysis.QgsGeometryCheckerUtils.LayerFeature.__init__?1(self, QgsFeaturePool, QgsFeature, QgsGeometryCheckContext, bool)
+_analysis.QgsGeometryCheckerUtils.LayerFeature?1(QgsGeometryCheckerUtils.LayerFeature)
+_analysis.QgsGeometryCheckerUtils.LayerFeature.__init__?1(self, QgsGeometryCheckerUtils.LayerFeature)
+_analysis.QgsGeometryCheckerUtils.LayerFeature.feature?4() -> QgsFeature
+_analysis.QgsGeometryCheckerUtils.LayerFeature.layerId?4() -> QString
+_analysis.QgsGeometryCheckerUtils.LayerFeature.geometry?4() -> QgsGeometry
+_analysis.QgsGeometryCheckerUtils.LayerFeature.id?4() -> QString
+_analysis.QgsGeometryCheckerUtils.LayerFeature.useMapCrs?4() -> bool
+_analysis.QgsGeometryCheckerUtils.LayerFeatures?1(QgsGeometryCheckerUtils.LayerFeatures)
+_analysis.QgsGeometryCheckerUtils.LayerFeatures.__init__?1(self, QgsGeometryCheckerUtils.LayerFeatures)
+_analysis.QgsFeaturePool?1(QgsVectorLayer)
+_analysis.QgsFeaturePool.__init__?1(self, QgsVectorLayer)
+_analysis.QgsFeaturePool.getFeature?4(int, QgsFeature) -> bool
+_analysis.QgsFeaturePool.updateFeature?4(QgsFeature)
+_analysis.QgsFeaturePool.deleteFeature?4(int)
+_analysis.QgsFeaturePool.layer?4() -> QgsVectorLayer
+_analysis.QgsFeaturePool.layerId?4() -> QString
+_analysis.QgsFeaturePool.geometryType?4() -> QgsWkbTypes.GeometryType
+_analysis.QgsFeaturePool.crs?4() -> QgsCoordinateReferenceSystem
+_analysis.QgsFeaturePool.layerName?4() -> QString
+_analysis.QgsFeaturePool.insertFeature?4(QgsFeature, bool skipLock=False)
+_analysis.QgsFeaturePool.refreshCache?4(QgsFeature)
+_analysis.QgsFeaturePool.removeFeature?4(int)
+_analysis.QgsInterpolatorVertexData.x?7
+_analysis.QgsInterpolatorVertexData.y?7
+_analysis.QgsInterpolatorVertexData.z?7
+_analysis.QgsInterpolatorVertexData?1(float, float, float)
+_analysis.QgsInterpolatorVertexData.__init__?1(self, float, float, float)
+_analysis.QgsInterpolatorVertexData?1()
+_analysis.QgsInterpolatorVertexData.__init__?1(self)
+_analysis.QgsInterpolatorVertexData?1(QgsInterpolatorVertexData)
+_analysis.QgsInterpolatorVertexData.__init__?1(self, QgsInterpolatorVertexData)
+_analysis.QgsInterpolator.Result?10
+_analysis.QgsInterpolator.Success?10
+_analysis.QgsInterpolator.Canceled?10
+_analysis.QgsInterpolator.InvalidSource?10
+_analysis.QgsInterpolator.FeatureGeometryError?10
+_analysis.QgsInterpolator.ValueSource?10
+_analysis.QgsInterpolator.ValueAttribute?10
+_analysis.QgsInterpolator.ValueZ?10
+_analysis.QgsInterpolator.ValueM?10
+_analysis.QgsInterpolator.SourceType?10
+_analysis.QgsInterpolator.SourcePoints?10
+_analysis.QgsInterpolator.SourceStructureLines?10
+_analysis.QgsInterpolator.SourceBreakLines?10
+_analysis.QgsInterpolator?1(unknown-type)
+_analysis.QgsInterpolator.__init__?1(self, unknown-type)
+_analysis.QgsInterpolator?1(QgsInterpolator)
+_analysis.QgsInterpolator.__init__?1(self, QgsInterpolator)
+_analysis.QgsInterpolator.interpolatePoint?4(float, float, QgsFeedback feedback=None) -> (int, float)
+_analysis.QgsInterpolator.cacheBaseData?4(QgsFeedback feedback=None) -> QgsInterpolator.Result
+_analysis.QgsInterpolator.LayerData.interpolationAttribute?7
+_analysis.QgsInterpolator.LayerData.source?7
+_analysis.QgsInterpolator.LayerData.sourceType?7
+_analysis.QgsInterpolator.LayerData.valueSource?7
+_analysis.QgsInterpolator.LayerData?1()
+_analysis.QgsInterpolator.LayerData.__init__?1(self)
+_analysis.QgsInterpolator.LayerData?1(QgsInterpolator.LayerData)
+_analysis.QgsInterpolator.LayerData.__init__?1(self, QgsInterpolator.LayerData)
+_analysis.QgsGridFileWriter?1(QgsInterpolator, QString, QgsRectangle, int, int)
+_analysis.QgsGridFileWriter.__init__?1(self, QgsInterpolator, QString, QgsRectangle, int, int)
+_analysis.QgsGridFileWriter?1(QgsGridFileWriter)
+_analysis.QgsGridFileWriter.__init__?1(self, QgsGridFileWriter)
+_analysis.QgsGridFileWriter.writeFile?4(QgsFeedback feedback=None) -> int
+_analysis.QgsIDWInterpolator?1(unknown-type)
+_analysis.QgsIDWInterpolator.__init__?1(self, unknown-type)
+_analysis.QgsIDWInterpolator?1(QgsIDWInterpolator)
+_analysis.QgsIDWInterpolator.__init__?1(self, QgsIDWInterpolator)
+_analysis.QgsIDWInterpolator.interpolatePoint?4(float, float, QgsFeedback feedback=None) -> (int, float)
+_analysis.QgsIDWInterpolator.setDistanceCoefficient?4(float)
+_analysis.QgsIDWInterpolator.distanceCoefficient?4() -> float
+_analysis.QgsTinInterpolator.TinInterpolation?10
+_analysis.QgsTinInterpolator.Linear?10
+_analysis.QgsTinInterpolator.CloughTocher?10
+_analysis.QgsTinInterpolator?1(unknown-type, QgsTinInterpolator.TinInterpolation interpolation=QgsTinInterpolator.Linear, QgsFeedback feedback=None)
+_analysis.QgsTinInterpolator.__init__?1(self, unknown-type, QgsTinInterpolator.TinInterpolation interpolation=QgsTinInterpolator.Linear, QgsFeedback feedback=None)
+_analysis.QgsTinInterpolator?1(QgsTinInterpolator)
+_analysis.QgsTinInterpolator.__init__?1(self, QgsTinInterpolator)
+_analysis.QgsTinInterpolator.interpolatePoint?4(float, float, QgsFeedback) -> (int, float)
+_analysis.QgsTinInterpolator.triangulationFields?4() -> QgsFields
+_analysis.QgsTinInterpolator.setTriangulationSink?4(QgsFeatureSink)
+_analysis.QgsGraphEdge?1()
+_analysis.QgsGraphEdge.__init__?1(self)
+_analysis.QgsGraphEdge?1(QgsGraphEdge)
+_analysis.QgsGraphEdge.__init__?1(self, QgsGraphEdge)
+_analysis.QgsGraphEdge.cost?4(int) -> QVariant
+_analysis.QgsGraphEdge.strategies?4() -> unknown-type
+_analysis.QgsGraphEdge.toVertex?4() -> int
+_analysis.QgsGraphEdge.fromVertex?4() -> int
+_analysis.QgsGraphVertex?1()
+_analysis.QgsGraphVertex.__init__?1(self)
+_analysis.QgsGraphVertex?1(QgsPointXY)
+_analysis.QgsGraphVertex.__init__?1(self, QgsPointXY)
+_analysis.QgsGraphVertex?1(QgsGraphVertex)
+_analysis.QgsGraphVertex.__init__?1(self, QgsGraphVertex)
+_analysis.QgsGraphVertex.incomingEdges?4() -> unknown-type
+_analysis.QgsGraphVertex.outgoingEdges?4() -> unknown-type
+_analysis.QgsGraphVertex.point?4() -> QgsPointXY
+_analysis.QgsGraph?1()
+_analysis.QgsGraph.__init__?1(self)
+_analysis.QgsGraph?1(QgsGraph)
+_analysis.QgsGraph.__init__?1(self, QgsGraph)
+_analysis.QgsGraph.addVertex?4(QgsPointXY) -> int
+_analysis.QgsGraph.addEdge?4(int, int, unknown-type) -> int
+_analysis.QgsGraph.vertexCount?4() -> int
+_analysis.QgsGraph.vertex?4(int) -> QgsGraphVertex
+_analysis.QgsGraph.edgeCount?4() -> int
+_analysis.QgsGraph.edge?4(int) -> QgsGraphEdge
+_analysis.QgsGraph.findVertex?4(QgsPointXY) -> int
+_analysis.QgsGraphBuilderInterface?1(QgsCoordinateReferenceSystem, bool ctfEnabled=True, float topologyTolerance=0, QString ellipsoidID='')
+_analysis.QgsGraphBuilderInterface.__init__?1(self, QgsCoordinateReferenceSystem, bool ctfEnabled=True, float topologyTolerance=0, QString ellipsoidID='')
+_analysis.QgsGraphBuilderInterface?1(QgsGraphBuilderInterface)
+_analysis.QgsGraphBuilderInterface.__init__?1(self, QgsGraphBuilderInterface)
+_analysis.QgsGraphBuilderInterface.destinationCrs?4() -> QgsCoordinateReferenceSystem
+_analysis.QgsGraphBuilderInterface.coordinateTransformationEnabled?4() -> bool
+_analysis.QgsGraphBuilderInterface.topologyTolerance?4() -> float
+_analysis.QgsGraphBuilderInterface.distanceArea?4() -> QgsDistanceArea
+_analysis.QgsGraphBuilderInterface.addVertex?4(int, QgsPointXY)
+_analysis.QgsGraphBuilderInterface.addEdge?4(int, QgsPointXY, int, QgsPointXY, unknown-type)
+_analysis.QgsGraphBuilder?1(QgsCoordinateReferenceSystem, bool otfEnabled=True, float topologyTolerance=0, QString ellipsoidID='')
+_analysis.QgsGraphBuilder.__init__?1(self, QgsCoordinateReferenceSystem, bool otfEnabled=True, float topologyTolerance=0, QString ellipsoidID='')
+_analysis.QgsGraphBuilder?1(QgsGraphBuilder)
+_analysis.QgsGraphBuilder.__init__?1(self, QgsGraphBuilder)
+_analysis.QgsGraphBuilder.addVertex?4(int, QgsPointXY)
+_analysis.QgsGraphBuilder.addEdge?4(int, QgsPointXY, int, QgsPointXY, unknown-type)
+_analysis.QgsGraphBuilder.graph?4() -> QgsGraph
+_analysis.QgsNetworkStrategy?1()
+_analysis.QgsNetworkStrategy.__init__?1(self)
+_analysis.QgsNetworkStrategy?1(QgsNetworkStrategy)
+_analysis.QgsNetworkStrategy.__init__?1(self, QgsNetworkStrategy)
+_analysis.QgsNetworkStrategy.requiredAttributes?4() -> unknown-type
+_analysis.QgsNetworkStrategy.cost?4(float, QgsFeature) -> QVariant
+_analysis.QgsNetworkSpeedStrategy?1(int, float, float)
+_analysis.QgsNetworkSpeedStrategy.__init__?1(self, int, float, float)
+_analysis.QgsNetworkSpeedStrategy?1(QgsNetworkSpeedStrategy)
+_analysis.QgsNetworkSpeedStrategy.__init__?1(self, QgsNetworkSpeedStrategy)
+_analysis.QgsNetworkSpeedStrategy.cost?4(float, QgsFeature) -> QVariant
+_analysis.QgsNetworkSpeedStrategy.requiredAttributes?4() -> unknown-type
+_analysis.QgsNetworkDistanceStrategy?1()
+_analysis.QgsNetworkDistanceStrategy.__init__?1(self)
+_analysis.QgsNetworkDistanceStrategy?1(QgsNetworkDistanceStrategy)
+_analysis.QgsNetworkDistanceStrategy.__init__?1(self, QgsNetworkDistanceStrategy)
+_analysis.QgsNetworkDistanceStrategy.cost?4(float, QgsFeature) -> QVariant
+_analysis.QgsGraphAnalyzer?1()
+_analysis.QgsGraphAnalyzer.__init__?1(self)
+_analysis.QgsGraphAnalyzer?1(QgsGraphAnalyzer)
+_analysis.QgsGraphAnalyzer.__init__?1(self, QgsGraphAnalyzer)
+_analysis.QgsGraphAnalyzer.dijkstra?4(QgsGraph, int, int, unknown-type resultTree=[], unknown-type resultCost=[]) -> list
+_analysis.QgsGraphAnalyzer.shortestTree?4(QgsGraph, int, int) -> QgsGraph
+_analysis.QgsGraphDirector?1()
+_analysis.QgsGraphDirector.__init__?1(self)
+_analysis.QgsGraphDirector.makeGraph?4(QgsGraphBuilderInterface, unknown-type, QgsFeedback feedback=None) -> unknown-type
+_analysis.QgsGraphDirector.addStrategy?4(QgsNetworkStrategy)
+_analysis.QgsGraphDirector.name?4() -> QString
+_analysis.QgsVectorLayerDirector.Direction?10
+_analysis.QgsVectorLayerDirector.DirectionForward?10
+_analysis.QgsVectorLayerDirector.DirectionBackward?10
+_analysis.QgsVectorLayerDirector.DirectionBoth?10
+_analysis.QgsVectorLayerDirector?1(QgsFeatureSource, int, QString, QString, QString, QgsVectorLayerDirector.Direction)
+_analysis.QgsVectorLayerDirector.__init__?1(self, QgsFeatureSource, int, QString, QString, QString, QgsVectorLayerDirector.Direction)
+_analysis.QgsVectorLayerDirector.makeGraph?4(QgsGraphBuilderInterface, unknown-type, QgsFeedback feedback=None) -> unknown-type
+_analysis.QgsVectorLayerDirector.name?4() -> QString
+_analysis.QgsGeometryCheckError.ValueType?10
+_analysis.QgsGeometryCheckError.ValueLength?10
+_analysis.QgsGeometryCheckError.ValueArea?10
+_analysis.QgsGeometryCheckError.ValueOther?10
+_analysis.QgsGeometryCheckError.Status?10
+_analysis.QgsGeometryCheckError.StatusPending?10
+_analysis.QgsGeometryCheckError.StatusFixFailed?10
+_analysis.QgsGeometryCheckError.StatusFixed?10
+_analysis.QgsGeometryCheckError.StatusObsolete?10
+_analysis.QgsGeometryCheckError?1(QgsGeometryCheck, QgsGeometryCheckerUtils.LayerFeature, QgsPointXY, QgsVertexId vidx=QgsVertexId(), QVariant value=None, QgsGeometryCheckError.ValueType valueType=QgsGeometryCheckError.ValueOther)
+_analysis.QgsGeometryCheckError.__init__?1(self, QgsGeometryCheck, QgsGeometryCheckerUtils.LayerFeature, QgsPointXY, QgsVertexId vidx=QgsVertexId(), QVariant value=None, QgsGeometryCheckError.ValueType valueType=QgsGeometryCheckError.ValueOther)
+_analysis.QgsGeometryCheckError?1(QgsGeometryCheck, QString, int, QgsGeometry, QgsPointXY, QgsVertexId vidx=QgsVertexId(), QVariant value=None, QgsGeometryCheckError.ValueType valueType=QgsGeometryCheckError.ValueOther)
+_analysis.QgsGeometryCheckError.__init__?1(self, QgsGeometryCheck, QString, int, QgsGeometry, QgsPointXY, QgsVertexId vidx=QgsVertexId(), QVariant value=None, QgsGeometryCheckError.ValueType valueType=QgsGeometryCheckError.ValueOther)
+_analysis.QgsGeometryCheckError?1(QgsGeometryCheckError)
+_analysis.QgsGeometryCheckError.__init__?1(self, QgsGeometryCheckError)
+_analysis.QgsGeometryCheckError.check?4() -> QgsGeometryCheck
+_analysis.QgsGeometryCheckError.layerId?4() -> QString
+_analysis.QgsGeometryCheckError.featureId?4() -> int
+_analysis.QgsGeometryCheckError.geometry?4() -> QgsGeometry
+_analysis.QgsGeometryCheckError.affectedAreaBBox?4() -> QgsRectangle
+_analysis.QgsGeometryCheckError.description?4() -> QString
+_analysis.QgsGeometryCheckError.location?4() -> QgsPointXY
+_analysis.QgsGeometryCheckError.value?4() -> QVariant
+_analysis.QgsGeometryCheckError.valueType?4() -> QgsGeometryCheckError.ValueType
+_analysis.QgsGeometryCheckError.vidx?4() -> QgsVertexId
+_analysis.QgsGeometryCheckError.status?4() -> QgsGeometryCheckError.Status
+_analysis.QgsGeometryCheckError.resolutionMessage?4() -> QString
+_analysis.QgsGeometryCheckError.setFixed?4(int)
+_analysis.QgsGeometryCheckError.setFixFailed?4(QString)
+_analysis.QgsGeometryCheckError.setObsolete?4()
+_analysis.QgsGeometryCheckError.isEqual?4(QgsGeometryCheckError) -> bool
+_analysis.QgsGeometryCheckError.closeMatch?4(QgsGeometryCheckError) -> bool
+_analysis.QgsGeometryCheckError.update?4(QgsGeometryCheckError)
+_analysis.QgsGeometryCheckError.icon?4() -> QIcon
+_analysis.QgsGeometryCheckContext.mapCrs?7
+_analysis.QgsGeometryCheckContext.reducedTolerance?7
+_analysis.QgsGeometryCheckContext.tolerance?7
+_analysis.QgsGeometryCheckContext.transformContext?7
+_analysis.QgsGeometryCheckContext?1(int, QgsCoordinateReferenceSystem, QgsCoordinateTransformContext)
+_analysis.QgsGeometryCheckContext.__init__?1(self, int, QgsCoordinateReferenceSystem, QgsCoordinateTransformContext)
+_analysis.QgsSingleGeometryCheckError?1(QgsSingleGeometryCheck, QgsGeometry, QgsGeometry, QgsVertexId vertexId=QgsVertexId())
+_analysis.QgsSingleGeometryCheckError.__init__?1(self, QgsSingleGeometryCheck, QgsGeometry, QgsGeometry, QgsVertexId vertexId=QgsVertexId())
+_analysis.QgsSingleGeometryCheckError?1(QgsSingleGeometryCheckError)
+_analysis.QgsSingleGeometryCheckError.__init__?1(self, QgsSingleGeometryCheckError)
+_analysis.QgsSingleGeometryCheckError.update?4(QgsSingleGeometryCheckError)
+_analysis.QgsSingleGeometryCheckError.isEqual?4(QgsSingleGeometryCheckError) -> bool
+_analysis.QgsSingleGeometryCheckError.description?4() -> QString
+_analysis.QgsSingleGeometryCheckError.check?4() -> QgsSingleGeometryCheck
+_analysis.QgsSingleGeometryCheckError.errorLocation?4() -> QgsGeometry
+_analysis.QgsSingleGeometryCheckError.vertexId?4() -> QgsVertexId
+_analysis.QgsGeometryCheckErrorSingle?1(QgsSingleGeometryCheckError, QgsGeometryCheckerUtils.LayerFeature)
+_analysis.QgsGeometryCheckErrorSingle.__init__?1(self, QgsSingleGeometryCheckError, QgsGeometryCheckerUtils.LayerFeature)
+_analysis.QgsGeometryCheckErrorSingle?1(QgsGeometryCheckErrorSingle)
+_analysis.QgsGeometryCheckErrorSingle.__init__?1(self, QgsGeometryCheckErrorSingle)
+_analysis.QgsGeometryCheckErrorSingle.singleError?4() -> QgsSingleGeometryCheckError
+_analysis.QgsGeometryCheck.Flag?10
+_analysis.QgsGeometryCheck.AvailableInValidation?10
+_analysis.QgsGeometryCheck.CheckType?10
+_analysis.QgsGeometryCheck.FeatureNodeCheck?10
+_analysis.QgsGeometryCheck.FeatureCheck?10
+_analysis.QgsGeometryCheck.LayerCheck?10
+_analysis.QgsGeometryCheck.ChangeType?10
+_analysis.QgsGeometryCheck.ChangeAdded?10
+_analysis.QgsGeometryCheck.ChangeRemoved?10
+_analysis.QgsGeometryCheck.ChangeChanged?10
+_analysis.QgsGeometryCheck.ChangeWhat?10
+_analysis.QgsGeometryCheck.ChangeFeature?10
+_analysis.QgsGeometryCheck.ChangePart?10
+_analysis.QgsGeometryCheck.ChangeRing?10
+_analysis.QgsGeometryCheck.ChangeNode?10
+_analysis.QgsGeometryCheck.staticMetaObject?7
+_analysis.QgsGeometryCheck?1(QgsGeometryCheckContext, unknown-type)
+_analysis.QgsGeometryCheck.__init__?1(self, QgsGeometryCheckContext, unknown-type)
+_analysis.QgsGeometryCheck?1(QgsGeometryCheck)
+_analysis.QgsGeometryCheck.__init__?1(self, QgsGeometryCheck)
+_analysis.QgsGeometryCheck.isCompatible?4(QgsVectorLayer) -> bool
+_analysis.QgsGeometryCheck.compatibleGeometryTypes?4() -> unknown-type
+_analysis.QgsGeometryCheck.flags?4() -> QgsGeometryCheck.Flags
+_analysis.QgsGeometryCheck.collectErrors?4(unknown-type, unknown-type, QStringList, QgsFeedback, QgsGeometryCheck.LayerFeatureIds ids=QgsGeometryCheck.LayerFeatureIds()) -> (unknown-type, QStringList)
+_analysis.QgsGeometryCheck.resolutionMethods?4() -> QStringList
+_analysis.QgsGeometryCheck.description?4() -> QString
+_analysis.QgsGeometryCheck.id?4() -> QString
+_analysis.QgsGeometryCheck.checkType?4() -> QgsGeometryCheck.CheckType
+_analysis.QgsGeometryCheck.context?4() -> QgsGeometryCheckContext
+_analysis.QgsSingleGeometryCheck?1(QgsGeometryCheckContext, unknown-type)
+_analysis.QgsSingleGeometryCheck.__init__?1(self, QgsGeometryCheckContext, unknown-type)
+_analysis.QgsSingleGeometryCheck?1(QgsSingleGeometryCheck)
+_analysis.QgsSingleGeometryCheck.__init__?1(self, QgsSingleGeometryCheck)
+_analysis.QgsSingleGeometryCheck.collectErrors?4(unknown-type, unknown-type, QStringList, QgsFeedback feedback=None, QgsGeometryCheck.LayerFeatureIds ids=QgsGeometryCheck.LayerFeatureIds())
+_analysis.QgsSingleGeometryCheck.processGeometry?4(QgsGeometry) -> unknown-type
+_analysis.QgsGeometryCheckRegistry?1()
+_analysis.QgsGeometryCheckRegistry.__init__?1(self)
+_analysis.QgsGeometryCheckRegistry?1(QgsGeometryCheckRegistry)
+_analysis.QgsGeometryCheckRegistry.__init__?1(self, QgsGeometryCheckRegistry)
+_analysis.QgsGeometryCheckRegistry.geometryCheck?4(QString, QgsGeometryCheckContext, unknown-type) -> QgsGeometryCheck
+_analysis.QgsGeometryCheckRegistry.geometryCheckFactories?4(QgsVectorLayer, QgsGeometryCheck.CheckType, QgsGeometryCheck.Flags flags=0) -> unknown-type
+_analysis.QgsGeometryCheckRegistry.registerGeometryCheck?4(QgsGeometryCheckFactory)
+_analysis.QgsGeometryCheckFactory?1()
+_analysis.QgsGeometryCheckFactory.__init__?1(self)
+_analysis.QgsGeometryCheckFactory?1(QgsGeometryCheckFactory)
+_analysis.QgsGeometryCheckFactory.__init__?1(self, QgsGeometryCheckFactory)
+_analysis.QgsGeometryCheckFactory.createGeometryCheck?4(QgsGeometryCheckContext, unknown-type) -> QgsGeometryCheck
+_analysis.QgsGeometryCheckFactory.id?4() -> QString
+_analysis.QgsGeometryCheckFactory.description?4() -> QString
+_analysis.QgsGeometryCheckFactory.isCompatible?4(QgsVectorLayer) -> bool
+_analysis.QgsGeometryCheckFactory.flags?4() -> QgsGeometryCheck.Flags
+_analysis.QgsGeometryCheckFactory.checkType?4() -> QgsGeometryCheck.CheckType
+_analysis.QgsNativeAlgorithms?1(QObject parent=None)
+_analysis.QgsNativeAlgorithms.__init__?1(self, QObject parent=None)
+_analysis.QgsNativeAlgorithms.icon?4() -> QIcon
+_analysis.QgsNativeAlgorithms.svgIconPath?4() -> QString
+_analysis.QgsNativeAlgorithms.id?4() -> QString
+_analysis.QgsNativeAlgorithms.helpId?4() -> QString
+_analysis.QgsNativeAlgorithms.name?4() -> QString
+_analysis.QgsNativeAlgorithms.supportsNonFileBasedOutput?4() -> bool
+_analysis.QgsNativeAlgorithms.loadAlgorithms?4()
+_analysis.QgsGeometryCheck.LayerFeatureIds?1()
+_analysis.QgsGeometryCheck.LayerFeatureIds.__init__?1(self)
+_analysis.QgsGeometryCheck.LayerFeatureIds?1(QgsGeometryCheck.LayerFeatureIds)
+_analysis.QgsGeometryCheck.LayerFeatureIds.__init__?1(self, QgsGeometryCheck.LayerFeatureIds)
+_analysis.QgsGeometryCheck.Flags?1()
+_analysis.QgsGeometryCheck.Flags.__init__?1(self)
+_analysis.QgsGeometryCheck.Flags?1(int)
+_analysis.QgsGeometryCheck.Flags.__init__?1(self, int)
+_analysis.QgsGeometryCheck.Flags?1(QgsGeometryCheck.Flags)
+_analysis.QgsGeometryCheck.Flags.__init__?1(self, QgsGeometryCheck.Flags)
+_analysis.QgsGeometryCheck.Change.type?7
+_analysis.QgsGeometryCheck.Change.vidx?7
+_analysis.QgsGeometryCheck.Change.what?7
+_analysis.QgsGeometryCheck.Change?1()
+_analysis.QgsGeometryCheck.Change.__init__?1(self)
+_analysis.QgsGeometryCheck.Change?1(QgsGeometryCheck.ChangeWhat, QgsGeometryCheck.ChangeType, QgsVertexId _vidx=QgsVertexId())
+_analysis.QgsGeometryCheck.Change.__init__?1(self, QgsGeometryCheck.ChangeWhat, QgsGeometryCheck.ChangeType, QgsVertexId _vidx=QgsVertexId())
+_analysis.QgsGeometryCheck.Change?1(QgsGeometryCheck.Change)
+_analysis.QgsGeometryCheck.Change.__init__?1(self, QgsGeometryCheck.Change)

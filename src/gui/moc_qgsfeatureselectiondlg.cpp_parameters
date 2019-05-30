@@ -1,0 +1,11 @@
+-I/home/guangping/dev/cpp/GIT/QGIS
+-DWITH_BINDINGS
+-DPROJ_VERSION_MAJOR=5
+-DWITH_QTWEBKIT
+-DQT_DISABLE_DEPRECATED_BEFORE=0
+-DQT_NO_CAST_TO_ASCII
+-DSIP_VERSION=0x041307
+-DWITH_QML
+-o
+/home/guangping/dev/cpp/GIT/QGIS/src/gui/moc_qgsfeatureselectiondlg.cpp
+/home/guangping/dev/cpp/GIT/QGIS/src/gui/qgsfeatureselectiondlg.h

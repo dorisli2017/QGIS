@@ -1,0 +1,2635 @@
+Terminals unused in grammar
+
+   NATURAL
+   UNION
+   Unknown_CHARACTER
+
+
+Grammar
+
+    0 $accept: root $end
+
+    1 root: select_statement
+
+    2 expr: expr_non_logical
+    3     | expr AND expr
+    4     | expr OR expr
+    5     | expr EQ expr
+    6     | expr NE expr
+    7     | expr LE expr
+    8     | expr GE expr
+    9     | expr LT expr
+   10     | expr GT expr
+   11     | expr LIKE expr
+   12     | expr IS expr
+   13     | NOT expr
+   14     | expr IN '(' expr_list ')'
+   15     | expr NOT IN '(' expr_list ')'
+   16     | expr BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr NOT BETWEEN expr_non_logical AND expr_non_logical
+
+   18 column_name: IDENTIFIER
+   19            | IDENTIFIER '.' IDENTIFIER
+
+   20 expr_list: expr_list COMMA expr
+   21          | expr
+
+   22 expr_non_logical: NUMBER_FLOAT
+   23                 | NUMBER_INT
+   24                 | NUMBER_INT64
+   25                 | BOOLEAN
+   26                 | STRING
+   27                 | NULLVALUE
+   28                 | column_name
+   29                 | '(' expr ')'
+   30                 | IDENTIFIER '(' expr_list ')'
+   31                 | IDENTIFIER '(' ')'
+   32                 | expr_non_logical PLUS expr_non_logical
+   33                 | expr_non_logical MINUS expr_non_logical
+   34                 | expr_non_logical MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical INTDIV expr_non_logical
+   36                 | expr_non_logical DIV expr_non_logical
+   37                 | expr_non_logical MOD expr_non_logical
+   38                 | expr_non_logical POW expr_non_logical
+   39                 | expr_non_logical CONCAT expr_non_logical
+   40                 | PLUS expr_non_logical
+   41                 | MINUS expr_non_logical
+   42                 | CAST '(' expr AS IDENTIFIER ')'
+
+   43 select_type: SELECT
+   44            | SELECT ALL
+   45            | SELECT DISTINCT
+
+   46 select_statement: select_type selected_column_list FROM table_list opt_joins opt_where opt_order_by
+
+   47 selected_column_list: selected_column_list COMMA selected_column
+   48                     | selected_column
+
+   49 selected_column: expr
+   50                | expr as_clause
+   51                | MUL_OR_STAR
+   52                | IDENTIFIER '.' MUL_OR_STAR
+   53                | IDENTIFIER '(' MUL_OR_STAR ')'
+   54                | IDENTIFIER '(' MUL_OR_STAR ')' as_clause
+   55                | IDENTIFIER '(' DISTINCT column_name ')'
+   56                | IDENTIFIER '(' DISTINCT column_name ')' as_clause
+
+   57 as_clause: AS IDENTIFIER
+   58          | IDENTIFIER
+
+   59 opt_where: %empty
+   60          | WHERE expr
+
+   61 join_qualifier: JOIN
+   62               | LEFT JOIN
+   63               | LEFT OUTER JOIN
+   64               | RIGHT JOIN
+   65               | RIGHT OUTER JOIN
+   66               | FULL JOIN
+   67               | CROSS JOIN
+   68               | INNER JOIN
+
+   69 join: join_qualifier table_def ON expr
+   70     | join_qualifier table_def USING '(' using_list ')'
+
+   71 using_list: IDENTIFIER
+   72           | using_list COMMA IDENTIFIER
+
+   73 join_list: join
+   74          | join_list join
+
+   75 opt_joins: %empty
+   76          | join_list
+
+   77 opt_order_by: %empty
+   78             | ORDER BY sort_spec_list
+
+   79 sort_spec_list: sort_spec_list COMMA sort_spec
+   80               | sort_spec
+
+   81 sort_spec: column_name
+   82          | column_name ASC
+   83          | column_name DESC
+
+   84 table_def: IDENTIFIER
+   85          | IDENTIFIER as_clause
+
+   86 table_list: table_list COMMA table_def
+   87           | table_def
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'(' (40) 14 15 29 30 31 42 53 54 55 56 70
+')' (41) 14 15 29 30 31 42 53 54 55 56 70
+'.' (46) 19 52
+error (256)
+OR (258) 4
+AND (259) 3 16 17
+EQ (260) 5
+NE (261) 6
+LE (262) 7
+GE (263) 8
+LT (264) 9
+GT (265) 10
+LIKE (266) 11
+IS (267) 12
+PLUS (268) 32 40
+MINUS (269) 33 41
+MUL_OR_STAR (270) 34 51 52 53 54
+DIV (271) 36
+INTDIV (272) 35
+MOD (273) 37
+CONCAT (274) 39
+POW (275) 38
+NOT (276) 13 15 17
+IN (277) 14 15
+BETWEEN (278) 16 17
+SELECT (279) 43 44 45
+ALL (280) 44
+DISTINCT (281) 45 55 56
+CAST (282) 42
+AS (283) 42 57
+JOIN (284) 61 62 63 64 65 66 67 68
+FROM (285) 46
+ON (286) 69
+USING (287) 70
+WHERE (288) 60
+ORDER (289) 78
+BY (290) 78
+ASC (291) 82
+DESC (292) 83
+LEFT (293) 62 63
+RIGHT (294) 64 65
+INNER (295) 68
+OUTER (296) 63 65
+CROSS (297) 67
+FULL (298) 66
+NATURAL (299)
+UNION (300)
+NUMBER_FLOAT (301) 22
+NUMBER_INT (302) 23
+NUMBER_INT64 (303) 24
+BOOLEAN (304) 25
+NULLVALUE (305) 27
+STRING (306) 26
+IDENTIFIER (307) 18 19 30 31 42 52 53 54 55 56 57 58 71 72 84 85
+COMMA (308) 20 47 72 79 86
+Unknown_CHARACTER (309)
+UMINUS (310)
+
+
+Nonterminals, with rules where they appear
+
+$accept (59)
+    on left: 0
+root (60)
+    on left: 1, on right: 0
+expr (61)
+    on left: 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17, on right: 3 4
+    5 6 7 8 9 10 11 12 13 14 15 16 17 20 21 29 42 49 50 60 69
+column_name (62)
+    on left: 18 19, on right: 28 55 56 81 82 83
+expr_list (63)
+    on left: 20 21, on right: 14 15 20 30
+expr_non_logical (64)
+    on left: 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
+    40 41 42, on right: 2 16 17 32 33 34 35 36 37 38 39 40 41
+select_type (65)
+    on left: 43 44 45, on right: 46
+select_statement (66)
+    on left: 46, on right: 1
+selected_column_list (67)
+    on left: 47 48, on right: 46 47
+selected_column (68)
+    on left: 49 50 51 52 53 54 55 56, on right: 47 48
+as_clause (69)
+    on left: 57 58, on right: 50 54 56 85
+opt_where (70)
+    on left: 59 60, on right: 46
+join_qualifier (71)
+    on left: 61 62 63 64 65 66 67 68, on right: 69 70
+join (72)
+    on left: 69 70, on right: 73 74
+using_list (73)
+    on left: 71 72, on right: 70 72
+join_list (74)
+    on left: 73 74, on right: 74 76
+opt_joins (75)
+    on left: 75 76, on right: 46
+opt_order_by (76)
+    on left: 77 78, on right: 46
+sort_spec_list (77)
+    on left: 79 80, on right: 78 79
+sort_spec (78)
+    on left: 81 82 83, on right: 79 80
+table_def (79)
+    on left: 84 85, on right: 69 70 86 87
+table_list (80)
+    on left: 86 87, on right: 46 86
+
+
+State 0
+
+    0 $accept: . root $end
+
+    SELECT  shift, and go to state 1
+
+    root              go to state 2
+    select_type       go to state 3
+    select_statement  go to state 4
+
+
+State 1
+
+   43 select_type: SELECT .
+   44            | SELECT . ALL
+   45            | SELECT . DISTINCT
+
+    ALL       shift, and go to state 5
+    DISTINCT  shift, and go to state 6
+
+    $default  reduce using rule 43 (select_type)
+
+
+State 2
+
+    0 $accept: root . $end
+
+    $end  shift, and go to state 7
+
+
+State 3
+
+   46 select_statement: select_type . selected_column_list FROM table_list opt_joins opt_where opt_order_by
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    MUL_OR_STAR   shift, and go to state 10
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 19
+    '('           shift, and go to state 20
+
+    expr                  go to state 21
+    column_name           go to state 22
+    expr_non_logical      go to state 23
+    selected_column_list  go to state 24
+    selected_column       go to state 25
+
+
+State 4
+
+    1 root: select_statement .
+
+    $default  reduce using rule 1 (root)
+
+
+State 5
+
+   44 select_type: SELECT ALL .
+
+    $default  reduce using rule 44 (select_type)
+
+
+State 6
+
+   45 select_type: SELECT DISTINCT .
+
+    $default  reduce using rule 45 (select_type)
+
+
+State 7
+
+    0 $accept: root $end .
+
+    $default  accept
+
+
+State 8
+
+   40 expr_non_logical: PLUS . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 27
+
+
+State 9
+
+   41 expr_non_logical: MINUS . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 28
+
+
+State 10
+
+   51 selected_column: MUL_OR_STAR .
+
+    $default  reduce using rule 51 (selected_column)
+
+
+State 11
+
+   13 expr: NOT . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 29
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 12
+
+   42 expr_non_logical: CAST . '(' expr AS IDENTIFIER ')'
+
+    '('  shift, and go to state 30
+
+
+State 13
+
+   22 expr_non_logical: NUMBER_FLOAT .
+
+    $default  reduce using rule 22 (expr_non_logical)
+
+
+State 14
+
+   23 expr_non_logical: NUMBER_INT .
+
+    $default  reduce using rule 23 (expr_non_logical)
+
+
+State 15
+
+   24 expr_non_logical: NUMBER_INT64 .
+
+    $default  reduce using rule 24 (expr_non_logical)
+
+
+State 16
+
+   25 expr_non_logical: BOOLEAN .
+
+    $default  reduce using rule 25 (expr_non_logical)
+
+
+State 17
+
+   27 expr_non_logical: NULLVALUE .
+
+    $default  reduce using rule 27 (expr_non_logical)
+
+
+State 18
+
+   26 expr_non_logical: STRING .
+
+    $default  reduce using rule 26 (expr_non_logical)
+
+
+State 19
+
+   18 column_name: IDENTIFIER .
+   19            | IDENTIFIER . '.' IDENTIFIER
+   30 expr_non_logical: IDENTIFIER . '(' expr_list ')'
+   31                 | IDENTIFIER . '(' ')'
+   52 selected_column: IDENTIFIER . '.' MUL_OR_STAR
+   53                | IDENTIFIER . '(' MUL_OR_STAR ')'
+   54                | IDENTIFIER . '(' MUL_OR_STAR ')' as_clause
+   55                | IDENTIFIER . '(' DISTINCT column_name ')'
+   56                | IDENTIFIER . '(' DISTINCT column_name ')' as_clause
+
+    '('  shift, and go to state 31
+    '.'  shift, and go to state 32
+
+    $default  reduce using rule 18 (column_name)
+
+
+State 20
+
+   29 expr_non_logical: '(' . expr ')'
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 33
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 21
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+   49 selected_column: expr .
+   50                | expr . as_clause
+
+    OR          shift, and go to state 34
+    AND         shift, and go to state 35
+    EQ          shift, and go to state 36
+    NE          shift, and go to state 37
+    LE          shift, and go to state 38
+    GE          shift, and go to state 39
+    LT          shift, and go to state 40
+    GT          shift, and go to state 41
+    LIKE        shift, and go to state 42
+    IS          shift, and go to state 43
+    NOT         shift, and go to state 44
+    IN          shift, and go to state 45
+    BETWEEN     shift, and go to state 46
+    AS          shift, and go to state 47
+    IDENTIFIER  shift, and go to state 48
+
+    $default  reduce using rule 49 (selected_column)
+
+    as_clause  go to state 49
+
+
+State 22
+
+   28 expr_non_logical: column_name .
+
+    $default  reduce using rule 28 (expr_non_logical)
+
+
+State 23
+
+    2 expr: expr_non_logical .
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    PLUS         shift, and go to state 50
+    MINUS        shift, and go to state 51
+    MUL_OR_STAR  shift, and go to state 52
+    DIV          shift, and go to state 53
+    INTDIV       shift, and go to state 54
+    MOD          shift, and go to state 55
+    CONCAT       shift, and go to state 56
+    POW          shift, and go to state 57
+
+    $default  reduce using rule 2 (expr)
+
+
+State 24
+
+   46 select_statement: select_type selected_column_list . FROM table_list opt_joins opt_where opt_order_by
+   47 selected_column_list: selected_column_list . COMMA selected_column
+
+    FROM   shift, and go to state 58
+    COMMA  shift, and go to state 59
+
+
+State 25
+
+   48 selected_column_list: selected_column .
+
+    $default  reduce using rule 48 (selected_column_list)
+
+
+State 26
+
+   18 column_name: IDENTIFIER .
+   19            | IDENTIFIER . '.' IDENTIFIER
+   30 expr_non_logical: IDENTIFIER . '(' expr_list ')'
+   31                 | IDENTIFIER . '(' ')'
+
+    '('  shift, and go to state 60
+    '.'  shift, and go to state 61
+
+    $default  reduce using rule 18 (column_name)
+
+
+State 27
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+   40                 | PLUS expr_non_logical .
+
+    $default  reduce using rule 40 (expr_non_logical)
+
+
+State 28
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+   41                 | MINUS expr_non_logical .
+
+    $default  reduce using rule 41 (expr_non_logical)
+
+
+State 29
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   13     | NOT expr .
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+
+    $default  reduce using rule 13 (expr)
+
+
+State 30
+
+   42 expr_non_logical: CAST '(' . expr AS IDENTIFIER ')'
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 62
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 31
+
+   30 expr_non_logical: IDENTIFIER '(' . expr_list ')'
+   31                 | IDENTIFIER '(' . ')'
+   53 selected_column: IDENTIFIER '(' . MUL_OR_STAR ')'
+   54                | IDENTIFIER '(' . MUL_OR_STAR ')' as_clause
+   55                | IDENTIFIER '(' . DISTINCT column_name ')'
+   56                | IDENTIFIER '(' . DISTINCT column_name ')' as_clause
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    MUL_OR_STAR   shift, and go to state 63
+    NOT           shift, and go to state 11
+    DISTINCT      shift, and go to state 64
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+    ')'           shift, and go to state 65
+
+    expr              go to state 66
+    column_name       go to state 22
+    expr_list         go to state 67
+    expr_non_logical  go to state 23
+
+
+State 32
+
+   19 column_name: IDENTIFIER '.' . IDENTIFIER
+   52 selected_column: IDENTIFIER '.' . MUL_OR_STAR
+
+    MUL_OR_STAR  shift, and go to state 68
+    IDENTIFIER   shift, and go to state 69
+
+
+State 33
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+   29 expr_non_logical: '(' expr . ')'
+
+    OR       shift, and go to state 34
+    AND      shift, and go to state 35
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+    ')'      shift, and go to state 70
+
+
+State 34
+
+    4 expr: expr OR . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 71
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 35
+
+    3 expr: expr AND . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 72
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 36
+
+    5 expr: expr EQ . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 73
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 37
+
+    6 expr: expr NE . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 74
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 38
+
+    7 expr: expr LE . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 75
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 39
+
+    8 expr: expr GE . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 76
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 40
+
+    9 expr: expr LT . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 77
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 41
+
+   10 expr: expr GT . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 78
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 42
+
+   11 expr: expr LIKE . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 79
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 43
+
+   12 expr: expr IS . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 80
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 44
+
+   15 expr: expr NOT . IN '(' expr_list ')'
+   17     | expr NOT . BETWEEN expr_non_logical AND expr_non_logical
+
+    IN       shift, and go to state 81
+    BETWEEN  shift, and go to state 82
+
+
+State 45
+
+   14 expr: expr IN . '(' expr_list ')'
+
+    '('  shift, and go to state 83
+
+
+State 46
+
+   16 expr: expr BETWEEN . expr_non_logical AND expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 84
+
+
+State 47
+
+   57 as_clause: AS . IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 85
+
+
+State 48
+
+   58 as_clause: IDENTIFIER .
+
+    $default  reduce using rule 58 (as_clause)
+
+
+State 49
+
+   50 selected_column: expr as_clause .
+
+    $default  reduce using rule 50 (selected_column)
+
+
+State 50
+
+   32 expr_non_logical: expr_non_logical PLUS . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 86
+
+
+State 51
+
+   33 expr_non_logical: expr_non_logical MINUS . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 87
+
+
+State 52
+
+   34 expr_non_logical: expr_non_logical MUL_OR_STAR . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 88
+
+
+State 53
+
+   36 expr_non_logical: expr_non_logical DIV . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 89
+
+
+State 54
+
+   35 expr_non_logical: expr_non_logical INTDIV . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 90
+
+
+State 55
+
+   37 expr_non_logical: expr_non_logical MOD . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 91
+
+
+State 56
+
+   39 expr_non_logical: expr_non_logical CONCAT . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 92
+
+
+State 57
+
+   38 expr_non_logical: expr_non_logical POW . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 93
+
+
+State 58
+
+   46 select_statement: select_type selected_column_list FROM . table_list opt_joins opt_where opt_order_by
+
+    IDENTIFIER  shift, and go to state 94
+
+    table_def   go to state 95
+    table_list  go to state 96
+
+
+State 59
+
+   47 selected_column_list: selected_column_list COMMA . selected_column
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    MUL_OR_STAR   shift, and go to state 10
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 19
+    '('           shift, and go to state 20
+
+    expr              go to state 21
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+    selected_column   go to state 97
+
+
+State 60
+
+   30 expr_non_logical: IDENTIFIER '(' . expr_list ')'
+   31                 | IDENTIFIER '(' . ')'
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+    ')'           shift, and go to state 65
+
+    expr              go to state 66
+    column_name       go to state 22
+    expr_list         go to state 67
+    expr_non_logical  go to state 23
+
+
+State 61
+
+   19 column_name: IDENTIFIER '.' . IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 69
+
+
+State 62
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+   42 expr_non_logical: CAST '(' expr . AS IDENTIFIER ')'
+
+    OR       shift, and go to state 34
+    AND      shift, and go to state 35
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+    AS       shift, and go to state 98
+
+
+State 63
+
+   53 selected_column: IDENTIFIER '(' MUL_OR_STAR . ')'
+   54                | IDENTIFIER '(' MUL_OR_STAR . ')' as_clause
+
+    ')'  shift, and go to state 99
+
+
+State 64
+
+   55 selected_column: IDENTIFIER '(' DISTINCT . column_name ')'
+   56                | IDENTIFIER '(' DISTINCT . column_name ')' as_clause
+
+    IDENTIFIER  shift, and go to state 100
+
+    column_name  go to state 101
+
+
+State 65
+
+   31 expr_non_logical: IDENTIFIER '(' ')' .
+
+    $default  reduce using rule 31 (expr_non_logical)
+
+
+State 66
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+   21 expr_list: expr .
+
+    OR       shift, and go to state 34
+    AND      shift, and go to state 35
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+
+    $default  reduce using rule 21 (expr_list)
+
+
+State 67
+
+   20 expr_list: expr_list . COMMA expr
+   30 expr_non_logical: IDENTIFIER '(' expr_list . ')'
+
+    COMMA  shift, and go to state 102
+    ')'    shift, and go to state 103
+
+
+State 68
+
+   52 selected_column: IDENTIFIER '.' MUL_OR_STAR .
+
+    $default  reduce using rule 52 (selected_column)
+
+
+State 69
+
+   19 column_name: IDENTIFIER '.' IDENTIFIER .
+
+    $default  reduce using rule 19 (column_name)
+
+
+State 70
+
+   29 expr_non_logical: '(' expr ')' .
+
+    $default  reduce using rule 29 (expr_non_logical)
+
+
+State 71
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    4     | expr OR expr .
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    AND      shift, and go to state 35
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+
+    $default  reduce using rule 4 (expr)
+
+
+State 72
+
+    3 expr: expr . AND expr
+    3     | expr AND expr .
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+
+    $default  reduce using rule 3 (expr)
+
+
+State 73
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    5     | expr EQ expr .
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    $default  reduce using rule 5 (expr)
+
+
+State 74
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    6     | expr NE expr .
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    $default  reduce using rule 6 (expr)
+
+
+State 75
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    7     | expr LE expr .
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    $default  reduce using rule 7 (expr)
+
+
+State 76
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    8     | expr GE expr .
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    $default  reduce using rule 8 (expr)
+
+
+State 77
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+    9     | expr LT expr .
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    $default  reduce using rule 9 (expr)
+
+
+State 78
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   10     | expr GT expr .
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    $default  reduce using rule 10 (expr)
+
+
+State 79
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   11     | expr LIKE expr .
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    $default  reduce using rule 11 (expr)
+
+
+State 80
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   12     | expr IS expr .
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+
+    $default  reduce using rule 12 (expr)
+
+
+State 81
+
+   15 expr: expr NOT IN . '(' expr_list ')'
+
+    '('  shift, and go to state 104
+
+
+State 82
+
+   17 expr: expr NOT BETWEEN . expr_non_logical AND expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 105
+
+
+State 83
+
+   14 expr: expr IN '(' . expr_list ')'
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 66
+    column_name       go to state 22
+    expr_list         go to state 106
+    expr_non_logical  go to state 23
+
+
+State 84
+
+   16 expr: expr BETWEEN expr_non_logical . AND expr_non_logical
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    AND          shift, and go to state 107
+    PLUS         shift, and go to state 50
+    MINUS        shift, and go to state 51
+    MUL_OR_STAR  shift, and go to state 52
+    DIV          shift, and go to state 53
+    INTDIV       shift, and go to state 54
+    MOD          shift, and go to state 55
+    CONCAT       shift, and go to state 56
+    POW          shift, and go to state 57
+
+
+State 85
+
+   57 as_clause: AS IDENTIFIER .
+
+    $default  reduce using rule 57 (as_clause)
+
+
+State 86
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   32                 | expr_non_logical PLUS expr_non_logical .
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    MUL_OR_STAR  shift, and go to state 52
+    DIV          shift, and go to state 53
+    INTDIV       shift, and go to state 54
+    MOD          shift, and go to state 55
+    CONCAT       shift, and go to state 56
+    POW          shift, and go to state 57
+
+    $default  reduce using rule 32 (expr_non_logical)
+
+
+State 87
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   33                 | expr_non_logical MINUS expr_non_logical .
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    MUL_OR_STAR  shift, and go to state 52
+    DIV          shift, and go to state 53
+    INTDIV       shift, and go to state 54
+    MOD          shift, and go to state 55
+    CONCAT       shift, and go to state 56
+    POW          shift, and go to state 57
+
+    $default  reduce using rule 33 (expr_non_logical)
+
+
+State 88
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   34                 | expr_non_logical MUL_OR_STAR expr_non_logical .
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    CONCAT  shift, and go to state 56
+    POW     shift, and go to state 57
+
+    $default  reduce using rule 34 (expr_non_logical)
+
+
+State 89
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   36                 | expr_non_logical DIV expr_non_logical .
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    CONCAT  shift, and go to state 56
+    POW     shift, and go to state 57
+
+    $default  reduce using rule 36 (expr_non_logical)
+
+
+State 90
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   35                 | expr_non_logical INTDIV expr_non_logical .
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    CONCAT  shift, and go to state 56
+    POW     shift, and go to state 57
+
+    $default  reduce using rule 35 (expr_non_logical)
+
+
+State 91
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   37                 | expr_non_logical MOD expr_non_logical .
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    CONCAT  shift, and go to state 56
+    POW     shift, and go to state 57
+
+    $default  reduce using rule 37 (expr_non_logical)
+
+
+State 92
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+   39                 | expr_non_logical CONCAT expr_non_logical .
+
+    $default  reduce using rule 39 (expr_non_logical)
+
+
+State 93
+
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   38                 | expr_non_logical POW expr_non_logical .
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    CONCAT  shift, and go to state 56
+    POW     shift, and go to state 57
+
+    $default  reduce using rule 38 (expr_non_logical)
+
+
+State 94
+
+   84 table_def: IDENTIFIER .
+   85          | IDENTIFIER . as_clause
+
+    AS          shift, and go to state 47
+    IDENTIFIER  shift, and go to state 48
+
+    $default  reduce using rule 84 (table_def)
+
+    as_clause  go to state 108
+
+
+State 95
+
+   87 table_list: table_def .
+
+    $default  reduce using rule 87 (table_list)
+
+
+State 96
+
+   46 select_statement: select_type selected_column_list FROM table_list . opt_joins opt_where opt_order_by
+   86 table_list: table_list . COMMA table_def
+
+    JOIN   shift, and go to state 109
+    LEFT   shift, and go to state 110
+    RIGHT  shift, and go to state 111
+    INNER  shift, and go to state 112
+    CROSS  shift, and go to state 113
+    FULL   shift, and go to state 114
+    COMMA  shift, and go to state 115
+
+    $default  reduce using rule 75 (opt_joins)
+
+    join_qualifier  go to state 116
+    join            go to state 117
+    join_list       go to state 118
+    opt_joins       go to state 119
+
+
+State 97
+
+   47 selected_column_list: selected_column_list COMMA selected_column .
+
+    $default  reduce using rule 47 (selected_column_list)
+
+
+State 98
+
+   42 expr_non_logical: CAST '(' expr AS . IDENTIFIER ')'
+
+    IDENTIFIER  shift, and go to state 120
+
+
+State 99
+
+   53 selected_column: IDENTIFIER '(' MUL_OR_STAR ')' .
+   54                | IDENTIFIER '(' MUL_OR_STAR ')' . as_clause
+
+    AS          shift, and go to state 47
+    IDENTIFIER  shift, and go to state 48
+
+    $default  reduce using rule 53 (selected_column)
+
+    as_clause  go to state 121
+
+
+State 100
+
+   18 column_name: IDENTIFIER .
+   19            | IDENTIFIER . '.' IDENTIFIER
+
+    '.'  shift, and go to state 61
+
+    $default  reduce using rule 18 (column_name)
+
+
+State 101
+
+   55 selected_column: IDENTIFIER '(' DISTINCT column_name . ')'
+   56                | IDENTIFIER '(' DISTINCT column_name . ')' as_clause
+
+    ')'  shift, and go to state 122
+
+
+State 102
+
+   20 expr_list: expr_list COMMA . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 123
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 103
+
+   30 expr_non_logical: IDENTIFIER '(' expr_list ')' .
+
+    $default  reduce using rule 30 (expr_non_logical)
+
+
+State 104
+
+   15 expr: expr NOT IN '(' . expr_list ')'
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 66
+    column_name       go to state 22
+    expr_list         go to state 124
+    expr_non_logical  go to state 23
+
+
+State 105
+
+   17 expr: expr NOT BETWEEN expr_non_logical . AND expr_non_logical
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    AND          shift, and go to state 125
+    PLUS         shift, and go to state 50
+    MINUS        shift, and go to state 51
+    MUL_OR_STAR  shift, and go to state 52
+    DIV          shift, and go to state 53
+    INTDIV       shift, and go to state 54
+    MOD          shift, and go to state 55
+    CONCAT       shift, and go to state 56
+    POW          shift, and go to state 57
+
+
+State 106
+
+   14 expr: expr IN '(' expr_list . ')'
+   20 expr_list: expr_list . COMMA expr
+
+    COMMA  shift, and go to state 102
+    ')'    shift, and go to state 126
+
+
+State 107
+
+   16 expr: expr BETWEEN expr_non_logical AND . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 127
+
+
+State 108
+
+   85 table_def: IDENTIFIER as_clause .
+
+    $default  reduce using rule 85 (table_def)
+
+
+State 109
+
+   61 join_qualifier: JOIN .
+
+    $default  reduce using rule 61 (join_qualifier)
+
+
+State 110
+
+   62 join_qualifier: LEFT . JOIN
+   63               | LEFT . OUTER JOIN
+
+    JOIN   shift, and go to state 128
+    OUTER  shift, and go to state 129
+
+
+State 111
+
+   64 join_qualifier: RIGHT . JOIN
+   65               | RIGHT . OUTER JOIN
+
+    JOIN   shift, and go to state 130
+    OUTER  shift, and go to state 131
+
+
+State 112
+
+   68 join_qualifier: INNER . JOIN
+
+    JOIN  shift, and go to state 132
+
+
+State 113
+
+   67 join_qualifier: CROSS . JOIN
+
+    JOIN  shift, and go to state 133
+
+
+State 114
+
+   66 join_qualifier: FULL . JOIN
+
+    JOIN  shift, and go to state 134
+
+
+State 115
+
+   86 table_list: table_list COMMA . table_def
+
+    IDENTIFIER  shift, and go to state 94
+
+    table_def  go to state 135
+
+
+State 116
+
+   69 join: join_qualifier . table_def ON expr
+   70     | join_qualifier . table_def USING '(' using_list ')'
+
+    IDENTIFIER  shift, and go to state 94
+
+    table_def  go to state 136
+
+
+State 117
+
+   73 join_list: join .
+
+    $default  reduce using rule 73 (join_list)
+
+
+State 118
+
+   74 join_list: join_list . join
+   76 opt_joins: join_list .
+
+    JOIN   shift, and go to state 109
+    LEFT   shift, and go to state 110
+    RIGHT  shift, and go to state 111
+    INNER  shift, and go to state 112
+    CROSS  shift, and go to state 113
+    FULL   shift, and go to state 114
+
+    $default  reduce using rule 76 (opt_joins)
+
+    join_qualifier  go to state 116
+    join            go to state 137
+
+
+State 119
+
+   46 select_statement: select_type selected_column_list FROM table_list opt_joins . opt_where opt_order_by
+
+    WHERE  shift, and go to state 138
+
+    $default  reduce using rule 59 (opt_where)
+
+    opt_where  go to state 139
+
+
+State 120
+
+   42 expr_non_logical: CAST '(' expr AS IDENTIFIER . ')'
+
+    ')'  shift, and go to state 140
+
+
+State 121
+
+   54 selected_column: IDENTIFIER '(' MUL_OR_STAR ')' as_clause .
+
+    $default  reduce using rule 54 (selected_column)
+
+
+State 122
+
+   55 selected_column: IDENTIFIER '(' DISTINCT column_name ')' .
+   56                | IDENTIFIER '(' DISTINCT column_name ')' . as_clause
+
+    AS          shift, and go to state 47
+    IDENTIFIER  shift, and go to state 48
+
+    $default  reduce using rule 55 (selected_column)
+
+    as_clause  go to state 141
+
+
+State 123
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+   20 expr_list: expr_list COMMA expr .
+
+    OR       shift, and go to state 34
+    AND      shift, and go to state 35
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+
+    $default  reduce using rule 20 (expr_list)
+
+
+State 124
+
+   15 expr: expr NOT IN '(' expr_list . ')'
+   20 expr_list: expr_list . COMMA expr
+
+    COMMA  shift, and go to state 102
+    ')'    shift, and go to state 142
+
+
+State 125
+
+   17 expr: expr NOT BETWEEN expr_non_logical AND . expr_non_logical
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    column_name       go to state 22
+    expr_non_logical  go to state 143
+
+
+State 126
+
+   14 expr: expr IN '(' expr_list ')' .
+
+    $default  reduce using rule 14 (expr)
+
+
+State 127
+
+   16 expr: expr BETWEEN expr_non_logical AND expr_non_logical .
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    PLUS         shift, and go to state 50
+    MINUS        shift, and go to state 51
+    MUL_OR_STAR  shift, and go to state 52
+    DIV          shift, and go to state 53
+    INTDIV       shift, and go to state 54
+    MOD          shift, and go to state 55
+    CONCAT       shift, and go to state 56
+    POW          shift, and go to state 57
+
+    $default  reduce using rule 16 (expr)
+
+
+State 128
+
+   62 join_qualifier: LEFT JOIN .
+
+    $default  reduce using rule 62 (join_qualifier)
+
+
+State 129
+
+   63 join_qualifier: LEFT OUTER . JOIN
+
+    JOIN  shift, and go to state 144
+
+
+State 130
+
+   64 join_qualifier: RIGHT JOIN .
+
+    $default  reduce using rule 64 (join_qualifier)
+
+
+State 131
+
+   65 join_qualifier: RIGHT OUTER . JOIN
+
+    JOIN  shift, and go to state 145
+
+
+State 132
+
+   68 join_qualifier: INNER JOIN .
+
+    $default  reduce using rule 68 (join_qualifier)
+
+
+State 133
+
+   67 join_qualifier: CROSS JOIN .
+
+    $default  reduce using rule 67 (join_qualifier)
+
+
+State 134
+
+   66 join_qualifier: FULL JOIN .
+
+    $default  reduce using rule 66 (join_qualifier)
+
+
+State 135
+
+   86 table_list: table_list COMMA table_def .
+
+    $default  reduce using rule 86 (table_list)
+
+
+State 136
+
+   69 join: join_qualifier table_def . ON expr
+   70     | join_qualifier table_def . USING '(' using_list ')'
+
+    ON     shift, and go to state 146
+    USING  shift, and go to state 147
+
+
+State 137
+
+   74 join_list: join_list join .
+
+    $default  reduce using rule 74 (join_list)
+
+
+State 138
+
+   60 opt_where: WHERE . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 148
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 139
+
+   46 select_statement: select_type selected_column_list FROM table_list opt_joins opt_where . opt_order_by
+
+    ORDER  shift, and go to state 149
+
+    $default  reduce using rule 77 (opt_order_by)
+
+    opt_order_by  go to state 150
+
+
+State 140
+
+   42 expr_non_logical: CAST '(' expr AS IDENTIFIER ')' .
+
+    $default  reduce using rule 42 (expr_non_logical)
+
+
+State 141
+
+   56 selected_column: IDENTIFIER '(' DISTINCT column_name ')' as_clause .
+
+    $default  reduce using rule 56 (selected_column)
+
+
+State 142
+
+   15 expr: expr NOT IN '(' expr_list ')' .
+
+    $default  reduce using rule 15 (expr)
+
+
+State 143
+
+   17 expr: expr NOT BETWEEN expr_non_logical AND expr_non_logical .
+   32 expr_non_logical: expr_non_logical . PLUS expr_non_logical
+   33                 | expr_non_logical . MINUS expr_non_logical
+   34                 | expr_non_logical . MUL_OR_STAR expr_non_logical
+   35                 | expr_non_logical . INTDIV expr_non_logical
+   36                 | expr_non_logical . DIV expr_non_logical
+   37                 | expr_non_logical . MOD expr_non_logical
+   38                 | expr_non_logical . POW expr_non_logical
+   39                 | expr_non_logical . CONCAT expr_non_logical
+
+    PLUS         shift, and go to state 50
+    MINUS        shift, and go to state 51
+    MUL_OR_STAR  shift, and go to state 52
+    DIV          shift, and go to state 53
+    INTDIV       shift, and go to state 54
+    MOD          shift, and go to state 55
+    CONCAT       shift, and go to state 56
+    POW          shift, and go to state 57
+
+    $default  reduce using rule 17 (expr)
+
+
+State 144
+
+   63 join_qualifier: LEFT OUTER JOIN .
+
+    $default  reduce using rule 63 (join_qualifier)
+
+
+State 145
+
+   65 join_qualifier: RIGHT OUTER JOIN .
+
+    $default  reduce using rule 65 (join_qualifier)
+
+
+State 146
+
+   69 join: join_qualifier table_def ON . expr
+
+    PLUS          shift, and go to state 8
+    MINUS         shift, and go to state 9
+    NOT           shift, and go to state 11
+    CAST          shift, and go to state 12
+    NUMBER_FLOAT  shift, and go to state 13
+    NUMBER_INT    shift, and go to state 14
+    NUMBER_INT64  shift, and go to state 15
+    BOOLEAN       shift, and go to state 16
+    NULLVALUE     shift, and go to state 17
+    STRING        shift, and go to state 18
+    IDENTIFIER    shift, and go to state 26
+    '('           shift, and go to state 20
+
+    expr              go to state 151
+    column_name       go to state 22
+    expr_non_logical  go to state 23
+
+
+State 147
+
+   70 join: join_qualifier table_def USING . '(' using_list ')'
+
+    '('  shift, and go to state 152
+
+
+State 148
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+   60 opt_where: WHERE expr .
+
+    OR       shift, and go to state 34
+    AND      shift, and go to state 35
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+
+    $default  reduce using rule 60 (opt_where)
+
+
+State 149
+
+   78 opt_order_by: ORDER . BY sort_spec_list
+
+    BY  shift, and go to state 153
+
+
+State 150
+
+   46 select_statement: select_type selected_column_list FROM table_list opt_joins opt_where opt_order_by .
+
+    $default  reduce using rule 46 (select_statement)
+
+
+State 151
+
+    3 expr: expr . AND expr
+    4     | expr . OR expr
+    5     | expr . EQ expr
+    6     | expr . NE expr
+    7     | expr . LE expr
+    8     | expr . GE expr
+    9     | expr . LT expr
+   10     | expr . GT expr
+   11     | expr . LIKE expr
+   12     | expr . IS expr
+   14     | expr . IN '(' expr_list ')'
+   15     | expr . NOT IN '(' expr_list ')'
+   16     | expr . BETWEEN expr_non_logical AND expr_non_logical
+   17     | expr . NOT BETWEEN expr_non_logical AND expr_non_logical
+   69 join: join_qualifier table_def ON expr .
+
+    OR       shift, and go to state 34
+    AND      shift, and go to state 35
+    EQ       shift, and go to state 36
+    NE       shift, and go to state 37
+    LE       shift, and go to state 38
+    GE       shift, and go to state 39
+    LT       shift, and go to state 40
+    GT       shift, and go to state 41
+    LIKE     shift, and go to state 42
+    IS       shift, and go to state 43
+    NOT      shift, and go to state 44
+    IN       shift, and go to state 45
+    BETWEEN  shift, and go to state 46
+
+    $default  reduce using rule 69 (join)
+
+
+State 152
+
+   70 join: join_qualifier table_def USING '(' . using_list ')'
+
+    IDENTIFIER  shift, and go to state 154
+
+    using_list  go to state 155
+
+
+State 153
+
+   78 opt_order_by: ORDER BY . sort_spec_list
+
+    IDENTIFIER  shift, and go to state 100
+
+    column_name     go to state 156
+    sort_spec_list  go to state 157
+    sort_spec       go to state 158
+
+
+State 154
+
+   71 using_list: IDENTIFIER .
+
+    $default  reduce using rule 71 (using_list)
+
+
+State 155
+
+   70 join: join_qualifier table_def USING '(' using_list . ')'
+   72 using_list: using_list . COMMA IDENTIFIER
+
+    COMMA  shift, and go to state 159
+    ')'    shift, and go to state 160
+
+
+State 156
+
+   81 sort_spec: column_name .
+   82          | column_name . ASC
+   83          | column_name . DESC
+
+    ASC   shift, and go to state 161
+    DESC  shift, and go to state 162
+
+    $default  reduce using rule 81 (sort_spec)
+
+
+State 157
+
+   78 opt_order_by: ORDER BY sort_spec_list .
+   79 sort_spec_list: sort_spec_list . COMMA sort_spec
+
+    COMMA  shift, and go to state 163
+
+    $default  reduce using rule 78 (opt_order_by)
+
+
+State 158
+
+   80 sort_spec_list: sort_spec .
+
+    $default  reduce using rule 80 (sort_spec_list)
+
+
+State 159
+
+   72 using_list: using_list COMMA . IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 164
+
+
+State 160
+
+   70 join: join_qualifier table_def USING '(' using_list ')' .
+
+    $default  reduce using rule 70 (join)
+
+
+State 161
+
+   82 sort_spec: column_name ASC .
+
+    $default  reduce using rule 82 (sort_spec)
+
+
+State 162
+
+   83 sort_spec: column_name DESC .
+
+    $default  reduce using rule 83 (sort_spec)
+
+
+State 163
+
+   79 sort_spec_list: sort_spec_list COMMA . sort_spec
+
+    IDENTIFIER  shift, and go to state 100
+
+    column_name  go to state 156
+    sort_spec    go to state 165
+
+
+State 164
+
+   72 using_list: using_list COMMA IDENTIFIER .
+
+    $default  reduce using rule 72 (using_list)
+
+
+State 165
+
+   79 sort_spec_list: sort_spec_list COMMA sort_spec .
+
+    $default  reduce using rule 79 (sort_spec_list)

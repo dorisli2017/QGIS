@@ -1,0 +1,232 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'testqgsfields.cpp'
+**
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.5)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'testqgsfields.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.9.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_TestQgsFields_t {
+    QByteArrayData data[31];
+    char stringdata0[296];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_TestQgsFields_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_TestQgsFields_t qt_meta_stringdata_TestQgsFields = {
+    {
+QT_MOC_LITERAL(0, 0, 13), // "TestQgsFields"
+QT_MOC_LITERAL(1, 14, 12), // "initTestCase"
+QT_MOC_LITERAL(2, 27, 0), // ""
+QT_MOC_LITERAL(3, 28, 15), // "cleanupTestCase"
+QT_MOC_LITERAL(4, 44, 4), // "init"
+QT_MOC_LITERAL(5, 49, 7), // "cleanup"
+QT_MOC_LITERAL(6, 57, 6), // "create"
+QT_MOC_LITERAL(7, 64, 4), // "copy"
+QT_MOC_LITERAL(8, 69, 10), // "assignment"
+QT_MOC_LITERAL(9, 80, 8), // "equality"
+QT_MOC_LITERAL(10, 89, 9), // "asVariant"
+QT_MOC_LITERAL(11, 99, 5), // "clear"
+QT_MOC_LITERAL(12, 105, 6), // "exists"
+QT_MOC_LITERAL(13, 112, 5), // "count"
+QT_MOC_LITERAL(14, 118, 7), // "isEmpty"
+QT_MOC_LITERAL(15, 126, 6), // "remove"
+QT_MOC_LITERAL(16, 133, 6), // "rename"
+QT_MOC_LITERAL(17, 140, 6), // "extend"
+QT_MOC_LITERAL(18, 147, 7), // "byIndex"
+QT_MOC_LITERAL(19, 155, 6), // "byName"
+QT_MOC_LITERAL(20, 162, 11), // "fieldOrigin"
+QT_MOC_LITERAL(21, 174, 16), // "fieldOriginIndex"
+QT_MOC_LITERAL(22, 191, 13), // "indexFromName"
+QT_MOC_LITERAL(23, 205, 6), // "toList"
+QT_MOC_LITERAL(24, 212, 12), // "allAttrsList"
+QT_MOC_LITERAL(25, 225, 21), // "appendExpressionField"
+QT_MOC_LITERAL(26, 247, 10), // "dataStream"
+QT_MOC_LITERAL(27, 258, 5), // "field"
+QT_MOC_LITERAL(28, 264, 8), // "qforeach"
+QT_MOC_LITERAL(29, 273, 8), // "iterator"
+QT_MOC_LITERAL(30, 282, 13) // "constIterator"
+
+    },
+    "TestQgsFields\0initTestCase\0\0cleanupTestCase\0"
+    "init\0cleanup\0create\0copy\0assignment\0"
+    "equality\0asVariant\0clear\0exists\0count\0"
+    "isEmpty\0remove\0rename\0extend\0byIndex\0"
+    "byName\0fieldOrigin\0fieldOriginIndex\0"
+    "indexFromName\0toList\0allAttrsList\0"
+    "appendExpressionField\0dataStream\0field\0"
+    "qforeach\0iterator\0constIterator"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_TestQgsFields[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      29,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags
+       1,    0,  159,    2, 0x08 /* Private */,
+       3,    0,  160,    2, 0x08 /* Private */,
+       4,    0,  161,    2, 0x08 /* Private */,
+       5,    0,  162,    2, 0x08 /* Private */,
+       6,    0,  163,    2, 0x08 /* Private */,
+       7,    0,  164,    2, 0x08 /* Private */,
+       8,    0,  165,    2, 0x08 /* Private */,
+       9,    0,  166,    2, 0x08 /* Private */,
+      10,    0,  167,    2, 0x08 /* Private */,
+      11,    0,  168,    2, 0x08 /* Private */,
+      12,    0,  169,    2, 0x08 /* Private */,
+      13,    0,  170,    2, 0x08 /* Private */,
+      14,    0,  171,    2, 0x08 /* Private */,
+      15,    0,  172,    2, 0x08 /* Private */,
+      16,    0,  173,    2, 0x08 /* Private */,
+      17,    0,  174,    2, 0x08 /* Private */,
+      18,    0,  175,    2, 0x08 /* Private */,
+      19,    0,  176,    2, 0x08 /* Private */,
+      20,    0,  177,    2, 0x08 /* Private */,
+      21,    0,  178,    2, 0x08 /* Private */,
+      22,    0,  179,    2, 0x08 /* Private */,
+      23,    0,  180,    2, 0x08 /* Private */,
+      24,    0,  181,    2, 0x08 /* Private */,
+      25,    0,  182,    2, 0x08 /* Private */,
+      26,    0,  183,    2, 0x08 /* Private */,
+      27,    0,  184,    2, 0x08 /* Private */,
+      28,    0,  185,    2, 0x08 /* Private */,
+      29,    0,  186,    2, 0x08 /* Private */,
+      30,    0,  187,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+
+       0        // eod
+};
+
+void TestQgsFields::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        TestQgsFields *_t = static_cast<TestQgsFields *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->initTestCase(); break;
+        case 1: _t->cleanupTestCase(); break;
+        case 2: _t->init(); break;
+        case 3: _t->cleanup(); break;
+        case 4: _t->create(); break;
+        case 5: _t->copy(); break;
+        case 6: _t->assignment(); break;
+        case 7: _t->equality(); break;
+        case 8: _t->asVariant(); break;
+        case 9: _t->clear(); break;
+        case 10: _t->exists(); break;
+        case 11: _t->count(); break;
+        case 12: _t->isEmpty(); break;
+        case 13: _t->remove(); break;
+        case 14: _t->rename(); break;
+        case 15: _t->extend(); break;
+        case 16: _t->byIndex(); break;
+        case 17: _t->byName(); break;
+        case 18: _t->fieldOrigin(); break;
+        case 19: _t->fieldOriginIndex(); break;
+        case 20: _t->indexFromName(); break;
+        case 21: _t->toList(); break;
+        case 22: _t->allAttrsList(); break;
+        case 23: _t->appendExpressionField(); break;
+        case 24: _t->dataStream(); break;
+        case 25: _t->field(); break;
+        case 26: _t->qforeach(); break;
+        case 27: _t->iterator(); break;
+        case 28: _t->constIterator(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObject TestQgsFields::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_TestQgsFields.data,
+      qt_meta_data_TestQgsFields,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *TestQgsFields::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *TestQgsFields::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_TestQgsFields.stringdata0))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int TestQgsFields::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 29)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 29;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 29)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 29;
+    }
+    return _id;
+}
+QT_WARNING_POP
+QT_END_MOC_NAMESPACE

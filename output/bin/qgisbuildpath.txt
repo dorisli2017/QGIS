@@ -1,0 +1,2 @@
+/home/guangping/dev/cpp/GIT/QGIS
+/home/guangping/dev/cpp/GIT/QGIS/output

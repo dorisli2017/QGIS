@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/config.h
+assert.h
+-
+
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/gmath.c
+gmath.h
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/gmath.h
+math.h
+-
+float.h
+-
+
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/gmath.h
+info.h
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/info.h
+
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/info.h
+nmeatime.h
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/nmeatime.h
+
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/nmeatime.h
+config.h
+/home/guangping/dev/cpp/GIT/QGIS/external/nmea/config.h
+

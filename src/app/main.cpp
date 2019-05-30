@@ -808,7 +808,6 @@ int main( int argc, char *argv[] )
       QgsApplication app(argc, argv, false);
       app.init();
       app.initQgis();
-
       lt::test(dataset);
 
       app.exitQgis();
