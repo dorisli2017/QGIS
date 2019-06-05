@@ -184,7 +184,7 @@ void QgsLabelingEngine::processProvider( QgsAbstractLabelProvider *provider, Qgs
 }
 
 
-void QgsLabelingEngine::run( QgsRenderContext &context,test::Performance& performance )
+void QgsLabelingEngine::run( QgsRenderContext &context,test::Performance& performance,const bool& is_initial,unordered_map<int, int>& my_solution_prev )
 {
   const QgsLabelingEngineSettings &settings = mMapSettings.labelingEngineSettings();
 
@@ -347,9 +347,9 @@ void QgsLabelingEngine::run( QgsRenderContext &context,test::Performance& perfor
   }
 
   // find the solution
-  test::Performance performance;
-  QList<pal::LabelPosition *> labels = p.solveProblem( problem.get(), settings.testFlag( QgsLabelingEngineSettings::UseAllLabels ), performance);
-
+  QList<pal::LabelPosition *> labels = p.solveProblem( problem.get(), settings.testFlag( QgsLabelingEngineSettings::UseAllLabels ), performance,is_initial,
+  my_solution_prev);
+ if(is_initial) assert(performance.remainingLabels == 0);
   QgsDebugMsgLevel( QStringLiteral( "LABELING work:  %1 ms ... labels# %2" ).arg( t.elapsed() ).arg( labels.size() ), 4 );
   t.restart();
 

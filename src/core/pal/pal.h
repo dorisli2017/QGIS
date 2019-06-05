@@ -148,7 +148,7 @@ namespace pal
        */
       std::unique_ptr< Problem > extractProblem( const QgsRectangle &extent, const QgsGeometry &mapBoundary );
 
-      QList<LabelPosition *> solveProblem( Problem *prob, bool displayAll,test::Performance& performance);
+      QList<LabelPosition *> solveProblem( Problem *prob, bool displayAll,test::Performance& performance,const bool& is_initial,unordered_map<int, int>& my_solution_prev);
 
       /**
        *\brief Set flag show partial label

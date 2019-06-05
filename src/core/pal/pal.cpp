@@ -455,7 +455,7 @@ std::unique_ptr<Problem> Pal::extractProblem( const QgsRectangle &extent, const 
   return extract( extent, mapBoundary );
 }
 
-QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll,test::Performance& performance )
+QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll,test::Performance& performance,const bool& is_initial,unordered_map<int, int>& my_solution_prev )
 {
   if ( !prob )
     return QList<LabelPosition *>();
@@ -465,21 +465,21 @@ QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll,test::P
   try
   {
     if ( searchMethod == FALP )
-      prob->init_sol_falp(performance);
+      prob->init_sol_falp(performance,true,is_initial,my_solution_prev);
 //+++++++++++++++++gpl-algorithms+++++++++++++++++++++
     else if ( searchMethod == SIMPLE )
-      prob->simple(performance);
+      prob->simple(performance,is_initial,my_solution_prev);
     else if ( searchMethod == MIS )
-      prob->mis(performance);
+      prob->mis(performance,is_initial,my_solution_prev);
     else if ( searchMethod == KAMIS )
-      prob->kamis(performance);
+      prob->kamis(performance,is_initial,my_solution_prev);
     else if ( searchMethod == MAXHS )
-      prob->maxHS(performance);
+      prob->maxHS(performance,is_initial,my_solution_prev);
 //-----------------gpl-algorithms---------------------
     else if ( searchMethod == CHAIN )
-      prob->chain_search(performance);
+      prob->chain_search(performance,is_initial,my_solution_prev);
     else
-      prob->popmusic(performance);
+      prob->popmusic(performance,is_initial,my_solution_prev);
   }
   catch ( InternalException::Empty & )
   {

@@ -61,9 +61,6 @@ class Modification
             int randID;
             int number = 0;
             std::set<int> used;
-            cout<< "fixSIZE "<< fixSize<< endl;
-            cout<< "anlargeSIZE "<< enlargeSize<< endl;
-            cout<< "shrinkSIZE "<< shrinkSize<< endl;
             for(int i = 0; i < fixSize; i++){
                 randID = rand()% size;
                 number = 0;

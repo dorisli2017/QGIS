@@ -333,7 +333,9 @@ void QgsMapRendererJob::drawLabeling( QgsRenderContext &renderContext, QgsLabeli
   if ( labelingEngine2 )
   {
     test:: Performance performance;
-    labelingEngine2->run( renderContext,performance );
+    bool myinitial = true;
+    unordered_map<int, int> my_solution_prev; 
+    labelingEngine2->run( renderContext,performance, myinitial, my_solution_prev);
   }
 
   QgsDebugMsg( QStringLiteral( "Draw labeling took (seconds): %1" ).arg( t.elapsed() / 1000. ) );

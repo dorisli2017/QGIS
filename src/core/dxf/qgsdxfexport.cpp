@@ -1145,7 +1145,9 @@ void QgsDxfExport::writeEntities()
     renderer->stopRender( ctx );
   }
   test::Performance performance;
-  engine.run( ctx,performance );
+  bool myinitial = true;
+  unordered_map<int, int> my_solution_prev; 
+  engine.run( ctx,performance,myinitial,my_solution_prev );
 
   endSection();
 }

@@ -8,8 +8,6 @@
 template<class K, class V, class dummy_compare, class A> using json_fifo_map = nlohmann::fifo_map<K, V, nlohmann::fifo_map_compare<K>, A>; 
 using json = nlohmann::basic_json<json_fifo_map>;
 using namespace std;
-inline bool initial = true;
-inline unordered_map<int, int> solution_prev; 
 namespace test{
     struct Performance{
         string name;
@@ -29,9 +27,9 @@ namespace test{
             json node;
             node["name"] = name;
             node["time"] = time; 
-             node["solutionSize"] = solutionSize;
-              node["remainingLabels"] = remainingLabels;
-               node["solutionWeight"] =  solutionWeight;
+            node["solutionSize"] = solutionSize;
+            node["remainingLabels"] = remainingLabels;
+            node["solutionWeight"] =  solutionWeight;
             return node;
         }
         void appendJSON(json node, string name){

@@ -149,12 +149,12 @@ namespace pal
       /**
        * \brief popmusic framework
        */
-      void popmusic(test::Performance& performance);
+      void popmusic(test::Performance& performance,const bool& myinitial,unordered_map<int, int>& my_solution_prev);
 
       /**
        * \brief Test with very-large scale neighborhood
        */
-      void chain_search(test::Performance& performance);
+      void chain_search(test::Performance& performance,const bool& myinitial,unordered_map<int, int>& my_solution_prev);
 
       QList<LabelPosition *> getSolution( bool returnInactive );
 
@@ -188,28 +188,28 @@ namespace pal
        * \brief Basic initial solution : every feature to -1
        */
       void init_sol_empty();
-      void init_sol_falp(test::Performance& performance);
+      void init_sol_falp(test::Performance& performance, bool final,const bool& myinitial,unordered_map<int, int>& my_solution_prev);
 //+++++++++++++++++++++++++++++++gpl_algorithms+++++++++++++++++++++++++++++++++
-      void simple(test::Performance& performance);
-      void mis(test::Performance& performance);
-      void maxHS(test::Performance& performance);
-      void kamis(test::Performance& performance);
+      void simple(test::Performance& performance,const bool& myinitial,unordered_map<int, int>& my_solution_prev);
+      void mis(test::Performance& performance,const bool& myinitial,unordered_map<int, int>& my_solution_prev);
+      void maxHS(test::Performance& performance,const bool& myinitial,unordered_map<int, int>& my_solution_prev);
+      void kamis(test::Performance& performance,const bool& myinitial,unordered_map<int, int>& my_solution_prev);
 //-------------------------------gpl-algorithms---------------------------------
 
 //++++++++++++++++++++++++ set conflict graph for MIS-algorithms+++++++++++++++++
-      void setConflictGraph();
+      void setConflictGraph(const bool& myinitial,unordered_map<int, int>& my_solution_prev);
       void debugConflictGraph();
       void debugIndepdency( vector<int>& MIS);
       void setSolution(vector<int>& MIS);
 //------------------------ set conflict graph for MIS-algorithms-----------------
 //+++++++++++++++++++++++++++++++Assertions for understanding QGIS++++++++++++++++++++++++++++++++++++++++++
-      void checkQgsfeatureID();
+      void checkQgsfeatureID(const bool& is_initial,unordered_map<int, int>& my_solution_prev);
       void checkLabelID();
       void printCost();
 //-----------------------------------Assertions for understanding QGIS-------------------------------------
 //+++++++++++++++++++++++++++++modification+++++++++++++++++++++++++++++++++++++++++++++++++++++++
-      int cacheSolution();
-      int getCached(int feat);
+      int cacheSolution(bool final,const bool& myinitial,unordered_map<int, int>& my_solution_prev);
+      int getCached(int feat,unordered_map<int, int>& my_solution_prev);
 //-----------------------------modification-------------------------------------------------------
 //++++++++++++++++++add weights+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // set weight as 1-cost

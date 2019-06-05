@@ -201,7 +201,7 @@ class CORE_EXPORT QgsLabelingEngine
     void removeProvider( QgsAbstractLabelProvider *provider );
 
     //! compute the labeling with given map settings and providers
-    void run( QgsRenderContext &context,test::Performance& performance );
+    void run( QgsRenderContext &context,test::Performance& performance, const bool& is_initial,unordered_map<int, int>& my_solution_prev );
 
     //! Returns pointer to recently computed results and pass the ownership of results to the caller
     QgsLabelingResults *takeResults();
