@@ -60,9 +60,11 @@ void QgsLabelingGui::registerDataDefinedButton( QgsPropertyOverrideButton *butto
 
 void QgsLabelingGui::updateProperty()
 {
+  std::cout<< "***in QgsLabelingGui::updateProperty()***"<< std::endl;
   QgsPropertyOverrideButton *button = qobject_cast<QgsPropertyOverrideButton *>( sender() );
   QgsPalLayerSettings::Property key = static_cast< QgsPalLayerSettings::Property >( button->propertyKey() );
   mDataDefinedProperties.setProperty( key, button->toProperty() );
+  std::cout<< "***out QgsLabelingGui::updateProperty()***"<< std::endl;
 }
 
 QgsLabelingGui::QgsLabelingGui( QgsVectorLayer *layer, QgsMapCanvas *mapCanvas, const QgsPalLayerSettings &layerSettings, QWidget *parent )
@@ -106,6 +108,7 @@ QgsLabelingGui::QgsLabelingGui( QgsVectorLayer *layer, QgsMapCanvas *mapCanvas, 
 
 void QgsLabelingGui::setLayer( QgsMapLayer *mapLayer )
 {
+  std::cout<< "in QgsLabelingGui::setLayer"<< std::endl;
   mPreviewFeature = QgsFeature();
 
   if ( !mapLayer || mapLayer->type() != QgsMapLayerType::VectorLayer )
@@ -271,6 +274,7 @@ void QgsLabelingGui::setLayer( QgsMapLayer *mapLayer )
 
   enableDataDefinedAlignment( mCoordXDDBtn->isActive() && mCoordYDDBtn->isActive() );
   updateUi(); // should come after data defined button setup
+  std::cout<< "out  QgsLabelingGui::setLayer"<< std::endl;
 }
 
 void QgsLabelingGui::blockInitSignals( bool block )

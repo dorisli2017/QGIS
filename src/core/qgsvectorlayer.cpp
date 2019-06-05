@@ -97,6 +97,7 @@
 #include "qgsexpressioncontextutils.h"
 
 #include "diagram/qgsdiagram.h"
+#include <iostream>
 
 #ifdef TESTPROVIDERLIB
 #include <dlfcn.h>
@@ -145,9 +146,10 @@ QgsVectorLayer::QgsVectorLayer( const QString &vectorLayerPath,
                                 const QgsVectorLayer::LayerOptions &options )
   : QgsMapLayer( QgsMapLayerType::VectorLayer, baseName, vectorLayerPath )
   , mAuxiliaryLayer( nullptr )
-  , mAuxiliaryLayerKey( QString() )
+  , mAuxiliaryLayerKey( QString("full_id") )
   , mReadExtentFromXml( options.readExtentFromXml )
 {
+  //assert(false);
   if ( options.fallbackCrs.isValid() )
     setCrs( options.fallbackCrs, false );
   mWkbType = options.fallbackWkbType;
@@ -922,9 +924,14 @@ QgsConditionalLayerStyles *QgsVectorLayer::conditionalStyles() const
 
 QgsFeatureIterator QgsVectorLayer::getFeatures( const QgsFeatureRequest &request ) const
 {
-  if ( !mValid || !mDataProvider )
+   //std::cout<< "In QgsVectorLayer::getFeatures"<< std::endl;
+   //std::cout<< "mValid: "<<mValid <<std::endl;
+   //std::cout<< "mDataProvider: "<<mDataProvider <<std::endl;
+  if ( !mValid || !mDataProvider ){
+    //std::cout<< "OUT QgsVectorLayer::getFeatures *************0"<< std::endl;
     return QgsFeatureIterator();
-
+  }
+  //std::cout<< "OUT QgsVectorLayer::getFeatures ************1"<< std::endl;
   return QgsFeatureIterator( new QgsVectorLayerFeatureIterator( new QgsVectorLayerFeatureSource( this ), true, request ) );
 }
 
@@ -1320,6 +1327,7 @@ void QgsVectorLayer::setLabeling( QgsAbstractVectorLayerLabeling *labeling )
 
 bool QgsVectorLayer::startEditing()
 {
+  std::cout<< "in QgsVectorLayer::startEditing"<< std::endl;
   if ( !mValid || !mDataProvider )
   {
     return false;
@@ -1483,7 +1491,9 @@ bool QgsVectorLayer::readXml( const QDomNode &layer_node, QgsReadWriteContext &c
   const QDomElement asElem = asNode.toElement();
   if ( !asElem.isNull() )
   {
+    std::cout<< "set key:"<< mAuxiliaryLayerKey.toUtf8().constData()<< std::endl;
     mAuxiliaryLayerKey = asElem.attribute( QStringLiteral( "key" ) );
+    std::cout<< "after set key:"<< mAuxiliaryLayerKey.toUtf8().constData()<< std::endl;
   }
 
   return mValid;               // should be true if read successfully
@@ -2619,6 +2629,14 @@ bool QgsVectorLayer::changeGeometry( QgsFeatureId fid, QgsGeometry &geom, bool s
 
 bool QgsVectorLayer::changeAttributeValue( QgsFeatureId fid, int field, const QVariant &newValue, const QVariant &oldValue, bool skipDefaultValues )
 {
+  //******print the information out**********************
+  /*std::cout<< "QgsFeatureId "<<fid << std::endl;
+    std::cout<< "field "<< field<< std::endl;
+      std::cout<< "newValue "<<newValue.toString().toUtf8().constData() << std::endl;
+        std::cout<< "oldValue "<<oldValue.toString().toUtf8().constData() << std::endl;
+          std::cout<< "skipDefaultValues "<<skipDefaultValues << std::endl;*/
+
+  std::cout<< "**in QgsVectorLayer::changeAttributeValue"<< std::endl;
   bool result = false;
 
   switch ( fields().fieldOrigin( field ) )
@@ -2642,7 +2660,7 @@ bool QgsVectorLayer::changeAttributeValue( QgsFeatureId fid, int field, const QV
 
   if ( result && !skipDefaultValues && !mDefaultValueOnUpdateFields.isEmpty() )
     updateDefaultValues( fid );
-
+  std::cout<< "**out QgsVectorLayer::changeAttributeValue"<< std::endl;
   return result;
 }
 
@@ -3346,6 +3364,7 @@ void QgsVectorLayer::updateExpressionField( int index, const QString &exp )
 
 void QgsVectorLayer::updateFields()
 {
+  std::cout<< "IN QgsVectorLayer::updateFields"<< std::endl;
   if ( !mDataProvider )
     return;
 
@@ -3457,6 +3476,7 @@ void QgsVectorLayer::updateFields()
     emit updatedFields();
     mEditFormConfig.setFields( mFields );
   }
+    std::cout<< "OUT QgsVectorLayer::updateFields"<< std::endl;
 }
 
 
@@ -4585,30 +4605,37 @@ QString QgsVectorLayer::loadNamedStyle( const QString &theURI, bool &resultFlag,
 
 bool QgsVectorLayer::loadAuxiliaryLayer( const QgsAuxiliaryStorage &storage, const QString &key )
 {
+  std::cout<< "IN QgsVectorLayer::loadAuxiliaryLayer"<< std::endl;
   bool rc = false;
 
   QString joinKey = mAuxiliaryLayerKey;
-  if ( !key.isEmpty() )
+  if ( !key.isEmpty() ){
+      std::cout<< "IN QgsVectorLayer::loadAuxiliaryLayer:key.isEmpty() "<< std::endl;
     joinKey = key;
-
+  }
+  std::cout<< "storage.isValid()"<< storage.isValid()<< std::endl;
+  std::cout<< "joinKey.isEmpty()"<< joinKey.toUtf8().constData()<< std::endl;
   if ( storage.isValid() && !joinKey.isEmpty() )
   {
+    std::cout<< "IN QgsVectorLayer::loadAuxiliaryLayer:storage.isValid() && !joinKey.isEmpty()"<< std::endl;
     QgsAuxiliaryLayer *alayer = nullptr;
 
     int idx = fields().lookupField( joinKey );
 
     if ( idx >= 0 )
     {
+      std::cout<< "idx: "<< idx<< std::endl;
       alayer = storage.createAuxiliaryLayer( fields().field( idx ), this );
 
       if ( alayer )
       {
+        std::cout<< "alayer"<< std::endl;
         setAuxiliaryLayer( alayer );
         rc = true;
       }
     }
   }
-
+  std::cout<< "OUT QgsVectorLayer::loadAuxiliaryLayer"<< std::endl;
   return rc;
 }
 
@@ -4625,8 +4652,9 @@ void QgsVectorLayer::setAuxiliaryLayer( QgsAuxiliaryLayer *alayer )
 
     if ( !alayer->isEditable() )
       alayer->startEditing();
-
+        std::cout<< "QgsVectorLayer::setAuxiliaryLayer set key:"<< mAuxiliaryLayerKey.toUtf8().constData()<< std::endl;
     mAuxiliaryLayerKey = alayer->joinInfo().targetFieldName();
+            std::cout<< "QgsVectorLayer::setAuxiliaryLayer set key:"<< mAuxiliaryLayerKey.toUtf8().constData()<< std::endl;
   }
 
   mAuxiliaryLayer.reset( alayer );

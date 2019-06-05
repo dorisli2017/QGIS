@@ -71,6 +71,7 @@ email                : sherman at mrcc.com
 #include "qgssvgcache.h"
 #include "qgsimagecache.h"
 #include "qgsexpressioncontextutils.h"
+#include <iostream>
 
 /**
  * \ingroup gui
@@ -489,6 +490,7 @@ QgsExpressionContextScope *QgsMapCanvas::defaultExpressionContextScope()
 
 void QgsMapCanvas::refresh()
 {
+   // std::cout<< "in carvas refresh "<<std::endl;
   if ( !mSettings.hasValidSettings() )
   {
     QgsDebugMsg( QStringLiteral( "CANVAS refresh - invalid settings -> nothing to do" ) );
@@ -513,6 +515,7 @@ void QgsMapCanvas::refresh()
 
   // schedule a refresh
   mRefreshTimer->start( 1 );
+ // std::cout<< "refresh finished"<<std:: endl;
 } // refresh
 
 void QgsMapCanvas::refreshMap()

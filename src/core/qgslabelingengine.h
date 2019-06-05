@@ -71,7 +71,7 @@ class CORE_EXPORT QgsAbstractLabelProvider
     //+++++++++++++++++gpl-modification+++++++++++++++++++
     virtual void fixFeature(int id){};
     virtual void fitFeature(int id, double fator){};
-    //virtual void getFeatureIds(){};
+    virtual void getFeatureIds(){};
     //--------------gpl-modification----------------------
     //! Returns list of child providers - useful if the provider needs to put labels into more layers with different configuration
     virtual QList<QgsAbstractLabelProvider *> subProviders() { return QList<QgsAbstractLabelProvider *>(); }
@@ -204,7 +204,13 @@ class CORE_EXPORT QgsLabelingEngine
 
     //! Remove provider if the provider's initialization failed. Provider instance is deleted.
     void removeProvider( QgsAbstractLabelProvider *provider );
-
+    //+++++++++++++++++gpl-modification+++++++++++++++++++
+    void fixFeature(int id);
+    void fitFeature(int id, double fator);
+    void getFeatureIds();
+    void getFieldNames();
+    //void getProvider(QgsAbstractLabelProvider *firstProvider);
+    //----------------gpl-modification--------------------
     //! compute the labeling with given map settings and providers
     void run( QgsRenderContext &context,test::Performance& performance );
     void interRun(QgsRenderContext &context,QDir& image_path, QString& ext_image, QImage &labeled_image, QString& dataset,vector<test::Performance>& performances);

@@ -371,6 +371,43 @@ class CORE_EXPORT QgsVectorLayer : public QgsMapLayer, public QgsExpressionConte
     Q_PROPERTY( double opacity READ opacity WRITE setOpacity NOTIFY opacityChanged )
 
   public:
+                  //+++++++++++++++++++debug code++++++++++++++++
+            void printLayer(){
+                std::cout<< "LAYER INFORMATION:"<<std:: endl;
+                std::cout<<mSelectedFeatureIds.size()<< " selected QgsFeatureIds: "<< std::endl;
+                for(auto ele: mSelectedFeatureIds)
+                  std::cout<< "QgsFeatureIds: "<< ele<< std::endl;  
+                  
+                std::cout<< "mLabelsEnabled: "<< mLabelsEnabled<< std::endl;
+                //std::cout<< "mLabelFontNotFoundNotified: "<< mLabelFontNotFoundNotified<<std:: endl;
+                //std::cout<< "mFeatureBlendMode: "<< mFeatureBlendMode << std::endl;
+                //std::cout<< "mSymbolFeatureCounted: "<< mSymbolFeatureCounted<< std::endl;
+                std::cout<< "mEditCommandActive: "<< mEditCommandActive << std::endl; 
+                //std::cout<< "mDeletedFids: "<< mDeletedFids << std::endl; 
+                std::cout<< "mAllowCommit" << mAllowCommit<< std::endl;
+                std::cout<< "number of features: "<< featureCount()<<std:: endl;
+                QgsFeatureIds ids= allFeatureIds();
+                                // print feature infos
+                for(auto ele: ids){
+                  std::cout<< "Ids: "<< ele<< std::endl; 
+                  QgsFeature feature = getFeature(ele);
+                  if(!feature.isValid()) assert(false);
+                  QgsAttributes attributes= feature.attributes();
+                  for(auto attr: attributes){
+                    std::cout<< attr.toString().toUtf8().constData()<< std::endl;
+                  } 
+                  std::cout<< std::endl;
+                } 
+
+                //print attribute info
+
+            }
+            //-------------------debug code----------------
+            void cacheIDs(std::vector<int>& featureQGSIDS){
+              QgsFeatureIds ids= allFeatureIds();
+              for(auto ele: ids)
+                featureQGSIDS.push_back(ele);  
+            }
 
     //! Result of an edit operation
     enum EditResult
@@ -2443,7 +2480,6 @@ class CORE_EXPORT QgsVectorLayer : public QgsMapLayer, public QgsExpressionConte
      * \since QGIS 3.0
      */
     void symbolFeatureCountMapChanged();
-
   protected:
     //! Sets the extent
     void setExtent( const QgsRectangle &rect ) FINAL;

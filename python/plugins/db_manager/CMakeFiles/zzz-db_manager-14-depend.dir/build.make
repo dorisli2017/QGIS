@@ -74,9 +74,23 @@ python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/dlg_table_properties.py
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/info_viewer.py
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/layer_preview.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/resources_rc.py
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/sql_dictionary.py
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/sqledit.py
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/table_viewer.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgAddGeometryColumn.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgCancelTaskQuery.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgCreateConstraint.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgCreateIndex.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgCreateTable.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgDbError.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgExportVector.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgFieldProperties.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgImportVector.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgQueryBuilder.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgSqlLayerWindow.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgSqlWindow.py
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgTableProperties.py
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/resources_rc.py
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend: python/plugins/db_manager/metadata.txt
 
@@ -102,8 +116,73 @@ python/plugins/db_manager/resources_rc.py: python/plugins/db_manager/resources.q
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating resources_rc.py"
 	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && /usr/bin/pyrcc5 -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/resources_rc.py /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/resources.qrc
 
+python/plugins/db_manager/ui_DlgAddGeometryColumn.py: python/plugins/db_manager/ui/DlgAddGeometryColumn.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ui_DlgAddGeometryColumn.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgAddGeometryColumn.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgAddGeometryColumn.py
+
+python/plugins/db_manager/ui_DlgCancelTaskQuery.py: python/plugins/db_manager/ui/DlgCancelTaskQuery.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating ui_DlgCancelTaskQuery.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgCancelTaskQuery.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgCancelTaskQuery.py
+
+python/plugins/db_manager/ui_DlgCreateConstraint.py: python/plugins/db_manager/ui/DlgCreateConstraint.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating ui_DlgCreateConstraint.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgCreateConstraint.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgCreateConstraint.py
+
+python/plugins/db_manager/ui_DlgCreateIndex.py: python/plugins/db_manager/ui/DlgCreateIndex.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating ui_DlgCreateIndex.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgCreateIndex.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgCreateIndex.py
+
+python/plugins/db_manager/ui_DlgCreateTable.py: python/plugins/db_manager/ui/DlgCreateTable.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating ui_DlgCreateTable.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgCreateTable.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgCreateTable.py
+
+python/plugins/db_manager/ui_DlgDbError.py: python/plugins/db_manager/ui/DlgDbError.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating ui_DlgDbError.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgDbError.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgDbError.py
+
+python/plugins/db_manager/ui_DlgExportVector.py: python/plugins/db_manager/ui/DlgExportVector.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating ui_DlgExportVector.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgExportVector.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgExportVector.py
+
+python/plugins/db_manager/ui_DlgFieldProperties.py: python/plugins/db_manager/ui/DlgFieldProperties.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating ui_DlgFieldProperties.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgFieldProperties.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgFieldProperties.py
+
+python/plugins/db_manager/ui_DlgImportVector.py: python/plugins/db_manager/ui/DlgImportVector.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating ui_DlgImportVector.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgImportVector.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgImportVector.py
+
+python/plugins/db_manager/ui_DlgQueryBuilder.py: python/plugins/db_manager/ui/DlgQueryBuilder.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating ui_DlgQueryBuilder.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgQueryBuilder.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgQueryBuilder.py
+
+python/plugins/db_manager/ui_DlgSqlLayerWindow.py: python/plugins/db_manager/ui/DlgSqlLayerWindow.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating ui_DlgSqlLayerWindow.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgSqlLayerWindow.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgSqlLayerWindow.py
+
+python/plugins/db_manager/ui_DlgSqlWindow.py: python/plugins/db_manager/ui/DlgSqlWindow.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating ui_DlgSqlWindow.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgSqlWindow.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgSqlWindow.py
+
+python/plugins/db_manager/ui_DlgTableProperties.py: python/plugins/db_manager/ui/DlgTableProperties.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating ui_DlgTableProperties.py"
+	cd /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager && ../../../scripts/pyuic-wrapper.sh /usr/bin/pyuic5 /home/guangping/dev/cpp/GIT/QGIS/output/lib /home/guangping/dev/cpp/GIT/QGIS/output/python /usr/bin/python3 /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui/DlgTableProperties.ui -o /home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/ui_DlgTableProperties.py
+
 zzz-db_manager-14-depend: python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend
 zzz-db_manager-14-depend: python/plugins/db_manager/resources_rc.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgAddGeometryColumn.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgCancelTaskQuery.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgCreateConstraint.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgCreateIndex.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgCreateTable.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgDbError.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgExportVector.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgFieldProperties.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgImportVector.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgQueryBuilder.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgSqlLayerWindow.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgSqlWindow.py
+zzz-db_manager-14-depend: python/plugins/db_manager/ui_DlgTableProperties.py
 zzz-db_manager-14-depend: python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/build.make
 
 .PHONY : zzz-db_manager-14-depend

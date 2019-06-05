@@ -225,6 +225,7 @@ QPainter::CompositionMode QgsMapLayer::blendMode() const
 
 bool QgsMapLayer::readLayerXml( const QDomElement &layerElement, QgsReadWriteContext &context )
 {
+  std::cout<< "IN QgsMapLayer::readLayerXml"<< std::endl;
   bool layerError;
 
   QDomNode mnl;
@@ -246,6 +247,7 @@ bool QgsMapLayer::readLayerXml( const QDomElement &layerElement, QgsReadWriteCon
   if ( ( rx.indexIn( mDataSource ) != -1 )
        && !QgsApplication::authManager()->setMasterPassword( true ) )
   {
+     std::cout<< "OUT QgsMapLayer::readLayerXml"<< std::endl;
     return false;
   }
 
@@ -381,7 +383,7 @@ bool QgsMapLayer::readLayerXml( const QDomElement &layerElement, QgsReadWriteCon
   // mMetadata.readFromLayer( this );
   QDomElement metadataElem = layerElement.firstChildElement( QStringLiteral( "resourceMetadata" ) );
   mMetadata.readMetadataXml( metadataElem );
-
+ std::cout<< "OUT QgsMapLayer::readLayerXml"<< std::endl;
   return ! layerError;
 } // bool QgsMapLayer::readLayerXML
 
@@ -1792,7 +1794,9 @@ QgsAbstract3DRenderer *QgsMapLayer::renderer3D() const
 
 void QgsMapLayer::triggerRepaint( bool deferredUpdate )
 {
+  std::cout<< "IN QgsMapLayer::triggerRepaint: "<<deferredUpdate << std::endl;
   emit repaintRequested( deferredUpdate );
+    std::cout<< "OUT QgsMapLayer::triggerRepaint"<< std::endl;
 }
 
 void QgsMapLayer::setMetadata( const QgsLayerMetadata &metadata )
@@ -1914,6 +1918,7 @@ bool QgsMapLayer::setDependencies( const QSet<QgsMapLayerDependency> &oDeps )
 
 void QgsMapLayer::setRefreshOnNotifyEnabled( bool enabled )
 {
+  std::cout<< "IN QgsMapLayer::setRefreshOnNotifyEnabled"<< std::endl;
   if ( !dataProvider() )
     return;
 
@@ -1928,11 +1933,14 @@ void QgsMapLayer::setRefreshOnNotifyEnabled( bool enabled )
     disconnect( dataProvider(), &QgsVectorDataProvider::notify, this, &QgsMapLayer::onNotifiedTriggerRepaint );
   }
   mIsRefreshOnNofifyEnabled = enabled;
+   std::cout<< "out QgsMapLayer::setRefreshOnNotifyEnabled"<< std::endl;
 }
 
 void QgsMapLayer::onNotifiedTriggerRepaint( const QString &message )
 {
+   std::cout<< "IN QgsMapLayer::onNotifiedTriggerRepaint"<< std::endl;
   if ( refreshOnNotifyMessage().isEmpty() || refreshOnNotifyMessage() == message )
     triggerRepaint();
+  std::cout<< "OUT QgsMapLayer::onNotifiedTriggerRepaint"<< std::endl;
 }
 

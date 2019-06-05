@@ -42,6 +42,7 @@ QgsMapRendererParallelJob::~QgsMapRendererParallelJob()
 
 void QgsMapRendererParallelJob::start()
 {
+  cout<< "* in  QgsMapRendererParallelJob::start()"<< endl;
   if ( isActive() )
     return;
 
@@ -69,6 +70,7 @@ void QgsMapRendererParallelJob::start()
 
   mFuture = QtConcurrent::map( mLayerJobs, renderLayerStatic );
   mFutureWatcher.setFuture( mFuture );
+    cout<< "* out  QgsMapRendererParallelJob::start()"<< endl;
 }
 
 void QgsMapRendererParallelJob::cancel()
@@ -185,14 +187,17 @@ QgsLabelingResults *QgsMapRendererParallelJob::takeLabelingResults()
 
 QImage QgsMapRendererParallelJob::renderedImage()
 {
+  cout<< "* in QgsMapRendererParallelJob::renderedImage()"<< endl;
   if ( mStatus == RenderingLayers )
     return composeImage( mSettings, mLayerJobs, mLabelJob );
   else
     return mFinalImage; // when rendering labels or idle
+        cout<< "* out QgsMapRendererParallelJob::renderedImage()"<< endl;
 }
 
 void QgsMapRendererParallelJob::renderLayersFinished()
 {
+      cout<< "* in QgsMapRendererParallelJob::renderLayersFinished()"<< endl;
   Q_ASSERT( mStatus == RenderingLayers );
 
   LayerRenderJobs::const_iterator it = mLayerJobs.constBegin();
@@ -216,14 +221,18 @@ void QgsMapRendererParallelJob::renderLayersFinished()
     connect( &mLabelingFutureWatcher, &QFutureWatcher<void>::finished, this, &QgsMapRendererParallelJob::renderingFinished );
 
     // now start rendering of labeling!
+    cout<< "**now start rendering of labeling!***********"<< endl;
     mLabelingFuture = QtConcurrent::run( renderLabelsStatic, this );
+    cout<< "**After QtConcurrent::run***********"<< endl;
     mLabelingFutureWatcher.setFuture( mLabelingFuture );
+    
     emit renderingLayersFinished();
   }
   else
   {
     renderingFinished();
   }
+        cout<< "* out QgsMapRendererParallelJob::renderLayersFinished()"<< endl;
 }
 
 void QgsMapRendererParallelJob::renderingFinished()
@@ -287,6 +296,7 @@ void QgsMapRendererParallelJob::renderLayerStatic( LayerRenderJob &job )
 
 void QgsMapRendererParallelJob::renderLabelsStatic( QgsMapRendererParallelJob *self )
 {
+  cout<< "********** in renderLabelsStatic**********"<< endl;
   LabelRenderJob &job = self->mLabelJob;
 
   if ( !job.cached )
@@ -335,5 +345,6 @@ void QgsMapRendererParallelJob::renderLabelsStatic( QgsMapRendererParallelJob *s
       self->mFinalImage = composeImage( self->mSettings, self->mLayerJobs, self->mLabelJob );
     }
   }
+    cout<< "********** out renderLabelsStatic**********"<< endl;
 }
 

@@ -1167,6 +1167,7 @@ bool QgsPalLayerSettings::checkMinimumSizeMM( const QgsRenderContext &ct, const 
 
 void QgsPalLayerSettings::calculateLabelSize( const QFontMetricsF *fm, const QString &text, double &labelX, double &labelY, const QgsFeature *f, QgsRenderContext *context )
 {
+  //cout<< " Key is calculateLabelSize" << endl;
   if ( !fm || !f )
   {
     return;
@@ -1195,6 +1196,7 @@ void QgsPalLayerSettings::calculateLabelSize( const QFontMetricsF *fm, const QSt
 
   if ( f == mCurFeat ) // called internally, use any stored data defined values
   {
+     // cout<< " f= mCurFeat" << endl;
     if ( dataDefinedValues.contains( QgsPalLayerSettings::MultiLineWrapChar ) )
     {
       wrapchr = dataDefinedValues.value( QgsPalLayerSettings::MultiLineWrapChar ).toString();
@@ -1237,6 +1239,7 @@ void QgsPalLayerSettings::calculateLabelSize( const QFontMetricsF *fm, const QSt
   }
   else // called externally with passed-in feature, evaluate data defined
   {
+          cout<< " f!= mCurFeat" << endl;
     rc->expressionContext().setOriginalValueVariable( wrapChar );
     wrapchr = mDataDefinedProperties.value( QgsPalLayerSettings::MultiLineWrapChar, rc->expressionContext(), wrapchr ).toString();
 

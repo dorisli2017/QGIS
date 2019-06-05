@@ -397,6 +397,7 @@ typedef QgsDataProvider *classFactoryFunction_t( const QString *, const QgsDataP
  */
 QgsDataProvider *QgsProviderRegistry::createProvider( QString const &providerKey, QString const &dataSource, const QgsDataProvider::ProviderOptions &options )
 {
+  std::cout<< "In QgsProviderRegistry::createProvider"<< std::endl;
   // XXX should I check for and possibly delete any pre-existing providers?
   // XXX How often will that scenario occur?
 
@@ -439,6 +440,7 @@ QgsDataProvider *QgsProviderRegistry::createProvider( QString const &providerKey
   if ( !myLib.load() )
   {
     QgsMessageLog::logMessage( QObject::tr( "Failed to load %1: %2" ).arg( lib, myLib.errorString() ) );
+      std::cout<< "OUT QgsProviderRegistry::createProvider"<< std::endl;
     return nullptr;
   }
 
@@ -446,6 +448,7 @@ QgsDataProvider *QgsProviderRegistry::createProvider( QString const &providerKey
   if ( !classFactory )
   {
     QgsDebugMsg( QStringLiteral( "Failed to load %1: no classFactory method" ).arg( lib ) );
+    std::cout<< "OUT 1 QgsProviderRegistry::createProvider"<< std:: endl;
     return nullptr;
   }
 
@@ -454,10 +457,12 @@ QgsDataProvider *QgsProviderRegistry::createProvider( QString const &providerKey
   {
     QgsMessageLog::logMessage( QObject::tr( "Unable to instantiate the data provider plugin %1" ).arg( lib ) );
     myLib.unload();
+    std::cout<< "OUT 2 QgsProviderRegistry::createProvider"<< std:: endl;
     return nullptr;
   }
 
   QgsDebugMsg( QStringLiteral( "Instantiated the data provider plugin: %1" ).arg( dataProvider->name() ) );
+  std::cout<< "OUT 3 QgsProviderRegistry::createProvider"<< std::endl;
   return dataProvider;
 } // QgsProviderRegistry::setDataProvider
 
@@ -533,6 +538,7 @@ QFunctionPointer QgsProviderRegistry::function( QString const &providerKey,
 
 QLibrary *QgsProviderRegistry::createProviderLibrary( QString const &providerKey ) const
 {
+  std::cout<< "IN QgsProviderRegistry::createProviderLibrary"<< std::endl;
   QString lib = library( providerKey );
   if ( lib.isEmpty() )
     return nullptr;
@@ -541,11 +547,13 @@ QLibrary *QgsProviderRegistry::createProviderLibrary( QString const &providerKey
 
   QgsDebugMsg( "Library name is " + myLib->fileName() );
 
-  if ( myLib->load() )
+  if ( myLib->load() ){
+  std::cout<< "OUT QgsProviderRegistry::createProviderLibrary"<< std::endl;
     return myLib.release();
+  }
 
   QgsDebugMsg( "Cannot load library: " + myLib->errorString() );
-
+std::cout<< "OUT QgsProviderRegistry::createProviderLibrary"<< std::endl;
   return nullptr;
 }
 

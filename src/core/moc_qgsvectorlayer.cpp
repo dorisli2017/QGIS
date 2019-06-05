@@ -999,8 +999,10 @@ void QgsVectorLayer::committedFeaturesRemoved(const QString & _t1, const QgsFeat
 // SIGNAL 25
 void QgsVectorLayer::committedAttributeValuesChanges(const QString & _t1, const QgsChangedAttributesMap & _t2)
 {
+    std::cout<< "in QgsVectorLayer::committedAttributeValuesChanges"<< endl;
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 25, _a);
+    std::cout<< "out QgsVectorLayer::committedAttributeValuesChanges"<< endl;
 }
 
 // SIGNAL 26

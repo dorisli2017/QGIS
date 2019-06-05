@@ -1187,7 +1187,7 @@ src/native/preinstall:
 src/native/CMakeFiles/qgis_native.dir/all:
 	$(MAKE) -f src/native/CMakeFiles/qgis_native.dir/build.make src/native/CMakeFiles/qgis_native.dir/depend
 	$(MAKE) -f src/native/CMakeFiles/qgis_native.dir/build.make src/native/CMakeFiles/qgis_native.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=82 "Built target qgis_native"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_native"
 .PHONY : src/native/CMakeFiles/qgis_native.dir/all
 
 # Include target in all.
@@ -1197,7 +1197,7 @@ all: src/native/CMakeFiles/qgis_native.dir/all
 
 # Build rule for subdir invocation for target.
 src/native/CMakeFiles/qgis_native.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 src/native/CMakeFiles/qgis_native.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/native/CMakeFiles/qgis_native.dir/rule
@@ -1352,7 +1352,7 @@ src/ui/preinstall:
 src/ui/CMakeFiles/ui.dir/all:
 	$(MAKE) -f src/ui/CMakeFiles/ui.dir/build.make src/ui/CMakeFiles/ui.dir/depend
 	$(MAKE) -f src/ui/CMakeFiles/ui.dir/build.make src/ui/CMakeFiles/ui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=92,93,94,95,96,97 "Built target ui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=91,92,93,94,95,96 "Built target ui"
 .PHONY : src/ui/CMakeFiles/ui.dir/all
 
 # Include target in all.
@@ -1409,7 +1409,7 @@ src/gui/CMakeFiles/qgis_gui.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 src/gui/CMakeFiles/qgis_gui.dir/all: src/ui/CMakeFiles/ui.dir/all
 	$(MAKE) -f src/gui/CMakeFiles/qgis_gui.dir/build.make src/gui/CMakeFiles/qgis_gui.dir/depend
 	$(MAKE) -f src/gui/CMakeFiles/qgis_gui.dir/build.make src/gui/CMakeFiles/qgis_gui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76 "Built target qgis_gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75 "Built target qgis_gui"
 .PHONY : src/gui/CMakeFiles/qgis_gui.dir/all
 
 # Include target in all.
@@ -1419,7 +1419,7 @@ all: src/gui/CMakeFiles/qgis_gui.dir/all
 
 # Build rule for subdir invocation for target.
 src/gui/CMakeFiles/qgis_gui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/qgis_gui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/gui/CMakeFiles/qgis_gui.dir/rule
@@ -1509,7 +1509,7 @@ all: src/auth/basic/CMakeFiles/basicauthmethod.dir/all
 
 # Build rule for subdir invocation for target.
 src/auth/basic/CMakeFiles/basicauthmethod.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/auth/basic/CMakeFiles/basicauthmethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/auth/basic/CMakeFiles/basicauthmethod.dir/rule
@@ -1566,7 +1566,7 @@ all: src/auth/esritoken/CMakeFiles/esritokenauthmethod.dir/all
 
 # Build rule for subdir invocation for target.
 src/auth/esritoken/CMakeFiles/esritokenauthmethod.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/auth/esritoken/CMakeFiles/esritokenauthmethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/auth/esritoken/CMakeFiles/esritokenauthmethod.dir/rule
@@ -1623,7 +1623,7 @@ all: src/auth/identcert/CMakeFiles/identcertauthmethod.dir/all
 
 # Build rule for subdir invocation for target.
 src/auth/identcert/CMakeFiles/identcertauthmethod.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/auth/identcert/CMakeFiles/identcertauthmethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/auth/identcert/CMakeFiles/identcertauthmethod.dir/rule
@@ -1680,7 +1680,7 @@ all: src/auth/pkipaths/CMakeFiles/pkipathsauthmethod.dir/all
 
 # Build rule for subdir invocation for target.
 src/auth/pkipaths/CMakeFiles/pkipathsauthmethod.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/auth/pkipaths/CMakeFiles/pkipathsauthmethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/auth/pkipaths/CMakeFiles/pkipathsauthmethod.dir/rule
@@ -1737,7 +1737,7 @@ all: src/auth/pkipkcs12/CMakeFiles/pkcs12authmethod.dir/all
 
 # Build rule for subdir invocation for target.
 src/auth/pkipkcs12/CMakeFiles/pkcs12authmethod.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/auth/pkipkcs12/CMakeFiles/pkcs12authmethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/auth/pkipkcs12/CMakeFiles/pkcs12authmethod.dir/rule
@@ -1796,7 +1796,7 @@ all: src/auth/oauth2/CMakeFiles/oauth2authmethod_static.dir/all
 
 # Build rule for subdir invocation for target.
 src/auth/oauth2/CMakeFiles/oauth2authmethod_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/auth/oauth2/CMakeFiles/oauth2authmethod_static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/auth/oauth2/CMakeFiles/oauth2authmethod_static.dir/rule
@@ -1835,7 +1835,7 @@ all: src/auth/oauth2/CMakeFiles/oauth2authmethod.dir/all
 
 # Build rule for subdir invocation for target.
 src/auth/oauth2/CMakeFiles/oauth2authmethod.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/auth/oauth2/CMakeFiles/oauth2authmethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/auth/oauth2/CMakeFiles/oauth2authmethod.dir/rule
@@ -1962,7 +1962,7 @@ all: src/providers/arcgisrest/CMakeFiles/arcgisfeatureserverprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/arcgisrest/CMakeFiles/arcgisfeatureserverprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/arcgisrest/CMakeFiles/arcgisfeatureserverprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/arcgisrest/CMakeFiles/arcgisfeatureserverprovider.dir/rule
@@ -2001,7 +2001,7 @@ all: src/providers/arcgisrest/CMakeFiles/arcgisfeatureserverprovider_a.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/arcgisrest/CMakeFiles/arcgisfeatureserverprovider_a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/arcgisrest/CMakeFiles/arcgisfeatureserverprovider_a.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/arcgisrest/CMakeFiles/arcgisfeatureserverprovider_a.dir/rule
@@ -2040,7 +2040,7 @@ all: src/providers/arcgisrest/CMakeFiles/arcgismapserverprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/arcgisrest/CMakeFiles/arcgismapserverprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/arcgisrest/CMakeFiles/arcgismapserverprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/arcgisrest/CMakeFiles/arcgismapserverprovider.dir/rule
@@ -2099,7 +2099,7 @@ all: src/providers/ogr/CMakeFiles/ogrprovider_a.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/ogr/CMakeFiles/ogrprovider_a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/ogr/CMakeFiles/ogrprovider_a.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/ogr/CMakeFiles/ogrprovider_a.dir/rule
@@ -2138,7 +2138,7 @@ all: src/providers/ogr/CMakeFiles/ogrprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/ogr/CMakeFiles/ogrprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/ogr/CMakeFiles/ogrprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/ogr/CMakeFiles/ogrprovider.dir/rule
@@ -2187,7 +2187,7 @@ src/providers/wms/CMakeFiles/wmsprovider.dir/all: src/core/CMakeFiles/qgis_core.
 src/providers/wms/CMakeFiles/wmsprovider.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/providers/wms/CMakeFiles/wmsprovider.dir/build.make src/providers/wms/CMakeFiles/wmsprovider.dir/depend
 	$(MAKE) -f src/providers/wms/CMakeFiles/wmsprovider.dir/build.make src/providers/wms/CMakeFiles/wmsprovider.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=99 "Built target wmsprovider"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target wmsprovider"
 .PHONY : src/providers/wms/CMakeFiles/wmsprovider.dir/all
 
 # Include target in all.
@@ -2197,7 +2197,7 @@ all: src/providers/wms/CMakeFiles/wmsprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/wms/CMakeFiles/wmsprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/wms/CMakeFiles/wmsprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/wms/CMakeFiles/wmsprovider.dir/rule
@@ -2226,7 +2226,7 @@ src/providers/wms/CMakeFiles/wmsprovider_a.dir/all: src/core/CMakeFiles/qgis_cor
 src/providers/wms/CMakeFiles/wmsprovider_a.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/providers/wms/CMakeFiles/wmsprovider_a.dir/build.make src/providers/wms/CMakeFiles/wmsprovider_a.dir/depend
 	$(MAKE) -f src/providers/wms/CMakeFiles/wmsprovider_a.dir/build.make src/providers/wms/CMakeFiles/wmsprovider_a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target wmsprovider_a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=99 "Built target wmsprovider_a"
 .PHONY : src/providers/wms/CMakeFiles/wmsprovider_a.dir/all
 
 # Include target in all.
@@ -2236,7 +2236,7 @@ all: src/providers/wms/CMakeFiles/wmsprovider_a.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/wms/CMakeFiles/wmsprovider_a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/wms/CMakeFiles/wmsprovider_a.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/wms/CMakeFiles/wmsprovider_a.dir/rule
@@ -2293,7 +2293,7 @@ all: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/rule
@@ -2350,7 +2350,7 @@ all: src/providers/gdal/CMakeFiles/gdalprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/gdal/CMakeFiles/gdalprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/gdal/CMakeFiles/gdalprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/gdal/CMakeFiles/gdalprovider.dir/rule
@@ -2407,7 +2407,7 @@ all: src/providers/geonode/CMakeFiles/geonodeprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/geonode/CMakeFiles/geonodeprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/geonode/CMakeFiles/geonodeprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/geonode/CMakeFiles/geonodeprovider.dir/rule
@@ -2464,7 +2464,7 @@ all: src/providers/mssql/CMakeFiles/mssqlprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/mssql/CMakeFiles/mssqlprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/mssql/CMakeFiles/mssqlprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/mssql/CMakeFiles/mssqlprovider.dir/rule
@@ -2521,7 +2521,7 @@ all: src/providers/ows/CMakeFiles/owsprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/ows/CMakeFiles/owsprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/ows/CMakeFiles/owsprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/ows/CMakeFiles/owsprovider.dir/rule
@@ -2578,7 +2578,7 @@ all: src/providers/wcs/CMakeFiles/wcsprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/wcs/CMakeFiles/wcsprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/wcs/CMakeFiles/wcsprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/wcs/CMakeFiles/wcsprovider.dir/rule
@@ -2690,7 +2690,7 @@ all: src/providers/wfs/CMakeFiles/wfsprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/wfs/CMakeFiles/wfsprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/wfs/CMakeFiles/wfsprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/wfs/CMakeFiles/wfsprovider.dir/rule
@@ -2747,7 +2747,7 @@ all: src/providers/spatialite/CMakeFiles/spatialiteprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/spatialite/CMakeFiles/spatialiteprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/spatialite/CMakeFiles/spatialiteprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/spatialite/CMakeFiles/spatialiteprovider.dir/rule
@@ -2794,7 +2794,7 @@ src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/all: src/core/CMakeFil
 src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/build.make src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/depend
 	$(MAKE) -f src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/build.make src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target virtuallayerprovider"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=97 "Built target virtuallayerprovider"
 .PHONY : src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/all
 
 # Include target in all.
@@ -2804,7 +2804,7 @@ all: src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/virtual/CMakeFiles/virtuallayerprovider.dir/rule
@@ -2861,7 +2861,7 @@ all: src/providers/db2/CMakeFiles/db2provider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/db2/CMakeFiles/db2provider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/db2/CMakeFiles/db2provider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/db2/CMakeFiles/db2provider.dir/rule
@@ -2918,7 +2918,7 @@ all: src/providers/mdal/CMakeFiles/mdalprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/mdal/CMakeFiles/mdalprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/mdal/CMakeFiles/mdalprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/mdal/CMakeFiles/mdalprovider.dir/rule
@@ -2977,7 +2977,7 @@ all: src/providers/postgres/CMakeFiles/postgresprovider_a.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/postgres/CMakeFiles/postgresprovider_a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/postgres/CMakeFiles/postgresprovider_a.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/postgres/CMakeFiles/postgresprovider_a.dir/rule
@@ -3016,7 +3016,7 @@ all: src/providers/postgres/CMakeFiles/postgresprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/postgres/CMakeFiles/postgresprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/postgres/CMakeFiles/postgresprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/providers/postgres/CMakeFiles/postgresprovider.dir/rule
@@ -3208,7 +3208,7 @@ all: src/app/CMakeFiles/qgis.dir/all
 
 # Build rule for subdir invocation for target.
 src/app/CMakeFiles/qgis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 src/app/CMakeFiles/qgis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/app/CMakeFiles/qgis.dir/rule
@@ -3249,7 +3249,7 @@ all: src/app/CMakeFiles/qgis_app.dir/all
 
 # Build rule for subdir invocation for target.
 src/app/CMakeFiles/qgis_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 src/app/CMakeFiles/qgis_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/app/CMakeFiles/qgis_app.dir/rule
@@ -3485,7 +3485,7 @@ all: src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/rule
@@ -3542,7 +3542,7 @@ all: src/plugins/evis/CMakeFiles/evis.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/evis/CMakeFiles/evis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/evis/CMakeFiles/evis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/plugins/evis/CMakeFiles/evis.dir/rule
@@ -3599,7 +3599,7 @@ all: src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/rule
@@ -3646,7 +3646,7 @@ src/plugins/topology/CMakeFiles/topolplugin.dir/all: src/core/CMakeFiles/qgis_co
 src/plugins/topology/CMakeFiles/topolplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/topology/CMakeFiles/topolplugin.dir/build.make src/plugins/topology/CMakeFiles/topolplugin.dir/depend
 	$(MAKE) -f src/plugins/topology/CMakeFiles/topolplugin.dir/build.make src/plugins/topology/CMakeFiles/topolplugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=90 "Built target topolplugin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target topolplugin"
 .PHONY : src/plugins/topology/CMakeFiles/topolplugin.dir/all
 
 # Include target in all.
@@ -3656,7 +3656,7 @@ all: src/plugins/topology/CMakeFiles/topolplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/topology/CMakeFiles/topolplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/topology/CMakeFiles/topolplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/plugins/topology/CMakeFiles/topolplugin.dir/rule
@@ -3713,7 +3713,7 @@ all: src/plugins/offline_editing/CMakeFiles/offlineeditingplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/offline_editing/CMakeFiles/offlineeditingplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/offline_editing/CMakeFiles/offlineeditingplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/plugins/offline_editing/CMakeFiles/offlineeditingplugin.dir/rule
@@ -3771,7 +3771,7 @@ all: src/plugins/geometry_checker/CMakeFiles/geometrycheckerplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/geometry_checker/CMakeFiles/geometrycheckerplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/geometry_checker/CMakeFiles/geometrycheckerplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/plugins/geometry_checker/CMakeFiles/geometrycheckerplugin.dir/rule
@@ -3828,7 +3828,7 @@ all: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : src/plugins/georeferencer/CMakeFiles/georefplugin.dir/rule
@@ -4024,7 +4024,7 @@ i18n/preinstall:
 i18n/CMakeFiles/translations.dir/all: src/app/CMakeFiles/qgis.dir/all
 	$(MAKE) -f i18n/CMakeFiles/translations.dir/build.make i18n/CMakeFiles/translations.dir/depend
 	$(MAKE) -f i18n/CMakeFiles/translations.dir/build.make i18n/CMakeFiles/translations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=91 "Built target translations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=90 "Built target translations"
 .PHONY : i18n/CMakeFiles/translations.dir/all
 
 # Include target in all.
@@ -4034,7 +4034,7 @@ all: i18n/CMakeFiles/translations.dir/all
 
 # Build rule for subdir invocation for target.
 i18n/CMakeFiles/translations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 i18n/CMakeFiles/translations.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : i18n/CMakeFiles/translations.dir/rule
@@ -4199,7 +4199,7 @@ python/CMakeFiles/staged-plugins-pyc.dir/all: python/CMakeFiles/staged-plugins.d
 
 # Build rule for subdir invocation for target.
 python/CMakeFiles/staged-plugins-pyc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/staged-plugins-pyc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/CMakeFiles/staged-plugins-pyc.dir/rule
@@ -4238,7 +4238,7 @@ all: python/CMakeFiles/python_module_qgis__gui.dir/all
 
 # Build rule for subdir invocation for target.
 python/CMakeFiles/python_module_qgis__gui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/python_module_qgis__gui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/CMakeFiles/python_module_qgis__gui.dir/rule
@@ -4272,7 +4272,7 @@ python/CMakeFiles/staged-plugins.dir/all: python/plugins/MetaSearch/CMakeFiles/z
 
 # Build rule for subdir invocation for target.
 python/CMakeFiles/staged-plugins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/staged-plugins.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/CMakeFiles/staged-plugins.dir/rule
@@ -4416,7 +4416,7 @@ all: python/CMakeFiles/staged-plugins-on-build.dir/all
 
 # Build rule for subdir invocation for target.
 python/CMakeFiles/staged-plugins-on-build.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/staged-plugins-on-build.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/CMakeFiles/staged-plugins-on-build.dir/rule
@@ -4485,7 +4485,7 @@ all: python/CMakeFiles/pygui.dir/all
 
 # Build rule for subdir invocation for target.
 python/CMakeFiles/pygui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/pygui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/CMakeFiles/pygui.dir/rule
@@ -4556,7 +4556,7 @@ all: python/CMakeFiles/qsci-api.dir/all
 
 # Build rule for subdir invocation for target.
 python/CMakeFiles/qsci-api.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/qsci-api.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/CMakeFiles/qsci-api.dir/rule
@@ -4588,7 +4588,7 @@ python/CMakeFiles/qsci-pap-src.dir/all: python/CMakeFiles/qsci-api.dir/all
 
 # Build rule for subdir invocation for target.
 python/CMakeFiles/qsci-pap-src.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/qsci-pap-src.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/CMakeFiles/qsci-pap-src.dir/rule
@@ -4743,7 +4743,7 @@ python/plugins/db_manager/CMakeFiles/zzz-db_manager-15-depend.dir/all: python/Py
 
 # Build rule for subdir invocation for target.
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-15-depend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 python/plugins/db_manager/CMakeFiles/zzz-db_manager-15-depend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/plugins/db_manager/CMakeFiles/zzz-db_manager-15-depend.dir/rule
@@ -4767,7 +4767,9 @@ clean: python/plugins/db_manager/CMakeFiles/zzz-db_manager-15-depend.dir/clean
 # Target rules for target python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir
 
 # All Build rule for target.
-python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/all:
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/all: python/CMakeFiles/pycore.dir/all
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/all: python/CMakeFiles/pygui.dir/all
+python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/all: python/PyQt/CMakeFiles/pyqtcompat.dir/all
 	$(MAKE) -f python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/build.make python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/depend
 	$(MAKE) -f python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/build.make python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target zzz-db_manager-14-depend"
@@ -4775,7 +4777,7 @@ python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/all:
 
 # Build rule for subdir invocation for target.
 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/plugins/db_manager/CMakeFiles/zzz-db_manager-14-depend.dir/rule
@@ -4891,7 +4893,7 @@ python/plugins/db_manager/db_plugins/postgis/CMakeFiles/zzz-db_manager-stageinst
 
 # Build rule for subdir invocation for target.
 python/plugins/db_manager/db_plugins/postgis/CMakeFiles/zzz-db_manager-stageinstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 python/plugins/db_manager/db_plugins/postgis/CMakeFiles/zzz-db_manager-stageinstall.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/plugins/db_manager/db_plugins/postgis/CMakeFiles/zzz-db_manager-stageinstall.dir/rule
@@ -4955,7 +4957,7 @@ python/plugins/db_manager/db_plugins/postgis/CMakeFiles/staged-db_manager.dir/al
 
 # Build rule for subdir invocation for target.
 python/plugins/db_manager/db_plugins/postgis/CMakeFiles/staged-db_manager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 python/plugins/db_manager/db_plugins/postgis/CMakeFiles/staged-db_manager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/plugins/db_manager/db_plugins/postgis/CMakeFiles/staged-db_manager.dir/rule
@@ -5033,7 +5035,7 @@ python/plugins/db_manager/db_plugins/postgis/CMakeFiles/zzz-db_manager-depend.di
 
 # Build rule for subdir invocation for target.
 python/plugins/db_manager/db_plugins/postgis/CMakeFiles/zzz-db_manager-depend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 python/plugins/db_manager/db_plugins/postgis/CMakeFiles/zzz-db_manager-depend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/plugins/db_manager/db_plugins/postgis/CMakeFiles/zzz-db_manager-depend.dir/rule
@@ -5272,7 +5274,7 @@ python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFiles/zzz-d
 
 # Build rule for subdir invocation for target.
 python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFiles/zzz-db_manager-5-depend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFiles/zzz-db_manager-5-depend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFiles/zzz-db_manager-5-depend.dir/rule
@@ -7437,7 +7439,7 @@ all: python/console/CMakeFiles/pyconsole.dir/all
 
 # Build rule for subdir invocation for target.
 python/console/CMakeFiles/pyconsole.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 python/console/CMakeFiles/pyconsole.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/console/CMakeFiles/pyconsole.dir/rule
@@ -7494,7 +7496,7 @@ all: python/pyplugin_installer/CMakeFiles/pyplugin-installer.dir/all
 
 # Build rule for subdir invocation for target.
 python/pyplugin_installer/CMakeFiles/pyplugin-installer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 python/pyplugin_installer/CMakeFiles/pyplugin-installer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : python/pyplugin_installer/CMakeFiles/pyplugin-installer.dir/rule
@@ -8342,7 +8344,7 @@ tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/all: src/core/CMake
 tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/all: tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/build.make tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/build.make tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_vectorlayerjoinbuffertest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=88 "Built target qgis_vectorlayerjoinbuffertest"
 .PHONY : tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/all
 
 # Include target in all.
@@ -8352,7 +8354,7 @@ all: tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_vectorlayerjoinbuffertest.dir/rule
@@ -8618,7 +8620,7 @@ all: tests/src/core/CMakeFiles/qgis_shapebursttest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_shapebursttest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_shapebursttest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_shapebursttest.dir/rule
@@ -8874,7 +8876,7 @@ tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/all: src/core/CMakeFiles/qgis
 tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/all: tests/src/core/CMakeFiles/qgis_rasterlayertest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/build.make tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/build.make tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_rasterlayertest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=85 "Built target qgis_rasterlayertest"
 .PHONY : tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/all
 
 # Include target in all.
@@ -8884,7 +8886,7 @@ all: tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_rasterlayertest.dir/rule
@@ -8960,7 +8962,7 @@ all: tests/src/core/CMakeFiles/qgis_rasterfilewritertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_rasterfilewritertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_rasterfilewritertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_rasterfilewritertest.dir/rule
@@ -9026,7 +9028,7 @@ tests/src/core/CMakeFiles/qgis_projutilstest.dir/all: src/core/CMakeFiles/qgis_c
 tests/src/core/CMakeFiles/qgis_projutilstest.dir/all: tests/src/core/CMakeFiles/qgis_projutilstest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_projutilstest.dir/build.make tests/src/core/CMakeFiles/qgis_projutilstest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_projutilstest.dir/build.make tests/src/core/CMakeFiles/qgis_projutilstest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_projutilstest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=84 "Built target qgis_projutilstest"
 .PHONY : tests/src/core/CMakeFiles/qgis_projutilstest.dir/all
 
 # Include target in all.
@@ -9036,7 +9038,7 @@ all: tests/src/core/CMakeFiles/qgis_projutilstest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_projutilstest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_projutilstest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_projutilstest.dir/rule
@@ -9064,7 +9066,7 @@ tests/src/core/CMakeFiles/qgis_painteffecttest.dir/all: src/core/CMakeFiles/qgis
 tests/src/core/CMakeFiles/qgis_painteffecttest.dir/all: tests/src/core/CMakeFiles/qgis_painteffecttest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_painteffecttest.dir/build.make tests/src/core/CMakeFiles/qgis_painteffecttest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_painteffecttest.dir/build.make tests/src/core/CMakeFiles/qgis_painteffecttest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=83 "Built target qgis_painteffecttest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_painteffecttest"
 .PHONY : tests/src/core/CMakeFiles/qgis_painteffecttest.dir/all
 
 # Include target in all.
@@ -9074,7 +9076,7 @@ all: tests/src/core/CMakeFiles/qgis_painteffecttest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_painteffecttest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_painteffecttest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_painteffecttest.dir/rule
@@ -10014,7 +10016,7 @@ tests/src/core/CMakeFiles/qgis_credentialstest.dir/all: src/core/CMakeFiles/qgis
 tests/src/core/CMakeFiles/qgis_credentialstest.dir/all: tests/src/core/CMakeFiles/qgis_credentialstest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_credentialstest.dir/build.make tests/src/core/CMakeFiles/qgis_credentialstest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_credentialstest.dir/build.make tests/src/core/CMakeFiles/qgis_credentialstest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=51 "Built target qgis_credentialstest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_credentialstest"
 .PHONY : tests/src/core/CMakeFiles/qgis_credentialstest.dir/all
 
 # Include target in all.
@@ -10024,7 +10026,7 @@ all: tests/src/core/CMakeFiles/qgis_credentialstest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_credentialstest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_credentialstest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_credentialstest.dir/rule
@@ -10356,7 +10358,7 @@ tests/src/core/CMakeFiles/qgis_ziputilstest.dir/all: src/core/CMakeFiles/qgis_co
 tests/src/core/CMakeFiles/qgis_ziputilstest.dir/all: tests/src/core/CMakeFiles/qgis_ziputilstest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_ziputilstest.dir/build.make tests/src/core/CMakeFiles/qgis_ziputilstest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_ziputilstest.dir/build.make tests/src/core/CMakeFiles/qgis_ziputilstest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=89 "Built target qgis_ziputilstest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_ziputilstest"
 .PHONY : tests/src/core/CMakeFiles/qgis_ziputilstest.dir/all
 
 # Include target in all.
@@ -10366,7 +10368,7 @@ all: tests/src/core/CMakeFiles/qgis_ziputilstest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_ziputilstest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_ziputilstest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_ziputilstest.dir/rule
@@ -10442,7 +10444,7 @@ all: tests/src/core/CMakeFiles/qgis_pointlocatortest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_pointlocatortest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_pointlocatortest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_pointlocatortest.dir/rule
@@ -10595,7 +10597,7 @@ all: tests/src/core/CMakeFiles/qgis_hstoreutilstest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_hstoreutilstest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_hstoreutilstest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_hstoreutilstest.dir/rule
@@ -10661,7 +10663,7 @@ tests/src/core/CMakeFiles/qgis_authmanagertest.dir/all: src/core/CMakeFiles/qgis
 tests/src/core/CMakeFiles/qgis_authmanagertest.dir/all: tests/src/core/CMakeFiles/qgis_authmanagertest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_authmanagertest.dir/build.make tests/src/core/CMakeFiles/qgis_authmanagertest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_authmanagertest.dir/build.make tests/src/core/CMakeFiles/qgis_authmanagertest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=32 "Built target qgis_authmanagertest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_authmanagertest"
 .PHONY : tests/src/core/CMakeFiles/qgis_authmanagertest.dir/all
 
 # Include target in all.
@@ -10671,7 +10673,7 @@ all: tests/src/core/CMakeFiles/qgis_authmanagertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_authmanagertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_authmanagertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_authmanagertest.dir/rule
@@ -10709,7 +10711,7 @@ all: tests/src/core/CMakeFiles/qgis_vectorfilewritertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_vectorfilewritertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_vectorfilewritertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_vectorfilewritertest.dir/rule
@@ -10965,7 +10967,7 @@ tests/src/core/CMakeFiles/qgis_curvetest.dir/all: src/core/CMakeFiles/qgis_core.
 tests/src/core/CMakeFiles/qgis_curvetest.dir/all: tests/src/core/CMakeFiles/qgis_curvetest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_curvetest.dir/build.make tests/src/core/CMakeFiles/qgis_curvetest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_curvetest.dir/build.make tests/src/core/CMakeFiles/qgis_curvetest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_curvetest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=51 "Built target qgis_curvetest"
 .PHONY : tests/src/core/CMakeFiles/qgis_curvetest.dir/all
 
 # Include target in all.
@@ -10975,7 +10977,7 @@ all: tests/src/core/CMakeFiles/qgis_curvetest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_curvetest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_curvetest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_curvetest.dir/rule
@@ -11003,7 +11005,7 @@ tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/all: src/core/CMakeFiles/qg
 tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/all: tests/src/core/CMakeFiles/qgis_layoutpicturetest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/build.make tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/build.make tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_layoutpicturetest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=78 "Built target qgis_layoutpicturetest"
 .PHONY : tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/all
 
 # Include target in all.
@@ -11013,7 +11015,7 @@ all: tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_layoutpicturetest.dir/rule
@@ -11649,7 +11651,7 @@ tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/all: src/core/CMakeFiles/q
 tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/all: tests/src/core/CMakeFiles/qgis_connectionpooltest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/build.make tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/build.make tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_connectionpooltest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=33 "Built target qgis_connectionpooltest"
 .PHONY : tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/all
 
 # Include target in all.
@@ -11659,7 +11661,7 @@ all: tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_connectionpooltest.dir/rule
@@ -11725,7 +11727,7 @@ tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/all: src/core/CMakeFiles/qgis_
 tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/all: tests/src/core/CMakeFiles/qgis_maptopixeltest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/build.make tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/build.make tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=81 "Built target qgis_maptopixeltest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_maptopixeltest"
 .PHONY : tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/all
 
 # Include target in all.
@@ -11735,7 +11737,7 @@ all: tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_maptopixeltest.dir/rule
@@ -11953,7 +11955,7 @@ tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/all: src/core/CMakeFiles/qgis_c
 tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/all: tests/src/core/CMakeFiles/qgis_svgmarkertest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/build.make tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/build.make tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_svgmarkertest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=87 "Built target qgis_svgmarkertest"
 .PHONY : tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/all
 
 # Include target in all.
@@ -11963,7 +11965,7 @@ all: tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_svgmarkertest.dir/rule
@@ -12219,7 +12221,7 @@ tests/src/core/CMakeFiles/qgis_gmltest.dir/all: src/core/CMakeFiles/qgis_core.di
 tests/src/core/CMakeFiles/qgis_gmltest.dir/all: tests/src/core/CMakeFiles/qgis_gmltest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_gmltest.dir/build.make tests/src/core/CMakeFiles/qgis_gmltest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_gmltest.dir/build.make tests/src/core/CMakeFiles/qgis_gmltest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=54 "Built target qgis_gmltest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_gmltest"
 .PHONY : tests/src/core/CMakeFiles/qgis_gmltest.dir/all
 
 # Include target in all.
@@ -12229,7 +12231,7 @@ all: tests/src/core/CMakeFiles/qgis_gmltest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_gmltest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_gmltest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_gmltest.dir/rule
@@ -12257,7 +12259,7 @@ tests/src/core/CMakeFiles/qgis_gradientstest.dir/all: src/core/CMakeFiles/qgis_c
 tests/src/core/CMakeFiles/qgis_gradientstest.dir/all: tests/src/core/CMakeFiles/qgis_gradientstest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_gradientstest.dir/build.make tests/src/core/CMakeFiles/qgis_gradientstest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_gradientstest.dir/build.make tests/src/core/CMakeFiles/qgis_gradientstest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_gradientstest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=54 "Built target qgis_gradientstest"
 .PHONY : tests/src/core/CMakeFiles/qgis_gradientstest.dir/all
 
 # Include target in all.
@@ -12267,7 +12269,7 @@ all: tests/src/core/CMakeFiles/qgis_gradientstest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_gradientstest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_gradientstest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_gradientstest.dir/rule
@@ -12723,7 +12725,7 @@ all: tests/src/core/CMakeFiles/qgis_layertreetest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_layertreetest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_layertreetest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_layertreetest.dir/rule
@@ -13131,7 +13133,7 @@ tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/all: src/core/CMakeF
 tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/all: tests/src/core/CMakeFiles/qgis_compositionconvertertest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/build.make tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/build.make tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=33 "Built target qgis_compositionconvertertest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_compositionconvertertest"
 .PHONY : tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/all
 
 # Include target in all.
@@ -13141,7 +13143,7 @@ all: tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_compositionconvertertest.dir/rule
@@ -13397,7 +13399,7 @@ tests/src/core/CMakeFiles/qgis_stringutilstest.dir/all: src/core/CMakeFiles/qgis
 tests/src/core/CMakeFiles/qgis_stringutilstest.dir/all: tests/src/core/CMakeFiles/qgis_stringutilstest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_stringutilstest.dir/build.make tests/src/core/CMakeFiles/qgis_stringutilstest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_stringutilstest.dir/build.make tests/src/core/CMakeFiles/qgis_stringutilstest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=87 "Built target qgis_stringutilstest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_stringutilstest"
 .PHONY : tests/src/core/CMakeFiles/qgis_stringutilstest.dir/all
 
 # Include target in all.
@@ -13407,7 +13409,7 @@ all: tests/src/core/CMakeFiles/qgis_stringutilstest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_stringutilstest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_stringutilstest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_stringutilstest.dir/rule
@@ -13511,7 +13513,7 @@ tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/all: src/core/CMakeFiles/qgi
 tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/all: tests/src/core/CMakeFiles/qgis_layoutobjecttest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/build.make tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/build.make tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=78 "Built target qgis_layoutobjecttest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_layoutobjecttest"
 .PHONY : tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/all
 
 # Include target in all.
@@ -13521,7 +13523,7 @@ all: tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_layoutobjecttest.dir/rule
@@ -13739,7 +13741,7 @@ tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/all: src/core/CMakeFiles/q
 tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/all: tests/src/core/CMakeFiles/qgis_legendrenderertest_autogen.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/build.make tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/build.make tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=79 "Built target qgis_legendrenderertest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_legendrenderertest"
 .PHONY : tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/all
 
 # Include target in all.
@@ -13749,7 +13751,7 @@ all: tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_legendrenderertest.dir/rule
@@ -14134,12 +14136,12 @@ clean: tests/src/core/CMakeFiles/qgis_snappingutilstest_autogen.dir/clean
 tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_shapebursttest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=86 "Built target qgis_shapebursttest_autogen"
 .PHONY : tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_shapebursttest_autogen.dir/rule
@@ -14422,12 +14424,12 @@ clean: tests/src/core/CMakeFiles/qgis_rasteriteratortest_autogen.dir/clean
 tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=85 "Built target qgis_rasterfilewritertest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_rasterfilewritertest_autogen"
 .PHONY : tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_rasterfilewritertest_autogen.dir/rule
@@ -15670,12 +15672,12 @@ clean: tests/src/core/CMakeFiles/qgis_coordinatetransformtest_autogen.dir/clean
 tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_pointlocatortest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=83 "Built target qgis_pointlocatortest_autogen"
 .PHONY : tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_pointlocatortest_autogen.dir/rule
@@ -15799,12 +15801,12 @@ clean: tests/src/core/CMakeFiles/qgis_vectorlayerutilstest_autogen.dir/clean
 tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_hstoreutilstest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=76 "Built target qgis_hstoreutilstest_autogen"
 .PHONY : tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_hstoreutilstest_autogen.dir/rule
@@ -15895,12 +15897,12 @@ clean: tests/src/core/CMakeFiles/qgis_authmanagertest_autogen.dir/clean
 tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=88 "Built target qgis_vectorfilewritertest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_vectorfilewritertest_autogen"
 .PHONY : tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_vectorfilewritertest_autogen.dir/rule
@@ -17591,12 +17593,12 @@ clean: tests/src/core/CMakeFiles/qgis_invertedpolygonrenderertest_autogen.dir/cl
 tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/depend
 	$(MAKE) -f tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/build.make tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=77 "Built target qgis_layertreetest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_layertreetest_autogen"
 .PHONY : tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/core/CMakeFiles/qgis_layertreetest_autogen.dir/rule
@@ -18648,7 +18650,7 @@ all: tests/src/gui/CMakeFiles/qgis_qgsguitest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_qgsguitest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_qgsguitest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_qgsguitest.dir/rule
@@ -18679,7 +18681,7 @@ tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/all: src/gui/CMakeFiles/qgis_gui
 tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/all: tests/src/gui/CMakeFiles/qgis_mapcanvastest_autogen.dir/all
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/build.make tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/depend
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/build.make tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_mapcanvastest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=79 "Built target qgis_mapcanvastest"
 .PHONY : tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/all
 
 # Include target in all.
@@ -18689,7 +18691,7 @@ all: tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_mapcanvastest.dir/rule
@@ -18730,7 +18732,7 @@ all: tests/src/gui/CMakeFiles/qgis_sqlcomposerdialog.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_sqlcomposerdialog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_sqlcomposerdialog.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_sqlcomposerdialog.dir/rule
@@ -18761,7 +18763,7 @@ tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/all: src/gui/CMakeFiles/qgis_gui.
 tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/all: tests/src/gui/CMakeFiles/qgis_focuswatcher_autogen.dir/all
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/build.make tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/depend
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/build.make tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_focuswatcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=53 "Built target qgis_focuswatcher"
 .PHONY : tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/all
 
 # Include target in all.
@@ -18771,7 +18773,7 @@ all: tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_focuswatcher.dir/rule
@@ -18812,7 +18814,7 @@ all: tests/src/gui/CMakeFiles/qgis_processingmodeltest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_processingmodeltest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_processingmodeltest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_processingmodeltest.dir/rule
@@ -18843,7 +18845,7 @@ tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/all: src/gui/CMakeFil
 tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/all: tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest_autogen.dir/all
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/build.make tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/depend
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/build.make tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=52 "Built target qgis_editorwidgetregistrytest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_editorwidgetregistrytest"
 .PHONY : tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/all
 
 # Include target in all.
@@ -18853,7 +18855,7 @@ all: tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest.dir/rule
@@ -18884,7 +18886,7 @@ tests/src/gui/CMakeFiles/qgis_filewidget.dir/all: src/gui/CMakeFiles/qgis_gui.di
 tests/src/gui/CMakeFiles/qgis_filewidget.dir/all: tests/src/gui/CMakeFiles/qgis_filewidget_autogen.dir/all
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_filewidget.dir/build.make tests/src/gui/CMakeFiles/qgis_filewidget.dir/depend
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_filewidget.dir/build.make tests/src/gui/CMakeFiles/qgis_filewidget.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=53 "Built target qgis_filewidget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_filewidget"
 .PHONY : tests/src/gui/CMakeFiles/qgis_filewidget.dir/all
 
 # Include target in all.
@@ -18894,7 +18896,7 @@ all: tests/src/gui/CMakeFiles/qgis_filewidget.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_filewidget.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_filewidget.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_filewidget.dir/rule
@@ -18935,7 +18937,7 @@ all: tests/src/gui/CMakeFiles/qgis_valuerelationwidgetwrapper.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_valuerelationwidgetwrapper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_valuerelationwidgetwrapper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_valuerelationwidgetwrapper.dir/rule
@@ -18976,7 +18978,7 @@ all: tests/src/gui/CMakeFiles/qgis_fieldexpressionwidget.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_fieldexpressionwidget.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_fieldexpressionwidget.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_fieldexpressionwidget.dir/rule
@@ -19017,7 +19019,7 @@ all: tests/src/gui/CMakeFiles/qgis_keyvaluewidgettest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_keyvaluewidgettest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_keyvaluewidgettest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_keyvaluewidgettest.dir/rule
@@ -19058,7 +19060,7 @@ all: tests/src/gui/CMakeFiles/qgis_processingguitest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_processingguitest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_processingguitest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_processingguitest.dir/rule
@@ -19099,7 +19101,7 @@ all: tests/src/gui/CMakeFiles/qgis_dockwidget.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_dockwidget.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_dockwidget.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_dockwidget.dir/rule
@@ -19140,7 +19142,7 @@ all: tests/src/gui/CMakeFiles/qgis_categorizedrendererwidget.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_categorizedrendererwidget.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_categorizedrendererwidget.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_categorizedrendererwidget.dir/rule
@@ -19181,7 +19183,7 @@ all: tests/src/gui/CMakeFiles/qgis_doublespinbox.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_doublespinbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_doublespinbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_doublespinbox.dir/rule
@@ -19212,7 +19214,7 @@ tests/src/gui/CMakeFiles/qgis_layoutgui.dir/all: src/gui/CMakeFiles/qgis_gui.dir
 tests/src/gui/CMakeFiles/qgis_layoutgui.dir/all: tests/src/gui/CMakeFiles/qgis_layoutgui_autogen.dir/all
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_layoutgui.dir/build.make tests/src/gui/CMakeFiles/qgis_layoutgui.dir/depend
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_layoutgui.dir/build.make tests/src/gui/CMakeFiles/qgis_layoutgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_layoutgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=77 "Built target qgis_layoutgui"
 .PHONY : tests/src/gui/CMakeFiles/qgis_layoutgui.dir/all
 
 # Include target in all.
@@ -19222,7 +19224,7 @@ all: tests/src/gui/CMakeFiles/qgis_layoutgui.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_layoutgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_layoutgui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_layoutgui.dir/rule
@@ -19263,7 +19265,7 @@ all: tests/src/gui/CMakeFiles/qgis_featurelistcombobox.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_featurelistcombobox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_featurelistcombobox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_featurelistcombobox.dir/rule
@@ -19304,7 +19306,7 @@ all: tests/src/gui/CMakeFiles/qgis_edittooltest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_edittooltest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_edittooltest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_edittooltest.dir/rule
@@ -19345,7 +19347,7 @@ all: tests/src/gui/CMakeFiles/qgis_projectionissues.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_projectionissues.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_projectionissues.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_projectionissues.dir/rule
@@ -19386,7 +19388,7 @@ all: tests/src/gui/CMakeFiles/qgis_zoomtest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_zoomtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_zoomtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_zoomtest.dir/rule
@@ -19427,7 +19429,7 @@ all: tests/src/gui/CMakeFiles/qgis_dualviewtest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_dualviewtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_dualviewtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_dualviewtest.dir/rule
@@ -19468,7 +19470,7 @@ all: tests/src/gui/CMakeFiles/qgis_rubberbandtest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_rubberbandtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_rubberbandtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_rubberbandtest.dir/rule
@@ -19509,7 +19511,7 @@ all: tests/src/gui/CMakeFiles/qgis_spinbox.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_spinbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_spinbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_spinbox.dir/rule
@@ -19540,7 +19542,7 @@ tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/all: src/gui/CMakeFiles/qgis_
 tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/all: tests/src/gui/CMakeFiles/qgis_scalerangewidget_autogen.dir/all
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/build.make tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/depend
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/build.make tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=86 "Built target qgis_scalerangewidget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_scalerangewidget"
 .PHONY : tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/all
 
 # Include target in all.
@@ -19550,7 +19552,7 @@ all: tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_scalerangewidget.dir/rule
@@ -19591,7 +19593,7 @@ all: tests/src/gui/CMakeFiles/qgis_rangewidgetwrapper.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_rangewidgetwrapper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_rangewidgetwrapper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_rangewidgetwrapper.dir/rule
@@ -19632,7 +19634,7 @@ all: tests/src/gui/CMakeFiles/qgis_messagebartest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_messagebartest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_messagebartest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_messagebartest.dir/rule
@@ -19673,7 +19675,7 @@ all: tests/src/gui/CMakeFiles/qgis_datumtransformdialog.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_datumtransformdialog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_datumtransformdialog.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_datumtransformdialog.dir/rule
@@ -19714,7 +19716,7 @@ all: tests/src/gui/CMakeFiles/qgis_listwidgettest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_listwidgettest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_listwidgettest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_listwidgettest.dir/rule
@@ -19755,7 +19757,7 @@ all: tests/src/gui/CMakeFiles/qgis_filedownloader.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_filedownloader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_filedownloader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_filedownloader.dir/rule
@@ -19796,7 +19798,7 @@ all: tests/src/gui/CMakeFiles/qgis_scalecombobox.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_scalecombobox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_scalecombobox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_scalecombobox.dir/rule
@@ -19837,7 +19839,7 @@ all: tests/src/gui/CMakeFiles/qgis_layoutview.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_layoutview.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_layoutview.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_layoutview.dir/rule
@@ -19878,7 +19880,7 @@ all: tests/src/gui/CMakeFiles/qgis_attributeformtest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_attributeformtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_attributeformtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_attributeformtest.dir/rule
@@ -19919,7 +19921,7 @@ all: tests/src/gui/CMakeFiles/qgis_valuemapwidgetwrapper.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_valuemapwidgetwrapper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_valuemapwidgetwrapper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_valuemapwidgetwrapper.dir/rule
@@ -19960,7 +19962,7 @@ all: tests/src/gui/CMakeFiles/qgis_relationreferencewidget.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_relationreferencewidget.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_relationreferencewidget.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_relationreferencewidget.dir/rule
@@ -19995,7 +19997,7 @@ tests/src/gui/CMakeFiles/qgis_qgsguitest_autogen.dir/all: src/gui/CMakeFiles/qgi
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_qgsguitest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_qgsguitest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_qgsguitest_autogen.dir/rule
@@ -20030,7 +20032,7 @@ tests/src/gui/CMakeFiles/qgis_mapcanvastest_autogen.dir/all: src/gui/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_mapcanvastest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_mapcanvastest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_mapcanvastest_autogen.dir/rule
@@ -20065,7 +20067,7 @@ tests/src/gui/CMakeFiles/qgis_sqlcomposerdialog_autogen.dir/all: src/gui/CMakeFi
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_sqlcomposerdialog_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_sqlcomposerdialog_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_sqlcomposerdialog_autogen.dir/rule
@@ -20100,7 +20102,7 @@ tests/src/gui/CMakeFiles/qgis_focuswatcher_autogen.dir/all: src/gui/CMakeFiles/q
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_focuswatcher_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_focuswatcher_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_focuswatcher_autogen.dir/rule
@@ -20135,7 +20137,7 @@ tests/src/gui/CMakeFiles/qgis_processingmodeltest_autogen.dir/all: src/gui/CMake
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_processingmodeltest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_processingmodeltest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_processingmodeltest_autogen.dir/rule
@@ -20170,7 +20172,7 @@ tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest_autogen.dir/all: src/gui/
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_editorwidgetregistrytest_autogen.dir/rule
@@ -20205,7 +20207,7 @@ tests/src/gui/CMakeFiles/qgis_filewidget_autogen.dir/all: src/gui/CMakeFiles/qgi
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_filewidget_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_filewidget_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_filewidget_autogen.dir/rule
@@ -20240,7 +20242,7 @@ tests/src/gui/CMakeFiles/qgis_valuerelationwidgetwrapper_autogen.dir/all: src/gu
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_valuerelationwidgetwrapper_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_valuerelationwidgetwrapper_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_valuerelationwidgetwrapper_autogen.dir/rule
@@ -20275,7 +20277,7 @@ tests/src/gui/CMakeFiles/qgis_fieldexpressionwidget_autogen.dir/all: src/gui/CMa
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_fieldexpressionwidget_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_fieldexpressionwidget_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_fieldexpressionwidget_autogen.dir/rule
@@ -20310,7 +20312,7 @@ tests/src/gui/CMakeFiles/qgis_keyvaluewidgettest_autogen.dir/all: src/gui/CMakeF
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_keyvaluewidgettest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_keyvaluewidgettest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_keyvaluewidgettest_autogen.dir/rule
@@ -20345,7 +20347,7 @@ tests/src/gui/CMakeFiles/qgis_processingguitest_autogen.dir/all: src/gui/CMakeFi
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_processingguitest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_processingguitest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_processingguitest_autogen.dir/rule
@@ -20380,7 +20382,7 @@ tests/src/gui/CMakeFiles/qgis_dockwidget_autogen.dir/all: src/gui/CMakeFiles/qgi
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_dockwidget_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_dockwidget_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_dockwidget_autogen.dir/rule
@@ -20415,7 +20417,7 @@ tests/src/gui/CMakeFiles/qgis_categorizedrendererwidget_autogen.dir/all: src/gui
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_categorizedrendererwidget_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_categorizedrendererwidget_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_categorizedrendererwidget_autogen.dir/rule
@@ -20450,7 +20452,7 @@ tests/src/gui/CMakeFiles/qgis_doublespinbox_autogen.dir/all: src/gui/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_doublespinbox_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_doublespinbox_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_doublespinbox_autogen.dir/rule
@@ -20485,7 +20487,7 @@ tests/src/gui/CMakeFiles/qgis_layoutgui_autogen.dir/all: src/gui/CMakeFiles/qgis
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_layoutgui_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_layoutgui_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_layoutgui_autogen.dir/rule
@@ -20520,7 +20522,7 @@ tests/src/gui/CMakeFiles/qgis_featurelistcombobox_autogen.dir/all: src/gui/CMake
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_featurelistcombobox_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_featurelistcombobox_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_featurelistcombobox_autogen.dir/rule
@@ -20550,12 +20552,12 @@ tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/all: src/analysis/CMakeFi
 tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/build.make tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/depend
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/build.make tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_edittooltest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=52 "Built target qgis_edittooltest_autogen"
 .PHONY : tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_edittooltest_autogen.dir/rule
@@ -20590,7 +20592,7 @@ tests/src/gui/CMakeFiles/qgis_projectionissues_autogen.dir/all: src/gui/CMakeFil
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_projectionissues_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_projectionissues_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_projectionissues_autogen.dir/rule
@@ -20620,12 +20622,12 @@ tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/all: src/analysis/CMakeFiles/
 tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/build.make tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/depend
 	$(MAKE) -f tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/build.make tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_zoomtest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=89 "Built target qgis_zoomtest_autogen"
 .PHONY : tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_zoomtest_autogen.dir/rule
@@ -20660,7 +20662,7 @@ tests/src/gui/CMakeFiles/qgis_dualviewtest_autogen.dir/all: src/gui/CMakeFiles/q
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_dualviewtest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_dualviewtest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_dualviewtest_autogen.dir/rule
@@ -20695,7 +20697,7 @@ tests/src/gui/CMakeFiles/qgis_rubberbandtest_autogen.dir/all: src/gui/CMakeFiles
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_rubberbandtest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_rubberbandtest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_rubberbandtest_autogen.dir/rule
@@ -20730,7 +20732,7 @@ tests/src/gui/CMakeFiles/qgis_spinbox_autogen.dir/all: src/gui/CMakeFiles/qgis_g
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_spinbox_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_spinbox_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_spinbox_autogen.dir/rule
@@ -20765,7 +20767,7 @@ tests/src/gui/CMakeFiles/qgis_scalerangewidget_autogen.dir/all: src/gui/CMakeFil
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_scalerangewidget_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_scalerangewidget_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_scalerangewidget_autogen.dir/rule
@@ -20800,7 +20802,7 @@ tests/src/gui/CMakeFiles/qgis_rangewidgetwrapper_autogen.dir/all: src/gui/CMakeF
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_rangewidgetwrapper_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_rangewidgetwrapper_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_rangewidgetwrapper_autogen.dir/rule
@@ -20835,7 +20837,7 @@ tests/src/gui/CMakeFiles/qgis_messagebartest_autogen.dir/all: src/gui/CMakeFiles
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_messagebartest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_messagebartest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_messagebartest_autogen.dir/rule
@@ -20870,7 +20872,7 @@ tests/src/gui/CMakeFiles/qgis_datumtransformdialog_autogen.dir/all: src/gui/CMak
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_datumtransformdialog_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_datumtransformdialog_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_datumtransformdialog_autogen.dir/rule
@@ -20905,7 +20907,7 @@ tests/src/gui/CMakeFiles/qgis_listwidgettest_autogen.dir/all: src/gui/CMakeFiles
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_listwidgettest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_listwidgettest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_listwidgettest_autogen.dir/rule
@@ -20940,7 +20942,7 @@ tests/src/gui/CMakeFiles/qgis_filedownloader_autogen.dir/all: src/gui/CMakeFiles
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_filedownloader_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_filedownloader_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_filedownloader_autogen.dir/rule
@@ -20975,7 +20977,7 @@ tests/src/gui/CMakeFiles/qgis_scalecombobox_autogen.dir/all: src/gui/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_scalecombobox_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_scalecombobox_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_scalecombobox_autogen.dir/rule
@@ -21010,7 +21012,7 @@ tests/src/gui/CMakeFiles/qgis_layoutview_autogen.dir/all: src/gui/CMakeFiles/qgi
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_layoutview_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_layoutview_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_layoutview_autogen.dir/rule
@@ -21045,7 +21047,7 @@ tests/src/gui/CMakeFiles/qgis_attributeformtest_autogen.dir/all: src/gui/CMakeFi
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_attributeformtest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_attributeformtest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_attributeformtest_autogen.dir/rule
@@ -21080,7 +21082,7 @@ tests/src/gui/CMakeFiles/qgis_valuemapwidgetwrapper_autogen.dir/all: src/gui/CMa
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_valuemapwidgetwrapper_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_valuemapwidgetwrapper_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_valuemapwidgetwrapper_autogen.dir/rule
@@ -21115,7 +21117,7 @@ tests/src/gui/CMakeFiles/qgis_relationreferencewidget_autogen.dir/all: src/gui/C
 
 # Build rule for subdir invocation for target.
 tests/src/gui/CMakeFiles/qgis_relationreferencewidget_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/gui/CMakeFiles/qgis_relationreferencewidget_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/gui/CMakeFiles/qgis_relationreferencewidget_autogen.dir/rule
@@ -21232,7 +21234,7 @@ tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/all: src/analysis/CMa
 tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/all: tests/src/analysis/CMakeFiles/qgis_networkanalysistest_autogen.dir/all
 	$(MAKE) -f tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/build.make tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/depend
 	$(MAKE) -f tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/build.make tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_networkanalysistest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=82 "Built target qgis_networkanalysistest"
 .PHONY : tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/all
 
 # Include target in all.
@@ -21242,7 +21244,7 @@ all: tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/analysis/CMakeFiles/qgis_networkanalysistest.dir/rule
@@ -21995,7 +21997,7 @@ tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/all: src/auth/oauth2/CMak
 tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/all: tests/src/auth/CMakeFiles/qgis_authoauthmethodtest_autogen.dir/all
 	$(MAKE) -f tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/build.make tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/depend
 	$(MAKE) -f tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/build.make tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_authoauthmethodtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=32 "Built target qgis_authoauthmethodtest"
 .PHONY : tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/all
 
 # Include target in all.
@@ -22005,7 +22007,7 @@ all: tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/auth/CMakeFiles/qgis_authoauthmethodtest.dir/rule
@@ -22039,7 +22041,7 @@ tests/src/auth/CMakeFiles/qgis_authoauthmethodtest_autogen.dir/all: src/auth/oau
 
 # Build rule for subdir invocation for target.
 tests/src/auth/CMakeFiles/qgis_authoauthmethodtest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/auth/CMakeFiles/qgis_authoauthmethodtest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/auth/CMakeFiles/qgis_authoauthmethodtest_autogen.dir/rule
@@ -22140,7 +22142,7 @@ all: tests/src/providers/CMakeFiles/qgis_mdalprovidertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_mdalprovidertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_mdalprovidertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_mdalprovidertest.dir/rule
@@ -22218,7 +22220,7 @@ all: tests/src/providers/CMakeFiles/qgis_arcgisrestutilstest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_arcgisrestutilstest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_arcgisrestutilstest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_arcgisrestutilstest.dir/rule
@@ -22334,7 +22336,7 @@ all: tests/src/providers/CMakeFiles/qgis_postgresprovidertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_postgresprovidertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_postgresprovidertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_postgresprovidertest.dir/rule
@@ -22524,7 +22526,7 @@ all: tests/src/providers/CMakeFiles/qgis_ogrprovidertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_ogrprovidertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_ogrprovidertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_ogrprovidertest.dir/rule
@@ -22639,7 +22641,7 @@ all: tests/src/providers/CMakeFiles/qgis_wmscapabilitiestest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_wmscapabilitiestest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_wmscapabilitiestest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_wmscapabilitiestest.dir/rule
@@ -22680,7 +22682,7 @@ all: tests/src/providers/CMakeFiles/qgis_wmsprovidertest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_wmsprovidertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_wmsprovidertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_wmsprovidertest.dir/rule
@@ -22795,7 +22797,7 @@ all: tests/src/providers/CMakeFiles/qgis_postgresconntest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_postgresconntest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_postgresconntest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_postgresconntest.dir/rule
@@ -22822,12 +22824,12 @@ clean: tests/src/providers/CMakeFiles/qgis_postgresconntest.dir/clean
 tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/build.make tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/depend
 	$(MAKE) -f tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/build.make tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_mdalprovidertest_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=81 "Built target qgis_mdalprovidertest_autogen"
 .PHONY : tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_mdalprovidertest_autogen.dir/rule
@@ -22860,7 +22862,7 @@ tests/src/providers/CMakeFiles/qgis_arcgisrestutilstest_autogen.dir/all: src/pro
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_arcgisrestutilstest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_arcgisrestutilstest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_arcgisrestutilstest_autogen.dir/rule
@@ -22925,7 +22927,7 @@ tests/src/providers/CMakeFiles/qgis_postgresprovidertest_autogen.dir/all: src/pr
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_postgresprovidertest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_postgresprovidertest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_postgresprovidertest_autogen.dir/rule
@@ -22990,7 +22992,7 @@ tests/src/providers/CMakeFiles/qgis_ogrprovidertest_autogen.dir/all: src/provide
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_ogrprovidertest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_ogrprovidertest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_ogrprovidertest_autogen.dir/rule
@@ -23023,7 +23025,7 @@ tests/src/providers/CMakeFiles/qgis_wmscapabilitiestest_autogen.dir/all: src/pro
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_wmscapabilitiestest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_wmscapabilitiestest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_wmscapabilitiestest_autogen.dir/rule
@@ -23056,7 +23058,7 @@ tests/src/providers/CMakeFiles/qgis_wmsprovidertest_autogen.dir/all: src/provide
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_wmsprovidertest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 45
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_wmsprovidertest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_wmsprovidertest_autogen.dir/rule
@@ -23089,7 +23091,7 @@ tests/src/providers/CMakeFiles/qgis_postgresconntest_autogen.dir/all: src/provid
 
 # Build rule for subdir invocation for target.
 tests/src/providers/CMakeFiles/qgis_postgresconntest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/providers/CMakeFiles/qgis_postgresconntest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/providers/CMakeFiles/qgis_postgresconntest_autogen.dir/rule
@@ -23296,7 +23298,7 @@ all: tests/src/app/CMakeFiles/qgis_meshcalculator.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_meshcalculator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_meshcalculator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_meshcalculator.dir/rule
@@ -23339,7 +23341,7 @@ all: tests/src/app/CMakeFiles/qgis_layoutvaliditychecks.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_layoutvaliditychecks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_layoutvaliditychecks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_layoutvaliditychecks.dir/rule
@@ -23493,7 +23495,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolreverselinetest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolreverselinetest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolreverselinetest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolreverselinetest.dir/rule
@@ -23536,7 +23538,7 @@ all: tests/src/app/CMakeFiles/qgis_vectorlayersaveasdialogtest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_vectorlayersaveasdialogtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_vectorlayersaveasdialogtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_vectorlayersaveasdialogtest.dir/rule
@@ -23727,7 +23729,7 @@ all: tests/src/app/CMakeFiles/qgis_maptooladdfeaturepoint.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptooladdfeaturepoint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptooladdfeaturepoint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptooladdfeaturepoint.dir/rule
@@ -23770,7 +23772,7 @@ all: tests/src/app/CMakeFiles/qgis_applocatorfilters.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_applocatorfilters.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_applocatorfilters.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_applocatorfilters.dir/rule
@@ -23813,7 +23815,7 @@ all: tests/src/app/CMakeFiles/qgis_maptooltrimextendfeaturetest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptooltrimextendfeaturetest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptooltrimextendfeaturetest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptooltrimextendfeaturetest.dir/rule
@@ -23856,7 +23858,7 @@ all: tests/src/app/CMakeFiles/qgis_attributetabletest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_attributetabletest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_attributetabletest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_attributetabletest.dir/rule
@@ -23963,7 +23965,7 @@ tests/src/app/CMakeFiles/qgis_projectproperties.dir/all: src/app/dwg/libdxfrw/CM
 tests/src/app/CMakeFiles/qgis_projectproperties.dir/all: tests/src/app/CMakeFiles/qgis_projectproperties_autogen.dir/all
 	$(MAKE) -f tests/src/app/CMakeFiles/qgis_projectproperties.dir/build.make tests/src/app/CMakeFiles/qgis_projectproperties.dir/depend
 	$(MAKE) -f tests/src/app/CMakeFiles/qgis_projectproperties.dir/build.make tests/src/app/CMakeFiles/qgis_projectproperties.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=84 "Built target qgis_projectproperties"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_projectproperties"
 .PHONY : tests/src/app/CMakeFiles/qgis_projectproperties.dir/all
 
 # Include target in all.
@@ -23973,7 +23975,7 @@ all: tests/src/app/CMakeFiles/qgis_projectproperties.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_projectproperties.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_projectproperties.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_projectproperties.dir/rule
@@ -24090,7 +24092,7 @@ all: tests/src/app/CMakeFiles/qgis_qgisapp.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_qgisapp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_qgisapp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_qgisapp.dir/rule
@@ -24170,7 +24172,7 @@ all: tests/src/app/CMakeFiles/qgis_fieldcalculatortest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_fieldcalculatortest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_fieldcalculatortest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_fieldcalculatortest.dir/rule
@@ -24287,7 +24289,7 @@ all: tests/src/app/CMakeFiles/qgis_apppythontest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_apppythontest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_apppythontest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_apppythontest.dir/rule
@@ -24311,13 +24313,13 @@ clean: tests/src/app/CMakeFiles/qgis_apppythontest.dir/clean
 # Target rules for target tests/src/app/CMakeFiles/qgis_maptoolreshape.dir
 
 # All Build rule for target.
+tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all: tests/src/app/CMakeFiles/qgis_maptoolreshape_autogen.dir/all
 tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all: src/native/CMakeFiles/qgis_native.dir/all
 tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all: src/analysis/CMakeFiles/qgis_analysis.dir/all
 tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all: src/app/CMakeFiles/qgis_app.dir/all
 tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all: src/app/dwg/libdxfrw/CMakeFiles/libdxfrw.dir/all
-tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all: tests/src/app/CMakeFiles/qgis_maptoolreshape_autogen.dir/all
 	$(MAKE) -f tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/build.make tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/depend
 	$(MAKE) -f tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/build.make tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_maptoolreshape"
@@ -24330,7 +24332,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolreshape.dir/rule
@@ -24373,7 +24375,7 @@ all: tests/src/app/CMakeFiles/qgis_appbrowserproviders.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_appbrowserproviders.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_appbrowserproviders.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_appbrowserproviders.dir/rule
@@ -24527,7 +24529,7 @@ all: tests/src/app/CMakeFiles/qgis_meshlayerpropertiesdialog.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_meshlayerpropertiesdialog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_meshlayerpropertiesdialog.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_meshlayerpropertiesdialog.dir/rule
@@ -24570,7 +24572,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolidentifyaction.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolidentifyaction.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolidentifyaction.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolidentifyaction.dir/rule
@@ -24650,7 +24652,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolselect.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolselect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolselect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolselect.dir/rule
@@ -24693,7 +24695,7 @@ all: tests/src/app/CMakeFiles/qgis_vertextool.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_vertextool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_vertextool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_vertextool.dir/rule
@@ -24810,7 +24812,7 @@ all: tests/src/app/CMakeFiles/qgis_maptooladdfeatureline.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptooladdfeatureline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptooladdfeatureline.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptooladdfeatureline.dir/rule
@@ -24843,7 +24845,7 @@ tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/all: src/app/dwg/lib
 tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/all: tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest_autogen.dir/all
 	$(MAKE) -f tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/build.make tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/depend
 	$(MAKE) -f tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/build.make tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_maptoolcircularstringtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=80 "Built target qgis_maptoolcircularstringtest"
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/all
 
 # Include target in all.
@@ -24853,7 +24855,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest.dir/rule
@@ -24970,7 +24972,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolcircletest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolcircletest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolcircletest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolcircletest.dir/rule
@@ -25050,7 +25052,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolellipsetest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolellipsetest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolellipsetest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolellipsetest.dir/rule
@@ -25130,7 +25132,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolrectangletest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolrectangletest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolrectangletest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolrectangletest.dir/rule
@@ -25173,7 +25175,7 @@ all: tests/src/app/CMakeFiles/qgis_maptoolregularpolygontest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolregularpolygontest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolregularpolygontest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolregularpolygontest.dir/rule
@@ -25216,7 +25218,7 @@ all: tests/src/app/CMakeFiles/qgis_qgisappclipboard.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_qgisappclipboard.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_qgisappclipboard.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_qgisappclipboard.dir/rule
@@ -25333,7 +25335,7 @@ all: tests/src/app/CMakeFiles/qgis_measuretool.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_measuretool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_measuretool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_measuretool.dir/rule
@@ -25368,7 +25370,7 @@ tests/src/app/CMakeFiles/qgis_meshcalculator_autogen.dir/all: src/app/CMakeFiles
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_meshcalculator_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_meshcalculator_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_meshcalculator_autogen.dir/rule
@@ -25403,7 +25405,7 @@ tests/src/app/CMakeFiles/qgis_layoutvaliditychecks_autogen.dir/all: src/app/CMak
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_layoutvaliditychecks_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_layoutvaliditychecks_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_layoutvaliditychecks_autogen.dir/rule
@@ -25438,7 +25440,7 @@ tests/src/app/CMakeFiles/qgis_maptoolreverselinetest_autogen.dir/all: src/app/CM
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolreverselinetest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolreverselinetest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolreverselinetest_autogen.dir/rule
@@ -25473,7 +25475,7 @@ tests/src/app/CMakeFiles/qgis_vectorlayersaveasdialogtest_autogen.dir/all: src/a
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_vectorlayersaveasdialogtest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_vectorlayersaveasdialogtest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_vectorlayersaveasdialogtest_autogen.dir/rule
@@ -25508,7 +25510,7 @@ tests/src/app/CMakeFiles/qgis_maptooladdfeaturepoint_autogen.dir/all: src/app/CM
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptooladdfeaturepoint_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptooladdfeaturepoint_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptooladdfeaturepoint_autogen.dir/rule
@@ -25543,7 +25545,7 @@ tests/src/app/CMakeFiles/qgis_applocatorfilters_autogen.dir/all: src/app/CMakeFi
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_applocatorfilters_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_applocatorfilters_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_applocatorfilters_autogen.dir/rule
@@ -25578,7 +25580,7 @@ tests/src/app/CMakeFiles/qgis_maptooltrimextendfeaturetest_autogen.dir/all: src/
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptooltrimextendfeaturetest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptooltrimextendfeaturetest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptooltrimextendfeaturetest_autogen.dir/rule
@@ -25613,7 +25615,7 @@ tests/src/app/CMakeFiles/qgis_attributetabletest_autogen.dir/all: src/app/CMakeF
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_attributetabletest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_attributetabletest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_attributetabletest_autogen.dir/rule
@@ -25648,7 +25650,7 @@ tests/src/app/CMakeFiles/qgis_projectproperties_autogen.dir/all: src/app/CMakeFi
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_projectproperties_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_projectproperties_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_projectproperties_autogen.dir/rule
@@ -25683,7 +25685,7 @@ tests/src/app/CMakeFiles/qgis_qgisapp_autogen.dir/all: src/app/CMakeFiles/qgis_a
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_qgisapp_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_qgisapp_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_qgisapp_autogen.dir/rule
@@ -25718,7 +25720,7 @@ tests/src/app/CMakeFiles/qgis_fieldcalculatortest_autogen.dir/all: src/app/CMake
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_fieldcalculatortest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_fieldcalculatortest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_fieldcalculatortest_autogen.dir/rule
@@ -25753,7 +25755,7 @@ tests/src/app/CMakeFiles/qgis_apppythontest_autogen.dir/all: src/app/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_apppythontest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_apppythontest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_apppythontest_autogen.dir/rule
@@ -25788,7 +25790,7 @@ tests/src/app/CMakeFiles/qgis_maptoolreshape_autogen.dir/all: src/app/CMakeFiles
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolreshape_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolreshape_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolreshape_autogen.dir/rule
@@ -25823,7 +25825,7 @@ tests/src/app/CMakeFiles/qgis_appbrowserproviders_autogen.dir/all: src/app/CMake
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_appbrowserproviders_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_appbrowserproviders_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_appbrowserproviders_autogen.dir/rule
@@ -25858,7 +25860,7 @@ tests/src/app/CMakeFiles/qgis_meshlayerpropertiesdialog_autogen.dir/all: src/app
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_meshlayerpropertiesdialog_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_meshlayerpropertiesdialog_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_meshlayerpropertiesdialog_autogen.dir/rule
@@ -25893,7 +25895,7 @@ tests/src/app/CMakeFiles/qgis_maptoolidentifyaction_autogen.dir/all: src/app/CMa
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolidentifyaction_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolidentifyaction_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolidentifyaction_autogen.dir/rule
@@ -25928,7 +25930,7 @@ tests/src/app/CMakeFiles/qgis_maptoolselect_autogen.dir/all: src/app/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolselect_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolselect_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolselect_autogen.dir/rule
@@ -25963,7 +25965,7 @@ tests/src/app/CMakeFiles/qgis_vertextool_autogen.dir/all: src/app/CMakeFiles/qgi
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_vertextool_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_vertextool_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_vertextool_autogen.dir/rule
@@ -25993,12 +25995,12 @@ tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/all: src/gui/CMa
 tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/all: src/app/CMakeFiles/qgis_app.dir/all
 	$(MAKE) -f tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/build.make tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/depend
 	$(MAKE) -f tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/build.make tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=80 "Built target qgis_maptooladdfeatureline_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num= "Built target qgis_maptooladdfeatureline_autogen"
 .PHONY : tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptooladdfeatureline_autogen.dir/rule
@@ -26033,7 +26035,7 @@ tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest_autogen.dir/all: src/app
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolcircularstringtest_autogen.dir/rule
@@ -26068,7 +26070,7 @@ tests/src/app/CMakeFiles/qgis_maptoolcircletest_autogen.dir/all: src/app/CMakeFi
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolcircletest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolcircletest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolcircletest_autogen.dir/rule
@@ -26103,7 +26105,7 @@ tests/src/app/CMakeFiles/qgis_maptoolellipsetest_autogen.dir/all: src/app/CMakeF
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolellipsetest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolellipsetest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolellipsetest_autogen.dir/rule
@@ -26138,7 +26140,7 @@ tests/src/app/CMakeFiles/qgis_maptoolrectangletest_autogen.dir/all: src/app/CMak
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolrectangletest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolrectangletest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolrectangletest_autogen.dir/rule
@@ -26173,7 +26175,7 @@ tests/src/app/CMakeFiles/qgis_maptoolregularpolygontest_autogen.dir/all: src/app
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_maptoolregularpolygontest_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_maptoolregularpolygontest_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_maptoolregularpolygontest_autogen.dir/rule
@@ -26208,7 +26210,7 @@ tests/src/app/CMakeFiles/qgis_qgisappclipboard_autogen.dir/all: src/app/CMakeFil
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_qgisappclipboard_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_qgisappclipboard_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_qgisappclipboard_autogen.dir/rule
@@ -26243,7 +26245,7 @@ tests/src/app/CMakeFiles/qgis_measuretool_autogen.dir/all: src/app/CMakeFiles/qg
 
 # Build rule for subdir invocation for target.
 tests/src/app/CMakeFiles/qgis_measuretool_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tests/src/app/CMakeFiles/qgis_measuretool_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guangping/dev/cpp/GIT/QGIS/CMakeFiles 0
 .PHONY : tests/src/app/CMakeFiles/qgis_measuretool_autogen.dir/rule

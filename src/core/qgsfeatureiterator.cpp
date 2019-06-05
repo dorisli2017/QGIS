@@ -18,6 +18,8 @@
 #include "qgssimplifymethod.h"
 #include "qgsexception.h"
 #include "qgsexpressionsorter.h"
+#include <cassert>
+#include "../../app/aclabeltester.h"
 
 QgsAbstractFeatureIterator::QgsAbstractFeatureIterator( const QgsFeatureRequest &request )
   : mRequest( request )
@@ -26,22 +28,27 @@ QgsAbstractFeatureIterator::QgsAbstractFeatureIterator( const QgsFeatureRequest 
 
 bool QgsAbstractFeatureIterator::nextFeature( QgsFeature &f )
 {
+ // std::cout<< "in QgsAbstractFeatureIterator::nextFeature"<< std::endl;
   bool dataOk = false;
   if ( mRequest.limit() >= 0 && mFetchedCount >= mRequest.limit() )
   {
+   // std::cout<< "out QgsAbstractFeatureIterator::nextFeature first" <<  std::endl;
     return false;
   }
 
   if ( mUseCachedFeatures )
   {
+      //std::cout<< "in QgsAbstractFeatureIterator::nextFeature if"<< std::endl;
     if ( mFeatureIterator != mCachedFeatures.constEnd() )
     {
+     // std::cout<< "in QgsAbstractFeatureIterator::nextFeature if if"<< std::endl;
       f = mFeatureIterator->mFeature;
       ++mFeatureIterator;
       dataOk = true;
     }
     else
     {
+         //   std::cout<< "in QgsAbstractFeatureIterator::nextFeature if else"<< std::endl;
       dataOk = false;
       // even the zombie dies at this point...
       mZombie = false;
@@ -49,17 +56,21 @@ bool QgsAbstractFeatureIterator::nextFeature( QgsFeature &f )
   }
   else
   {
+    //std::cout<< "in QgsAbstractFeatureIterator::nextFeature else"<< std::endl;
     switch ( mRequest.filterType() )
     {
       case QgsFeatureRequest::FilterExpression:
+        //std::cout<< "FILTEREXPRESSION"<< std::endl;
         dataOk = nextFeatureFilterExpression( f );
         break;
 
       case QgsFeatureRequest::FilterFids:
+        //std::cout<< "FilterFids"<< std::endl;
         dataOk = nextFeatureFilterFids( f );
         break;
 
       default:
+        //std::cout<< "Filter DEFAULT"<< std::endl;
         dataOk = fetchFeature( f );
         break;
     }
@@ -67,7 +78,7 @@ bool QgsAbstractFeatureIterator::nextFeature( QgsFeature &f )
 
   if ( dataOk )
     mFetchedCount++;
-
+  //std::cout<< "out QgsAbstractFeatureIterator::nextFeature "<<dataOk <<  std::endl;
   return dataOk;
 }
 

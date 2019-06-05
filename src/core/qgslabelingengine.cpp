@@ -116,6 +116,7 @@ void QgsLabelingEngine::removeProvider( QgsAbstractLabelProvider *provider )
 
 void QgsLabelingEngine::processProvider( QgsAbstractLabelProvider *provider, QgsRenderContext &context, pal::Pal &p )
 {
+    //cout<< "process provider"<< endl;
   QgsAbstractLabelProvider::Flags flags = provider->flags();
 
   // create the pal layer
@@ -156,6 +157,7 @@ void QgsLabelingEngine::processProvider( QgsAbstractLabelProvider *provider, Qgs
       upsdnlabels = pal::Layer::ShowAll;
       break;
   }
+     //cout<< "process provider B"<< endl;
   l->setUpsidedownLabels( upsdnlabels );
 
 
@@ -182,6 +184,7 @@ void QgsLabelingEngine::processProvider( QgsAbstractLabelProvider *provider, Qgs
     mSubProviders << subProvider;
     processProvider( subProvider, context, p );
   }
+     // cout<< "process provider C"<< endl;
 }
 
 
@@ -234,7 +237,6 @@ void QgsLabelingEngine::run( QgsRenderContext &context,test::Performance& perfor
 
   p.setShowPartial( settings.testFlag( QgsLabelingEngineSettings::UsePartialCandidates ) );
 
-
   // for each provider: get labels and register them in PAL
   for ( QgsAbstractLabelProvider *provider : qgis::as_const( mProviders ) )
   {
@@ -247,7 +249,6 @@ void QgsLabelingEngine::run( QgsRenderContext &context,test::Performance& perfor
     processProvider( provider, context, p );
     if ( appendedLayerScope )
       delete context.expressionContext().popScope();
-              //  provider->getFeatureIds();
   }
 
 
@@ -347,10 +348,8 @@ void QgsLabelingEngine::run( QgsRenderContext &context,test::Performance& perfor
       }
     }
   }
-
   // find the solution
   QList<pal::LabelPosition *> labels = p.solveProblem( problem.get(), settings.testFlag( QgsLabelingEngineSettings::UseAllLabels ), performance );
-
   QgsDebugMsgLevel( QStringLiteral( "LABELING work:  %1 ms ... labels# %2" ).arg( t.elapsed() ).arg( labels.size() ), 4 );
   t.restart();
 
@@ -380,7 +379,6 @@ void QgsLabelingEngine::run( QgsRenderContext &context,test::Performance& perfor
 
   // Reset composition mode for further drawing operations
   painter->setCompositionMode( QPainter::CompositionMode_SourceOver );
-
   QgsDebugMsgLevel( QStringLiteral( "LABELING draw:  %1 ms" ).arg( t.elapsed() ), 4 );
 }
 
@@ -501,7 +499,7 @@ QVector<QgsPalLayerSettings::PredefinedPointPosition> QgsLabelingUtils::decodePr
   return result;
 }
 
-void QgsLabelingEngine::interRun(QgsRenderContext &context,QDir& image_path, QString& ext_image, QImage &labeled_image, QString& dataset,vector<test::Performance>& performances)
+/*void QgsLabelingEngine::interRun(QgsRenderContext &context,QDir& image_path, QString& ext_image, QImage &labeled_image, QString& dataset,vector<test::Performance>& performances)
 {
   for(int i =0 ; i < 10; i++){
   const QgsLabelingEngineSettings &settings = mMapSettings.labelingEngineSettings();
@@ -702,4 +700,33 @@ void QgsLabelingEngine::interRun(QgsRenderContext &context,QDir& image_path, QSt
           // Reset composition mode for further drawing operations
     painter->setCompositionMode( QPainter::CompositionMode_SourceOver );
     }
-}
+}*/
+    //+++++++++++++++++gpl-modification+++++++++++++++++++
+    void QgsLabelingEngine::fixFeature(int id){
+      for ( QgsAbstractLabelProvider *provider : qgis::as_const( mProviders )){
+        provider->fixFeature(id);
+      }
+    };
+    void QgsLabelingEngine::fitFeature(int id, double factor){
+      for ( QgsAbstractLabelProvider *provider : qgis::as_const( mProviders )){
+        provider->fitFeature(id,factor);
+      } 
+    };
+    void QgsLabelingEngine::getFeatureIds(){
+      for ( QgsAbstractLabelProvider *provider : qgis::as_const( mProviders )){
+          provider->getFeatureIds();
+      }
+    };
+    void QgsLabelingEngine::getFieldNames(){
+      for ( QgsAbstractLabelProvider *provider : qgis::as_const( mProviders )){
+          provider->getFeatureIds();
+      }
+    };
+   /*
+    void QgsLabelingEngine::getProvider(QgsAbstractLabelProvider* firstProvider){
+      for ( QgsAbstractLabelProvider *provider : qgis::as_const( mProviders )){
+          firstProvider = new QgsAbstractLabelProvider(provider);
+      }
+    };
+    */
+    //----------------gpl-modification--------------------

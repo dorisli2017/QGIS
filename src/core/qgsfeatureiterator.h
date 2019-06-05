@@ -372,6 +372,7 @@ inline QgsFeatureIterator::~QgsFeatureIterator()
 
 inline bool QgsFeatureIterator::nextFeature( QgsFeature &f )
 {
+  //std::cout<< "mIter: "<<mIter<<std::endl;
   return mIter ? mIter->nextFeature( f ) : false;
 }
 

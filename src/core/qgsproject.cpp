@@ -956,18 +956,23 @@ bool QgsProject::_getMapLayers( const QDomDocument &doc, QList<QDomNode> &broken
 
 bool QgsProject::addLayer( const QDomElement &layerElem, QList<QDomNode> &brokenNodes, QgsReadWriteContext &context )
 {
+  std:: cout<< "IN QgsProject::addLayer"<< std:: endl;
   QString type = layerElem.attribute( QStringLiteral( "type" ) );
   QgsDebugMsgLevel( "Layer type is " + type, 4 );
   std::unique_ptr<QgsMapLayer> mapLayer;
 
   if ( type == QLatin1String( "vector" ) )
   {
+      //std:: cout<< "IN QgsProject::addLayer if vector"<< std:: endl;
     mapLayer = qgis::make_unique<QgsVectorLayer>();
     // apply specific settings to vector layer
     if ( QgsVectorLayer *vl = qobject_cast<QgsVectorLayer *>( mapLayer.get() ) )
     {
+          std:: cout<< "IN QgsProject::addLayer if vector if"<< std:: endl;
       vl->setReadExtentFromXml( mTrustLayerMetadata );
+          std:: cout<< "OUT QgsProject::addLayer if vector if"<< std:: endl;
     }
+    std:: cout<< "OUT QgsProject::addLayer if vector"<< std:: endl;
   }
   else if ( type == QLatin1String( "raster" ) )
   {
@@ -982,10 +987,11 @@ bool QgsProject::addLayer( const QDomElement &layerElem, QList<QDomNode> &broken
     QString typeName = layerElem.attribute( QStringLiteral( "name" ) );
     mapLayer.reset( QgsApplication::pluginLayerRegistry()->createLayer( typeName ) );
   }
-
+    std:: cout<< " QgsProject::addLayer POINT A"<< std:: endl;
   if ( !mapLayer )
   {
     QgsDebugMsg( QStringLiteral( "Unable to create layer" ) );
+      std:: cout<< "OUT QgsProject::addLayer"<< std:: endl;
     return false;
   }
 
@@ -996,32 +1002,33 @@ bool QgsProject::addLayer( const QDomElement &layerElem, QList<QDomNode> &broken
   const QString layerId { layerElem.namedItem( QStringLiteral( "id" ) ).toElement().text() };
   Q_ASSERT( ! layerId.isEmpty() );
   const bool layerWasStored { layerStore()->mapLayer( layerId ) != nullptr };
-
+    std:: cout<< " QgsProject::addLayer POINT B"<< std:: endl;
   // have the layer restore state that is stored in Dom node
   bool layerIsValid = mapLayer->readLayerXml( layerElem, context ) && mapLayer->isValid();
   QList<QgsMapLayer *> newLayers;
   newLayers << mapLayer.get();
+      std:: cout<< " QgsProject::addLayer POINT B1"<< std:: endl;
   if ( layerIsValid )
-  {
+  {    std:: cout<< " QgsProject::addLayer POINT B if"<< std:: endl;
     emit readMapLayer( mapLayer.get(), layerElem );
     addMapLayers( newLayers );
   }
   else
-  {
+  {    std:: cout<< " QgsProject::addLayer POINT C else"<< std:: endl;
     // It's a bad layer: do not add to legend (the user will decide if she wants to do so)
     addMapLayers( newLayers, false );
     newLayers.first();
     QgsDebugMsg( "Unable to load " + type + " layer" );
     brokenNodes.push_back( layerElem );
   }
-
+    std:: cout<< " QgsProject::addLayer POINT C"<< std:: endl;
   // It should be safe to delete the layer now if layer was stored, because all the store
   // had to to was to reset the data source in case the validity changed.
   if ( ! layerWasStored )
   {
     mapLayer.release();
   }
-
+  std:: cout<< "OUT QgsProject::addLayer"<< std:: endl;
   return layerIsValid;
 }
 

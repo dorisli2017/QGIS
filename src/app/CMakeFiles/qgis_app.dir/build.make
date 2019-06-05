@@ -925,9 +925,33 @@ src/app/CMakeFiles/qgis_app.dir/__/__/external/nmea/gmath.c.o.provides: src/app/
 src/app/CMakeFiles/qgis_app.dir/__/__/external/nmea/gmath.c.o.provides.build: src/app/CMakeFiles/qgis_app.dir/__/__/external/nmea/gmath.c.o
 
 
+src/app/CMakeFiles/qgis_app.dir/modification.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
+src/app/CMakeFiles/qgis_app.dir/modification.cpp.o: src/app/modification.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building CXX object src/app/CMakeFiles/qgis_app.dir/modification.cpp.o"
+	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/modification.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/modification.cpp
+
+src/app/CMakeFiles/qgis_app.dir/modification.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qgis_app.dir/modification.cpp.i"
+	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guangping/dev/cpp/GIT/QGIS/src/app/modification.cpp > CMakeFiles/qgis_app.dir/modification.cpp.i
+
+src/app/CMakeFiles/qgis_app.dir/modification.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qgis_app.dir/modification.cpp.s"
+	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guangping/dev/cpp/GIT/QGIS/src/app/modification.cpp -o CMakeFiles/qgis_app.dir/modification.cpp.s
+
+src/app/CMakeFiles/qgis_app.dir/modification.cpp.o.requires:
+
+.PHONY : src/app/CMakeFiles/qgis_app.dir/modification.cpp.o.requires
+
+src/app/CMakeFiles/qgis_app.dir/modification.cpp.o.provides: src/app/CMakeFiles/qgis_app.dir/modification.cpp.o.requires
+	$(MAKE) -f src/app/CMakeFiles/qgis_app.dir/build.make src/app/CMakeFiles/qgis_app.dir/modification.cpp.o.provides.build
+.PHONY : src/app/CMakeFiles/qgis_app.dir/modification.cpp.o.provides
+
+src/app/CMakeFiles/qgis_app.dir/modification.cpp.o.provides.build: src/app/CMakeFiles/qgis_app.dir/modification.cpp.o
+
+
 src/app/CMakeFiles/qgis_app.dir/qgisapp.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgisapp.cpp.o: src/app/qgisapp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgisapp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgisapp.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgisapp.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgisapp.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgisapp.cpp.i: cmake_force
@@ -951,7 +975,7 @@ src/app/CMakeFiles/qgis_app.dir/qgisapp.cpp.o.provides.build: src/app/CMakeFiles
 
 src/app/CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o: src/app/qgisappinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-deprecated-declarations -o CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgisappinterface.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgisappinterface.cpp.i: cmake_force
@@ -975,7 +999,7 @@ src/app/CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o: src/app/qgisappstylesheet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgisappstylesheet.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.i: cmake_force
@@ -999,7 +1023,7 @@ src/app/CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsabout.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsabout.cpp.o: src/app/qgsabout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsabout.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsabout.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsabout.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsabout.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsabout.cpp.i: cmake_force
@@ -1023,7 +1047,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsabout.cpp.o.provides.build: src/app/CMakeFile
 
 src/app/CMakeFiles/qgis_app.dir/qgsalignrasterdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsalignrasterdialog.cpp.o: src/app/qgsalignrasterdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsalignrasterdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsalignrasterdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsalignrasterdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsalignrasterdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsalignrasterdialog.cpp.i: cmake_force
@@ -1047,7 +1071,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsalignrasterdialog.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsappauthrequesthandler.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsappauthrequesthandler.cpp.o: src/app/qgsappauthrequesthandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappauthrequesthandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappauthrequesthandler.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsappauthrequesthandler.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsappauthrequesthandler.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsappauthrequesthandler.cpp.i: cmake_force
@@ -1071,7 +1095,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsappauthrequesthandler.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsappbrowserproviders.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsappbrowserproviders.cpp.o: src/app/qgsappbrowserproviders.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappbrowserproviders.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappbrowserproviders.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsappbrowserproviders.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsappbrowserproviders.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsappbrowserproviders.cpp.i: cmake_force
@@ -1095,7 +1119,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsappbrowserproviders.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/qgsapplayertreeviewmenuprovider.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsapplayertreeviewmenuprovider.cpp.o: src/app/qgsapplayertreeviewmenuprovider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsapplayertreeviewmenuprovider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsapplayertreeviewmenuprovider.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsapplayertreeviewmenuprovider.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsapplayertreeviewmenuprovider.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsapplayertreeviewmenuprovider.cpp.i: cmake_force
@@ -1119,7 +1143,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsapplayertreeviewmenuprovider.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/qgsappwindowmanager.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsappwindowmanager.cpp.o: src/app/qgsappwindowmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappwindowmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappwindowmanager.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsappwindowmanager.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsappwindowmanager.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsappwindowmanager.cpp.i: cmake_force
@@ -1143,7 +1167,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsappwindowmanager.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/qgsaddattrdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsaddattrdialog.cpp.o: src/app/qgsaddattrdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsaddattrdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsaddattrdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsaddattrdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsaddattrdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsaddattrdialog.cpp.i: cmake_force
@@ -1167,7 +1191,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsaddattrdialog.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgsaddtaborgroup.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsaddtaborgroup.cpp.o: src/app/qgsaddtaborgroup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsaddtaborgroup.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsaddtaborgroup.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsaddtaborgroup.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsaddtaborgroup.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsaddtaborgroup.cpp.i: cmake_force
@@ -1191,7 +1215,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsaddtaborgroup.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgsappscreenshots.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsappscreenshots.cpp.o: src/app/qgsappscreenshots.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappscreenshots.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappscreenshots.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsappscreenshots.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsappscreenshots.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsappscreenshots.cpp.i: cmake_force
@@ -1215,7 +1239,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsappscreenshots.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsjoindialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsjoindialog.cpp.o: src/app/qgsjoindialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsjoindialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsjoindialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsjoindialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsjoindialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsjoindialog.cpp.i: cmake_force
@@ -1239,7 +1263,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsjoindialog.cpp.o.provides.build: src/app/CMak
 
 src/app/CMakeFiles/qgis_app.dir/qgsannotationwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsannotationwidget.cpp.o: src/app/qgsannotationwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsannotationwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsannotationwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsannotationwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsannotationwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsannotationwidget.cpp.i: cmake_force
@@ -1263,7 +1287,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsannotationwidget.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/qgsappsslerrorhandler.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsappsslerrorhandler.cpp.o: src/app/qgsappsslerrorhandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappsslerrorhandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsappsslerrorhandler.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsappsslerrorhandler.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsappsslerrorhandler.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsappsslerrorhandler.cpp.i: cmake_force
@@ -1287,7 +1311,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsappsslerrorhandler.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributeactiondialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsattributeactiondialog.cpp.o: src/app/qgsattributeactiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributeactiondialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributeactiondialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsattributeactiondialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsattributeactiondialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributeactiondialog.cpp.i: cmake_force
@@ -1311,7 +1335,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsattributeactiondialog.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributeactionpropertiesdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsattributeactionpropertiesdialog.cpp.o: src/app/qgsattributeactionpropertiesdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributeactionpropertiesdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributeactionpropertiesdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsattributeactionpropertiesdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsattributeactionpropertiesdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributeactionpropertiesdialog.cpp.i: cmake_force
@@ -1335,7 +1359,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsattributeactionpropertiesdialog.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributetypedialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsattributetypedialog.cpp.o: src/app/qgsattributetypedialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributetypedialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributetypedialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsattributetypedialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsattributetypedialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributetypedialog.cpp.i: cmake_force
@@ -1359,7 +1383,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsattributetypedialog.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributerelationedit.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsattributerelationedit.cpp.o: src/app/qgsattributerelationedit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributerelationedit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributerelationedit.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsattributerelationedit.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsattributerelationedit.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributerelationedit.cpp.i: cmake_force
@@ -1383,7 +1407,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsattributerelationedit.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributesforminitcode.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsattributesforminitcode.cpp.o: src/app/qgsattributesforminitcode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributesforminitcode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributesforminitcode.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsattributesforminitcode.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsattributesforminitcode.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributesforminitcode.cpp.i: cmake_force
@@ -1407,7 +1431,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsattributesforminitcode.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributetabledialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsattributetabledialog.cpp.o: src/app/qgsattributetabledialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributetabledialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributetabledialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsattributetabledialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsattributetabledialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributetabledialog.cpp.i: cmake_force
@@ -1431,7 +1455,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsattributetabledialog.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsbookmarks.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsbookmarks.cpp.o: src/app/qgsbookmarks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsbookmarks.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsbookmarks.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsbookmarks.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsbookmarks.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsbookmarks.cpp.i: cmake_force
@@ -1455,7 +1479,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsbookmarks.cpp.o.provides.build: src/app/CMake
 
 src/app/CMakeFiles/qgis_app.dir/qgsclipboard.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsclipboard.cpp.o: src/app/qgsclipboard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsclipboard.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsclipboard.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsclipboard.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsclipboard.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsclipboard.cpp.i: cmake_force
@@ -1479,7 +1503,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsclipboard.cpp.o.provides.build: src/app/CMake
 
 src/app/CMakeFiles/qgis_app.dir/qgscustomization.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgscustomization.cpp.o: src/app/qgscustomization.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgscustomization.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgscustomization.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgscustomization.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgscustomization.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgscustomization.cpp.i: cmake_force
@@ -1503,7 +1527,7 @@ src/app/CMakeFiles/qgis_app.dir/qgscustomization.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgscustomprojectiondialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgscustomprojectiondialog.cpp.o: src/app/qgscustomprojectiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgscustomprojectiondialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgscustomprojectiondialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgscustomprojectiondialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgscustomprojectiondialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgscustomprojectiondialog.cpp.i: cmake_force
@@ -1527,7 +1551,7 @@ src/app/CMakeFiles/qgis_app.dir/qgscustomprojectiondialog.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgsdatumtransformtablewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsdatumtransformtablewidget.cpp.o: src/app/qgsdatumtransformtablewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdatumtransformtablewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdatumtransformtablewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsdatumtransformtablewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsdatumtransformtablewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsdatumtransformtablewidget.cpp.i: cmake_force
@@ -1551,7 +1575,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsdatumtransformtablewidget.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/qgsdiscoverrelationsdlg.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsdiscoverrelationsdlg.cpp.o: src/app/qgsdiscoverrelationsdlg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdiscoverrelationsdlg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdiscoverrelationsdlg.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsdiscoverrelationsdlg.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsdiscoverrelationsdlg.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsdiscoverrelationsdlg.cpp.i: cmake_force
@@ -1575,7 +1599,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsdiscoverrelationsdlg.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsdxfexportdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsdxfexportdialog.cpp.o: src/app/qgsdxfexportdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdxfexportdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdxfexportdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsdxfexportdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsdxfexportdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsdxfexportdialog.cpp.i: cmake_force
@@ -1599,7 +1623,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsdxfexportdialog.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/qgsformannotationdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsformannotationdialog.cpp.o: src/app/qgsformannotationdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsformannotationdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsformannotationdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsformannotationdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsformannotationdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsformannotationdialog.cpp.i: cmake_force
@@ -1623,7 +1647,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsformannotationdialog.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsguivectorlayertools.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsguivectorlayertools.cpp.o: src/app/qgsguivectorlayertools.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsguivectorlayertools.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsguivectorlayertools.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsguivectorlayertools.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsguivectorlayertools.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsguivectorlayertools.cpp.i: cmake_force
@@ -1647,7 +1671,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsguivectorlayertools.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/qgshtmlannotationdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgshtmlannotationdialog.cpp.o: src/app/qgshtmlannotationdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgshtmlannotationdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_244) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgshtmlannotationdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgshtmlannotationdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgshtmlannotationdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgshtmlannotationdialog.cpp.i: cmake_force
@@ -1671,7 +1695,7 @@ src/app/CMakeFiles/qgis_app.dir/qgshtmlannotationdialog.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsdelattrdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsdelattrdialog.cpp.o: src/app/qgsdelattrdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_244) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdelattrdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_245) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdelattrdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsdelattrdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsdelattrdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsdelattrdialog.cpp.i: cmake_force
@@ -1695,7 +1719,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsdelattrdialog.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgsdiagramproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsdiagramproperties.cpp.o: src/app/qgsdiagramproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_245) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdiagramproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_246) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdiagramproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsdiagramproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsdiagramproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsdiagramproperties.cpp.i: cmake_force
@@ -1719,7 +1743,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsdiagramproperties.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsdisplayangle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsdisplayangle.cpp.o: src/app/qgsdisplayangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_246) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdisplayangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_247) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsdisplayangle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsdisplayangle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsdisplayangle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsdisplayangle.cpp.i: cmake_force
@@ -1743,7 +1767,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsdisplayangle.cpp.o.provides.build: src/app/CM
 
 src/app/CMakeFiles/qgis_app.dir/qgsfieldcalculator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsfieldcalculator.cpp.o: src/app/qgsfieldcalculator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_247) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsfieldcalculator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_248) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsfieldcalculator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsfieldcalculator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsfieldcalculator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsfieldcalculator.cpp.i: cmake_force
@@ -1767,7 +1791,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsfieldcalculator.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/qgsfirstrundialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsfirstrundialog.cpp.o: src/app/qgsfirstrundialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_248) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsfirstrundialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_249) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsfirstrundialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsfirstrundialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsfirstrundialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsfirstrundialog.cpp.i: cmake_force
@@ -1791,7 +1815,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsfirstrundialog.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationservice.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationservice.cpp.o: src/app/qgsgeometryvalidationservice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_249) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationservice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_250) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationservice.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsgeometryvalidationservice.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsgeometryvalidationservice.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationservice.cpp.i: cmake_force
@@ -1815,7 +1839,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationservice.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationdock.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationdock.cpp.o: src/app/qgsgeometryvalidationdock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_250) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationdock.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_251) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationdock.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsgeometryvalidationdock.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsgeometryvalidationdock.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationdock.cpp.i: cmake_force
@@ -1839,7 +1863,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationdock.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationmodel.cpp.o: src/app/qgsgeometryvalidationmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_251) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_252) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsgeometryvalidationmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsgeometryvalidationmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationmodel.cpp.i: cmake_force
@@ -1863,7 +1887,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsgeometryvalidationmodel.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/qgssourcefieldsproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgssourcefieldsproperties.cpp.o: src/app/qgssourcefieldsproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_252) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssourcefieldsproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_253) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssourcefieldsproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgssourcefieldsproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgssourcefieldsproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgssourcefieldsproperties.cpp.i: cmake_force
@@ -1887,7 +1911,7 @@ src/app/CMakeFiles/qgis_app.dir/qgssourcefieldsproperties.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributesformproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsattributesformproperties.cpp.o: src/app/qgsattributesformproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_253) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributesformproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_254) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsattributesformproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsattributesformproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsattributesformproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsattributesformproperties.cpp.i: cmake_force
@@ -1911,7 +1935,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsattributesformproperties.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/qgsidentifyresultsdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsidentifyresultsdialog.cpp.o: src/app/qgsidentifyresultsdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_254) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsidentifyresultsdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_255) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsidentifyresultsdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsidentifyresultsdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsidentifyresultsdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsidentifyresultsdialog.cpp.i: cmake_force
@@ -1935,7 +1959,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsidentifyresultsdialog.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsfeatureaction.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsfeatureaction.cpp.o: src/app/qgsfeatureaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_255) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsfeatureaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_256) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsfeatureaction.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsfeatureaction.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsfeatureaction.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsfeatureaction.cpp.i: cmake_force
@@ -1959,7 +1983,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsfeatureaction.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgslabelpropertydialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslabelpropertydialog.cpp.o: src/app/qgslabelpropertydialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_256) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslabelpropertydialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_257) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslabelpropertydialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslabelpropertydialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslabelpropertydialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslabelpropertydialog.cpp.i: cmake_force
@@ -1983,7 +2007,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslabelpropertydialog.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/qgslabelengineconfigdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslabelengineconfigdialog.cpp.o: src/app/qgslabelengineconfigdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_257) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslabelengineconfigdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_258) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslabelengineconfigdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslabelengineconfigdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslabelengineconfigdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslabelengineconfigdialog.cpp.i: cmake_force
@@ -2007,7 +2031,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslabelengineconfigdialog.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/qgslabelinggui.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslabelinggui.cpp.o: src/app/qgslabelinggui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_258) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslabelinggui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_259) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslabelinggui.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslabelinggui.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslabelinggui.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslabelinggui.cpp.i: cmake_force
@@ -2031,7 +2055,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslabelinggui.cpp.o.provides.build: src/app/CMa
 
 src/app/CMakeFiles/qgis_app.dir/qgslabelingwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslabelingwidget.cpp.o: src/app/qgslabelingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_259) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslabelingwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_260) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslabelingwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslabelingwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslabelingwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslabelingwidget.cpp.i: cmake_force
@@ -2055,7 +2079,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslabelingwidget.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgslayercapabilitiesmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslayercapabilitiesmodel.cpp.o: src/app/qgslayercapabilitiesmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_260) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayercapabilitiesmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_261) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayercapabilitiesmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslayercapabilitiesmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslayercapabilitiesmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslayercapabilitiesmodel.cpp.i: cmake_force
@@ -2079,7 +2103,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslayercapabilitiesmodel.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewindicatorprovider.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewindicatorprovider.cpp.o: src/app/qgslayertreeviewindicatorprovider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_261) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewindicatorprovider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_262) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewindicatorprovider.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslayertreeviewindicatorprovider.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslayertreeviewindicatorprovider.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewindicatorprovider.cpp.i: cmake_force
@@ -2103,7 +2127,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewindicatorprovider.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewembeddedindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewembeddedindicator.cpp.o: src/app/qgslayertreeviewembeddedindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_262) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewembeddedindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_263) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewembeddedindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslayertreeviewembeddedindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslayertreeviewembeddedindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewembeddedindicator.cpp.i: cmake_force
@@ -2127,7 +2151,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewembeddedindicator.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewfilterindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewfilterindicator.cpp.o: src/app/qgslayertreeviewfilterindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_263) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewfilterindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_264) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewfilterindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslayertreeviewfilterindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslayertreeviewfilterindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewfilterindicator.cpp.i: cmake_force
@@ -2151,7 +2175,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewfilterindicator.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewmemoryindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewmemoryindicator.cpp.o: src/app/qgslayertreeviewmemoryindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_264) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewmemoryindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_265) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewmemoryindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslayertreeviewmemoryindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslayertreeviewmemoryindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewmemoryindicator.cpp.i: cmake_force
@@ -2175,7 +2199,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewmemoryindicator.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewnonremovableindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewnonremovableindicator.cpp.o: src/app/qgslayertreeviewnonremovableindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_265) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewnonremovableindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_266) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewnonremovableindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslayertreeviewnonremovableindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslayertreeviewnonremovableindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewnonremovableindicator.cpp.i: cmake_force
@@ -2199,7 +2223,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewnonremovableindicator.cpp.o.prov
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewbadlayerindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewbadlayerindicator.cpp.o: src/app/qgslayertreeviewbadlayerindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_266) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewbadlayerindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_267) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewbadlayerindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslayertreeviewbadlayerindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslayertreeviewbadlayerindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewbadlayerindicator.cpp.i: cmake_force
@@ -2223,7 +2247,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslayertreeviewbadlayerindicator.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/qgsmapcanvasdockwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmapcanvasdockwidget.cpp.o: src/app/qgsmapcanvasdockwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_267) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmapcanvasdockwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_268) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmapcanvasdockwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmapcanvasdockwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmapcanvasdockwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmapcanvasdockwidget.cpp.i: cmake_force
@@ -2247,7 +2271,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmapcanvasdockwidget.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstylecategoriesmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstylecategoriesmodel.cpp.o: src/app/qgsmaplayerstylecategoriesmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_268) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstylecategoriesmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_269) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstylecategoriesmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaplayerstylecategoriesmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaplayerstylecategoriesmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstylecategoriesmodel.cpp.i: cmake_force
@@ -2271,7 +2295,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstylecategoriesmodel.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstyleguiutils.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstyleguiutils.cpp.o: src/app/qgsmaplayerstyleguiutils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_269) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstyleguiutils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_270) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstyleguiutils.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaplayerstyleguiutils.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaplayerstyleguiutils.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstyleguiutils.cpp.i: cmake_force
@@ -2295,7 +2319,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaplayerstyleguiutils.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsmapsavedialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmapsavedialog.cpp.o: src/app/qgsmapsavedialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_270) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmapsavedialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_271) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmapsavedialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmapsavedialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmapsavedialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmapsavedialog.cpp.i: cmake_force
@@ -2319,7 +2343,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmapsavedialog.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgspuzzlewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgspuzzlewidget.cpp.o: src/app/qgspuzzlewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_271) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspuzzlewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_272) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspuzzlewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgspuzzlewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgspuzzlewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgspuzzlewidget.cpp.i: cmake_force
@@ -2343,7 +2367,7 @@ src/app/CMakeFiles/qgis_app.dir/qgspuzzlewidget.cpp.o.provides.build: src/app/CM
 
 src/app/CMakeFiles/qgis_app.dir/qgsversionmigration.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsversionmigration.cpp.o: src/app/qgsversionmigration.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_272) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsversionmigration.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_273) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsversionmigration.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsversionmigration.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsversionmigration.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsversionmigration.cpp.i: cmake_force
@@ -2367,7 +2391,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsversionmigration.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/qgsrulebasedlabelingwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsrulebasedlabelingwidget.cpp.o: src/app/qgsrulebasedlabelingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_273) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrulebasedlabelingwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_274) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrulebasedlabelingwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsrulebasedlabelingwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsrulebasedlabelingwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsrulebasedlabelingwidget.cpp.i: cmake_force
@@ -2391,7 +2415,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsrulebasedlabelingwidget.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/qgssnappinglayertreemodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgssnappinglayertreemodel.cpp.o: src/app/qgssnappinglayertreemodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_274) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssnappinglayertreemodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_275) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssnappinglayertreemodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgssnappinglayertreemodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgssnappinglayertreemodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgssnappinglayertreemodel.cpp.i: cmake_force
@@ -2415,7 +2439,7 @@ src/app/CMakeFiles/qgis_app.dir/qgssnappinglayertreemodel.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgssnappingwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgssnappingwidget.cpp.o: src/app/qgssnappingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_275) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssnappingwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_276) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssnappingwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgssnappingwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgssnappingwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgssnappingwidget.cpp.i: cmake_force
@@ -2439,7 +2463,7 @@ src/app/CMakeFiles/qgis_app.dir/qgssnappingwidget.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarcoordinateswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarcoordinateswidget.cpp.o: src/app/qgsstatusbarcoordinateswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_276) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsstatusbarcoordinateswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_277) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsstatusbarcoordinateswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsstatusbarcoordinateswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsstatusbarcoordinateswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarcoordinateswidget.cpp.i: cmake_force
@@ -2463,7 +2487,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsstatusbarcoordinateswidget.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarmagnifierwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarmagnifierwidget.cpp.o: src/app/qgsstatusbarmagnifierwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_277) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsstatusbarmagnifierwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_278) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsstatusbarmagnifierwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsstatusbarmagnifierwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsstatusbarmagnifierwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarmagnifierwidget.cpp.i: cmake_force
@@ -2487,7 +2511,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsstatusbarmagnifierwidget.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarscalewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarscalewidget.cpp.o: src/app/qgsstatusbarscalewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_278) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsstatusbarscalewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_279) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsstatusbarscalewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsstatusbarscalewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsstatusbarscalewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsstatusbarscalewidget.cpp.i: cmake_force
@@ -2511,7 +2535,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsstatusbarscalewidget.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerloadstyledialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerloadstyledialog.cpp.o: src/app/qgsvectorlayerloadstyledialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_279) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerloadstyledialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_280) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerloadstyledialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsvectorlayerloadstyledialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsvectorlayerloadstyledialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerloadstyledialog.cpp.i: cmake_force
@@ -2535,7 +2559,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerloadstyledialog.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/qgsversioninfo.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsversioninfo.cpp.o: src/app/qgsversioninfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_280) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsversioninfo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_281) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsversioninfo.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsversioninfo.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsversioninfo.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsversioninfo.cpp.i: cmake_force
@@ -2559,7 +2583,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsversioninfo.cpp.o.provides.build: src/app/CMa
 
 src/app/CMakeFiles/qgis_app.dir/qgswelcomepageitemsmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgswelcomepageitemsmodel.cpp.o: src/app/qgswelcomepageitemsmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_281) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgswelcomepageitemsmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_282) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgswelcomepageitemsmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgswelcomepageitemsmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgswelcomepageitemsmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgswelcomepageitemsmodel.cpp.i: cmake_force
@@ -2583,7 +2607,7 @@ src/app/CMakeFiles/qgis_app.dir/qgswelcomepageitemsmodel.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgswelcomepage.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgswelcomepage.cpp.o: src/app/qgswelcomepage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_282) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgswelcomepage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_283) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgswelcomepage.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgswelcomepage.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgswelcomepage.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgswelcomepage.cpp.i: cmake_force
@@ -2607,7 +2631,7 @@ src/app/CMakeFiles/qgis_app.dir/qgswelcomepage.cpp.o.provides.build: src/app/CMa
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdfeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdfeature.cpp.o: src/app/qgsmaptooladdfeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_283) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdfeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_284) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdfeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooladdfeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooladdfeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdfeature.cpp.i: cmake_force
@@ -2631,7 +2655,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdfeature.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldigitizefeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldigitizefeature.cpp.o: src/app/qgsmaptooldigitizefeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_284) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooldigitizefeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_285) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooldigitizefeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooldigitizefeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooldigitizefeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldigitizefeature.cpp.i: cmake_force
@@ -2655,7 +2679,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooldigitizefeature.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdpart.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdpart.cpp.o: src/app/qgsmaptooladdpart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_285) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdpart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_286) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdpart.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooladdpart.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooladdpart.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdpart.cpp.i: cmake_force
@@ -2679,7 +2703,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdpart.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdring.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdring.cpp.o: src/app/qgsmaptooladdring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_286) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_287) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdring.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooladdring.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooladdring.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdring.cpp.i: cmake_force
@@ -2703,7 +2727,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdring.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfillring.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfillring.cpp.o: src/app/qgsmaptoolfillring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_287) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfillring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_288) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfillring.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolfillring.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolfillring.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfillring.cpp.i: cmake_force
@@ -2727,7 +2751,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfillring.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolannotation.cpp.o: src/app/qgsmaptoolannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_288) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_289) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolannotation.cpp.i: cmake_force
@@ -2751,7 +2775,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolannotation.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolchangelabelproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolchangelabelproperties.cpp.o: src/app/qgsmaptoolchangelabelproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_289) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolchangelabelproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_290) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolchangelabelproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolchangelabelproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolchangelabelproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolchangelabelproperties.cpp.i: cmake_force
@@ -2775,7 +2799,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolchangelabelproperties.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletering.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletering.cpp.o: src/app/qgsmaptooldeletering.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_290) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletering.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_291) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletering.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooldeletering.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooldeletering.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletering.cpp.i: cmake_force
@@ -2799,7 +2823,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletering.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletepart.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletepart.cpp.o: src/app/qgsmaptooldeletepart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_291) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletepart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_292) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletepart.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooldeletepart.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooldeletepart.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletepart.cpp.i: cmake_force
@@ -2823,7 +2847,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooldeletepart.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooltrimextendfeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooltrimextendfeature.cpp.o: src/app/qgsmaptooltrimextendfeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_292) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooltrimextendfeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_293) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooltrimextendfeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooltrimextendfeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooltrimextendfeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooltrimextendfeature.cpp.i: cmake_force
@@ -2847,7 +2871,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooltrimextendfeature.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfeatureaction.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfeatureaction.cpp.o: src/app/qgsmaptoolfeatureaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_293) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfeatureaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_294) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfeatureaction.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolfeatureaction.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolfeatureaction.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfeatureaction.cpp.i: cmake_force
@@ -2871,7 +2895,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolfeatureaction.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolformannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolformannotation.cpp.o: src/app/qgsmaptoolformannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_294) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolformannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_295) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolformannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolformannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolformannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolformannotation.cpp.i: cmake_force
@@ -2895,7 +2919,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolformannotation.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolhtmlannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolhtmlannotation.cpp.o: src/app/qgsmaptoolhtmlannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_295) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolhtmlannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_296) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolhtmlannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolhtmlannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolhtmlannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolhtmlannotation.cpp.i: cmake_force
@@ -2919,7 +2943,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolhtmlannotation.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpinlabels.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpinlabels.cpp.o: src/app/qgsmaptoolpinlabels.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_296) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpinlabels.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_297) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpinlabels.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolpinlabels.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolpinlabels.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpinlabels.cpp.i: cmake_force
@@ -2943,7 +2967,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpinlabels.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolshowhidelabels.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolshowhidelabels.cpp.o: src/app/qgsmaptoolshowhidelabels.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_297) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolshowhidelabels.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_298) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolshowhidelabels.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolshowhidelabels.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolshowhidelabels.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolshowhidelabels.cpp.i: cmake_force
@@ -2967,7 +2991,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolshowhidelabels.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolidentifyaction.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolidentifyaction.cpp.o: src/app/qgsmaptoolidentifyaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_298) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolidentifyaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_299) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolidentifyaction.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolidentifyaction.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolidentifyaction.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolidentifyaction.cpp.i: cmake_force
@@ -2991,7 +3015,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolidentifyaction.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoollabel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoollabel.cpp.o: src/app/qgsmaptoollabel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_299) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoollabel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_300) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoollabel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoollabel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoollabel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoollabel.cpp.i: cmake_force
@@ -3015,7 +3039,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoollabel.cpp.o.provides.build: src/app/CM
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmeasureangle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmeasureangle.cpp.o: src/app/qgsmaptoolmeasureangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_300) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmeasureangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_301) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmeasureangle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolmeasureangle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolmeasureangle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmeasureangle.cpp.i: cmake_force
@@ -3039,7 +3063,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmeasureangle.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovefeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovefeature.cpp.o: src/app/qgsmaptoolmovefeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_301) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovefeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_302) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovefeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolmovefeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolmovefeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovefeature.cpp.i: cmake_force
@@ -3063,7 +3087,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovefeature.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovelabel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovelabel.cpp.o: src/app/qgsmaptoolmovelabel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_302) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovelabel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_303) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovelabel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolmovelabel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolmovelabel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovelabel.cpp.i: cmake_force
@@ -3087,7 +3111,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolmovelabel.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetcurve.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetcurve.cpp.o: src/app/qgsmaptooloffsetcurve.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_303) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetcurve.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_304) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetcurve.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooloffsetcurve.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooloffsetcurve.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetcurve.cpp.i: cmake_force
@@ -3111,7 +3135,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetcurve.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetpointsymbol.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetpointsymbol.cpp.o: src/app/qgsmaptooloffsetpointsymbol.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_304) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetpointsymbol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_305) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetpointsymbol.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooloffsetpointsymbol.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooloffsetpointsymbol.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetpointsymbol.cpp.i: cmake_force
@@ -3135,7 +3159,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooloffsetpointsymbol.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpointsymbol.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpointsymbol.cpp.o: src/app/qgsmaptoolpointsymbol.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_305) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpointsymbol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_306) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpointsymbol.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolpointsymbol.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolpointsymbol.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpointsymbol.cpp.i: cmake_force
@@ -3159,7 +3183,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolpointsymbol.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreshape.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreshape.cpp.o: src/app/qgsmaptoolreshape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_306) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreshape.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_307) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreshape.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolreshape.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolreshape.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreshape.cpp.i: cmake_force
@@ -3183,7 +3207,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreshape.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreverseline.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreverseline.cpp.o: src/app/qgsmaptoolreverseline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_307) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreverseline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_308) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreverseline.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolreverseline.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolreverseline.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreverseline.cpp.i: cmake_force
@@ -3207,7 +3231,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolreverseline.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatefeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatefeature.cpp.o: src/app/qgsmaptoolrotatefeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_308) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatefeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_309) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatefeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolrotatefeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolrotatefeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatefeature.cpp.i: cmake_force
@@ -3231,7 +3255,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatefeature.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatelabel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatelabel.cpp.o: src/app/qgsmaptoolrotatelabel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_309) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatelabel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_310) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatelabel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolrotatelabel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolrotatelabel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatelabel.cpp.i: cmake_force
@@ -3255,7 +3279,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatelabel.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatepointsymbols.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatepointsymbols.cpp.o: src/app/qgsmaptoolrotatepointsymbols.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_310) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatepointsymbols.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_311) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatepointsymbols.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolrotatepointsymbols.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolrotatepointsymbols.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatepointsymbols.cpp.i: cmake_force
@@ -3279,7 +3303,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrotatepointsymbols.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselect.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselect.cpp.o: src/app/qgsmaptoolselect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_311) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselect.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_312) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselect.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolselect.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolselect.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselect.cpp.i: cmake_force
@@ -3303,7 +3327,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselect.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectionhandler.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectionhandler.cpp.o: src/app/qgsmaptoolselectionhandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_312) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectionhandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_313) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectionhandler.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolselectionhandler.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolselectionhandler.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectionhandler.cpp.i: cmake_force
@@ -3327,7 +3351,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectionhandler.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectutils.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectutils.cpp.o: src/app/qgsmaptoolselectutils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_313) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectutils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_314) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectutils.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolselectutils.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolselectutils.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectutils.cpp.i: cmake_force
@@ -3351,7 +3375,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolselectutils.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsimplify.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsimplify.cpp.o: src/app/qgsmaptoolsimplify.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_314) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsimplify.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_315) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsimplify.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolsimplify.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolsimplify.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsimplify.cpp.i: cmake_force
@@ -3375,7 +3399,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsimplify.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitfeatures.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitfeatures.cpp.o: src/app/qgsmaptoolsplitfeatures.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_315) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitfeatures.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_316) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitfeatures.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolsplitfeatures.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolsplitfeatures.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitfeatures.cpp.i: cmake_force
@@ -3399,7 +3423,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitfeatures.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitparts.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitparts.cpp.o: src/app/qgsmaptoolsplitparts.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_316) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitparts.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_317) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitparts.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolsplitparts.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolsplitparts.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitparts.cpp.i: cmake_force
@@ -3423,7 +3447,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsplitparts.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsvgannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsvgannotation.cpp.o: src/app/qgsmaptoolsvgannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_317) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsvgannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_318) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsvgannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolsvgannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolsvgannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsvgannotation.cpp.i: cmake_force
@@ -3447,7 +3471,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolsvgannotation.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooltextannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooltextannotation.cpp.o: src/app/qgsmaptooltextannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_318) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooltextannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_319) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooltextannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooltextannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooltextannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooltextannotation.cpp.i: cmake_force
@@ -3471,7 +3495,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooltextannotation.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationitem.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationitem.cpp.o: src/app/decorations/qgsdecorationitem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_319) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationitem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_320) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationitem.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationitem.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationitem.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationitem.cpp.i: cmake_force
@@ -3495,7 +3519,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationitem.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitle.cpp.o: src/app/decorations/qgsdecorationtitle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_320) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_321) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationtitle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitle.cpp.i: cmake_force
@@ -3519,7 +3543,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitle.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitledialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitledialog.cpp.o: src/app/decorations/qgsdecorationtitledialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_321) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitledialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_322) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitledialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitledialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationtitledialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitledialog.cpp.i: cmake_force
@@ -3543,7 +3567,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationtitledialog.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyright.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyright.cpp.o: src/app/decorations/qgsdecorationcopyright.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_322) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyright.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_323) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyright.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyright.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationcopyright.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyright.cpp.i: cmake_force
@@ -3567,7 +3591,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyright.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyrightdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyrightdialog.cpp.o: src/app/decorations/qgsdecorationcopyrightdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_323) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyrightdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_324) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyrightdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyrightdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationcopyrightdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyrightdialog.cpp.i: cmake_force
@@ -3591,7 +3615,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationcopyrightdialog.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextent.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextent.cpp.o: src/app/decorations/qgsdecorationlayoutextent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_324) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_325) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextent.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextent.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationlayoutextent.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextent.cpp.i: cmake_force
@@ -3615,7 +3639,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextent.cpp.o.prov
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextentdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextentdialog.cpp.o: src/app/decorations/qgsdecorationlayoutextentdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_325) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextentdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_326) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextentdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextentdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationlayoutextentdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextentdialog.cpp.i: cmake_force
@@ -3639,7 +3663,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationlayoutextentdialog.cpp.
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrow.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrow.cpp.o: src/app/decorations/qgsdecorationnortharrow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_326) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_327) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrow.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrow.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationnortharrow.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrow.cpp.i: cmake_force
@@ -3663,7 +3687,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrow.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrowdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrowdialog.cpp.o: src/app/decorations/qgsdecorationnortharrowdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_327) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrowdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_328) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrowdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrowdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationnortharrowdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrowdialog.cpp.i: cmake_force
@@ -3687,7 +3711,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationnortharrowdialog.cpp.o.
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebar.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebar.cpp.o: src/app/decorations/qgsdecorationscalebar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_328) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_329) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebar.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebar.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationscalebar.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebar.cpp.i: cmake_force
@@ -3711,7 +3735,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebar.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebardialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebardialog.cpp.o: src/app/decorations/qgsdecorationscalebardialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_329) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebardialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_330) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebardialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebardialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationscalebardialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebardialog.cpp.i: cmake_force
@@ -3735,7 +3759,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationscalebardialog.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgrid.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgrid.cpp.o: src/app/decorations/qgsdecorationgrid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_330) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgrid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_331) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgrid.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationgrid.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationgrid.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgrid.cpp.i: cmake_force
@@ -3759,7 +3783,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgrid.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgriddialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgriddialog.cpp.o: src/app/decorations/qgsdecorationgriddialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_331) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgriddialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_332) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgriddialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/qgsdecorationgriddialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/qgsdecorationgriddialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgriddialog.cpp.i: cmake_force
@@ -3783,7 +3807,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/qgsdecorationgriddialog.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgslockedfeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgslockedfeature.cpp.o: src/app/vertextool/qgslockedfeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_332) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/qgslockedfeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_333) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/qgslockedfeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/vertextool/qgslockedfeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/vertextool/qgslockedfeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgslockedfeature.cpp.i: cmake_force
@@ -3807,7 +3831,7 @@ src/app/CMakeFiles/qgis_app.dir/vertextool/qgslockedfeature.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertexeditor.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertexeditor.cpp.o: src/app/vertextool/qgsvertexeditor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_333) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertexeditor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_334) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertexeditor.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/vertextool/qgsvertexeditor.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/vertextool/qgsvertexeditor.cpp
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertexeditor.cpp.i: cmake_force
@@ -3831,7 +3855,7 @@ src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertexeditor.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertextool.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertextool.cpp.o: src/app/vertextool/qgsvertextool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_334) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertextool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_335) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertextool.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/vertextool/qgsvertextool.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/vertextool/qgsvertextool.cpp
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertextool.cpp.i: cmake_force
@@ -3855,7 +3879,7 @@ src/app/CMakeFiles/qgis_app.dir/vertextool/qgsvertextool.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgslayerstylingwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgslayerstylingwidget.cpp.o: src/app/qgslayerstylingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_335) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayerstylingwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_336) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgslayerstylingwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgslayerstylingwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgslayerstylingwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgslayerstylingwidget.cpp.i: cmake_force
@@ -3879,7 +3903,7 @@ src/app/CMakeFiles/qgis_app.dir/qgslayerstylingwidget.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmeasuredialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmeasuredialog.cpp.o: src/app/qgsmeasuredialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_336) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmeasuredialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_337) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmeasuredialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmeasuredialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmeasuredialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmeasuredialog.cpp.i: cmake_force
@@ -3903,7 +3927,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmeasuredialog.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/qgsmeasuretool.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmeasuretool.cpp.o: src/app/qgsmeasuretool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_337) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmeasuretool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_338) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmeasuretool.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmeasuretool.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmeasuretool.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmeasuretool.cpp.i: cmake_force
@@ -3927,7 +3951,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmeasuretool.cpp.o.provides.build: src/app/CMa
 
 src/app/CMakeFiles/qgis_app.dir/qgsmergeattributesdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmergeattributesdialog.cpp.o: src/app/qgsmergeattributesdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_338) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmergeattributesdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_339) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmergeattributesdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmergeattributesdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmergeattributesdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmergeattributesdialog.cpp.i: cmake_force
@@ -3951,7 +3975,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmergeattributesdialog.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsoptions.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsoptions.cpp.o: src/app/qgsoptions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_339) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsoptions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_340) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsoptions.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsoptions.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsoptions.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsoptions.cpp.i: cmake_force
@@ -3975,7 +3999,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsoptions.cpp.o.provides.build: src/app/CMakeFi
 
 src/app/CMakeFiles/qgis_app.dir/qgspointmarkeritem.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgspointmarkeritem.cpp.o: src/app/qgspointmarkeritem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_340) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspointmarkeritem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_341) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspointmarkeritem.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgspointmarkeritem.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgspointmarkeritem.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgspointmarkeritem.cpp.i: cmake_force
@@ -3999,7 +4023,7 @@ src/app/CMakeFiles/qgis_app.dir/qgspointmarkeritem.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/qgspointrotationitem.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgspointrotationitem.cpp.o: src/app/qgspointrotationitem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_341) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspointrotationitem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_342) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspointrotationitem.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgspointrotationitem.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgspointrotationitem.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgspointrotationitem.cpp.i: cmake_force
@@ -4023,7 +4047,7 @@ src/app/CMakeFiles/qgis_app.dir/qgspointrotationitem.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgspluginmetadata.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgspluginmetadata.cpp.o: src/app/qgspluginmetadata.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_342) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspluginmetadata.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_343) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspluginmetadata.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgspluginmetadata.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgspluginmetadata.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgspluginmetadata.cpp.i: cmake_force
@@ -4047,7 +4071,7 @@ src/app/CMakeFiles/qgis_app.dir/qgspluginmetadata.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgspluginregistry.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgspluginregistry.cpp.o: src/app/qgspluginregistry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_343) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspluginregistry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_344) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgspluginregistry.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgspluginregistry.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgspluginregistry.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgspluginregistry.cpp.i: cmake_force
@@ -4071,7 +4095,7 @@ src/app/CMakeFiles/qgis_app.dir/qgspluginregistry.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsprojectlayergroupdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsprojectlayergroupdialog.cpp.o: src/app/qgsprojectlayergroupdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_344) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsprojectlayergroupdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_345) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsprojectlayergroupdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsprojectlayergroupdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsprojectlayergroupdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsprojectlayergroupdialog.cpp.i: cmake_force
@@ -4095,7 +4119,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsprojectlayergroupdialog.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/qgsprojectproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsprojectproperties.cpp.o: src/app/qgsprojectproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_345) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsprojectproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_346) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsprojectproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsprojectproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsprojectproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsprojectproperties.cpp.i: cmake_force
@@ -4119,7 +4143,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsprojectproperties.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsrastercalcdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsrastercalcdialog.cpp.o: src/app/qgsrastercalcdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_346) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrastercalcdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_347) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrastercalcdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsrastercalcdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsrastercalcdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsrastercalcdialog.cpp.i: cmake_force
@@ -4143,7 +4167,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsrastercalcdialog.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/qgsrasterlayerproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsrasterlayerproperties.cpp.o: src/app/qgsrasterlayerproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_347) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrasterlayerproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_348) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrasterlayerproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsrasterlayerproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsrasterlayerproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsrasterlayerproperties.cpp.i: cmake_force
@@ -4167,7 +4191,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsrasterlayerproperties.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsrelationmanagerdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsrelationmanagerdialog.cpp.o: src/app/qgsrelationmanagerdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_348) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrelationmanagerdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_349) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrelationmanagerdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsrelationmanagerdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsrelationmanagerdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsrelationmanagerdialog.cpp.i: cmake_force
@@ -4191,7 +4215,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsrelationmanagerdialog.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsrelationadddlg.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsrelationadddlg.cpp.o: src/app/qgsrelationadddlg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_349) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrelationadddlg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_350) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsrelationadddlg.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsrelationadddlg.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsrelationadddlg.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsrelationadddlg.cpp.i: cmake_force
@@ -4215,7 +4239,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsrelationadddlg.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/qgsselectbyformdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsselectbyformdialog.cpp.o: src/app/qgsselectbyformdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_350) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsselectbyformdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_351) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsselectbyformdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsselectbyformdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsselectbyformdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsselectbyformdialog.cpp.i: cmake_force
@@ -4239,7 +4263,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsselectbyformdialog.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsstatisticalsummarydockwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsstatisticalsummarydockwidget.cpp.o: src/app/qgsstatisticalsummarydockwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_351) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsstatisticalsummarydockwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_352) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsstatisticalsummarydockwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsstatisticalsummarydockwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsstatisticalsummarydockwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsstatisticalsummarydockwidget.cpp.i: cmake_force
@@ -4263,7 +4287,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsstatisticalsummarydockwidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/qgstextannotationdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgstextannotationdialog.cpp.o: src/app/qgstextannotationdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_352) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgstextannotationdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_353) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgstextannotationdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgstextannotationdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgstextannotationdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgstextannotationdialog.cpp.i: cmake_force
@@ -4287,7 +4311,7 @@ src/app/CMakeFiles/qgis_app.dir/qgstextannotationdialog.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgssvgannotationdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgssvgannotationdialog.cpp.o: src/app/qgssvgannotationdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_353) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssvgannotationdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_354) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssvgannotationdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgssvgannotationdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgssvgannotationdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgssvgannotationdialog.cpp.i: cmake_force
@@ -4311,7 +4335,7 @@ src/app/CMakeFiles/qgis_app.dir/qgssvgannotationdialog.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/qgsundowidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsundowidget.cpp.o: src/app/qgsundowidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_354) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsundowidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_355) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsundowidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsundowidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsundowidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsundowidget.cpp.i: cmake_force
@@ -4335,7 +4359,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsundowidget.cpp.o.provides.build: src/app/CMak
 
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerlegendwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerlegendwidget.cpp.o: src/app/qgsvectorlayerlegendwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_355) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerlegendwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_356) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerlegendwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsvectorlayerlegendwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsvectorlayerlegendwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerlegendwidget.cpp.i: cmake_force
@@ -4359,7 +4383,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerlegendwidget.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayersavestyledialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayersavestyledialog.cpp.o: src/app/qgsvectorlayersavestyledialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_356) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvectorlayersavestyledialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_357) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvectorlayersavestyledialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsvectorlayersavestyledialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsvectorlayersavestyledialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayersavestyledialog.cpp.i: cmake_force
@@ -4383,7 +4407,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsvectorlayersavestyledialog.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerproperties.cpp.o: src/app/qgsvectorlayerproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_357) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_358) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsvectorlayerproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsvectorlayerproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerproperties.cpp.i: cmake_force
@@ -4407,7 +4431,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsvectorlayerproperties.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/qgsmapthemes.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmapthemes.cpp.o: src/app/qgsmapthemes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_358) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmapthemes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_359) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmapthemes.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmapthemes.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmapthemes.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmapthemes.cpp.i: cmake_force
@@ -4431,7 +4455,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmapthemes.cpp.o.provides.build: src/app/CMake
 
 src/app/CMakeFiles/qgis_app.dir/qgshandlebadlayers.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgshandlebadlayers.cpp.o: src/app/qgshandlebadlayers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_359) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgshandlebadlayers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_360) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgshandlebadlayers.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgshandlebadlayers.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgshandlebadlayers.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgshandlebadlayers.cpp.i: cmake_force
@@ -4455,7 +4479,7 @@ src/app/CMakeFiles/qgis_app.dir/qgshandlebadlayers.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircularstring.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircularstring.cpp.o: src/app/qgsmaptooladdcircularstring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_360) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircularstring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_361) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircularstring.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooladdcircularstring.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooladdcircularstring.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircularstring.cpp.i: cmake_force
@@ -4479,7 +4503,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircularstring.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringcurvepoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringcurvepoint.cpp.o: src/app/qgsmaptoolcircularstringcurvepoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_361) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringcurvepoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_362) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringcurvepoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringcurvepoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolcircularstringcurvepoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringcurvepoint.cpp.i: cmake_force
@@ -4503,7 +4527,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringcurvepoint.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringradius.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringradius.cpp.o: src/app/qgsmaptoolcircularstringradius.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_362) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringradius.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_363) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringradius.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringradius.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolcircularstringradius.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringradius.cpp.i: cmake_force
@@ -4527,7 +4551,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircularstringradius.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircle.cpp.o: src/app/qgsmaptooladdcircle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_363) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_364) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooladdcircle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooladdcircle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircle.cpp.i: cmake_force
@@ -4551,7 +4575,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdcircle.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2points.cpp.o: src/app/qgsmaptoolcircle2points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_364) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_365) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolcircle2points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolcircle2points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2points.cpp.i: cmake_force
@@ -4575,7 +4599,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2points.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3points.cpp.o: src/app/qgsmaptoolcircle3points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_365) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_366) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolcircle3points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolcircle3points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3points.cpp.i: cmake_force
@@ -4599,7 +4623,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3points.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3tangents.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3tangents.cpp.o: src/app/qgsmaptoolcircle3tangents.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_366) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3tangents.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_367) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3tangents.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolcircle3tangents.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolcircle3tangents.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3tangents.cpp.i: cmake_force
@@ -4623,7 +4647,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle3tangents.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2tangentspoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2tangentspoint.cpp.o: src/app/qgsmaptoolcircle2tangentspoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_367) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2tangentspoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_368) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2tangentspoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolcircle2tangentspoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolcircle2tangentspoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2tangentspoint.cpp.i: cmake_force
@@ -4647,7 +4671,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcircle2tangentspoint.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcirclecenterpoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcirclecenterpoint.cpp.o: src/app/qgsmaptoolcirclecenterpoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_368) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcirclecenterpoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_369) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcirclecenterpoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolcirclecenterpoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolcirclecenterpoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcirclecenterpoint.cpp.i: cmake_force
@@ -4671,7 +4695,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolcirclecenterpoint.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdellipse.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdellipse.cpp.o: src/app/qgsmaptooladdellipse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_369) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdellipse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_370) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdellipse.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooladdellipse.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooladdellipse.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdellipse.cpp.i: cmake_force
@@ -4695,7 +4719,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdellipse.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsefoci.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsefoci.cpp.o: src/app/qgsmaptoolellipsefoci.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_370) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsefoci.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_371) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsefoci.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolellipsefoci.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolellipsefoci.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsefoci.cpp.i: cmake_force
@@ -4719,7 +4743,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsefoci.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipseextent.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipseextent.cpp.o: src/app/qgsmaptoolellipseextent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_371) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipseextent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_372) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipseextent.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolellipseextent.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolellipseextent.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipseextent.cpp.i: cmake_force
@@ -4743,7 +4767,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipseextent.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenterpoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenterpoint.cpp.o: src/app/qgsmaptoolellipsecenterpoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_372) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenterpoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_373) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenterpoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenterpoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolellipsecenterpoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenterpoint.cpp.i: cmake_force
@@ -4767,7 +4791,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenterpoint.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenter2points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenter2points.cpp.o: src/app/qgsmaptoolellipsecenter2points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_373) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenter2points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_374) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenter2points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenter2points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolellipsecenter2points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenter2points.cpp.i: cmake_force
@@ -4791,7 +4815,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolellipsecenter2points.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdrectangle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdrectangle.cpp.o: src/app/qgsmaptooladdrectangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_374) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdrectangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_375) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdrectangle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooladdrectangle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooladdrectangle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdrectangle.cpp.i: cmake_force
@@ -4815,7 +4839,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdrectangle.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdregularpolygon.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdregularpolygon.cpp.o: src/app/qgsmaptooladdregularpolygon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_375) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdregularpolygon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_376) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdregularpolygon.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptooladdregularpolygon.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptooladdregularpolygon.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdregularpolygon.cpp.i: cmake_force
@@ -4839,7 +4863,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptooladdregularpolygon.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectanglecenter.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectanglecenter.cpp.o: src/app/qgsmaptoolrectanglecenter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_376) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectanglecenter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_377) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectanglecenter.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolrectanglecenter.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolrectanglecenter.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectanglecenter.cpp.i: cmake_force
@@ -4863,7 +4887,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectanglecenter.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangleextent.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangleextent.cpp.o: src/app/qgsmaptoolrectangleextent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_377) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangleextent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_378) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangleextent.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolrectangleextent.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolrectangleextent.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangleextent.cpp.i: cmake_force
@@ -4887,7 +4911,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangleextent.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangle3points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangle3points.cpp.o: src/app/qgsmaptoolrectangle3points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_378) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangle3points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_379) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangle3points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolrectangle3points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolrectangle3points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangle3points.cpp.i: cmake_force
@@ -4911,7 +4935,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolrectangle3points.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygon2points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygon2points.cpp.o: src/app/qgsmaptoolregularpolygon2points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_379) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygon2points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_380) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygon2points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygon2points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolregularpolygon2points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygon2points.cpp.i: cmake_force
@@ -4935,7 +4959,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygon2points.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncenterpoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncenterpoint.cpp.o: src/app/qgsmaptoolregularpolygoncenterpoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_380) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncenterpoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_381) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncenterpoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncenterpoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolregularpolygoncenterpoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncenterpoint.cpp.i: cmake_force
@@ -4959,7 +4983,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncenterpoint.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncentercorner.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncentercorner.cpp.o: src/app/qgsmaptoolregularpolygoncentercorner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_381) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncentercorner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_382) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncentercorner.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncentercorner.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsmaptoolregularpolygoncentercorner.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncentercorner.cpp.i: cmake_force
@@ -4983,7 +5007,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsmaptoolregularpolygoncentercorner.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/browser/qgsinbuiltdataitemproviders.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/browser/qgsinbuiltdataitemproviders.cpp.o: src/app/browser/qgsinbuiltdataitemproviders.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_382) "Building CXX object src/app/CMakeFiles/qgis_app.dir/browser/qgsinbuiltdataitemproviders.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_383) "Building CXX object src/app/CMakeFiles/qgis_app.dir/browser/qgsinbuiltdataitemproviders.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/browser/qgsinbuiltdataitemproviders.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/browser/qgsinbuiltdataitemproviders.cpp
 
 src/app/CMakeFiles/qgis_app.dir/browser/qgsinbuiltdataitemproviders.cpp.i: cmake_force
@@ -5007,7 +5031,7 @@ src/app/CMakeFiles/qgis_app.dir/browser/qgsinbuiltdataitemproviders.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutaddpagesdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutaddpagesdialog.cpp.o: src/app/layout/qgslayoutaddpagesdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_383) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutaddpagesdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_384) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutaddpagesdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutaddpagesdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutaddpagesdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutaddpagesdialog.cpp.i: cmake_force
@@ -5031,7 +5055,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutaddpagesdialog.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutapputils.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutapputils.cpp.o: src/app/layout/qgslayoutapputils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_384) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutapputils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_385) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutapputils.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutapputils.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutapputils.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutapputils.cpp.i: cmake_force
@@ -5055,7 +5079,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutapputils.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutatlaswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutatlaswidget.cpp.o: src/app/layout/qgslayoutatlaswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_385) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutatlaswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_386) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutatlaswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutatlaswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutatlaswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutatlaswidget.cpp.i: cmake_force
@@ -5079,7 +5103,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutatlaswidget.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributeselectiondialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributeselectiondialog.cpp.o: src/app/layout/qgslayoutattributeselectiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_386) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributeselectiondialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_387) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributeselectiondialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutattributeselectiondialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutattributeselectiondialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributeselectiondialog.cpp.i: cmake_force
@@ -5103,7 +5127,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributeselectiondialog.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributetablewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributetablewidget.cpp.o: src/app/layout/qgslayoutattributetablewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_387) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributetablewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_388) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributetablewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutattributetablewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutattributetablewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributetablewidget.cpp.i: cmake_force
@@ -5127,7 +5151,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutattributetablewidget.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutdesignerdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutdesignerdialog.cpp.o: src/app/layout/qgslayoutdesignerdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_388) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutdesignerdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_389) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutdesignerdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutdesignerdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutdesignerdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutdesignerdialog.cpp.i: cmake_force
@@ -5151,7 +5175,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutdesignerdialog.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutguidewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutguidewidget.cpp.o: src/app/layout/qgslayoutguidewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_389) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutguidewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_390) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutguidewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutguidewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutguidewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutguidewidget.cpp.i: cmake_force
@@ -5175,7 +5199,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutguidewidget.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayouthtmlwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayouthtmlwidget.cpp.o: src/app/layout/qgslayouthtmlwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_390) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayouthtmlwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_391) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayouthtmlwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayouthtmlwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayouthtmlwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayouthtmlwidget.cpp.i: cmake_force
@@ -5199,7 +5223,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayouthtmlwidget.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutimageexportoptionsdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutimageexportoptionsdialog.cpp.o: src/app/layout/qgslayoutimageexportoptionsdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_391) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutimageexportoptionsdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_392) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutimageexportoptionsdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutimageexportoptionsdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutimageexportoptionsdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutimageexportoptionsdialog.cpp.i: cmake_force
@@ -5223,7 +5247,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutimageexportoptionsdialog.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutitemslistview.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutitemslistview.cpp.o: src/app/layout/qgslayoutitemslistview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_392) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutitemslistview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_393) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutitemslistview.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutitemslistview.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutitemslistview.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutitemslistview.cpp.i: cmake_force
@@ -5247,7 +5271,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutitemslistview.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutappmenuprovider.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutappmenuprovider.cpp.o: src/app/layout/qgslayoutappmenuprovider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_393) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutappmenuprovider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_394) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutappmenuprovider.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutappmenuprovider.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutappmenuprovider.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutappmenuprovider.cpp.i: cmake_force
@@ -5271,7 +5295,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutappmenuprovider.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlabelwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlabelwidget.cpp.o: src/app/layout/qgslayoutlabelwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_394) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlabelwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_395) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlabelwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutlabelwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutlabelwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlabelwidget.cpp.i: cmake_force
@@ -5295,7 +5319,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlabelwidget.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendlayersdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendlayersdialog.cpp.o: src/app/layout/qgslayoutlegendlayersdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_395) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendlayersdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_396) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendlayersdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutlegendlayersdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutlegendlayersdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendlayersdialog.cpp.i: cmake_force
@@ -5319,7 +5343,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendlayersdialog.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendwidget.cpp.o: src/app/layout/qgslayoutlegendwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_396) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_397) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutlegendwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutlegendwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendwidget.cpp.i: cmake_force
@@ -5343,7 +5367,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutlegendwidget.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmanagerdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmanagerdialog.cpp.o: src/app/layout/qgslayoutmanagerdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_397) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmanagerdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_398) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmanagerdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutmanagerdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutmanagerdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmanagerdialog.cpp.i: cmake_force
@@ -5367,7 +5391,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmanagerdialog.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapwidget.cpp.o: src/app/layout/qgslayoutmapwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_398) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_399) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutmapwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutmapwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapwidget.cpp.i: cmake_force
@@ -5391,7 +5415,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapwidget.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapgridwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapgridwidget.cpp.o: src/app/layout/qgslayoutmapgridwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_399) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapgridwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_400) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapgridwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutmapgridwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutmapgridwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapgridwidget.cpp.i: cmake_force
@@ -5415,7 +5439,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutmapgridwidget.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpagepropertieswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpagepropertieswidget.cpp.o: src/app/layout/qgslayoutpagepropertieswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_400) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpagepropertieswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_401) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpagepropertieswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutpagepropertieswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutpagepropertieswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpagepropertieswidget.cpp.i: cmake_force
@@ -5439,7 +5463,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpagepropertieswidget.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpicturewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpicturewidget.cpp.o: src/app/layout/qgslayoutpicturewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_401) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpicturewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_402) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpicturewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutpicturewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutpicturewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpicturewidget.cpp.i: cmake_force
@@ -5463,7 +5487,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpicturewidget.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolygonwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolygonwidget.cpp.o: src/app/layout/qgslayoutpolygonwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_402) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolygonwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_403) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolygonwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutpolygonwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutpolygonwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolygonwidget.cpp.i: cmake_force
@@ -5487,7 +5511,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolygonwidget.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolylinewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolylinewidget.cpp.o: src/app/layout/qgslayoutpolylinewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_403) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolylinewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_404) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolylinewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutpolylinewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutpolylinewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolylinewidget.cpp.i: cmake_force
@@ -5511,7 +5535,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpolylinewidget.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpropertieswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpropertieswidget.cpp.o: src/app/layout/qgslayoutpropertieswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_404) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpropertieswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_405) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpropertieswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutpropertieswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutpropertieswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpropertieswidget.cpp.i: cmake_force
@@ -5535,7 +5559,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutpropertieswidget.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutqptdrophandler.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutqptdrophandler.cpp.o: src/app/layout/qgslayoutqptdrophandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_405) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutqptdrophandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_406) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutqptdrophandler.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutqptdrophandler.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutqptdrophandler.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutqptdrophandler.cpp.i: cmake_force
@@ -5559,7 +5583,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutqptdrophandler.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutscalebarwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutscalebarwidget.cpp.o: src/app/layout/qgslayoutscalebarwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_406) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutscalebarwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_407) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutscalebarwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutscalebarwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutscalebarwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutscalebarwidget.cpp.i: cmake_force
@@ -5583,7 +5607,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutscalebarwidget.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutshapewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutshapewidget.cpp.o: src/app/layout/qgslayoutshapewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_407) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutshapewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_408) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutshapewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutshapewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutshapewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutshapewidget.cpp.i: cmake_force
@@ -5607,7 +5631,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutshapewidget.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayouttablebackgroundcolorsdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayouttablebackgroundcolorsdialog.cpp.o: src/app/layout/qgslayouttablebackgroundcolorsdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_408) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayouttablebackgroundcolorsdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_409) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayouttablebackgroundcolorsdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayouttablebackgroundcolorsdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayouttablebackgroundcolorsdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayouttablebackgroundcolorsdialog.cpp.i: cmake_force
@@ -5631,7 +5655,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayouttablebackgroundcolorsdialog.cpp.
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutvaliditychecks.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutvaliditychecks.cpp.o: src/app/layout/qgslayoutvaliditychecks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_409) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutvaliditychecks.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_410) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutvaliditychecks.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgslayoutvaliditychecks.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgslayoutvaliditychecks.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutvaliditychecks.cpp.i: cmake_force
@@ -5655,7 +5679,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgslayoutvaliditychecks.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportfieldgroupsectionwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportfieldgroupsectionwidget.cpp.o: src/app/layout/qgsreportfieldgroupsectionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_410) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportfieldgroupsectionwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_411) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportfieldgroupsectionwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgsreportfieldgroupsectionwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgsreportfieldgroupsectionwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportfieldgroupsectionwidget.cpp.i: cmake_force
@@ -5679,7 +5703,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgsreportfieldgroupsectionwidget.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportlayoutsectionwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportlayoutsectionwidget.cpp.o: src/app/layout/qgsreportlayoutsectionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_411) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportlayoutsectionwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_412) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportlayoutsectionwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgsreportlayoutsectionwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgsreportlayoutsectionwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportlayoutsectionwidget.cpp.i: cmake_force
@@ -5703,7 +5727,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgsreportlayoutsectionwidget.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportorganizerwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportorganizerwidget.cpp.o: src/app/layout/qgsreportorganizerwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_412) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportorganizerwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_413) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportorganizerwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgsreportorganizerwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgsreportorganizerwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportorganizerwidget.cpp.i: cmake_force
@@ -5727,7 +5751,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgsreportorganizerwidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionmodel.cpp.o: src/app/layout/qgsreportsectionmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_413) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_414) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgsreportsectionmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgsreportsectionmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionmodel.cpp.i: cmake_force
@@ -5751,7 +5775,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionmodel.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionwidget.cpp.o: src/app/layout/qgsreportsectionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_414) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_415) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/qgsreportsectionwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/qgsreportsectionwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionwidget.cpp.i: cmake_force
@@ -5775,7 +5799,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/qgsreportsectionwidget.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/locator/qgsinbuiltlocatorfilters.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/locator/qgsinbuiltlocatorfilters.cpp.o: src/app/locator/qgsinbuiltlocatorfilters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_415) "Building CXX object src/app/CMakeFiles/qgis_app.dir/locator/qgsinbuiltlocatorfilters.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_416) "Building CXX object src/app/CMakeFiles/qgis_app.dir/locator/qgsinbuiltlocatorfilters.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/locator/qgsinbuiltlocatorfilters.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/locator/qgsinbuiltlocatorfilters.cpp
 
 src/app/CMakeFiles/qgis_app.dir/locator/qgsinbuiltlocatorfilters.cpp.i: cmake_force
@@ -5799,7 +5823,7 @@ src/app/CMakeFiles/qgis_app.dir/locator/qgsinbuiltlocatorfilters.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/locator/qgslocatoroptionswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/locator/qgslocatoroptionswidget.cpp.o: src/app/locator/qgslocatoroptionswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_416) "Building CXX object src/app/CMakeFiles/qgis_app.dir/locator/qgslocatoroptionswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_417) "Building CXX object src/app/CMakeFiles/qgis_app.dir/locator/qgslocatoroptionswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/locator/qgslocatoroptionswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/locator/qgslocatoroptionswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/locator/qgslocatoroptionswidget.cpp.i: cmake_force
@@ -5823,7 +5847,7 @@ src/app/CMakeFiles/qgis_app.dir/locator/qgslocatoroptionswidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsinformationwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsinformationwidget.cpp.o: src/app/gps/qgsgpsinformationwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_417) "Building CXX object src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsinformationwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_418) "Building CXX object src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsinformationwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/gps/qgsgpsinformationwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/gps/qgsgpsinformationwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsinformationwidget.cpp.i: cmake_force
@@ -5847,7 +5871,7 @@ src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsinformationwidget.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsmarker.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsmarker.cpp.o: src/app/gps/qgsgpsmarker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_418) "Building CXX object src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsmarker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_419) "Building CXX object src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsmarker.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/gps/qgsgpsmarker.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/gps/qgsgpsmarker.cpp
 
 src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsmarker.cpp.i: cmake_force
@@ -5871,7 +5895,7 @@ src/app/CMakeFiles/qgis_app.dir/gps/qgsgpsmarker.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimportdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimportdialog.cpp.o: src/app/dwg/qgsdwgimportdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_419) "Building CXX object src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimportdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_420) "Building CXX object src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimportdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/dwg/qgsdwgimportdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/dwg/qgsdwgimportdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimportdialog.cpp.i: cmake_force
@@ -5895,7 +5919,7 @@ src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimportdialog.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimporter.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimporter.cpp.o: src/app/dwg/qgsdwgimporter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_420) "Building CXX object src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimporter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_421) "Building CXX object src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimporter.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/dwg/qgsdwgimporter.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/dwg/qgsdwgimporter.cpp
 
 src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimporter.cpp.i: cmake_force
@@ -5919,7 +5943,7 @@ src/app/CMakeFiles/qgis_app.dir/dwg/qgsdwgimporter.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager.cpp.o: src/app/pluginmanager/qgspluginmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_421) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_422) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/qgspluginmanager.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager.cpp.i: cmake_force
@@ -5943,7 +5967,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager_texts.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager_texts.cpp.o: src/app/pluginmanager/qgspluginmanager_texts.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_422) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager_texts.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_423) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager_texts.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager_texts.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/qgspluginmanager_texts.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager_texts.cpp.i: cmake_force
@@ -5967,7 +5991,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginmanager_texts.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgsapppluginmanagerinterface.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgsapppluginmanagerinterface.cpp.o: src/app/pluginmanager/qgsapppluginmanagerinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_423) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgsapppluginmanagerinterface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_424) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgsapppluginmanagerinterface.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/qgsapppluginmanagerinterface.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/qgsapppluginmanagerinterface.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgsapppluginmanagerinterface.cpp.i: cmake_force
@@ -5991,7 +6015,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgsapppluginmanagerinterface.cpp.o
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginsortfilterproxymodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginsortfilterproxymodel.cpp.o: src/app/pluginmanager/qgspluginsortfilterproxymodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_424) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginsortfilterproxymodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_425) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginsortfilterproxymodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/qgspluginsortfilterproxymodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/qgspluginsortfilterproxymodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginsortfilterproxymodel.cpp.i: cmake_force
@@ -6015,7 +6039,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginsortfilterproxymodel.cpp.
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginitemdelegate.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginitemdelegate.cpp.o: src/app/pluginmanager/qgspluginitemdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_425) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginitemdelegate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_426) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginitemdelegate.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/qgspluginitemdelegate.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/qgspluginitemdelegate.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginitemdelegate.cpp.i: cmake_force
@@ -6039,7 +6063,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/qgspluginitemdelegate.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/qgsnewspatialitelayerdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsnewspatialitelayerdialog.cpp.o: src/app/qgsnewspatialitelayerdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_426) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsnewspatialitelayerdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_427) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsnewspatialitelayerdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsnewspatialitelayerdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsnewspatialitelayerdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsnewspatialitelayerdialog.cpp.i: cmake_force
@@ -6063,7 +6087,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsnewspatialitelayerdialog.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/qgssettingstree.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgssettingstree.cpp.o: src/app/qgssettingstree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_427) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssettingstree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_428) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgssettingstree.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgssettingstree.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgssettingstree.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgssettingstree.cpp.i: cmake_force
@@ -6087,7 +6111,7 @@ src/app/CMakeFiles/qgis_app.dir/qgssettingstree.cpp.o.provides.build: src/app/CM
 
 src/app/CMakeFiles/qgis_app.dir/qgsvariantdelegate.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgsvariantdelegate.cpp.o: src/app/qgsvariantdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_428) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvariantdelegate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_429) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgsvariantdelegate.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgsvariantdelegate.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgsvariantdelegate.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgsvariantdelegate.cpp.i: cmake_force
@@ -6111,7 +6135,7 @@ src/app/CMakeFiles/qgis_app.dir/qgsvariantdelegate.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/qgscrashhandler.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/qgscrashhandler.cpp.o: src/app/qgscrashhandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_429) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgscrashhandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_430) "Building CXX object src/app/CMakeFiles/qgis_app.dir/qgscrashhandler.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/qgscrashhandler.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/qgscrashhandler.cpp
 
 src/app/CMakeFiles/qgis_app.dir/qgscrashhandler.cpp.i: cmake_force
@@ -6135,7 +6159,7 @@ src/app/CMakeFiles/qgis_app.dir/qgscrashhandler.cpp.o.provides.build: src/app/CM
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshlayerproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshlayerproperties.cpp.o: src/app/mesh/qgsmeshlayerproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_430) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshlayerproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_431) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshlayerproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsmeshlayerproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsmeshlayerproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshlayerproperties.cpp.i: cmake_force
@@ -6159,7 +6183,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshlayerproperties.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsrenderermeshpropertieswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsrenderermeshpropertieswidget.cpp.o: src/app/mesh/qgsrenderermeshpropertieswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_431) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsrenderermeshpropertieswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_432) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsrenderermeshpropertieswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsrenderermeshpropertieswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsrenderermeshpropertieswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsrenderermeshpropertieswidget.cpp.i: cmake_force
@@ -6183,7 +6207,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsrenderermeshpropertieswidget.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderermeshsettingswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderermeshsettingswidget.cpp.o: src/app/mesh/qgsmeshrenderermeshsettingswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_432) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderermeshsettingswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_433) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderermeshsettingswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderermeshsettingswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsmeshrenderermeshsettingswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderermeshsettingswidget.cpp.i: cmake_force
@@ -6207,7 +6231,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderermeshsettingswidget.cpp.o.pro
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendererscalarsettingswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendererscalarsettingswidget.cpp.o: src/app/mesh/qgsmeshrendererscalarsettingswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_433) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendererscalarsettingswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_434) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendererscalarsettingswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsmeshrendererscalarsettingswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsmeshrendererscalarsettingswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendererscalarsettingswidget.cpp.i: cmake_force
@@ -6231,7 +6255,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendererscalarsettingswidget.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderervectorsettingswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderervectorsettingswidget.cpp.o: src/app/mesh/qgsmeshrenderervectorsettingswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_434) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderervectorsettingswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_435) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderervectorsettingswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderervectorsettingswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsmeshrenderervectorsettingswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderervectorsettingswidget.cpp.i: cmake_force
@@ -6255,7 +6279,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrenderervectorsettingswidget.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendereractivedatasetwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendereractivedatasetwidget.cpp.o: src/app/mesh/qgsmeshrendereractivedatasetwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_435) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendereractivedatasetwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_436) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendereractivedatasetwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsmeshrendereractivedatasetwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsmeshrendereractivedatasetwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendereractivedatasetwidget.cpp.i: cmake_force
@@ -6279,7 +6303,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshrendereractivedatasetwidget.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshdatasetgrouptreeview.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshdatasetgrouptreeview.cpp.o: src/app/mesh/qgsmeshdatasetgrouptreeview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_436) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshdatasetgrouptreeview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_437) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshdatasetgrouptreeview.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsmeshdatasetgrouptreeview.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsmeshdatasetgrouptreeview.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshdatasetgrouptreeview.cpp.i: cmake_force
@@ -6303,7 +6327,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshdatasetgrouptreeview.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshcalculatordialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshcalculatordialog.cpp.o: src/app/mesh/qgsmeshcalculatordialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_437) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshcalculatordialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_438) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshcalculatordialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsmeshcalculatordialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsmeshcalculatordialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshcalculatordialog.cpp.i: cmake_force
@@ -6327,7 +6351,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshcalculatordialog.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshtimeformatdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshtimeformatdialog.cpp.o: src/app/mesh/qgsmeshtimeformatdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_438) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshtimeformatdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_439) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshtimeformatdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/qgsmeshtimeformatdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/qgsmeshtimeformatdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshtimeformatdialog.cpp.i: cmake_force
@@ -6351,7 +6375,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/qgsmeshtimeformatdialog.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgisapp.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgisapp.cpp.o: src/app/moc_qgisapp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_439) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgisapp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_440) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgisapp.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgisapp.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgisapp.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgisapp.cpp.i: cmake_force
@@ -6375,7 +6399,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgisapp.cpp.o.provides.build: src/app/CMakeF
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgisappinterface.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgisappinterface.cpp.o: src/app/moc_qgisappinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_440) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgisappinterface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_441) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgisappinterface.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgisappinterface.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgisappinterface.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgisappinterface.cpp.i: cmake_force
@@ -6399,7 +6423,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgisappinterface.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgisappstylesheet.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgisappstylesheet.cpp.o: src/app/moc_qgisappstylesheet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_441) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgisappstylesheet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_442) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgisappstylesheet.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgisappstylesheet.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgisappstylesheet.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgisappstylesheet.cpp.i: cmake_force
@@ -6423,7 +6447,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgisappstylesheet.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsabout.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsabout.cpp.o: src/app/moc_qgsabout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_442) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsabout.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_443) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsabout.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsabout.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsabout.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsabout.cpp.i: cmake_force
@@ -6447,7 +6471,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsabout.cpp.o.provides.build: src/app/CMake
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsaddattrdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsaddattrdialog.cpp.o: src/app/moc_qgsaddattrdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_443) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsaddattrdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_444) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsaddattrdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsaddattrdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsaddattrdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsaddattrdialog.cpp.i: cmake_force
@@ -6471,7 +6495,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsaddattrdialog.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsalignrasterdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsalignrasterdialog.cpp.o: src/app/moc_qgsalignrasterdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_444) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsalignrasterdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_445) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsalignrasterdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsalignrasterdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsalignrasterdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsalignrasterdialog.cpp.i: cmake_force
@@ -6495,7 +6519,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsalignrasterdialog.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsappbrowserproviders.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsappbrowserproviders.cpp.o: src/app/moc_qgsappbrowserproviders.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_445) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsappbrowserproviders.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_446) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsappbrowserproviders.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsappbrowserproviders.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsappbrowserproviders.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsappbrowserproviders.cpp.i: cmake_force
@@ -6519,7 +6543,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsappbrowserproviders.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsappscreenshots.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsappscreenshots.cpp.o: src/app/moc_qgsappscreenshots.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_446) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsappscreenshots.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_447) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsappscreenshots.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsappscreenshots.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsappscreenshots.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsappscreenshots.cpp.i: cmake_force
@@ -6543,7 +6567,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsappscreenshots.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsjoindialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsjoindialog.cpp.o: src/app/moc_qgsjoindialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_447) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsjoindialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_448) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsjoindialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsjoindialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsjoindialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsjoindialog.cpp.i: cmake_force
@@ -6567,7 +6591,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsjoindialog.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsaddtaborgroup.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsaddtaborgroup.cpp.o: src/app/moc_qgsaddtaborgroup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_448) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsaddtaborgroup.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_449) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsaddtaborgroup.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsaddtaborgroup.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsaddtaborgroup.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsaddtaborgroup.cpp.i: cmake_force
@@ -6591,7 +6615,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsaddtaborgroup.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsannotationwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsannotationwidget.cpp.o: src/app/moc_qgsannotationwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_449) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsannotationwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_450) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsannotationwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsannotationwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsannotationwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsannotationwidget.cpp.i: cmake_force
@@ -6615,7 +6639,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsannotationwidget.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsapplayertreeviewmenuprovider.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsapplayertreeviewmenuprovider.cpp.o: src/app/moc_qgsapplayertreeviewmenuprovider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_450) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsapplayertreeviewmenuprovider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_451) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsapplayertreeviewmenuprovider.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsapplayertreeviewmenuprovider.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsapplayertreeviewmenuprovider.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsapplayertreeviewmenuprovider.cpp.i: cmake_force
@@ -6639,7 +6663,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsapplayertreeviewmenuprovider.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactiondialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactiondialog.cpp.o: src/app/moc_qgsattributeactiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_451) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactiondialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_452) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactiondialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsattributeactiondialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsattributeactiondialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactiondialog.cpp.i: cmake_force
@@ -6663,7 +6687,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactiondialog.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactionpropertiesdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactionpropertiesdialog.cpp.o: src/app/moc_qgsattributeactionpropertiesdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_452) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactionpropertiesdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_453) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactionpropertiesdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsattributeactionpropertiesdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsattributeactionpropertiesdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactionpropertiesdialog.cpp.i: cmake_force
@@ -6687,7 +6711,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsattributeactionpropertiesdialog.cpp.o.pro
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetypedialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetypedialog.cpp.o: src/app/moc_qgsattributetypedialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_453) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetypedialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_454) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetypedialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsattributetypedialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsattributetypedialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetypedialog.cpp.i: cmake_force
@@ -6711,7 +6735,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetypedialog.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributerelationedit.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributerelationedit.cpp.o: src/app/moc_qgsattributerelationedit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_454) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributerelationedit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_455) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributerelationedit.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsattributerelationedit.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsattributerelationedit.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributerelationedit.cpp.i: cmake_force
@@ -6735,7 +6759,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsattributerelationedit.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesforminitcode.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesforminitcode.cpp.o: src/app/moc_qgsattributesforminitcode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_455) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesforminitcode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_456) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesforminitcode.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsattributesforminitcode.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsattributesforminitcode.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesforminitcode.cpp.i: cmake_force
@@ -6759,7 +6783,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesforminitcode.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetabledialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetabledialog.cpp.o: src/app/moc_qgsattributetabledialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_456) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetabledialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_457) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetabledialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsattributetabledialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsattributetabledialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetabledialog.cpp.i: cmake_force
@@ -6783,7 +6807,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsattributetabledialog.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsbookmarks.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsbookmarks.cpp.o: src/app/moc_qgsbookmarks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_457) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsbookmarks.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_458) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsbookmarks.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsbookmarks.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsbookmarks.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsbookmarks.cpp.i: cmake_force
@@ -6807,7 +6831,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsbookmarks.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsclipboard.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsclipboard.cpp.o: src/app/moc_qgsclipboard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_458) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsclipboard.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_459) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsclipboard.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsclipboard.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsclipboard.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsclipboard.cpp.i: cmake_force
@@ -6831,7 +6855,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsclipboard.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgscustomization.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgscustomization.cpp.o: src/app/moc_qgscustomization.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_459) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgscustomization.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_460) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgscustomization.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgscustomization.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgscustomization.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgscustomization.cpp.i: cmake_force
@@ -6855,7 +6879,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgscustomization.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgscustomprojectiondialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgscustomprojectiondialog.cpp.o: src/app/moc_qgscustomprojectiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_460) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgscustomprojectiondialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_461) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgscustomprojectiondialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgscustomprojectiondialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgscustomprojectiondialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgscustomprojectiondialog.cpp.i: cmake_force
@@ -6879,7 +6903,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgscustomprojectiondialog.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdatumtransformtablewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdatumtransformtablewidget.cpp.o: src/app/moc_qgsdatumtransformtablewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_461) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdatumtransformtablewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_462) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdatumtransformtablewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsdatumtransformtablewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsdatumtransformtablewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdatumtransformtablewidget.cpp.i: cmake_force
@@ -6903,7 +6927,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsdatumtransformtablewidget.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdelattrdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdelattrdialog.cpp.o: src/app/moc_qgsdelattrdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_462) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdelattrdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_463) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdelattrdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsdelattrdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsdelattrdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdelattrdialog.cpp.i: cmake_force
@@ -6927,7 +6951,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsdelattrdialog.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdiagramproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdiagramproperties.cpp.o: src/app/moc_qgsdiagramproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_463) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdiagramproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_464) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdiagramproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsdiagramproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsdiagramproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdiagramproperties.cpp.i: cmake_force
@@ -6951,7 +6975,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsdiagramproperties.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdiscoverrelationsdlg.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdiscoverrelationsdlg.cpp.o: src/app/moc_qgsdiscoverrelationsdlg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_464) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdiscoverrelationsdlg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_465) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdiscoverrelationsdlg.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsdiscoverrelationsdlg.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsdiscoverrelationsdlg.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdiscoverrelationsdlg.cpp.i: cmake_force
@@ -6975,7 +6999,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsdiscoverrelationsdlg.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdisplayangle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdisplayangle.cpp.o: src/app/moc_qgsdisplayangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_465) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdisplayangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_466) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdisplayangle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsdisplayangle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsdisplayangle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdisplayangle.cpp.i: cmake_force
@@ -6999,7 +7023,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsdisplayangle.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdxfexportdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdxfexportdialog.cpp.o: src/app/moc_qgsdxfexportdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_466) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdxfexportdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_467) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsdxfexportdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsdxfexportdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsdxfexportdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsdxfexportdialog.cpp.i: cmake_force
@@ -7023,7 +7047,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsdxfexportdialog.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfeatureaction.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfeatureaction.cpp.o: src/app/moc_qgsfeatureaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_467) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsfeatureaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_468) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsfeatureaction.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsfeatureaction.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsfeatureaction.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfeatureaction.cpp.i: cmake_force
@@ -7047,7 +7071,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsfeatureaction.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfieldcalculator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfieldcalculator.cpp.o: src/app/moc_qgsfieldcalculator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_468) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsfieldcalculator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_469) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsfieldcalculator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsfieldcalculator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsfieldcalculator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfieldcalculator.cpp.i: cmake_force
@@ -7071,7 +7095,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsfieldcalculator.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfirstrundialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfirstrundialog.cpp.o: src/app/moc_qgsfirstrundialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_469) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsfirstrundialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_470) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsfirstrundialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsfirstrundialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsfirstrundialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsfirstrundialog.cpp.i: cmake_force
@@ -7095,7 +7119,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsfirstrundialog.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssourcefieldsproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgssourcefieldsproperties.cpp.o: src/app/moc_qgssourcefieldsproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_470) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssourcefieldsproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_471) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssourcefieldsproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgssourcefieldsproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgssourcefieldsproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssourcefieldsproperties.cpp.i: cmake_force
@@ -7119,7 +7143,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgssourcefieldsproperties.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesformproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesformproperties.cpp.o: src/app/moc_qgsattributesformproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_471) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesformproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_472) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesformproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsattributesformproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsattributesformproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesformproperties.cpp.i: cmake_force
@@ -7143,7 +7167,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsattributesformproperties.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsformannotationdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsformannotationdialog.cpp.o: src/app/moc_qgsformannotationdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_472) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsformannotationdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_473) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsformannotationdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsformannotationdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsformannotationdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsformannotationdialog.cpp.i: cmake_force
@@ -7167,7 +7191,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsformannotationdialog.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsguivectorlayertools.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsguivectorlayertools.cpp.o: src/app/moc_qgsguivectorlayertools.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_473) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsguivectorlayertools.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_474) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsguivectorlayertools.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsguivectorlayertools.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsguivectorlayertools.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsguivectorlayertools.cpp.i: cmake_force
@@ -7191,7 +7215,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsguivectorlayertools.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationservice.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationservice.cpp.o: src/app/moc_qgsgeometryvalidationservice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_474) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationservice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_475) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationservice.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationservice.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsgeometryvalidationservice.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationservice.cpp.i: cmake_force
@@ -7215,7 +7239,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationservice.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationdock.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationdock.cpp.o: src/app/moc_qgsgeometryvalidationdock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_475) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationdock.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_476) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationdock.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationdock.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsgeometryvalidationdock.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationdock.cpp.i: cmake_force
@@ -7239,7 +7263,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationdock.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationmodel.cpp.o: src/app/moc_qgsgeometryvalidationmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_476) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_477) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsgeometryvalidationmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationmodel.cpp.i: cmake_force
@@ -7263,7 +7287,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsgeometryvalidationmodel.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgshtmlannotationdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgshtmlannotationdialog.cpp.o: src/app/moc_qgshtmlannotationdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_477) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgshtmlannotationdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_478) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgshtmlannotationdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgshtmlannotationdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgshtmlannotationdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgshtmlannotationdialog.cpp.i: cmake_force
@@ -7287,7 +7311,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgshtmlannotationdialog.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsidentifyresultsdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsidentifyresultsdialog.cpp.o: src/app/moc_qgsidentifyresultsdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_478) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsidentifyresultsdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_479) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsidentifyresultsdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsidentifyresultsdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsidentifyresultsdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsidentifyresultsdialog.cpp.i: cmake_force
@@ -7311,7 +7335,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsidentifyresultsdialog.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelengineconfigdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelengineconfigdialog.cpp.o: src/app/moc_qgslabelengineconfigdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_479) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslabelengineconfigdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_480) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslabelengineconfigdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslabelengineconfigdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslabelengineconfigdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelengineconfigdialog.cpp.i: cmake_force
@@ -7335,7 +7359,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslabelengineconfigdialog.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelinggui.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelinggui.cpp.o: src/app/moc_qgslabelinggui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_480) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslabelinggui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_481) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslabelinggui.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslabelinggui.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslabelinggui.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelinggui.cpp.i: cmake_force
@@ -7359,7 +7383,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslabelinggui.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelingwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelingwidget.cpp.o: src/app/moc_qgslabelingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_481) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslabelingwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_482) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslabelingwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslabelingwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslabelingwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelingwidget.cpp.i: cmake_force
@@ -7383,7 +7407,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslabelingwidget.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelpropertydialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelpropertydialog.cpp.o: src/app/moc_qgslabelpropertydialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_482) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslabelpropertydialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_483) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslabelpropertydialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslabelpropertydialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslabelpropertydialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslabelpropertydialog.cpp.i: cmake_force
@@ -7407,7 +7431,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslabelpropertydialog.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayercapabilitiesmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayercapabilitiesmodel.cpp.o: src/app/moc_qgslayercapabilitiesmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_483) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayercapabilitiesmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_484) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayercapabilitiesmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslayercapabilitiesmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslayercapabilitiesmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayercapabilitiesmodel.cpp.i: cmake_force
@@ -7431,7 +7455,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslayercapabilitiesmodel.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewindicatorprovider.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewindicatorprovider.cpp.o: src/app/moc_qgslayertreeviewindicatorprovider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_484) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewindicatorprovider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_485) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewindicatorprovider.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslayertreeviewindicatorprovider.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslayertreeviewindicatorprovider.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewindicatorprovider.cpp.i: cmake_force
@@ -7455,7 +7479,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewindicatorprovider.cpp.o.prov
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewembeddedindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewembeddedindicator.cpp.o: src/app/moc_qgslayertreeviewembeddedindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_485) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewembeddedindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_486) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewembeddedindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslayertreeviewembeddedindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslayertreeviewembeddedindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewembeddedindicator.cpp.i: cmake_force
@@ -7479,7 +7503,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewembeddedindicator.cpp.o.prov
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewmemoryindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewmemoryindicator.cpp.o: src/app/moc_qgslayertreeviewmemoryindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_486) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewmemoryindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_487) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewmemoryindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslayertreeviewmemoryindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslayertreeviewmemoryindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewmemoryindicator.cpp.i: cmake_force
@@ -7503,7 +7527,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewmemoryindicator.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewfilterindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewfilterindicator.cpp.o: src/app/moc_qgslayertreeviewfilterindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_487) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewfilterindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_488) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewfilterindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslayertreeviewfilterindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslayertreeviewfilterindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewfilterindicator.cpp.i: cmake_force
@@ -7527,7 +7551,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewfilterindicator.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewnonremovableindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewnonremovableindicator.cpp.o: src/app/moc_qgslayertreeviewnonremovableindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_488) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewnonremovableindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_489) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewnonremovableindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslayertreeviewnonremovableindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslayertreeviewnonremovableindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewnonremovableindicator.cpp.i: cmake_force
@@ -7551,7 +7575,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewnonremovableindicator.cpp.o.
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewbadlayerindicator.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewbadlayerindicator.cpp.o: src/app/moc_qgslayertreeviewbadlayerindicator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_489) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewbadlayerindicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_490) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewbadlayerindicator.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslayertreeviewbadlayerindicator.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslayertreeviewbadlayerindicator.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewbadlayerindicator.cpp.i: cmake_force
@@ -7575,7 +7599,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslayertreeviewbadlayerindicator.cpp.o.prov
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapcanvasdockwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapcanvasdockwidget.cpp.o: src/app/moc_qgsmapcanvasdockwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_490) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmapcanvasdockwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_491) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmapcanvasdockwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmapcanvasdockwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmapcanvasdockwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapcanvasdockwidget.cpp.i: cmake_force
@@ -7599,7 +7623,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmapcanvasdockwidget.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstylecategoriesmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstylecategoriesmodel.cpp.o: src/app/moc_qgsmaplayerstylecategoriesmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_491) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstylecategoriesmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_492) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstylecategoriesmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaplayerstylecategoriesmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaplayerstylecategoriesmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstylecategoriesmodel.cpp.i: cmake_force
@@ -7623,7 +7647,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstylecategoriesmodel.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstyleguiutils.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstyleguiutils.cpp.o: src/app/moc_qgsmaplayerstyleguiutils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_492) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstyleguiutils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_493) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstyleguiutils.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaplayerstyleguiutils.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaplayerstyleguiutils.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstyleguiutils.cpp.i: cmake_force
@@ -7647,7 +7671,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaplayerstyleguiutils.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapsavedialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapsavedialog.cpp.o: src/app/moc_qgsmapsavedialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_493) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmapsavedialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_494) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmapsavedialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmapsavedialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmapsavedialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapsavedialog.cpp.i: cmake_force
@@ -7671,7 +7695,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmapsavedialog.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgspuzzlewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgspuzzlewidget.cpp.o: src/app/moc_qgspuzzlewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_494) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgspuzzlewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_495) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgspuzzlewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgspuzzlewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgspuzzlewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgspuzzlewidget.cpp.i: cmake_force
@@ -7695,7 +7719,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgspuzzlewidget.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrulebasedlabelingwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrulebasedlabelingwidget.cpp.o: src/app/moc_qgsrulebasedlabelingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_495) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrulebasedlabelingwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_496) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrulebasedlabelingwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsrulebasedlabelingwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsrulebasedlabelingwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrulebasedlabelingwidget.cpp.i: cmake_force
@@ -7719,7 +7743,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsrulebasedlabelingwidget.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssnappinglayertreemodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgssnappinglayertreemodel.cpp.o: src/app/moc_qgssnappinglayertreemodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_496) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssnappinglayertreemodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_497) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssnappinglayertreemodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgssnappinglayertreemodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgssnappinglayertreemodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssnappinglayertreemodel.cpp.i: cmake_force
@@ -7743,7 +7767,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgssnappinglayertreemodel.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssnappingwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgssnappingwidget.cpp.o: src/app/moc_qgssnappingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_497) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssnappingwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_498) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssnappingwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgssnappingwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgssnappingwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssnappingwidget.cpp.i: cmake_force
@@ -7767,7 +7791,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgssnappingwidget.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarcoordinateswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarcoordinateswidget.cpp.o: src/app/moc_qgsstatusbarcoordinateswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_498) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarcoordinateswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_499) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarcoordinateswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsstatusbarcoordinateswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsstatusbarcoordinateswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarcoordinateswidget.cpp.i: cmake_force
@@ -7791,7 +7815,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarcoordinateswidget.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarmagnifierwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarmagnifierwidget.cpp.o: src/app/moc_qgsstatusbarmagnifierwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_499) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarmagnifierwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_500) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarmagnifierwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsstatusbarmagnifierwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsstatusbarmagnifierwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarmagnifierwidget.cpp.i: cmake_force
@@ -7815,7 +7839,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarmagnifierwidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarscalewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarscalewidget.cpp.o: src/app/moc_qgsstatusbarscalewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_500) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarscalewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_501) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarscalewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsstatusbarscalewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsstatusbarscalewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarscalewidget.cpp.i: cmake_force
@@ -7839,7 +7863,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsstatusbarscalewidget.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerloadstyledialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerloadstyledialog.cpp.o: src/app/moc_qgsvectorlayerloadstyledialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_501) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerloadstyledialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_502) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerloadstyledialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsvectorlayerloadstyledialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsvectorlayerloadstyledialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerloadstyledialog.cpp.i: cmake_force
@@ -7863,7 +7887,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerloadstyledialog.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsversioninfo.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsversioninfo.cpp.o: src/app/moc_qgsversioninfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_502) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsversioninfo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_503) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsversioninfo.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsversioninfo.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsversioninfo.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsversioninfo.cpp.i: cmake_force
@@ -7887,7 +7911,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsversioninfo.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepageitemsmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepageitemsmodel.cpp.o: src/app/moc_qgswelcomepageitemsmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_503) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepageitemsmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_504) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepageitemsmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgswelcomepageitemsmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgswelcomepageitemsmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepageitemsmodel.cpp.i: cmake_force
@@ -7911,7 +7935,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepageitemsmodel.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepage.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepage.cpp.o: src/app/moc_qgswelcomepage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_504) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_505) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepage.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgswelcomepage.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgswelcomepage.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepage.cpp.i: cmake_force
@@ -7935,7 +7959,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepage.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdfeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdfeature.cpp.o: src/app/moc_qgsmaptooladdfeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_505) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdfeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_506) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdfeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooladdfeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooladdfeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdfeature.cpp.i: cmake_force
@@ -7959,7 +7983,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdfeature.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldigitizefeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldigitizefeature.cpp.o: src/app/moc_qgsmaptooldigitizefeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_506) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldigitizefeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_507) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldigitizefeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooldigitizefeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooldigitizefeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldigitizefeature.cpp.i: cmake_force
@@ -7983,7 +8007,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldigitizefeature.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolannotation.cpp.o: src/app/moc_qgsmaptoolannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_507) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_508) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolannotation.cpp.i: cmake_force
@@ -8007,7 +8031,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolannotation.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringradius.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringradius.cpp.o: src/app/moc_qgsmaptoolcircularstringradius.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_508) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringradius.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_509) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringradius.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringradius.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolcircularstringradius.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringradius.cpp.i: cmake_force
@@ -8031,7 +8055,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringradius.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdpart.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdpart.cpp.o: src/app/moc_qgsmaptooladdpart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_509) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdpart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_510) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdpart.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooladdpart.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooladdpart.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdpart.cpp.i: cmake_force
@@ -8055,7 +8079,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdpart.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdring.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdring.cpp.o: src/app/moc_qgsmaptooladdring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_510) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_511) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdring.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooladdring.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooladdring.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdring.cpp.i: cmake_force
@@ -8079,7 +8103,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdring.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfillring.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfillring.cpp.o: src/app/moc_qgsmaptoolfillring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_511) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfillring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_512) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfillring.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolfillring.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolfillring.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfillring.cpp.i: cmake_force
@@ -8103,7 +8127,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfillring.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolchangelabelproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolchangelabelproperties.cpp.o: src/app/moc_qgsmaptoolchangelabelproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_512) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolchangelabelproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_513) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolchangelabelproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolchangelabelproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolchangelabelproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolchangelabelproperties.cpp.i: cmake_force
@@ -8127,7 +8151,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolchangelabelproperties.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletepart.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletepart.cpp.o: src/app/moc_qgsmaptooldeletepart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_513) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletepart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_514) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletepart.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletepart.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooldeletepart.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletepart.cpp.i: cmake_force
@@ -8151,7 +8175,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletepart.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletering.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletering.cpp.o: src/app/moc_qgsmaptooldeletering.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_514) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletering.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_515) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletering.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletering.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooldeletering.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletering.cpp.i: cmake_force
@@ -8175,7 +8199,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooldeletering.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltrimextendfeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltrimextendfeature.cpp.o: src/app/moc_qgsmaptooltrimextendfeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_515) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltrimextendfeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_516) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltrimextendfeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooltrimextendfeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooltrimextendfeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltrimextendfeature.cpp.i: cmake_force
@@ -8199,7 +8223,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltrimextendfeature.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfeatureaction.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfeatureaction.cpp.o: src/app/moc_qgsmaptoolfeatureaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_516) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfeatureaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_517) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfeatureaction.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolfeatureaction.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolfeatureaction.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfeatureaction.cpp.i: cmake_force
@@ -8223,7 +8247,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolfeatureaction.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolformannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolformannotation.cpp.o: src/app/moc_qgsmaptoolformannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_517) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolformannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_518) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolformannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolformannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolformannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolformannotation.cpp.i: cmake_force
@@ -8247,7 +8271,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolformannotation.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolhtmlannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolhtmlannotation.cpp.o: src/app/moc_qgsmaptoolhtmlannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_518) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolhtmlannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_519) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolhtmlannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolhtmlannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolhtmlannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolhtmlannotation.cpp.i: cmake_force
@@ -8271,7 +8295,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolhtmlannotation.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpinlabels.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpinlabels.cpp.o: src/app/moc_qgsmaptoolpinlabels.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_519) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpinlabels.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_520) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpinlabels.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolpinlabels.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolpinlabels.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpinlabels.cpp.i: cmake_force
@@ -8295,7 +8319,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpinlabels.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolshowhidelabels.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolshowhidelabels.cpp.o: src/app/moc_qgsmaptoolshowhidelabels.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_520) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolshowhidelabels.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_521) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolshowhidelabels.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolshowhidelabels.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolshowhidelabels.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolshowhidelabels.cpp.i: cmake_force
@@ -8319,7 +8343,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolshowhidelabels.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolidentifyaction.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolidentifyaction.cpp.o: src/app/moc_qgsmaptoolidentifyaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_521) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolidentifyaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_522) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolidentifyaction.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolidentifyaction.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolidentifyaction.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolidentifyaction.cpp.i: cmake_force
@@ -8343,7 +8367,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolidentifyaction.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmeasureangle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmeasureangle.cpp.o: src/app/moc_qgsmaptoolmeasureangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_522) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmeasureangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_523) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmeasureangle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolmeasureangle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolmeasureangle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmeasureangle.cpp.i: cmake_force
@@ -8367,7 +8391,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmeasureangle.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovefeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovefeature.cpp.o: src/app/moc_qgsmaptoolmovefeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_523) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovefeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_524) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovefeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovefeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolmovefeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovefeature.cpp.i: cmake_force
@@ -8391,7 +8415,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovefeature.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovelabel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovelabel.cpp.o: src/app/moc_qgsmaptoolmovelabel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_524) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovelabel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_525) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovelabel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovelabel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolmovelabel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovelabel.cpp.i: cmake_force
@@ -8415,7 +8439,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolmovelabel.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoollabel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoollabel.cpp.o: src/app/moc_qgsmaptoollabel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_525) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoollabel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_526) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoollabel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoollabel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoollabel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoollabel.cpp.i: cmake_force
@@ -8439,7 +8463,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoollabel.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetcurve.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetcurve.cpp.o: src/app/moc_qgsmaptooloffsetcurve.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_526) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetcurve.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_527) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetcurve.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetcurve.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooloffsetcurve.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetcurve.cpp.i: cmake_force
@@ -8463,7 +8487,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetcurve.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetpointsymbol.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetpointsymbol.cpp.o: src/app/moc_qgsmaptooloffsetpointsymbol.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_527) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetpointsymbol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_528) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetpointsymbol.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetpointsymbol.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooloffsetpointsymbol.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetpointsymbol.cpp.i: cmake_force
@@ -8487,7 +8511,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooloffsetpointsymbol.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpointsymbol.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpointsymbol.cpp.o: src/app/moc_qgsmaptoolpointsymbol.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_528) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpointsymbol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_529) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpointsymbol.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolpointsymbol.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolpointsymbol.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpointsymbol.cpp.i: cmake_force
@@ -8511,7 +8535,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolpointsymbol.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreshape.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreshape.cpp.o: src/app/moc_qgsmaptoolreshape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_529) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreshape.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_530) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreshape.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolreshape.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolreshape.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreshape.cpp.i: cmake_force
@@ -8535,7 +8559,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreshape.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreverseline.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreverseline.cpp.o: src/app/moc_qgsmaptoolreverseline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_530) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreverseline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_531) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreverseline.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolreverseline.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolreverseline.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreverseline.cpp.i: cmake_force
@@ -8559,7 +8583,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolreverseline.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatefeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatefeature.cpp.o: src/app/moc_qgsmaptoolrotatefeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_531) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatefeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_532) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatefeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatefeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolrotatefeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatefeature.cpp.i: cmake_force
@@ -8583,7 +8607,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatefeature.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatelabel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatelabel.cpp.o: src/app/moc_qgsmaptoolrotatelabel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_532) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatelabel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_533) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatelabel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatelabel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolrotatelabel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatelabel.cpp.i: cmake_force
@@ -8607,7 +8631,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatelabel.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatepointsymbols.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatepointsymbols.cpp.o: src/app/moc_qgsmaptoolrotatepointsymbols.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_533) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatepointsymbols.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_534) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatepointsymbols.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatepointsymbols.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolrotatepointsymbols.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatepointsymbols.cpp.i: cmake_force
@@ -8631,7 +8655,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrotatepointsymbols.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselect.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselect.cpp.o: src/app/moc_qgsmaptoolselect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_534) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselect.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_535) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselect.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolselect.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolselect.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselect.cpp.i: cmake_force
@@ -8655,7 +8679,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselect.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselectionhandler.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselectionhandler.cpp.o: src/app/moc_qgsmaptoolselectionhandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_535) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselectionhandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_536) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselectionhandler.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolselectionhandler.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolselectionhandler.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselectionhandler.cpp.i: cmake_force
@@ -8679,7 +8703,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolselectionhandler.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsimplify.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsimplify.cpp.o: src/app/moc_qgsmaptoolsimplify.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_536) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsimplify.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_537) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsimplify.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolsimplify.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolsimplify.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsimplify.cpp.i: cmake_force
@@ -8703,7 +8727,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsimplify.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitfeatures.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitfeatures.cpp.o: src/app/moc_qgsmaptoolsplitfeatures.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_537) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitfeatures.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_538) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitfeatures.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitfeatures.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolsplitfeatures.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitfeatures.cpp.i: cmake_force
@@ -8727,7 +8751,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitfeatures.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitparts.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitparts.cpp.o: src/app/moc_qgsmaptoolsplitparts.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_538) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitparts.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_539) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitparts.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitparts.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolsplitparts.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitparts.cpp.i: cmake_force
@@ -8751,7 +8775,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsplitparts.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsvgannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsvgannotation.cpp.o: src/app/moc_qgsmaptoolsvgannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_539) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsvgannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_540) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsvgannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolsvgannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolsvgannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsvgannotation.cpp.i: cmake_force
@@ -8775,7 +8799,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolsvgannotation.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltextannotation.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltextannotation.cpp.o: src/app/moc_qgsmaptooltextannotation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_540) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltextannotation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_541) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltextannotation.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooltextannotation.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooltextannotation.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltextannotation.cpp.i: cmake_force
@@ -8799,7 +8823,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooltextannotation.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircularstring.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircularstring.cpp.o: src/app/moc_qgsmaptooladdcircularstring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_541) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircularstring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_542) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircularstring.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircularstring.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooladdcircularstring.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircularstring.cpp.i: cmake_force
@@ -8823,7 +8847,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircularstring.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringcurvepoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringcurvepoint.cpp.o: src/app/moc_qgsmaptoolcircularstringcurvepoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_542) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringcurvepoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_543) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringcurvepoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringcurvepoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolcircularstringcurvepoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringcurvepoint.cpp.i: cmake_force
@@ -8847,7 +8871,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircularstringcurvepoint.cpp.o.pro
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircle.cpp.o: src/app/moc_qgsmaptooladdcircle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_543) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_544) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooladdcircle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircle.cpp.i: cmake_force
@@ -8871,7 +8895,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdcircle.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2points.cpp.o: src/app/moc_qgsmaptoolcircle2points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_544) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_545) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolcircle2points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2points.cpp.i: cmake_force
@@ -8895,7 +8919,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2points.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3points.cpp.o: src/app/moc_qgsmaptoolcircle3points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_545) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_546) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolcircle3points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3points.cpp.i: cmake_force
@@ -8919,7 +8943,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3points.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3tangents.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3tangents.cpp.o: src/app/moc_qgsmaptoolcircle3tangents.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_546) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3tangents.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_547) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3tangents.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3tangents.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolcircle3tangents.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3tangents.cpp.i: cmake_force
@@ -8943,7 +8967,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle3tangents.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2tangentspoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2tangentspoint.cpp.o: src/app/moc_qgsmaptoolcircle2tangentspoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_547) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2tangentspoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_548) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2tangentspoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2tangentspoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolcircle2tangentspoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2tangentspoint.cpp.i: cmake_force
@@ -8967,7 +8991,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcircle2tangentspoint.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcirclecenterpoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcirclecenterpoint.cpp.o: src/app/moc_qgsmaptoolcirclecenterpoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_548) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcirclecenterpoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_549) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcirclecenterpoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolcirclecenterpoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolcirclecenterpoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcirclecenterpoint.cpp.i: cmake_force
@@ -8991,7 +9015,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolcirclecenterpoint.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdellipse.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdellipse.cpp.o: src/app/moc_qgsmaptooladdellipse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_549) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdellipse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_550) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdellipse.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooladdellipse.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooladdellipse.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdellipse.cpp.i: cmake_force
@@ -9015,7 +9039,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdellipse.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsefoci.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsefoci.cpp.o: src/app/moc_qgsmaptoolellipsefoci.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_550) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsefoci.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_551) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsefoci.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsefoci.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolellipsefoci.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsefoci.cpp.i: cmake_force
@@ -9039,7 +9063,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsefoci.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipseextent.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipseextent.cpp.o: src/app/moc_qgsmaptoolellipseextent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_551) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipseextent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_552) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipseextent.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipseextent.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolellipseextent.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipseextent.cpp.i: cmake_force
@@ -9063,7 +9087,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipseextent.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenterpoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenterpoint.cpp.o: src/app/moc_qgsmaptoolellipsecenterpoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_552) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenterpoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_553) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenterpoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenterpoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolellipsecenterpoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenterpoint.cpp.i: cmake_force
@@ -9087,7 +9111,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenterpoint.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenter2points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenter2points.cpp.o: src/app/moc_qgsmaptoolellipsecenter2points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_553) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenter2points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_554) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenter2points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenter2points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolellipsecenter2points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenter2points.cpp.i: cmake_force
@@ -9111,7 +9135,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolellipsecenter2points.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdrectangle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdrectangle.cpp.o: src/app/moc_qgsmaptooladdrectangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_554) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdrectangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_555) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdrectangle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooladdrectangle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooladdrectangle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdrectangle.cpp.i: cmake_force
@@ -9135,7 +9159,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdrectangle.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdregularpolygon.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdregularpolygon.cpp.o: src/app/moc_qgsmaptooladdregularpolygon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_555) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdregularpolygon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_556) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdregularpolygon.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptooladdregularpolygon.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptooladdregularpolygon.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdregularpolygon.cpp.i: cmake_force
@@ -9159,7 +9183,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptooladdregularpolygon.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectanglecenter.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectanglecenter.cpp.o: src/app/moc_qgsmaptoolrectanglecenter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_556) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectanglecenter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_557) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectanglecenter.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectanglecenter.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolrectanglecenter.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectanglecenter.cpp.i: cmake_force
@@ -9183,7 +9207,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectanglecenter.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangleextent.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangleextent.cpp.o: src/app/moc_qgsmaptoolrectangleextent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_557) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangleextent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_558) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangleextent.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangleextent.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolrectangleextent.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangleextent.cpp.i: cmake_force
@@ -9207,7 +9231,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangleextent.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangle3points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangle3points.cpp.o: src/app/moc_qgsmaptoolrectangle3points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_558) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangle3points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_559) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangle3points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangle3points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolrectangle3points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangle3points.cpp.i: cmake_force
@@ -9231,7 +9255,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolrectangle3points.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygon2points.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygon2points.cpp.o: src/app/moc_qgsmaptoolregularpolygon2points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_559) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygon2points.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_560) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygon2points.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygon2points.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolregularpolygon2points.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygon2points.cpp.i: cmake_force
@@ -9255,7 +9279,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygon2points.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncenterpoint.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncenterpoint.cpp.o: src/app/moc_qgsmaptoolregularpolygoncenterpoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_560) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncenterpoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_561) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncenterpoint.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncenterpoint.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolregularpolygoncenterpoint.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncenterpoint.cpp.i: cmake_force
@@ -9279,7 +9303,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncenterpoint.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncentercorner.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncentercorner.cpp.o: src/app/moc_qgsmaptoolregularpolygoncentercorner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_561) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncentercorner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_562) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncentercorner.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncentercorner.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmaptoolregularpolygoncentercorner.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncentercorner.cpp.i: cmake_force
@@ -9303,7 +9327,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmaptoolregularpolygoncentercorner.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationitem.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationitem.cpp.o: src/app/decorations/moc_qgsdecorationitem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_562) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationitem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_563) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationitem.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationitem.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationitem.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationitem.cpp.i: cmake_force
@@ -9327,7 +9351,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationitem.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitle.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitle.cpp.o: src/app/decorations/moc_qgsdecorationtitle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_563) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_564) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitle.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitle.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationtitle.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitle.cpp.i: cmake_force
@@ -9351,7 +9375,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitle.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitledialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitledialog.cpp.o: src/app/decorations/moc_qgsdecorationtitledialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_564) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitledialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_565) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitledialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitledialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationtitledialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitledialog.cpp.i: cmake_force
@@ -9375,7 +9399,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationtitledialog.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyright.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyright.cpp.o: src/app/decorations/moc_qgsdecorationcopyright.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_565) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyright.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_566) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyright.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyright.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationcopyright.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyright.cpp.i: cmake_force
@@ -9399,7 +9423,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyright.cpp.o.pro
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyrightdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyrightdialog.cpp.o: src/app/decorations/moc_qgsdecorationcopyrightdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_566) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyrightdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_567) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyrightdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyrightdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationcopyrightdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyrightdialog.cpp.i: cmake_force
@@ -9423,7 +9447,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationcopyrightdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextent.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextent.cpp.o: src/app/decorations/moc_qgsdecorationlayoutextent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_567) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_568) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextent.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextent.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationlayoutextent.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextent.cpp.i: cmake_force
@@ -9447,7 +9471,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextent.cpp.o.
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextentdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextentdialog.cpp.o: src/app/decorations/moc_qgsdecorationlayoutextentdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_568) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextentdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_569) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextentdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextentdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationlayoutextentdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextentdialog.cpp.i: cmake_force
@@ -9471,7 +9495,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationlayoutextentdialog.
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrow.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrow.cpp.o: src/app/decorations/moc_qgsdecorationnortharrow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_569) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_570) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrow.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrow.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationnortharrow.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrow.cpp.i: cmake_force
@@ -9495,7 +9519,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrow.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrowdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrowdialog.cpp.o: src/app/decorations/moc_qgsdecorationnortharrowdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_570) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrowdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_571) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrowdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrowdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationnortharrowdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrowdialog.cpp.i: cmake_force
@@ -9519,7 +9543,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationnortharrowdialog.cp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebar.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebar.cpp.o: src/app/decorations/moc_qgsdecorationscalebar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_571) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_572) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebar.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebar.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationscalebar.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebar.cpp.i: cmake_force
@@ -9543,7 +9567,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebar.cpp.o.prov
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebardialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebardialog.cpp.o: src/app/decorations/moc_qgsdecorationscalebardialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_572) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebardialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_573) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebardialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebardialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationscalebardialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebardialog.cpp.i: cmake_force
@@ -9567,7 +9591,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationscalebardialog.cpp.
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgrid.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgrid.cpp.o: src/app/decorations/moc_qgsdecorationgrid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_573) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgrid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_574) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgrid.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgrid.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationgrid.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgrid.cpp.i: cmake_force
@@ -9591,7 +9615,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgrid.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgriddialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgriddialog.cpp.o: src/app/decorations/moc_qgsdecorationgriddialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_574) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgriddialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_575) "Building CXX object src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgriddialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgriddialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/decorations/moc_qgsdecorationgriddialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgriddialog.cpp.i: cmake_force
@@ -9615,7 +9639,7 @@ src/app/CMakeFiles/qgis_app.dir/decorations/moc_qgsdecorationgriddialog.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgslockedfeature.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgslockedfeature.cpp.o: src/app/vertextool/moc_qgslockedfeature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_575) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgslockedfeature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_576) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgslockedfeature.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/vertextool/moc_qgslockedfeature.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/vertextool/moc_qgslockedfeature.cpp
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgslockedfeature.cpp.i: cmake_force
@@ -9639,7 +9663,7 @@ src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgslockedfeature.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertexeditor.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertexeditor.cpp.o: src/app/vertextool/moc_qgsvertexeditor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_576) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertexeditor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_577) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertexeditor.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertexeditor.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/vertextool/moc_qgsvertexeditor.cpp
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertexeditor.cpp.i: cmake_force
@@ -9663,7 +9687,7 @@ src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertexeditor.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertextool.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertextool.cpp.o: src/app/vertextool/moc_qgsvertextool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_577) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertextool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_578) "Building CXX object src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertextool.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertextool.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/vertextool/moc_qgsvertextool.cpp
 
 src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertextool.cpp.i: cmake_force
@@ -9687,7 +9711,7 @@ src/app/CMakeFiles/qgis_app.dir/vertextool/moc_qgsvertextool.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayerstylingwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayerstylingwidget.cpp.o: src/app/moc_qgslayerstylingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_578) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayerstylingwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_579) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgslayerstylingwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgslayerstylingwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgslayerstylingwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgslayerstylingwidget.cpp.i: cmake_force
@@ -9711,7 +9735,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgslayerstylingwidget.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuredialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuredialog.cpp.o: src/app/moc_qgsmeasuredialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_579) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuredialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_580) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuredialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmeasuredialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmeasuredialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuredialog.cpp.i: cmake_force
@@ -9735,7 +9759,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuredialog.cpp.o.provides.build: src/a
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuretool.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuretool.cpp.o: src/app/moc_qgsmeasuretool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_580) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuretool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_581) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuretool.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmeasuretool.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmeasuretool.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuretool.cpp.i: cmake_force
@@ -9759,7 +9783,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmeasuretool.cpp.o.provides.build: src/app
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmergeattributesdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmergeattributesdialog.cpp.o: src/app/moc_qgsmergeattributesdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_581) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmergeattributesdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_582) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmergeattributesdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmergeattributesdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmergeattributesdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmergeattributesdialog.cpp.i: cmake_force
@@ -9783,7 +9807,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmergeattributesdialog.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsoptions.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsoptions.cpp.o: src/app/moc_qgsoptions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_582) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsoptions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_583) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsoptions.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsoptions.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsoptions.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsoptions.cpp.i: cmake_force
@@ -9807,7 +9831,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsoptions.cpp.o.provides.build: src/app/CMa
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectlayergroupdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectlayergroupdialog.cpp.o: src/app/moc_qgsprojectlayergroupdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_583) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectlayergroupdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_584) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectlayergroupdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsprojectlayergroupdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsprojectlayergroupdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectlayergroupdialog.cpp.i: cmake_force
@@ -9831,7 +9855,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectlayergroupdialog.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectproperties.cpp.o: src/app/moc_qgsprojectproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_584) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_585) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsprojectproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsprojectproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectproperties.cpp.i: cmake_force
@@ -9855,7 +9879,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsprojectproperties.cpp.o.provides.build: s
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrastercalcdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrastercalcdialog.cpp.o: src/app/moc_qgsrastercalcdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_585) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrastercalcdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_586) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrastercalcdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsrastercalcdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsrastercalcdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrastercalcdialog.cpp.i: cmake_force
@@ -9879,7 +9903,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsrastercalcdialog.cpp.o.provides.build: sr
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrasterlayerproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrasterlayerproperties.cpp.o: src/app/moc_qgsrasterlayerproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_586) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrasterlayerproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_587) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrasterlayerproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsrasterlayerproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsrasterlayerproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrasterlayerproperties.cpp.i: cmake_force
@@ -9903,7 +9927,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsrasterlayerproperties.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationmanagerdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationmanagerdialog.cpp.o: src/app/moc_qgsrelationmanagerdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_587) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationmanagerdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_588) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationmanagerdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsrelationmanagerdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsrelationmanagerdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationmanagerdialog.cpp.i: cmake_force
@@ -9927,7 +9951,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationmanagerdialog.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationadddlg.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationadddlg.cpp.o: src/app/moc_qgsrelationadddlg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_588) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationadddlg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_589) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationadddlg.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsrelationadddlg.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsrelationadddlg.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationadddlg.cpp.i: cmake_force
@@ -9951,7 +9975,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsrelationadddlg.cpp.o.provides.build: src/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsselectbyformdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsselectbyformdialog.cpp.o: src/app/moc_qgsselectbyformdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_589) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsselectbyformdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_590) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsselectbyformdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsselectbyformdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsselectbyformdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsselectbyformdialog.cpp.i: cmake_force
@@ -9975,7 +9999,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsselectbyformdialog.cpp.o.provides.build: 
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatisticalsummarydockwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatisticalsummarydockwidget.cpp.o: src/app/moc_qgsstatisticalsummarydockwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_590) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsstatisticalsummarydockwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_591) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsstatisticalsummarydockwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsstatisticalsummarydockwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsstatisticalsummarydockwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsstatisticalsummarydockwidget.cpp.i: cmake_force
@@ -9999,7 +10023,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsstatisticalsummarydockwidget.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssvgannotationdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgssvgannotationdialog.cpp.o: src/app/moc_qgssvgannotationdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_591) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssvgannotationdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_592) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssvgannotationdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgssvgannotationdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgssvgannotationdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssvgannotationdialog.cpp.i: cmake_force
@@ -10023,7 +10047,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgssvgannotationdialog.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgstextannotationdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgstextannotationdialog.cpp.o: src/app/moc_qgstextannotationdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_592) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgstextannotationdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_593) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgstextannotationdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgstextannotationdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgstextannotationdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgstextannotationdialog.cpp.i: cmake_force
@@ -10047,7 +10071,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgstextannotationdialog.cpp.o.provides.build
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsundowidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsundowidget.cpp.o: src/app/moc_qgsundowidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_593) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsundowidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_594) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsundowidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsundowidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsundowidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsundowidget.cpp.i: cmake_force
@@ -10071,7 +10095,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsundowidget.cpp.o.provides.build: src/app/
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerlegendwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerlegendwidget.cpp.o: src/app/moc_qgsvectorlayerlegendwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_594) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerlegendwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_595) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerlegendwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsvectorlayerlegendwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsvectorlayerlegendwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerlegendwidget.cpp.i: cmake_force
@@ -10095,7 +10119,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerlegendwidget.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayersavestyledialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayersavestyledialog.cpp.o: src/app/moc_qgsvectorlayersavestyledialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_595) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayersavestyledialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_596) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayersavestyledialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsvectorlayersavestyledialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsvectorlayersavestyledialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayersavestyledialog.cpp.i: cmake_force
@@ -10119,7 +10143,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayersavestyledialog.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerproperties.cpp.o: src/app/moc_qgsvectorlayerproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_596) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_597) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsvectorlayerproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsvectorlayerproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerproperties.cpp.i: cmake_force
@@ -10143,7 +10167,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsvectorlayerproperties.cpp.o.provides.buil
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapthemes.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapthemes.cpp.o: src/app/moc_qgsmapthemes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_597) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmapthemes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_598) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsmapthemes.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsmapthemes.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsmapthemes.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsmapthemes.cpp.i: cmake_force
@@ -10167,7 +10191,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsmapthemes.cpp.o.provides.build: src/app/C
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgshandlebadlayers.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgshandlebadlayers.cpp.o: src/app/moc_qgshandlebadlayers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_598) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgshandlebadlayers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_599) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgshandlebadlayers.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgshandlebadlayers.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgshandlebadlayers.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgshandlebadlayers.cpp.i: cmake_force
@@ -10191,7 +10215,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgshandlebadlayers.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/browser/moc_qgsinbuiltdataitemproviders.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/browser/moc_qgsinbuiltdataitemproviders.cpp.o: src/app/browser/moc_qgsinbuiltdataitemproviders.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_599) "Building CXX object src/app/CMakeFiles/qgis_app.dir/browser/moc_qgsinbuiltdataitemproviders.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_600) "Building CXX object src/app/CMakeFiles/qgis_app.dir/browser/moc_qgsinbuiltdataitemproviders.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/browser/moc_qgsinbuiltdataitemproviders.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/browser/moc_qgsinbuiltdataitemproviders.cpp
 
 src/app/CMakeFiles/qgis_app.dir/browser/moc_qgsinbuiltdataitemproviders.cpp.i: cmake_force
@@ -10215,7 +10239,7 @@ src/app/CMakeFiles/qgis_app.dir/browser/moc_qgsinbuiltdataitemproviders.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutaddpagesdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutaddpagesdialog.cpp.o: src/app/layout/moc_qgslayoutaddpagesdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_600) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutaddpagesdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_601) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutaddpagesdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutaddpagesdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutaddpagesdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutaddpagesdialog.cpp.i: cmake_force
@@ -10239,7 +10263,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutaddpagesdialog.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutappmenuprovider.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutappmenuprovider.cpp.o: src/app/layout/moc_qgslayoutappmenuprovider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_601) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutappmenuprovider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_602) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutappmenuprovider.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutappmenuprovider.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutappmenuprovider.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutappmenuprovider.cpp.i: cmake_force
@@ -10263,7 +10287,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutappmenuprovider.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutatlaswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutatlaswidget.cpp.o: src/app/layout/moc_qgslayoutatlaswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_602) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutatlaswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_603) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutatlaswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutatlaswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutatlaswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutatlaswidget.cpp.i: cmake_force
@@ -10287,7 +10311,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutatlaswidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributeselectiondialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributeselectiondialog.cpp.o: src/app/layout/moc_qgslayoutattributeselectiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_603) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributeselectiondialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_604) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributeselectiondialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributeselectiondialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutattributeselectiondialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributeselectiondialog.cpp.i: cmake_force
@@ -10311,7 +10335,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributeselectiondialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributetablewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributetablewidget.cpp.o: src/app/layout/moc_qgslayoutattributetablewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_604) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributetablewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_605) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributetablewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributetablewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutattributetablewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributetablewidget.cpp.i: cmake_force
@@ -10335,7 +10359,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutattributetablewidget.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutdesignerdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutdesignerdialog.cpp.o: src/app/layout/moc_qgslayoutdesignerdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_605) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutdesignerdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_606) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutdesignerdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutdesignerdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutdesignerdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutdesignerdialog.cpp.i: cmake_force
@@ -10359,7 +10383,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutdesignerdialog.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutguidewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutguidewidget.cpp.o: src/app/layout/moc_qgslayoutguidewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_606) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutguidewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_607) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutguidewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutguidewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutguidewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutguidewidget.cpp.i: cmake_force
@@ -10383,7 +10407,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutguidewidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouthtmlwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouthtmlwidget.cpp.o: src/app/layout/moc_qgslayouthtmlwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_607) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouthtmlwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_608) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouthtmlwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayouthtmlwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayouthtmlwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouthtmlwidget.cpp.i: cmake_force
@@ -10407,7 +10431,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouthtmlwidget.cpp.o.provides.bu
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutimageexportoptionsdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutimageexportoptionsdialog.cpp.o: src/app/layout/moc_qgslayoutimageexportoptionsdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_608) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutimageexportoptionsdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_609) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutimageexportoptionsdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutimageexportoptionsdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutimageexportoptionsdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutimageexportoptionsdialog.cpp.i: cmake_force
@@ -10431,7 +10455,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutimageexportoptionsdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutitemslistview.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutitemslistview.cpp.o: src/app/layout/moc_qgslayoutitemslistview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_609) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutitemslistview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_610) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutitemslistview.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutitemslistview.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutitemslistview.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutitemslistview.cpp.i: cmake_force
@@ -10455,7 +10479,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutitemslistview.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlabelwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlabelwidget.cpp.o: src/app/layout/moc_qgslayoutlabelwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_610) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlabelwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_611) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlabelwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlabelwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutlabelwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlabelwidget.cpp.i: cmake_force
@@ -10479,7 +10503,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlabelwidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendwidget.cpp.o: src/app/layout/moc_qgslayoutlegendwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_611) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_612) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutlegendwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendwidget.cpp.i: cmake_force
@@ -10503,7 +10527,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendwidget.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendlayersdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendlayersdialog.cpp.o: src/app/layout/moc_qgslayoutlegendlayersdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_612) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendlayersdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_613) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendlayersdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendlayersdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutlegendlayersdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendlayersdialog.cpp.i: cmake_force
@@ -10527,7 +10551,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutlegendlayersdialog.cpp.o.pro
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmanagerdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmanagerdialog.cpp.o: src/app/layout/moc_qgslayoutmanagerdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_613) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmanagerdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_614) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmanagerdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmanagerdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutmanagerdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmanagerdialog.cpp.i: cmake_force
@@ -10551,7 +10575,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmanagerdialog.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapwidget.cpp.o: src/app/layout/moc_qgslayoutmapwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_614) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_615) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutmapwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapwidget.cpp.i: cmake_force
@@ -10575,7 +10599,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapwidget.cpp.o.provides.bui
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapgridwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapgridwidget.cpp.o: src/app/layout/moc_qgslayoutmapgridwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_615) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapgridwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_616) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapgridwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapgridwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutmapgridwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapgridwidget.cpp.i: cmake_force
@@ -10599,7 +10623,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutmapgridwidget.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpagepropertieswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpagepropertieswidget.cpp.o: src/app/layout/moc_qgslayoutpagepropertieswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_616) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpagepropertieswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_617) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpagepropertieswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpagepropertieswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutpagepropertieswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpagepropertieswidget.cpp.i: cmake_force
@@ -10623,7 +10647,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpagepropertieswidget.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpicturewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpicturewidget.cpp.o: src/app/layout/moc_qgslayoutpicturewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_617) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpicturewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_618) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpicturewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpicturewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutpicturewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpicturewidget.cpp.i: cmake_force
@@ -10647,7 +10671,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpicturewidget.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolygonwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolygonwidget.cpp.o: src/app/layout/moc_qgslayoutpolygonwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_618) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolygonwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_619) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolygonwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolygonwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutpolygonwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolygonwidget.cpp.i: cmake_force
@@ -10671,7 +10695,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolygonwidget.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolylinewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolylinewidget.cpp.o: src/app/layout/moc_qgslayoutpolylinewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_619) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolylinewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_620) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolylinewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolylinewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutpolylinewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolylinewidget.cpp.i: cmake_force
@@ -10695,7 +10719,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpolylinewidget.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpropertieswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpropertieswidget.cpp.o: src/app/layout/moc_qgslayoutpropertieswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_620) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpropertieswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_621) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpropertieswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpropertieswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutpropertieswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpropertieswidget.cpp.i: cmake_force
@@ -10719,7 +10743,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutpropertieswidget.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutqptdrophandler.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutqptdrophandler.cpp.o: src/app/layout/moc_qgslayoutqptdrophandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_621) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutqptdrophandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_622) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutqptdrophandler.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutqptdrophandler.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutqptdrophandler.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutqptdrophandler.cpp.i: cmake_force
@@ -10743,7 +10767,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutqptdrophandler.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutscalebarwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutscalebarwidget.cpp.o: src/app/layout/moc_qgslayoutscalebarwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_622) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutscalebarwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_623) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutscalebarwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutscalebarwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutscalebarwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutscalebarwidget.cpp.i: cmake_force
@@ -10767,7 +10791,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutscalebarwidget.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutshapewidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutshapewidget.cpp.o: src/app/layout/moc_qgslayoutshapewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_623) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutshapewidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_624) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutshapewidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayoutshapewidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayoutshapewidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutshapewidget.cpp.i: cmake_force
@@ -10791,7 +10815,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayoutshapewidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouttablebackgroundcolorsdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouttablebackgroundcolorsdialog.cpp.o: src/app/layout/moc_qgslayouttablebackgroundcolorsdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_624) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouttablebackgroundcolorsdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_625) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouttablebackgroundcolorsdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgslayouttablebackgroundcolorsdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgslayouttablebackgroundcolorsdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouttablebackgroundcolorsdialog.cpp.i: cmake_force
@@ -10815,7 +10839,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgslayouttablebackgroundcolorsdialog.
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportfieldgroupsectionwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportfieldgroupsectionwidget.cpp.o: src/app/layout/moc_qgsreportfieldgroupsectionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_625) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportfieldgroupsectionwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_626) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportfieldgroupsectionwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgsreportfieldgroupsectionwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgsreportfieldgroupsectionwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportfieldgroupsectionwidget.cpp.i: cmake_force
@@ -10839,7 +10863,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportfieldgroupsectionwidget.cpp.
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportlayoutsectionwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportlayoutsectionwidget.cpp.o: src/app/layout/moc_qgsreportlayoutsectionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_626) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportlayoutsectionwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_627) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportlayoutsectionwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgsreportlayoutsectionwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgsreportlayoutsectionwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportlayoutsectionwidget.cpp.i: cmake_force
@@ -10863,7 +10887,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportlayoutsectionwidget.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportorganizerwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportorganizerwidget.cpp.o: src/app/layout/moc_qgsreportorganizerwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_627) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportorganizerwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_628) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportorganizerwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgsreportorganizerwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgsreportorganizerwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportorganizerwidget.cpp.i: cmake_force
@@ -10887,7 +10911,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportorganizerwidget.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionmodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionmodel.cpp.o: src/app/layout/moc_qgsreportsectionmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_628) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_629) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionmodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionmodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgsreportsectionmodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionmodel.cpp.i: cmake_force
@@ -10911,7 +10935,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionmodel.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionwidget.cpp.o: src/app/layout/moc_qgsreportsectionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_629) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_630) "Building CXX object src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/layout/moc_qgsreportsectionwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionwidget.cpp.i: cmake_force
@@ -10935,7 +10959,7 @@ src/app/CMakeFiles/qgis_app.dir/layout/moc_qgsreportsectionwidget.cpp.o.provides
 
 src/app/CMakeFiles/qgis_app.dir/locator/moc_qgsinbuiltlocatorfilters.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/locator/moc_qgsinbuiltlocatorfilters.cpp.o: src/app/locator/moc_qgsinbuiltlocatorfilters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_630) "Building CXX object src/app/CMakeFiles/qgis_app.dir/locator/moc_qgsinbuiltlocatorfilters.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_631) "Building CXX object src/app/CMakeFiles/qgis_app.dir/locator/moc_qgsinbuiltlocatorfilters.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/locator/moc_qgsinbuiltlocatorfilters.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/locator/moc_qgsinbuiltlocatorfilters.cpp
 
 src/app/CMakeFiles/qgis_app.dir/locator/moc_qgsinbuiltlocatorfilters.cpp.i: cmake_force
@@ -10959,7 +10983,7 @@ src/app/CMakeFiles/qgis_app.dir/locator/moc_qgsinbuiltlocatorfilters.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/locator/moc_qgslocatoroptionswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/locator/moc_qgslocatoroptionswidget.cpp.o: src/app/locator/moc_qgslocatoroptionswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_631) "Building CXX object src/app/CMakeFiles/qgis_app.dir/locator/moc_qgslocatoroptionswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_632) "Building CXX object src/app/CMakeFiles/qgis_app.dir/locator/moc_qgslocatoroptionswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/locator/moc_qgslocatoroptionswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/locator/moc_qgslocatoroptionswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/locator/moc_qgslocatoroptionswidget.cpp.i: cmake_force
@@ -10983,7 +11007,7 @@ src/app/CMakeFiles/qgis_app.dir/locator/moc_qgslocatoroptionswidget.cpp.o.provid
 
 src/app/CMakeFiles/qgis_app.dir/gps/moc_qgsgpsinformationwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/gps/moc_qgsgpsinformationwidget.cpp.o: src/app/gps/moc_qgsgpsinformationwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_632) "Building CXX object src/app/CMakeFiles/qgis_app.dir/gps/moc_qgsgpsinformationwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_633) "Building CXX object src/app/CMakeFiles/qgis_app.dir/gps/moc_qgsgpsinformationwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/gps/moc_qgsgpsinformationwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/gps/moc_qgsgpsinformationwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/gps/moc_qgsgpsinformationwidget.cpp.i: cmake_force
@@ -11007,7 +11031,7 @@ src/app/CMakeFiles/qgis_app.dir/gps/moc_qgsgpsinformationwidget.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/dwg/moc_qgsdwgimportdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/dwg/moc_qgsdwgimportdialog.cpp.o: src/app/dwg/moc_qgsdwgimportdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_633) "Building CXX object src/app/CMakeFiles/qgis_app.dir/dwg/moc_qgsdwgimportdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_634) "Building CXX object src/app/CMakeFiles/qgis_app.dir/dwg/moc_qgsdwgimportdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/dwg/moc_qgsdwgimportdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/dwg/moc_qgsdwgimportdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/dwg/moc_qgsdwgimportdialog.cpp.i: cmake_force
@@ -11031,7 +11055,7 @@ src/app/CMakeFiles/qgis_app.dir/dwg/moc_qgsdwgimportdialog.cpp.o.provides.build:
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginmanager.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginmanager.cpp.o: src/app/pluginmanager/moc_qgspluginmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_634) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_635) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginmanager.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginmanager.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/moc_qgspluginmanager.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginmanager.cpp.i: cmake_force
@@ -11055,7 +11079,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginmanager.cpp.o.provide
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgsapppluginmanagerinterface.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgsapppluginmanagerinterface.cpp.o: src/app/pluginmanager/moc_qgsapppluginmanagerinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_635) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgsapppluginmanagerinterface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_636) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgsapppluginmanagerinterface.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/moc_qgsapppluginmanagerinterface.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/moc_qgsapppluginmanagerinterface.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgsapppluginmanagerinterface.cpp.i: cmake_force
@@ -11079,7 +11103,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgsapppluginmanagerinterface.c
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginsortfilterproxymodel.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginsortfilterproxymodel.cpp.o: src/app/pluginmanager/moc_qgspluginsortfilterproxymodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_636) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginsortfilterproxymodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_637) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginsortfilterproxymodel.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginsortfilterproxymodel.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/moc_qgspluginsortfilterproxymodel.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginsortfilterproxymodel.cpp.i: cmake_force
@@ -11103,7 +11127,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginsortfilterproxymodel.
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginitemdelegate.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginitemdelegate.cpp.o: src/app/pluginmanager/moc_qgspluginitemdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_637) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginitemdelegate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_638) "Building CXX object src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginitemdelegate.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginitemdelegate.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/moc_qgspluginitemdelegate.cpp
 
 src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginitemdelegate.cpp.i: cmake_force
@@ -11127,7 +11151,7 @@ src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginitemdelegate.cpp.o.pr
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsnewspatialitelayerdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsnewspatialitelayerdialog.cpp.o: src/app/moc_qgsnewspatialitelayerdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_638) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsnewspatialitelayerdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_639) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsnewspatialitelayerdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsnewspatialitelayerdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsnewspatialitelayerdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsnewspatialitelayerdialog.cpp.i: cmake_force
@@ -11151,7 +11175,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsnewspatialitelayerdialog.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssettingstree.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgssettingstree.cpp.o: src/app/moc_qgssettingstree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_639) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssettingstree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_640) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgssettingstree.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgssettingstree.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgssettingstree.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgssettingstree.cpp.i: cmake_force
@@ -11175,7 +11199,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgssettingstree.cpp.o.provides.build: src/ap
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvariantdelegate.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvariantdelegate.cpp.o: src/app/moc_qgsvariantdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_640) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvariantdelegate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_641) "Building CXX object src/app/CMakeFiles/qgis_app.dir/moc_qgsvariantdelegate.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/moc_qgsvariantdelegate.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsvariantdelegate.cpp
 
 src/app/CMakeFiles/qgis_app.dir/moc_qgsvariantdelegate.cpp.i: cmake_force
@@ -11199,7 +11223,7 @@ src/app/CMakeFiles/qgis_app.dir/moc_qgsvariantdelegate.cpp.o.provides.build: src
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshlayerproperties.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshlayerproperties.cpp.o: src/app/mesh/moc_qgsmeshlayerproperties.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_641) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshlayerproperties.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_642) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshlayerproperties.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshlayerproperties.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsmeshlayerproperties.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshlayerproperties.cpp.i: cmake_force
@@ -11223,7 +11247,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshlayerproperties.cpp.o.provides.b
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsrenderermeshpropertieswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsrenderermeshpropertieswidget.cpp.o: src/app/mesh/moc_qgsrenderermeshpropertieswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_642) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsrenderermeshpropertieswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_643) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsrenderermeshpropertieswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsrenderermeshpropertieswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsrenderermeshpropertieswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsrenderermeshpropertieswidget.cpp.i: cmake_force
@@ -11247,7 +11271,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsrenderermeshpropertieswidget.cpp.o.p
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp.o: src/app/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_643) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_644) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp.i: cmake_force
@@ -11271,7 +11295,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderermeshsettingswidget.cpp.o
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp.o: src/app/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_644) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_645) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp.i: cmake_force
@@ -11295,7 +11319,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendererscalarsettingswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp.o: src/app/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_645) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_646) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp.i: cmake_force
@@ -11319,7 +11343,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrenderervectorsettingswidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp.o: src/app/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_646) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_647) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp.i: cmake_force
@@ -11343,7 +11367,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshrendereractivedatasetwidget.cpp.
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshdatasetgrouptreeview.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshdatasetgrouptreeview.cpp.o: src/app/mesh/moc_qgsmeshdatasetgrouptreeview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_647) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshdatasetgrouptreeview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_648) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshdatasetgrouptreeview.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshdatasetgrouptreeview.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsmeshdatasetgrouptreeview.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshdatasetgrouptreeview.cpp.i: cmake_force
@@ -11367,7 +11391,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshdatasetgrouptreeview.cpp.o.provi
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshcalculatordialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshcalculatordialog.cpp.o: src/app/mesh/moc_qgsmeshcalculatordialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_648) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshcalculatordialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_649) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshcalculatordialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshcalculatordialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsmeshcalculatordialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshcalculatordialog.cpp.i: cmake_force
@@ -11391,7 +11415,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshcalculatordialog.cpp.o.provides.
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshtimeformatdialog.cpp.o: src/app/CMakeFiles/qgis_app.dir/flags.make
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshtimeformatdialog.cpp.o: src/app/mesh/moc_qgsmeshtimeformatdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_649) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshtimeformatdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_650) "Building CXX object src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshtimeformatdialog.cpp.o"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshtimeformatdialog.cpp.o -c /home/guangping/dev/cpp/GIT/QGIS/src/app/mesh/moc_qgsmeshtimeformatdialog.cpp
 
 src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshtimeformatdialog.cpp.i: cmake_force
@@ -11416,6 +11440,7 @@ src/app/CMakeFiles/qgis_app.dir/mesh/moc_qgsmeshtimeformatdialog.cpp.o.provides.
 # Object files for target qgis_app
 qgis_app_OBJECTS = \
 "CMakeFiles/qgis_app.dir/__/__/external/nmea/gmath.c.o" \
+"CMakeFiles/qgis_app.dir/modification.cpp.o" \
 "CMakeFiles/qgis_app.dir/qgisapp.cpp.o" \
 "CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o" \
 "CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o" \
@@ -11858,6 +11883,7 @@ qgis_app_OBJECTS = \
 qgis_app_EXTERNAL_OBJECTS =
 
 output/lib/libqgis_app.so.3.7.0: src/app/CMakeFiles/qgis_app.dir/__/__/external/nmea/gmath.c.o
+output/lib/libqgis_app.so.3.7.0: src/app/CMakeFiles/qgis_app.dir/modification.cpp.o
 output/lib/libqgis_app.so.3.7.0: src/app/CMakeFiles/qgis_app.dir/qgisapp.cpp.o
 output/lib/libqgis_app.so.3.7.0: src/app/CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o
 output/lib/libqgis_app.so.3.7.0: src/app/CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o
@@ -12317,7 +12343,7 @@ output/lib/libqgis_app.so.3.7.0: /usr/lib/x86_64-linux-gnu/libzip.so
 output/lib/libqgis_app.so.3.7.0: /usr/local/lib/libexiv2.so
 output/lib/libqgis_app.so.3.7.0: /usr/lib/x86_64-linux-gnu/libOpenCL.so
 output/lib/libqgis_app.so.3.7.0: src/app/CMakeFiles/qgis_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_650) "Linking CXX shared library ../../output/lib/libqgis_app.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guangping/dev/cpp/GIT/QGIS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_651) "Linking CXX shared library ../../output/lib/libqgis_app.so"
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qgis_app.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/guangping/dev/cpp/GIT/QGIS/src/app && $(CMAKE_COMMAND) -E cmake_symlink_library ../../output/lib/libqgis_app.so.3.7.0 ../../output/lib/libqgis_app.so.3.7.0 ../../output/lib/libqgis_app.so
 
@@ -12330,6 +12356,7 @@ src/app/CMakeFiles/qgis_app.dir/build: output/lib/libqgis_app.so
 .PHONY : src/app/CMakeFiles/qgis_app.dir/build
 
 src/app/CMakeFiles/qgis_app.dir/requires: src/app/CMakeFiles/qgis_app.dir/__/__/external/nmea/gmath.c.o.requires
+src/app/CMakeFiles/qgis_app.dir/requires: src/app/CMakeFiles/qgis_app.dir/modification.cpp.o.requires
 src/app/CMakeFiles/qgis_app.dir/requires: src/app/CMakeFiles/qgis_app.dir/qgisapp.cpp.o.requires
 src/app/CMakeFiles/qgis_app.dir/requires: src/app/CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o.requires
 src/app/CMakeFiles/qgis_app.dir/requires: src/app/CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o.requires

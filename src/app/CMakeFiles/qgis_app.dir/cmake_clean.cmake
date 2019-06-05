@@ -211,6 +211,7 @@ file(REMOVE_RECURSE
   "mesh/moc_qgsmeshcalculatordialog.cpp"
   "mesh/moc_qgsmeshtimeformatdialog.cpp"
   "CMakeFiles/qgis_app.dir/__/__/external/nmea/gmath.c.o"
+  "CMakeFiles/qgis_app.dir/modification.cpp.o"
   "CMakeFiles/qgis_app.dir/qgisapp.cpp.o"
   "CMakeFiles/qgis_app.dir/qgisappinterface.cpp.o"
   "CMakeFiles/qgis_app.dir/qgisappstylesheet.cpp.o"

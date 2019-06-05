@@ -52,8 +52,8 @@
 //-------------------gpl----------------------------
 using namespace pal;
 //+++++++++++debug+++++++++++++++++++++
-bool gplDebugger = false;
-bool gplPrinter = false;
+bool gplDebugger = true;
+bool gplPrinter = true;
 bool testPrinter = true;
 QSet<int> QgsFeatureIDS_prev;
 int numF_prev;
@@ -326,7 +326,8 @@ performance.name = "init_sol_falp";
         continue;
       }
     }
-
+  std::cout<< "nbft: "<< nbft << endl;
+  std::cout<< "list->getSize() "<< list->getSize() << endl;
   while ( list->getSize() > 0 ) // O (log size)
   {
     if ( pal->isCanceled() )
@@ -431,7 +432,6 @@ int solutionCount = 0;
 if(gplDebugger){
    std::cout<<"popmusic"<<endl;
 }
-performance.name = "popmusic";
 //cacheIds();
 //-------------------gpl-----------------------------------
   if ( nbft == 0 )
@@ -581,6 +581,7 @@ performance.name = "popmusic";
 
   delete[] ok;
   solution_cost();
+  performance.name = "popmusic";
   performance.solutionWeight = sol->cost;
   for(int i = 0; i < nbft; i++){
     if(sol->s[i] != -1) solutionCount++;
@@ -1226,7 +1227,7 @@ inline Chain *Problem::chain( SubPart *part, int seed )
 {
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++
 if(gplDebugger){
- std::cout<< "chain"<<endl;
+// std::cout<< "chain"<<endl;
 }
 //-------------------gpl----------------------------
   int i;
@@ -1517,7 +1518,7 @@ inline Chain *Problem::chain( int seed )
 {
 //+++++++++++++++++++gpl++++++++++++++++++++++++++++
 if(gplDebugger){
- cout<<"chain"<<endl;
+ //cout<<"chain"<<endl;
 }
 //-------------------gpl----------------------------
   int i;
@@ -2222,7 +2223,6 @@ auto start = std::chrono::system_clock::now();
 if(gplDebugger){
  std::cout<<"chain_search"<<endl;
 }
-performance.name = "chain_search";
 //-------------------gpl----------------------------------
   if ( nbft == 0 )
     return;
@@ -2320,6 +2320,7 @@ performance.name = "chain_search";
   for(int i = 0; i < nbft; i++){
     if(sol->s[i]  != -1) solutionCount++;
   }
+  performance.name = "chain_search";
   performance.solutionSize = solutionCount;
   auto end = std::chrono::system_clock::now();
   std::chrono::duration<double> elapsed_seconds = end-start;
@@ -2364,7 +2365,6 @@ QList<LabelPosition *> Problem::getSolution( bool returnInactive )
   {
     std::sort( solList.begin(), solList.end(), compareLabelArea );
   }
-
   return solList;
 }
 
@@ -2587,7 +2587,6 @@ void Problem::simple(test::Performance& performance)
     if(gplDebugger){
        cout<< "simple"<<endl;
     }
-    performance.name = "simple";
     int solutionCount= 0;
     int remainingCount = 0;
     if(gplPrinter){
@@ -2661,6 +2660,7 @@ if(gplDebugger){
   cout<< sol->cost<<endl;
 }
 solution_cost();
+performance.name = "simple";
 performance.solutionWeight = sol->cost;
 performance.solutionSize = solutionCount;
 performance.remainingLabels = remainingCount;
@@ -2880,7 +2880,6 @@ void Problem::mis(test::Performance& performance){
         cout<< "mis"<<endl;
     }
     //cacheIds();
-    performance.name = "mis";
     auto start = std::chrono::system_clock::now();
 //-------------------gpl-----------------------------------
   int label;
@@ -2911,6 +2910,7 @@ void Problem::mis(test::Performance& performance){
   for(int i = 0; i < nbft; i++){
     if(sol->s[i] != -1) solutionCount++;
   }
+  performance.name = "mis";
   performance.solutionSize = solutionCount;
   performance.remainingLabels = remainingCount;
   auto end = std::chrono::system_clock::now();
@@ -2986,7 +2986,6 @@ void Problem::maxHS(test::Performance& performance){
         cout<<"maxHS"<<endl;
     }
     //cacheIds();
-    performance.name = "maxHS";
     auto start = std::chrono::system_clock::now();
 //-------------------gpl-----------------------------------
   init_sol_empty();
@@ -3006,6 +3005,7 @@ void Problem::maxHS(test::Performance& performance){
     if(sol->s[i] != -1) solutionCount++;
   }
   solution_cost();
+  performance.name = "maxHS";
   performance.solutionWeight = sol->cost;
   performance.solutionSize = solutionCount;
   performance.remainingLabels = remainingCount;
@@ -3029,7 +3029,6 @@ void Problem::kamis(test::Performance& performance){
         cout<< "kamis"<<endl;
     }
     //cacheIds();
-    performance.name = "kamis";
     auto start = std::chrono::system_clock::now();
 //-------------------gpl-----------------------------------
   init_sol_empty();
@@ -3066,6 +3065,7 @@ void Problem::kamis(test::Performance& performance){
     if(sol->s[i] != -1) solutionCount++;
   }
   solution_cost();
+  performance.name = "kamis";
   performance.solutionWeight = sol->cost;
   performance.solutionSize = solutionCount;
   performance.remainingLabels = remainingCount;

@@ -22,6 +22,7 @@
 #include "qgsfeature.h"
 
 #include "qgsvectorlayerref.h"
+#include<iostream>
 
 /**
  * \ingroup core
@@ -33,7 +34,21 @@
 class CORE_EXPORT QgsVectorLayerJoinInfo
 {
   public:
-
+//+++++++++++++++++++++++++to understand++++++++++++++++++++++
+void print() const{
+  std::cout<< "mPrefix: "<<mPrefix.toUtf8().constData() << std::endl;
+    std::cout<< "mMemoryCache: "<<mMemoryCache<< std::endl;
+      std::cout<< "mJoinFieldsSubset: "<<mJoinFieldsSubset << std::endl;
+        std::cout<< "cacheDirty: "<<cacheDirty << std::endl;
+                std::cout<< "mDynamicForm: "<<mDynamicForm << std::endl;
+                        std::cout<< "mEditable: "<<mEditable << std::endl;
+                                std::cout<< "mCascadedDelete: "<<mCascadedDelete << std::endl;
+                                       // std::cout<< "mBlackList: "<<mBlackList<< std::endl;
+                                        std::cout<< "cached attributes:"<< std::endl;
+qDebug()<<cachedAttributes;
+//assert(false);
+}
+//-------------------------to understand----------------------
     /**
      * Constructor for QgsVectorLayerJoinInfo.
      */

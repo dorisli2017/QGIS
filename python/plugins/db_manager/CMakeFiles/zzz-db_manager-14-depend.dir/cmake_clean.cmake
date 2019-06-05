@@ -1,6 +1,19 @@
 file(REMOVE_RECURSE
   "CMakeFiles/zzz-db_manager-14-depend"
   "resources_rc.py"
+  "ui_DlgAddGeometryColumn.py"
+  "ui_DlgCancelTaskQuery.py"
+  "ui_DlgCreateConstraint.py"
+  "ui_DlgCreateIndex.py"
+  "ui_DlgCreateTable.py"
+  "ui_DlgDbError.py"
+  "ui_DlgExportVector.py"
+  "ui_DlgFieldProperties.py"
+  "ui_DlgImportVector.py"
+  "ui_DlgQueryBuilder.py"
+  "ui_DlgSqlLayerWindow.py"
+  "ui_DlgSqlWindow.py"
+  "ui_DlgTableProperties.py"
 )
 
 # Per-language clean rules from dependency scanning.

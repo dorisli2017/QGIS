@@ -22,6 +22,7 @@
 #include "geos_c.h"
 #include "qgsgeos.h"
 #include "qgsmargins.h"
+#include <iostream>
 
 namespace pal
 {
@@ -307,7 +308,9 @@ class CORE_EXPORT QgsLabelFeature
     //! Whether label should be always shown (sets very high label priority)
     bool alwaysShow() const { return mAlwaysShow; }
     //! Sets whether label should be always shown (sets very high label priority)
-    void setAlwaysShow( bool enabled ) { mAlwaysShow = enabled; }
+    void setAlwaysShow( bool enabled ) { 
+      mAlwaysShow = enabled; 
+      }
 
     /**
      * Returns whether the feature will act as an obstacle for labels.

@@ -396,16 +396,21 @@ int QgsVectorLayerJoinBuffer::joinedFieldsOffset( const QgsVectorLayerJoinInfo *
 
 const QgsVectorLayerJoinInfo *QgsVectorLayerJoinBuffer::joinForFieldIndex( int index, const QgsFields &fields, int &sourceFieldIndex ) const
 {
-  if ( fields.fieldOrigin( index ) != QgsFields::OriginJoin )
+  std::cout<< "IN QgsVectorLayerJoinBuffer::joinForFieldIndex"<< std::endl;
+  if ( fields.fieldOrigin( index ) != QgsFields::OriginJoin ){
+    std::cout<< "OUT QgsVectorLayerJoinBuffer::joinForFieldIndex    *******     0"<< std::endl;
     return nullptr;
+  }
 
   int originIndex = fields.fieldOriginIndex( index );
   int sourceJoinIndex = originIndex / 1000;
   sourceFieldIndex = originIndex % 1000;
 
-  if ( sourceJoinIndex < 0 || sourceJoinIndex >= mVectorJoins.count() )
+  if ( sourceJoinIndex < 0 || sourceJoinIndex >= mVectorJoins.count() ){
+    std::cout<< "OUT QgsVectorLayerJoinBuffer::joinForFieldIndex      **********     1"<< std::endl;
     return nullptr;
-
+  }
+  std::cout<< "OUT QgsVectorLayerJoinBuffer::joinForFieldIndex       ***********   2"<< std::endl;
   return &( mVectorJoins[sourceJoinIndex] );
 }
 
@@ -428,10 +433,12 @@ QList<const QgsVectorLayerJoinInfo *> QgsVectorLayerJoinBuffer::joinsWhereFieldI
 
 QgsFeature QgsVectorLayerJoinBuffer::joinedFeatureOf( const QgsVectorLayerJoinInfo *info, const QgsFeature &feature ) const
 {
+  std::cout<< "In QgsVectorLayerJoinBuffer::joinedFeatureOf"<< std::endl;
   QgsFeature joinedFeature;
 
   if ( info->joinLayer() )
   {
+      std::cout<< "In QgsVectorLayerJoinBuffer::joinedFeatureOf if"<< std::endl;
     joinedFeature.initAttributes( info->joinLayer()->fields().count() );
     joinedFeature.setFields( info->joinLayer()->fields() );
 
@@ -442,11 +449,13 @@ QgsFeature QgsVectorLayerJoinBuffer::joinedFeatureOf( const QgsVectorLayerJoinIn
     QgsFeatureRequest request;
     request.setFilterExpression( filter );
     request.setLimit( 1 );
-
+    
+  //std::cout<< "joinFieldName: "<< joinFieldName.toUtf8().constData()<< std::endl;
+    //std::cout<< "filter: "<<filter.toUtf8().constData()<< std::endl;
     QgsFeatureIterator it = info->joinLayer()->getFeatures( request );
     it.nextFeature( joinedFeature );
   }
-
+  std::cout<< "out QgsVectorLayerJoinBuffer::joinedFeatureOf "<<joinedFeature.isValid()<< std::endl;
   return joinedFeature;
 }
 
@@ -530,6 +539,7 @@ void QgsVectorLayerJoinBuffer::connectJoinedLayer( QgsVectorLayer *vl )
 
 bool QgsVectorLayerJoinBuffer::addFeatures( QgsFeatureList &features, QgsFeatureSink::Flags )
 {
+  assert(false);
   if ( !containsJoins() )
     return false;
 
@@ -618,30 +628,42 @@ bool QgsVectorLayerJoinBuffer::addFeatures( QgsFeatureList &features, QgsFeature
 
 bool QgsVectorLayerJoinBuffer::changeAttributeValue( QgsFeatureId fid, int field, const QVariant &newValue, const QVariant &oldValue )
 {
+  std::cout<< "In QgsVectorLayerJoinBuffer::changeAttributeValue" << std::endl;
+  std::cout<< "fid" <<fid << std::endl;
+  std::cout<< "field" <<field << std::endl;
   if ( mLayer->fields().fieldOrigin( field ) != QgsFields::OriginJoin )
     return false;
 
   int srcFieldIndex;
   const QgsVectorLayerJoinInfo *info = joinForFieldIndex( field, mLayer->fields(), srcFieldIndex );
+  assert(info);
   if ( info && info->joinLayer() && info->isEditable() )
   {
     QgsFeature feature = mLayer->getFeature( fid );
 
     if ( !feature.isValid() )
       return false;
-
+// KEY PART
+//PRINT INFO
+    std::cout<< "Now print INFO"<< std::endl;
+    info->print();
     const QgsFeature joinFeature = joinedFeatureOf( info, feature );
 
-    if ( joinFeature.isValid() )
+    if ( joinFeature.isValid() ){
+      std::cout<< "OUT QgsVectorLayerJoinBuffer::changeAttributeValue 1" << std::endl;
       return info->joinLayer()->changeAttributeValue( joinFeature.id(), srcFieldIndex, newValue, oldValue );
+    }
     else
     {
+      assert(false);
       feature.setAttribute( field, newValue );
       return addFeatures( QgsFeatureList() << feature );
     }
   }
-  else
+  else{
+    std::cout<< "OUT QgsVectorLayerJoinBuffer::changeAttributeValue 2" << std::endl;
     return false;
+  }
 }
 
 bool QgsVectorLayerJoinBuffer::changeAttributeValues( QgsFeatureId fid, const QgsAttributeMap &newValues, const QgsAttributeMap &oldValues )

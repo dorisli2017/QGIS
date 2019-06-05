@@ -42,6 +42,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/db_plugins/postgis/plugins/versioning/__init__.py"
     "/home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/db_plugins/postgis/plugins/versioning/dlg_versioning.py"
     "/home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/db_plugins/postgis/plugins/versioning/ui_DlgVersioning.py"
+    "/home/guangping/dev/cpp/GIT/QGIS/python/plugins/db_manager/db_plugins/postgis/plugins/versioning/ui_DlgVersioning.py"
     )
 endif()
 

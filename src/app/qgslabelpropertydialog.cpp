@@ -31,6 +31,7 @@
 #include <QColorDialog>
 #include <QFontDatabase>
 #include <QDialogButtonBox>
+#include <iostream>
 
 
 QgsLabelPropertyDialog::QgsLabelPropertyDialog( const QString &layerId, const QString &providerId, int featureId, const QFont &labelFont, const QString &labelText, QWidget *parent, Qt::WindowFlags f ):
@@ -85,14 +86,30 @@ void QgsLabelPropertyDialog::setMapCanvas( QgsMapCanvas *canvas )
 
 void QgsLabelPropertyDialog::buttonBox_clicked( QAbstractButton *button )
 {
+  std::cout<< "in QgsLabelPropertyDialog::buttonBox_clicked"<< std::endl;
   if ( buttonBox->buttonRole( button ) == QDialogButtonBox::ApplyRole )
   {
+    std:: cout<< "emit applied()"<< std::endl;
     emit applied();
   }
+    std::cout<< "out QgsLabelPropertyDialog::buttonBox_clicked"<< std::endl;
 }
 
 void QgsLabelPropertyDialog::init( const QString &layerId, const QString &providerId, int featureId, const QString &labelText )
 {
+  std:: cout<< "in QgsLabelPropertyDialog::init" << std::endl;
+   std:: cout<< "layerID "<< layerId.toUtf8().constData() << std::endl;
+    std:: cout<< "providerId "<< providerId.toUtf8().constData() << std::endl;
+    std:: cout<< "featureId "<< featureId<< std::endl;
+     std:: cout<< "labelText "<< labelText.toUtf8().constData() << std::endl;
+  if(false){
+    const auto constPropertyKeys = mDataDefinedProperties.propertyKeys();
+        std::cout<< "in print field"<< std::endl;
+      for ( int key : constPropertyKeys ){
+        std::cout<< mDataDefinedProperties.property( key ).field().toUtf8().constData()<< std:: endl;    
+      }
+      std::cout<< "out print field"<< std::endl;
+  }
   //get feature attributes
   QgsVectorLayer *vlayer = QgsProject::instance()->mapLayer<QgsVectorLayer *>( layerId );
   if ( !vlayer )
@@ -190,13 +207,27 @@ void QgsLabelPropertyDialog::init( const QString &layerId, const QString &provid
   disableGuiElements();
 
   mDataDefinedProperties = layerSettings.dataDefinedProperties();
-
+  std::cout<< "before setDataDefinedValues"<< std::endl;
+  if(true){
+    const auto constPropertyKeys = mDataDefinedProperties.propertyKeys();
+        std::cout<< "in print field: "<< constPropertyKeys.size()<<  std::endl;
+  }
   //set widget values from data defined results
   setDataDefinedValues( vlayer );
+    std::cout<< "after setDataDefinedValues"<< std::endl;
+  if(true){
+    const auto constPropertyKeys = mDataDefinedProperties.propertyKeys();
+        std::cout<< "in print field: "<< constPropertyKeys.size()<<  std::endl;
+  }
   //enable widgets connected to data defined fields
   enableDataDefinedWidgets( vlayer );
-
+  if(true){
+    const auto constPropertyKeys = mDataDefinedProperties.propertyKeys();
+        std::cout<< "in print field: "<< constPropertyKeys.size()<<  std::endl;
+  }
   blockElementSignals( false );
+
+    std:: cout<< "out QgsLabelPropertyDialog::init" <<std:: endl;
 }
 
 void QgsLabelPropertyDialog::disableGuiElements()
@@ -252,7 +283,7 @@ void QgsLabelPropertyDialog::setDataDefinedValues( QgsVectorLayer *vlayer )
   //loop through data defined properties and set all the GUI widget values. We can do this
   //even if the data defined property is set to an expression, as it's useful to show
   //users what the evaluated property is...
-
+  std::cout<< "in QgsLabelPropertyDialog::setDataDefinedValues"<< std:: endl;
   QgsExpressionContext context;
   context << QgsExpressionContextUtils::globalScope()
           << QgsExpressionContextUtils::projectScope( QgsProject::instance() )
@@ -380,13 +411,21 @@ void QgsLabelPropertyDialog::setDataDefinedValues( QgsVectorLayer *vlayer )
         break;
     }
   }
+    std::cout<< "out QgsLabelPropertyDialog::setDataDefinedValues"<< std:: endl;
 }
 
 void QgsLabelPropertyDialog::enableDataDefinedWidgets( QgsVectorLayer *vlayer )
 {
+  std::cout<< "in QgsLabelPropertyDialog::enableDataDefinedWidgets"<< std::endl;
   //loop through data defined properties, this time setting whether or not the widgets are enabled
   //this can only be done for properties which are assigned to fields
   const auto constPropertyKeys = mDataDefinedProperties.propertyKeys();
+    // print all the fields names++++++++++++++
+  if(true){
+    const auto constPropertyKeys = mDataDefinedProperties.propertyKeys();
+        std::cout<< "in print field: "<< constPropertyKeys.size()<<  std::endl;
+  }
+  //print all the fields names------------------------------
   for ( int key : constPropertyKeys )
   {
     QgsProperty prop = mDataDefinedProperties.property( key );
@@ -476,6 +515,7 @@ void QgsLabelPropertyDialog::enableDataDefinedWidgets( QgsVectorLayer *vlayer )
         break;
     }
   }
+    std::cout<< "out QgsLabelPropertyDialog::enableDataDefinedWidgets"<< std::endl;
 }
 
 void QgsLabelPropertyDialog::updateFont( const QFont &font, bool block )
@@ -546,7 +586,9 @@ void QgsLabelPropertyDialog::mAlwaysShowChkbx_toggled( bool chkd )
 
 void QgsLabelPropertyDialog::minScaleChanged( double scale )
 {
+  std::cout<< "in QgsLabelPropertyDialog::minScaleChanged"<< std::endl;
   insertChangedValue( QgsPalLayerSettings::MinimumScale, scale );
+    std::cout<< "out QgsLabelPropertyDialog::minScaleChanged"<<std:: endl;
 }
 
 void QgsLabelPropertyDialog::maxScaleChanged( double scale )
@@ -589,9 +631,11 @@ void QgsLabelPropertyDialog::mYCoordSpinBox_valueChanged( double d )
 
 void QgsLabelPropertyDialog::mFontFamilyCmbBx_currentFontChanged( const QFont &f )
 {
+  std::cout<< "in mFontFamilyCmbBx_currentFontChanged"<< std::endl;
   mLabelFont.setFamily( f.family() );
   updateFont( mLabelFont );
   insertChangedValue( QgsPalLayerSettings::Family, f.family() );
+    std::cout<< "out mFontFamilyCmbBx_currentFontChanged"<< std::endl;
 }
 
 void QgsLabelPropertyDialog::mFontStyleCmbBx_currentIndexChanged( const QString &text )
@@ -692,12 +736,17 @@ void QgsLabelPropertyDialog::mLabelTextLineEdit_textChanged( const QString &text
 
 void QgsLabelPropertyDialog::insertChangedValue( QgsPalLayerSettings::Property p, const QVariant &value )
 {
+  std::cout<< "in QgsLabelPropertyDialog::insertChangedValue"<<std:: endl;
+  std::cout<<"the property p: "<<  p << std::endl;
+  std::cout<<"the variant value: "<<  value.toString().toUtf8().constData() << std::endl;
   if ( mDataDefinedProperties.isActive( p ) )
   {
     QgsProperty prop = mDataDefinedProperties.property( p );
     if ( prop.propertyType() == QgsProperty::FieldBasedProperty )
     {
+      std::cout<< "prop.field()"<< prop.field().toUtf8().constData() <<std::endl;
       mChangedProperties.insert( mCurLabelFeat.fieldNameIndex( prop.field() ), value );
     }
   }
+    std::cout<< "out QgsLabelPropertyDialog::insertChangedValue"<< std::endl;
 }

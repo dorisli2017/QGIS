@@ -452,6 +452,7 @@ void QgsMapRendererJob::cleanupLabelJob( LabelRenderJob &job )
 
 QImage QgsMapRendererJob::composeImage( const QgsMapSettings &settings, const LayerRenderJobs &jobs, const LabelRenderJob &labelJob )
 {
+  std::cout<< "in QgsMapRendererJob::composeImage"<< std::endl;
   QImage image( settings.deviceOutputSize(), settings.outputImageFormat() );
   image.setDevicePixelRatio( settings.devicePixelRatio() );
   image.fill( settings.backgroundColor().rgba() );
@@ -507,6 +508,7 @@ QImage QgsMapRendererJob::composeImage( const QgsMapSettings &settings, const La
   }
 
   painter.end();
+    std::cout<< "out QgsMapRendererJob::composeImage"<< std::endl;
   return image;
 }
 

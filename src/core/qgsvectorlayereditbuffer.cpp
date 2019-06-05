@@ -232,22 +232,30 @@ bool QgsVectorLayerEditBuffer::changeAttributeValues( QgsFeatureId fid, const Qg
 
 bool QgsVectorLayerEditBuffer::changeAttributeValue( QgsFeatureId fid, int field, const QVariant &newValue, const QVariant &oldValue )
 {
+  std::cout<< "in EditBuffer::changeAttributeValue"<< std:: endl;
   if ( FID_IS_NEW( fid ) )
   {
-    if ( !mAddedFeatures.contains( fid ) )
+    if ( !mAddedFeatures.contains( fid ) ){
+      std::cout<< "out EditBuffer::changeAttributeValue"<< std:: endl;
       return false;
+    }
   }
   else if ( !( L->dataProvider()->capabilities() & QgsVectorDataProvider::ChangeAttributeValues ) )
   {
+    std::cout<< "out Buffer::changeAttributeValue"<< std:: endl;
     return false;
   }
 
   if ( field < 0 || field >= L->fields().count() ||
        L->fields().fieldOrigin( field ) == QgsFields::OriginJoin ||
-       L->fields().fieldOrigin( field ) == QgsFields::OriginExpression )
+       L->fields().fieldOrigin( field ) == QgsFields::OriginExpression ){
+
+    std::cout<< "out Buffer::changeAttributeValue"<< std:: endl;
     return false;
+  }
 
   L->undoStack()->push( new QgsVectorLayerUndoCommandChangeAttribute( this, fid, field, newValue, oldValue ) );
+  std::cout<< "out Buffer::changeAttributeValue"<< std:: endl;
   return true;
 }
 

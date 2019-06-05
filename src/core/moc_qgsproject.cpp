@@ -850,6 +850,7 @@ void QgsProject::writeProject(QDomDocument & _t1)
 // SIGNAL 4
 void QgsProject::readMapLayer(QgsMapLayer * _t1, const QDomElement & _t2)
 {
+    std:: cout<< " IN QgsProject::readMapLayer"<< std:: endl;
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }

@@ -56,6 +56,7 @@ include python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFil
 python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFiles/zzz-db_manager-5-depend: python/plugins/db_manager/db_plugins/postgis/plugins/versioning/__init__.py
 python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFiles/zzz-db_manager-5-depend: python/plugins/db_manager/db_plugins/postgis/plugins/versioning/dlg_versioning.py
 python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFiles/zzz-db_manager-5-depend: python/plugins/db_manager/db_plugins/postgis/plugins/versioning/ui_DlgVersioning.py
+python/plugins/db_manager/db_plugins/postgis/plugins/versioning/CMakeFiles/zzz-db_manager-5-depend: python/plugins/db_manager/db_plugins/postgis/plugins/versioning/ui_DlgVersioning.py
 
 
 python/plugins/db_manager/db_plugins/postgis/plugins/versioning/ui_DlgVersioning.py: python/plugins/db_manager/db_plugins/postgis/plugins/versioning/DlgVersioning.ui

@@ -719,12 +719,15 @@ bool QgsMapToolLabel::createAuxiliaryFields( QgsPalIndexes &indexes )
 
 bool QgsMapToolLabel::createAuxiliaryFields( LabelDetails &details, QgsPalIndexes &indexes ) const
 {
+  std::cout<< "in QgsMapToolLabel::createAuxiliaryFields"<< std:: endl;
   bool newAuxiliaryLayer = false;
   QgsVectorLayer *vlayer = details.layer;
   QString providerId = details.pos.providerID;
 
-  if ( !vlayer || !vlayer->labelsEnabled() )
+  if ( !vlayer || !vlayer->labelsEnabled() ){
+   std::cout<< "out QgsMapToolLabel::createAuxiliaryFields"<< std:: endl;
     return false;
+  }
 
   if ( !vlayer->auxiliaryLayer() )
   {
@@ -735,7 +738,11 @@ bool QgsMapToolLabel::createAuxiliaryFields( LabelDetails &details, QgsPalIndexe
 
   if ( !vlayer->auxiliaryLayer() )
     return false;
-
+// to understand the properties +
+for(auto p: mPalProperties){
+ // std::cout<< "* add property "<< p << std::endl;
+}
+// to understand the properties -
   for ( const QgsPalLayerSettings::Property &p : qgis::as_const( mPalProperties ) )
   {
     int index = -1;
@@ -755,7 +762,7 @@ bool QgsMapToolLabel::createAuxiliaryFields( LabelDetails &details, QgsPalIndexe
   }
 
   details.settings = vlayer->labeling()->settings( providerId );
-
+  std::cout<< "out QgsMapToolLabel::createAuxiliaryFields"<< std:: endl;    
   return newAuxiliaryLayer;
 }
 

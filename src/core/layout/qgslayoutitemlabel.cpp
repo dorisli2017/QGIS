@@ -41,6 +41,7 @@
 #include <QPainter>
 #include <QTimer>
 #include <QEventLoop>
+#include <iostream>
 
 QgsLayoutItemLabel::QgsLayoutItemLabel( QgsLayout *layout )
   : QgsLayoutItem( layout )
@@ -484,8 +485,10 @@ void QgsLayoutItemLabel::setFrameStrokeWidth( const QgsLayoutMeasurement strokeW
 
 void QgsLayoutItemLabel::refresh()
 {
+  std::cout<< " in qgslayoutItem label refresh"<< std::endl;
   QgsLayoutItem::refresh();
   refreshExpressionContext();
+  std::cout<< " out qgslayoutItem label refresh"<< std::endl;
 }
 
 void QgsLayoutItemLabel::itemShiftAdjustSize( double newWidth, double newHeight, double &xShift, double &yShift ) const

@@ -100,6 +100,7 @@ bool QgsVectorLayerLabelProvider::prepare( const QgsRenderContext &context, QSet
 
 QList<QgsLabelFeature *> QgsVectorLayerLabelProvider::labelFeatures( QgsRenderContext &ctx )
 {
+  //cout<< "in vector labelfeatures()"<< endl;
   if ( !mSource )
   {
     // we have created the provider with "own feature loop" == false
@@ -108,8 +109,9 @@ QList<QgsLabelFeature *> QgsVectorLayerLabelProvider::labelFeatures( QgsRenderCo
   }
 
   QSet<QString> attrNames;
-  if ( !prepare( ctx, attrNames ) )
+  if ( !prepare( ctx, attrNames ) ){
     return QList<QgsLabelFeature *>();
+  }
 
   if ( mRenderer )
     mRenderer->startRender( ctx, mFields );
@@ -126,9 +128,11 @@ QList<QgsLabelFeature *> QgsVectorLayerLabelProvider::labelFeatures( QgsRenderCo
   QgsExpressionContextScope *symbolScope = new QgsExpressionContextScope();
   ctx.expressionContext().appendScope( symbolScope );
   QgsFeature fet;
+   //cout<< " vector labelfeatures before while()"<< endl;
   while ( fit.nextFeature( fet ) )
   {
     QgsGeometry obstacleGeometry;
+   // cout<< " vector labelfeatures before if()"<< endl;
     if ( mRenderer )
     {
       QgsSymbolList symbols = mRenderer->originalSymbolsForFeature( fet, ctx );
@@ -145,13 +149,11 @@ QList<QgsLabelFeature *> QgsVectorLayerLabelProvider::labelFeatures( QgsRenderCo
     ctx.expressionContext().setFeature( fet );
     registerFeature( fet, ctx, obstacleGeometry );
   }
-
   if ( ctx.expressionContext().lastScope() == symbolScope )
     delete ctx.expressionContext().popScope();
 
   if ( mRenderer )
     mRenderer->stopRender( ctx );
-
   return mLabels;
 }
 
@@ -536,7 +538,7 @@ void QgsVectorLayerLabelProvider::drawLabelPrivate( pal::LabelPosition *label, Q
     drawLabelPrivate( label->getNextPart(), context, tmpLyr, drawType, dpiRatio );
 }
     //+++++++++++++++++gpl-modification+++++++++++++++++++
-    void QgsVectorLayerLabelProvider::fixFeature(int id){
+   void QgsVectorLayerLabelProvider::fixFeature(int id){
       for(auto ele: mLabels){
         if(ele->id() == id){
             ele->setAlwaysShow(true);
@@ -550,14 +552,11 @@ void QgsVectorLayerLabelProvider::drawLabelPrivate( pal::LabelPosition *label, Q
         }
       }  
     };
-    /*void QgsVectorLayerLabelProvider::getFeatureIds(){
-      if(initial){
-        cout<< "get featureIDs"<< endl;
-        cout<<"the size of features: "<< mLabels.size() << endl;
-        for(auto ele: mLabels){
-          featureQGSIDS.push_back(ele->id());
-        }
-      }
+    void QgsVectorLayerLabelProvider::getFeatureIds(){
+     /* cout<< "get featureIDs of Provider"<< endl;
+      cout<<"the size of features: "<< mLabels.size() << endl;
+      for(auto ele: mLabels){
+        featureQGSIDS.push_back(ele->id());
+      }*/
     };
-    */
     //----------------gpl-modification--------------------

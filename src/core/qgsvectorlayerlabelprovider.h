@@ -56,7 +56,8 @@ class CORE_EXPORT QgsVectorLayerLabelProvider : public QgsAbstractLabelProvider
     //+++++++++++++++++gpl-modification+++++++++++++++++++
     void fixFeature(int id);
     void fitFeature(int id, double fator);
-    //void getFeatureIds();
+    void getFeatureIds();
+
     //----------------gpl-modification--------------------
 
     // new virtual methods

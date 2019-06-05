@@ -49,6 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/guangping/dev/cpp/GIT/QGIS/python/qsci_apis/PyQGIS-1.8.api"
     "/home/guangping/dev/cpp/GIT/QGIS/python/qsci_apis/PyQGIS-2.0.api"
     "/home/guangping/dev/cpp/GIT/QGIS/python/qsci_apis/PyQGIS-2.2.api"
+    "/home/guangping/dev/cpp/GIT/QGIS/python/qsci_apis/PyQGIS.api"
     "/home/guangping/dev/cpp/GIT/QGIS/python/qsci_apis/PyQt5.api"
     "/home/guangping/dev/cpp/GIT/QGIS/python/qsci_apis/Python-3.6.api"
     "/home/guangping/dev/cpp/GIT/QGIS/python/qsci_apis/QScintilla2-2.4.5.api"

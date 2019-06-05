@@ -26,6 +26,7 @@
 
 #include <sqlite3.h>
 #include <QFile>
+#include <iostream>
 
 const QString AS_JOINFIELD = "ASPK";
 const QString AS_EXTENSION = "qgd";
@@ -67,6 +68,7 @@ QgsAuxiliaryLayer::QgsAuxiliaryLayer( const QString &pkField, const QString &fil
   , mTable( table )
   , mLayer( vlayer )
 {
+    std::cout<< "in QgsAuxiliaryLayer::construction" << std::endl;
   // init join info
   mJoinInfo.setPrefix( AS_JOINPREFIX );
   mJoinInfo.setJoinLayer( this );
@@ -76,19 +78,24 @@ QgsAuxiliaryLayer::QgsAuxiliaryLayer( const QString &pkField, const QString &fil
   mJoinInfo.setUpsertOnEdit( true );
   mJoinInfo.setCascadedDelete( true );
   mJoinInfo.setJoinFieldNamesBlackList( QStringList() << QStringLiteral( "rowid" ) ); // introduced by ogr provider
+  std::cout<< "out QgsAuxiliaryLayer::construction" << std::endl;
 }
 
 QgsAuxiliaryLayer *QgsAuxiliaryLayer::clone( QgsVectorLayer *target ) const
 {
+      std::cout<< "in QgsAuxiliaryLayer::clone" << std::endl;
   QgsAuxiliaryStorage::duplicateTable( source(), target->id() );
+        std::cout<< "out QgsAuxiliaryLayer::clone" << std::endl;
   return new QgsAuxiliaryLayer( mJoinInfo.targetFieldName(), mFileName, target->id(), target );
 }
 
 bool QgsAuxiliaryLayer::clear()
 {
+        std::cout<< "in QgsAuxiliaryLayer::clear" << std::endl;
   bool rc = deleteFeatures( allFeatureIds() );
   commitChanges();
   startEditing();
+        std::cout<< "out QgsAuxiliaryLayer::clear" << std::endl;
   return rc;
 }
 
@@ -135,9 +142,11 @@ bool QgsAuxiliaryLayer::exists( const QgsPropertyDefinition &definition ) const
 
 bool QgsAuxiliaryLayer::addAuxiliaryField( const QgsPropertyDefinition &definition )
 {
-  if ( ( definition.name().isEmpty() && definition.comment().isEmpty() ) || exists( definition ) )
+  std::cout<< "in QgsAuxiliaryLayer::addAuxiliaryField"<< std:: endl;
+  if ( ( definition.name().isEmpty() && definition.comment().isEmpty() ) || exists( definition ) ){
+     std::cout<< "out QgsAuxiliaryLayer::addAuxiliaryField"<< std:: endl;
     return false;
-
+  }
   const QgsField af = createAuxiliaryField( definition );
   const bool rc = addAttribute( af );
   updateFields();
@@ -181,7 +190,7 @@ bool QgsAuxiliaryLayer::addAuxiliaryField( const QgsPropertyDefinition &definiti
       mLayer->setEditorWidgetSetup( index, editorWidgetSetup( auxIndex ) );
     }
   }
-
+  std::cout<< "out QgsAuxiliaryLayer::addAuxiliaryField"<< std:: endl;
   return rc;
 }
 
@@ -219,23 +228,26 @@ bool QgsAuxiliaryLayer::save()
 
 int QgsAuxiliaryLayer::createProperty( QgsPalLayerSettings::Property property, QgsVectorLayer *layer )
 {
+  //std::cout<< "in QgsAuxiliaryLayer::pal::createProperty" << std::endl;
   int index = -1;
 
   if ( layer && layer->labeling() && layer->auxiliaryLayer() )
   {
+      std::cout<< "if 1" << std::endl;
     // property definition are identical whatever the provider id
     const QgsPropertyDefinition def = layer->labeling()->settings().propertyDefinitions()[property];
     const QString fieldName = nameFromProperty( def, true );
-
     layer->auxiliaryLayer()->addAuxiliaryField( def );
 
     if ( layer->auxiliaryLayer()->indexOfPropertyDefinition( def ) >= 0 )
     {
+      std::cout<< "if 2" << std::endl;
       const QgsProperty prop = QgsProperty::fromField( fieldName );
 
       const QStringList subProviderIds = layer->labeling()->subProviders();
       for ( const QString &providerId : subProviderIds )
       {
+        std::cout<< "for 1" << std::endl;
         QgsPalLayerSettings *settings = new QgsPalLayerSettings( layer->labeling()->settings( providerId ) );
 
         QgsPropertyCollection c = settings->dataDefinedProperties();
@@ -250,7 +262,7 @@ int QgsAuxiliaryLayer::createProperty( QgsPalLayerSettings::Property property, Q
 
     index = layer->fields().lookupField( fieldName );
   }
-
+ // std::cout<< "out QgsAuxiliaryLayer::pal::createProperty" << std::endl;
   return index;
 }
 
@@ -364,8 +376,9 @@ int QgsAuxiliaryLayer::indexOfPropertyDefinition( const QgsPropertyDefinition &d
 
 QString QgsAuxiliaryLayer::nameFromProperty( const QgsPropertyDefinition &def, bool joined )
 {
+    //std::cout<< "in QgsAuxiliaryLayer::nameFromProperty" << std::endl;
   QString fieldName = def.origin();
-
+     std::cout<< "** filedName "<< fieldName.toUtf8().constData() << std::endl;
   if ( !def.name().isEmpty() )
     fieldName =  QString( "%1_%2" ).arg( fieldName, def.name().toLower() );
 
@@ -374,12 +387,13 @@ QString QgsAuxiliaryLayer::nameFromProperty( const QgsPropertyDefinition &def, b
 
   if ( joined )
     fieldName = QString( "%1%2" ).arg( AS_JOINPREFIX, fieldName );
-
+ //std::cout<< "out QgsAuxiliaryLayer::nameFromProperty" << std::endl;
   return fieldName;
 }
 
 QgsField QgsAuxiliaryLayer::createAuxiliaryField( const QgsPropertyDefinition &def )
 {
+  std::cout<< "in QgsAuxiliaryLayer::createAuxiliaryField" << std::endl;
   QgsField afield;
 
   if ( !def.name().isEmpty() || !def.comment().isEmpty() )
@@ -412,7 +426,7 @@ QgsField QgsAuxiliaryLayer::createAuxiliaryField( const QgsPropertyDefinition &d
     afield.setLength( len );
     afield.setPrecision( precision );
   }
-
+  std::cout<< "out QgsAuxiliaryLayer::createAuxiliaryField" << std::endl;
   return afield;
 }
 
@@ -561,6 +575,7 @@ bool QgsAuxiliaryStorage::save() const
 
 QgsAuxiliaryLayer *QgsAuxiliaryStorage::createAuxiliaryLayer( const QgsField &field, QgsVectorLayer *layer ) const
 {
+  std::cout<< "IN QgsAuxiliaryStorage::createAuxiliaryLayer"<< std::endl;
   QgsAuxiliaryLayer *alayer = nullptr;
 
   if ( mValid && layer )
@@ -573,6 +588,7 @@ QgsAuxiliaryLayer *QgsAuxiliaryStorage::createAuxiliaryLayer( const QgsField &fi
     {
       if ( !createTable( field.typeName(), table, database.get() ) )
       {
+        std::cout<< "OUT QgsAuxiliaryStorage::createAuxiliaryLayer"<< std::endl;
         return alayer;
       }
     }
@@ -580,7 +596,7 @@ QgsAuxiliaryLayer *QgsAuxiliaryStorage::createAuxiliaryLayer( const QgsField &fi
     alayer = new QgsAuxiliaryLayer( field.name(), currentFileName(), table, layer );
     alayer->startEditing();
   }
-
+  std::cout<< "OUT QgsAuxiliaryStorage::createAuxiliaryLayer"<< std::endl;
   return alayer;
 }
 

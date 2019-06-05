@@ -276,7 +276,9 @@ QVariant QgsFeature::attribute( const QString &name ) const
 
 int QgsFeature::fieldNameIndex( const QString &fieldName ) const
 {
+  //std::cout<< "in QGSFEATURE:fieldNameIndex"<< std::endl;
   return d->fields.lookupField( fieldName );
+  //std::cout<< "out QGSFEATURE:fieldNameIndex"<< std::endl;
 }
 
 /***************************************************************************

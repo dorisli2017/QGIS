@@ -413,6 +413,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgsversioninfo.cpp" "/home/guangping/dev/cpp/GIT/QGIS/src/app/CMakeFiles/qgis_app.dir/moc_qgsversioninfo.cpp.o"
   "/home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgswelcomepage.cpp" "/home/guangping/dev/cpp/GIT/QGIS/src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepage.cpp.o"
   "/home/guangping/dev/cpp/GIT/QGIS/src/app/moc_qgswelcomepageitemsmodel.cpp" "/home/guangping/dev/cpp/GIT/QGIS/src/app/CMakeFiles/qgis_app.dir/moc_qgswelcomepageitemsmodel.cpp.o"
+  "/home/guangping/dev/cpp/GIT/QGIS/src/app/modification.cpp" "/home/guangping/dev/cpp/GIT/QGIS/src/app/CMakeFiles/qgis_app.dir/modification.cpp.o"
   "/home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/moc_qgsapppluginmanagerinterface.cpp" "/home/guangping/dev/cpp/GIT/QGIS/src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgsapppluginmanagerinterface.cpp.o"
   "/home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/moc_qgspluginitemdelegate.cpp" "/home/guangping/dev/cpp/GIT/QGIS/src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginitemdelegate.cpp.o"
   "/home/guangping/dev/cpp/GIT/QGIS/src/app/pluginmanager/moc_qgspluginmanager.cpp" "/home/guangping/dev/cpp/GIT/QGIS/src/app/CMakeFiles/qgis_app.dir/pluginmanager/moc_qgspluginmanager.cpp.o"

@@ -103,11 +103,13 @@ Pal::~Pal()
 Layer *Pal::addLayer( QgsAbstractLabelProvider *provider, const QString &layerName, QgsPalLayerSettings::Placement arrangement, double defaultPriority, bool active, bool toLabel, bool displayAll )
 {
   mMutex.lock();
-
+  //cout<< "addLayer"<< endl;
   Q_ASSERT( !mLayers.contains( provider ) );
 
   Layer *layer = new Layer( provider, layerName, arrangement, defaultPriority, active, toLabel, this, displayAll );
+    //cout<< "befor insert"<< endl;
   mLayers.insert( provider, layer );
+   //   cout<< "after insert"<< endl;
   mMutex.unlock();
 
   return layer;
@@ -461,11 +463,11 @@ QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll,test::P
     return QList<LabelPosition *>();
 
   prob->reduce();
-
   try
   {
-    if ( searchMethod == FALP )
+    if ( searchMethod == FALP ){
       prob->init_sol_falp(performance);
+    }
 //+++++++++++++++++gpl-algorithms+++++++++++++++++++++
     else if ( searchMethod == SIMPLE )
       prob->simple(performance);
@@ -485,7 +487,6 @@ QList<LabelPosition *> Pal::solveProblem( Problem *prob, bool displayAll,test::P
   {
     return QList<LabelPosition *>();
   }
-
   return prob->getSolution( displayAll );
 }
 

@@ -66,7 +66,7 @@ email                : sherman at mrcc.com
 #include <QMessageBox>
 #include <QString>
 #include <QTextCodec>
-
+#include <iostream>
 
 #ifdef Q_OS_WIN
 #include <windows.h>
@@ -378,6 +378,7 @@ static QString AnalyzeURI( QString const &uri,
                            QString &subsetString,
                            OGRwkbGeometryType &ogrGeometryTypeFilter )
 {
+  //std::cout<< "IN  AnalyzeURI"<< std::endl;
   isSubLayer = false;
   layerIndex = 0;
   layerName = QString();
@@ -441,7 +442,7 @@ static QString AnalyzeURI( QString const &uri,
         ogrGeometryTypeFilter = ogrWkbGeometryTypeFromName( value );
       }
     }
-
+  //std::cout<< "OUT  AnalyzeURI"<< std::endl;
     return filePath;
   }
 
@@ -450,6 +451,7 @@ static QString AnalyzeURI( QString const &uri,
 QgsOgrProvider::QgsOgrProvider( QString const &uri, const ProviderOptions &options )
   : QgsVectorDataProvider( uri, options )
 {
+    //std::cout<< "IN QgsOgrProvider::QgsOgrProvider"<< std::endl;
   QgsApplication::registerOgrDrivers();
 
   QgsSettings settings;
@@ -595,6 +597,7 @@ QgsOgrProvider::QgsOgrProvider( QString const &uri, const ProviderOptions &optio
   setNativeTypes( nativeTypes );
 
   QgsOgrConnPool::instance()->ref( QgsOgrProviderUtils::connectionPoolId( dataSourceUri( true ), mShareSameDatasetAmongLayers ) );
+      //std::cout<< "OUT QgsOgrProvider::QgsOgrProvider"<< std::endl;
 }
 
 QgsOgrProvider::~QgsOgrProvider()

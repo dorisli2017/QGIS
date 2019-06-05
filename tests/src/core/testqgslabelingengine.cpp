@@ -55,6 +55,7 @@ class TestQgsLabelingEngine : public QObject
     void testLabelBoundary();
     void testLabelBlockingRegion();
 
+
   private:
     QgsVectorLayer *vl = nullptr;
 
@@ -147,9 +148,9 @@ void TestQgsLabelingEngine::setDefaultLabelParams( QgsPalLayerSettings &settings
   format.setColor( QColor( 200, 0, 200 ) );
   settings.setFormat( format );
 }
-
 void TestQgsLabelingEngine::testBasic()
-{
+{  
+  std::cout<< "in TestQgsLabelingEngine::testBasic()"<< std::endl;
   QSize size( 640, 480 );
   QgsMapSettings mapSettings;
   mapSettings.setOutputSize( size );
@@ -170,7 +171,6 @@ void TestQgsLabelingEngine::testBasic()
   context.setPainter( &p );
 
   QgsPalLayerSettings settings;
-  settings.fieldName = QStringLiteral( "Class" );
   setDefaultLabelParams( settings );
 
   vl->setLabeling( new QgsVectorLayerSimpleLabeling( settings ) );  // TODO: this should not be necessary!
@@ -197,9 +197,8 @@ void TestQgsLabelingEngine::testBasic()
   vl->setLabeling( nullptr );
 
   QVERIFY( imageCheck( "labeling_basic", img2, 20 ) );
+  std::cout<< "in TestQgsLabelingEngine::testBasic()"<< std::endl;
 }
-
-
 void TestQgsLabelingEngine::testDiagrams()
 {
   QSize size( 640, 480 );

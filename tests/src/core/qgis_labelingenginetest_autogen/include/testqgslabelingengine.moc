@@ -7,6 +7,7 @@
 *****************************************************************************/
 
 #include <QtCore/qbytearray.h>
+#include <iostream>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'testqgslabelingengine.cpp' doesn't include <QObject>."
@@ -123,6 +124,7 @@ static const uint qt_meta_data_TestQgsLabelingEngine[] = {
 
 void TestQgsLabelingEngine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
+    std::cout<< "***********In TestQgsLabelingEngine::qt_static_metacall "<< std:: endl;
     if (_c == QMetaObject::InvokeMetaMethod) {
         TestQgsLabelingEngine *_t = static_cast<TestQgsLabelingEngine *>(_o);
         Q_UNUSED(_t)
@@ -149,6 +151,7 @@ void TestQgsLabelingEngine::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         }
     }
     Q_UNUSED(_a);
+    std::cout<< "**********out TestQgsLabelingEngine::qt_static_metacall "<< std:: endl;
 }
 
 const QMetaObject TestQgsLabelingEngine::staticMetaObject = {

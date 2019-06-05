@@ -9,7 +9,6 @@ template<class K, class V, class dummy_compare, class A> using json_fifo_map = n
 using json = nlohmann::basic_json<json_fifo_map>;
 using namespace std;
 inline bool initial = true;
-inline vector<int> featureQGSIDS;
 inline unordered_map<int, int> solution_prev; 
 namespace test{
     struct Performance{

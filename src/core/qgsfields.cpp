@@ -18,6 +18,7 @@
 #include "qgsfields_p.h"
 #include "qgsapplication.h"
 #include <QIcon>
+#include <iostream>
 
 /***************************************************************************
  * This class is considered CRITICAL and any change MUST be accompanied with
@@ -325,9 +326,12 @@ int QgsFields::lookupField( const QString &fieldName ) const
 {
   if ( fieldName.isEmpty() ) //shortcut
     return -1;
-
+  //std::cout<< "count is "<< count()<< std::endl;
   for ( int idx = 0; idx < count(); ++idx )
   {
+    //for understanding*************
+    //std::cout<< d->fields[idx].field.name().toUtf8().constData()<< std::endl; 
+    //for understanding***************
     if ( d->fields[idx].field.name() == fieldName )
       return idx;
   }

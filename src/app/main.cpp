@@ -814,7 +814,6 @@ int main( int argc, char *argv[] )
 
       return 0;
   }
-
   /////////////////////////////////////////////////////////////////////
   // If no --project was specified, parse the args to look for a     //
   // .qgs file and set myProjectFileName to it. This allows loading  //
@@ -1476,7 +1475,7 @@ int main( int argc, char *argv[] )
         layerIds << vl->id();
       }
     }
-
+  cout<< "************ layer added **********"<< endl;
     if ( !layers.isEmpty() )
     {
       dxfExport.addLayers( layers );
@@ -1536,6 +1535,7 @@ int main( int argc, char *argv[] )
   /////////////////////////////////////////////////////////////////////
   // Continue on to interactive gui...
   /////////////////////////////////////////////////////////////////////
+  cout<< "************ show in  main **********"<< endl;
   qgis->show();
   myApp.connect( &myApp, SIGNAL( lastWindowClosed() ), &myApp, SLOT( quit() ) );
 
@@ -1549,11 +1549,12 @@ int main( int argc, char *argv[] )
   qgis->menuBar()->setNativeMenuBar( false );
   qgis->menuBar()->setVisible( true );
 #endif
-
+cout <<"set Signal"<< endl;
 #if !defined(Q_OS_WIN)
   UnixSignalWatcher sigwatch;
+  cout <<"set Signal finished"<< endl;
   sigwatch.watchForSignal( SIGINT );
-
+cout <<"watchforSignal"<<SIGINT << endl;
   QObject::connect( &sigwatch, &UnixSignalWatcher::unixSignal, &myApp, [&myApp ]( int signal )
   {
     switch ( signal )
@@ -1567,7 +1568,7 @@ int main( int argc, char *argv[] )
     }
   } );
 #endif
-
+  cout<< "************ exec in  main **********"<< endl;
   int retval = myApp.exec();
   delete qgis;
   return retval;
