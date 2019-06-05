@@ -52,11 +52,6 @@ class CORE_EXPORT QgsVectorLayerLabelProvider : public QgsAbstractLabelProvider
     QList<QgsLabelFeature *> labelFeatures( QgsRenderContext &context ) override;
 
     void drawLabel( QgsRenderContext &context, pal::LabelPosition *label ) const override;
-    //+++++++++++++++++gpl-modification+++++++++++++++++++
-    void fixFeature(int id);
-    void fitFeature(int id, double fator);
-    void getFeatureIds(vector<int>& ids);
-    //----------------gpl-modification--------------------
 
     // new virtual methods
 

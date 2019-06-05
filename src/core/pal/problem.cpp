@@ -370,8 +370,8 @@ if(gplDebugger){
 }
   performance.solutionSize = solutionCount;
  auto end = std::chrono::system_clock::now();
- std::chrono::duration<double> elapsed_seconds = end-start;
- performance.time = elapsed_seconds.count();
+const auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end-start).count();
+ performance.time = duration;
  solution_cost();
  performance.solutionWeight = sol->cost;
  if(testPrinter){
@@ -2766,7 +2766,7 @@ void Problem::setConflictGraph(){
        candidates->Search( amin, amax, conflictCallBack, reinterpret_cast< void * >(context) );   
     }
   }
-  if(!init){
+  if(!initial){
     // build previou solution
     int qgsID;
     int offset;
@@ -3000,7 +3000,7 @@ void Problem::maxHS(test::Performance& performance){
   solution_cost();
   performance.solutionWeight = sol->cost;
   performance.solutionSize = solutionCount;
-  performance.remainingLabels =- remainingCount;
+  performance.remainingLabels = remainingCount;
   auto end = std::chrono::system_clock::now();
   std::chrono::duration<double> elapsed_seconds = end-start;
   performance.time = elapsed_seconds.count();
@@ -3040,7 +3040,7 @@ void Problem::kamis(test::Performance& performance){
   std::unordered_map<int,int>::const_iterator got;
   // count remaing labels
   int remainingCount = 0;
-  if(!init){
+  if(!initial){
     for (int  i = 0; i < nbft; i++ ){
       offset = sol->s[i]-featStartId[i];
       if(offset >= 0){
@@ -3077,7 +3077,7 @@ int Problem:: cacheSolution(){
   std::unordered_map<int,int>::const_iterator got;
   // count remaing labels
   int remainingCount = 0;
-  if(!init){
+  if(!initial){
     for (int  i = 0; i < nbft; i++ ){
       offset = sol->s[i]-featStartId[i];
       if(offset >= 0){
@@ -3091,7 +3091,7 @@ int Problem:: cacheSolution(){
   }
   // store new solution
   solution_prev.clear();
-  init = false;
+  initial = false;
   for (int  i = 0; i < nbft; i++ ){
     offset = sol->s[i]-featStartId[i];
     if(offset >= 0){
@@ -3163,7 +3163,7 @@ void Problem:: checkQgsfeatureID(){
   unordered_map<int, int> solution; 
   unordered_map<int, unordered_set<int>> candidates;
   //comparison with previous solution 
-  if(!init){
+  if(!initial){
     if(numF_prev != nbft){
       cout<< "numF_prev: "<<numF_prev <<endl;  
       cout<< "nbft: "<<nbft <<endl;  
@@ -3259,7 +3259,7 @@ void Problem:: checkQgsfeatureID(){
   QgsFeatureIDS_prev.clear();
   solution_prev.clear();
   candidates_prev.clear();
-  init = false;
+  initial = false;
   numF_prev = nbft;
   coutL = 0;
   int fID_first = -1;

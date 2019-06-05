@@ -68,12 +68,6 @@ class CORE_EXPORT QgsAbstractLabelProvider
 
     //! draw this label at the position determined by the labeling engine
     virtual void drawLabel( QgsRenderContext &context, pal::LabelPosition *label ) const = 0;
-    //+++++++++++++++++gpl-modification+++++++++++++++++++
-    virtual void fixFeature(int id){};
-    virtual void fitFeature(int id, double fator){};
-    virtual void getFeatureIds(vector<int>& ids){};
-    //--------------gpl-modification----------------------
-
     //! Returns list of child providers - useful if the provider needs to put labels into more layers with different configuration
     virtual QList<QgsAbstractLabelProvider *> subProviders() { return QList<QgsAbstractLabelProvider *>(); }
 
